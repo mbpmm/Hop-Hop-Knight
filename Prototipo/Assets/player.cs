@@ -51,6 +51,11 @@ public class player : MonoBehaviour
 
         }
 
+        if (vertical<0)
+        {
+
+        }
+
         if (powerUp)
         {
             powerUpDuration += Time.deltaTime;
