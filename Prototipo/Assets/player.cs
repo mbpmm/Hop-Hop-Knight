@@ -15,6 +15,8 @@ public class player : MonoBehaviour
     public GameObject room3;
     public float fireRate;
     public bool exitOnce;
+    public Animator animator;
+    public int direction;
 
     private float powerUpDuration;
     private bool powerUp;
@@ -25,6 +27,7 @@ public class player : MonoBehaviour
     void Start()
     {
         playerRB = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         limMax = 0.96f;
         limXMin = 0.04f;
         limYMin = 0.07f;
@@ -51,9 +54,35 @@ public class player : MonoBehaviour
 
         }
 
-        if (vertical<0)
+        if (horizontal<0)
         {
-
+            direction = 1;
+            animator.SetInteger("Direction",direction);
+            animator.SetBool("IsMoving", true);
+        }
+        if (horizontal>0)
+        {
+            direction = 2;
+            animator.SetInteger("Direction", direction);
+            animator.SetBool("IsMoving", true);
+        }
+        if (vertical < 0)
+        {
+            direction = 4;
+            animator.SetInteger("Direction", direction);
+            animator.SetBool("IsMoving", true);
+        }
+        if (vertical > 0)
+        {
+            direction = 3;
+            animator.SetInteger("Direction", direction);
+            animator.SetBool("IsMoving", true);
+        }
+        if (horizontal == 0 && vertical==0)
+        {
+            direction = 0;
+            animator.SetInteger("Direction", direction);
+            animator.SetBool("IsMoving", false);
         }
 
         if (powerUp)
