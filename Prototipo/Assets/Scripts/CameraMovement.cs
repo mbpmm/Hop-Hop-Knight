@@ -7,8 +7,8 @@ public class CameraMovement : MonoBehaviour
     public Transform target;
     public Vector3 offset;
     public Vector3 rotation;
-
     private Vector3 initialPos;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +18,7 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        transform.position = target.position + offset;
+        transform.position = new Vector3(transform.position.x, target.position.y, target.position.z)+offset;
         transform.eulerAngles = rotation;
     }
 }
