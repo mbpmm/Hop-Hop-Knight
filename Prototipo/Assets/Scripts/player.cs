@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class player : MonoBehaviour
@@ -12,8 +14,18 @@ public class player : MonoBehaviour
     public bool exitOnce;
     public Animator animator;
     public int direction;
+
     public bool onTheGround;
     public bool doubleJumpAllowed;
+
+    public float attackTime;
+    public float startAttackTime;
+    public Transform attackPos;
+    public LayerMask enemies;
+    public float attackRange;
+    public int damage;
+    public Button attackBtn;
+    public bool isAttacking;
 
     private float powerUpDuration;
     private bool powerUp;
@@ -40,19 +52,21 @@ public class player : MonoBehaviour
         //    playerRB.AddForce(Vector2.up * jumpForce);
         //}
 
-        //if (horizontal < 0)
-        //{
-        //    direction = 1;
-        //    animator.SetInteger("Direction", direction);
-        //    animator.SetBool("IsMoving", true);
-        //}
-        //if (horizontal > 0)
-        //{
-        //    direction = 2;
-        //    animator.SetInteger("Direction", direction);
-        //    animator.SetBool("IsMoving", true);
-        //}
-        
+        if (horizontal < 0)
+        {
+            transform.eulerAngles = new Vector3(0, 0, 0);
+            direction = 1;
+            animator.SetInteger("Direction", direction);
+            animator.SetBool("IsMoving", true);
+        }
+        if (horizontal > 0)
+        {
+            transform.eulerAngles = new Vector3(0, -180, 0);
+            direction = 2;
+            animator.SetInteger("Direction", direction);
+            animator.SetBool("IsMoving", true);
+        }
+
         //if (horizontal == 0 && vertical == 0)
         //{
         //    direction = 0;
@@ -80,9 +94,38 @@ public class player : MonoBehaviour
             doubleJumpAllowed = false;
         }
 
+
+        if (attackTime <= 0 && isAttacking)
+        {
+            attackTime = startAttackTime;
+            isAttacking = false;
+        }
+        else
+        {
+            attackTime -= Time.deltaTime;
+        }
     }
 
-    
+    public void Attack()
+    {
+        if (attackTime <= 0 )
+        {
+            isAttacking = true;
+            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, enemies);
+            for (int i = 0; i < enemiesToDamage.Length; i++)
+            {
+                enemiesToDamage[i].GetComponent<EnemyAI>().TakeDamage(damage);
+            }
+        }
+       
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(attackPos.position, attackRange);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (exitOnce)
