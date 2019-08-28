@@ -74,7 +74,7 @@ public class player : MonoBehaviour
         //    animator.SetBool("IsMoving", false);
         //}
 
-        if (playerRB.velocity.y == 0)
+        if (playerRB.velocity.y < 0.005f&& playerRB.velocity.y >= -0.005f)
             onTheGround = true;
         else
             onTheGround = false;
@@ -84,10 +84,10 @@ public class player : MonoBehaviour
 
         if (onTheGround && CrossPlatformInputManager.GetButtonDown("Jump"))
         {
-            playerRB.velocity = new Vector2(playerRB.velocity.x, 0f);
+            //playerRB.velocity = new Vector2(playerRB.velocity.x, 0f);
             playerRB.AddForce(Vector2.up * jumpForce);
         }
-        else if (doubleJumpAllowed && CrossPlatformInputManager.GetButtonDown("Jump"))
+        else if (doubleJumpAllowed && CrossPlatformInputManager.GetButtonDown("Jump") && onTheGround==false)
         {
             playerRB.velocity = new Vector2(playerRB.velocity.x, 0f);
             playerRB.AddForce(Vector2.up * jumpForce);
@@ -126,10 +126,12 @@ public class player : MonoBehaviour
         Gizmos.DrawWireSphere(attackPos.position, attackRange);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (exitOnce)
+        if (collision.gameObject.tag == "Floor")
         {
+            playerRB.velocity = new Vector2(playerRB.velocity.x, 0);
         }
     }
 }

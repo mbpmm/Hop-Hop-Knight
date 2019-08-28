@@ -187,6 +187,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6082221943791148521, guid: fa978cafe43267f4e94d27c2fb1e2c3f,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa978cafe43267f4e94d27c2fb1e2c3f, type: 3}
 --- !u!1 &307699062
@@ -199,7 +204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 307699063}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: AttackRange
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -233,9 +238,9 @@ GameObject:
   - component: {fileID: 340869985}
   - component: {fileID: 340869989}
   - component: {fileID: 340869988}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Tilemap
-  m_TagString: Untagged
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2567,6 +2572,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6082221943791148521, guid: fa978cafe43267f4e94d27c2fb1e2c3f,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa978cafe43267f4e94d27c2fb1e2c3f, type: 3}
 --- !u!1001 &922580636
@@ -2635,6 +2645,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6082221943791148521, guid: fa978cafe43267f4e94d27c2fb1e2c3f,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa978cafe43267f4e94d27c2fb1e2c3f, type: 3}
@@ -2848,7 +2863,7 @@ MonoBehaviour:
   onTheGround: 0
   doubleJumpAllowed: 0
   attackTime: 0
-  startAttackTime: 1
+  startAttackTime: 0.75
   attackPos: {fileID: 307699063}
   enemies:
     serializedVersion: 2
@@ -3523,6 +3538,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6082221943791148521, guid: fa978cafe43267f4e94d27c2fb1e2c3f,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa978cafe43267f4e94d27c2fb1e2c3f, type: 3}
 --- !u!1001 &2009172342
@@ -3602,6 +3622,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 2.07
       objectReference: {fileID: 0}
+    - target: {fileID: 6082221943791148521, guid: fa978cafe43267f4e94d27c2fb1e2c3f,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa978cafe43267f4e94d27c2fb1e2c3f, type: 3}
 --- !u!1 &2084763475
@@ -3669,7 +3694,7 @@ MonoBehaviour:
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
+    m_ColorMultiplier: 2.56
     m_FadeDuration: 0.1
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
