@@ -82,12 +82,12 @@ public class player : MonoBehaviour
         if (onTheGround)
             doubleJumpAllowed = true;
 
-        if (onTheGround && CrossPlatformInputManager.GetButtonDown("Jump"))
+        if (onTheGround && CrossPlatformInputManager.GetButtonDown("Jump") || onTheGround && Input.GetKeyDown(KeyCode.Space))
         {
             //playerRB.velocity = new Vector2(playerRB.velocity.x, 0f);
             playerRB.AddForce(Vector2.up * jumpForce);
         }
-        else if (doubleJumpAllowed && CrossPlatformInputManager.GetButtonDown("Jump") && onTheGround==false)
+        else if (doubleJumpAllowed && CrossPlatformInputManager.GetButtonDown("Jump") && onTheGround==false || doubleJumpAllowed && Input.GetKeyDown(KeyCode.Space) && onTheGround == false)
         {
             playerRB.velocity = new Vector2(playerRB.velocity.x, 0f);
             playerRB.AddForce(Vector2.up * jumpForce);
