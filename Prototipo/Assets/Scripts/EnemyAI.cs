@@ -10,10 +10,11 @@ public class EnemyAI : MonoBehaviour
     public float distance;
     public bool movingRight = true;
     public Transform groundDetection;
+    private Rigidbody2D enemyRB;
     // Start is called before the first frame update
     void Start()
     {
-        
+        enemyRB = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
