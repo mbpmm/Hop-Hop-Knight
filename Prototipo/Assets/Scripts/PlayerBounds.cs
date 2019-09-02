@@ -20,7 +20,7 @@ public class PlayerBounds : MonoBehaviour
     void LateUpdate()
     {
         Vector3 viewPos = transform.position;
-        viewPos.x = Mathf.Clamp(viewPos.x, -screenBounds.x + objectWidth, screenBounds.x - objectWidth);
+        //viewPos.x = Mathf.Clamp(viewPos.x, -screenBounds.x + objectWidth, screenBounds.x - objectWidth);
         //viewPos.y = Mathf.Clamp(viewPos.y, -screenBounds.y + objectHeight, screenBounds.y - objectHeight);
         transform.position = viewPos;
     }

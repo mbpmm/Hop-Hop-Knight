@@ -27,6 +27,13 @@ public class player : MonoBehaviour
     public Button attackBtn;
     public bool isAttacking;
 
+    public bool isWallSliding;
+    public Transform wallCheck;
+    public float wallCheckDistance;
+    public RaycastHit2D wallCheckHit;
+    public LayerMask wall;
+    public float maxWallSlidingVel;
+
     private float powerUpDuration;
     private bool powerUp;
     private Rigidbody2D playerRB;
@@ -52,14 +59,14 @@ public class player : MonoBehaviour
         //    playerRB.AddForce(Vector2.up * jumpForce);
         //}
 
-        if (horizontal < 0)
+        if (horizontal > 0)
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
             direction = 1;
             animator.SetInteger("Direction", direction);
             animator.SetBool("IsMoving", true);
         }
-        if (horizontal > 0)
+        if (horizontal < 0)
         {
             transform.eulerAngles = new Vector3(0, -180, 0);
             direction = 2;
@@ -94,6 +101,25 @@ public class player : MonoBehaviour
             doubleJumpAllowed = false;
         }
 
+        wallCheckHit = Physics2D.Raycast(wallCheck.position, wallCheck.right, wallCheckDistance, wall);
+
+        if (wallCheckHit && playerRB.velocity.y < -0.005f)
+        {
+            isWallSliding = true;
+        }
+        else
+        {
+            isWallSliding = false;
+        }
+
+        if (isWallSliding)
+        {
+            if (playerRB.velocity.y< -maxWallSlidingVel)
+            {
+                playerRB.velocity = new Vector2(playerRB.velocity.x, -maxWallSlidingVel);
+            }
+            
+        }
 
         if (attackTime <= 0 && isAttacking)
         {
@@ -129,9 +155,18 @@ public class player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Floor")
-        {
-            playerRB.velocity = new Vector2(playerRB.velocity.x, 0);
-        }
+        //if (collision.gameObject.tag == "Floor")
+        //{
+        //    playerRB.velocity = new Vector2(playerRB.velocity.x, 0);
+        //}
+
+        //if (collision.gameObject.tag == "Wall")
+        //{
+        //    isWallSliding = true;
+        //}
+        //else
+        //{
+        //    isWallSliding = false;
+        //}
     }
 }

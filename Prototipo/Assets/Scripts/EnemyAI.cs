@@ -23,7 +23,7 @@ public class EnemyAI : MonoBehaviour
         transform.Translate(Vector2.right * Time.deltaTime * speed);
 
         RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, distance);
-        if (groundInfo.collider==false)
+        if (groundInfo.collider==false || groundInfo.collider.tag=="Wall")
         {
             if (movingRight==true)
             {
