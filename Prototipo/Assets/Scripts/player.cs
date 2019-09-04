@@ -27,6 +27,13 @@ public class player : MonoBehaviour
     public Button attackBtn;
     public bool isAttacking;
 
+    public bool isGrounded;
+    public Transform groundCheck;
+    public float checkRadius;
+    public LayerMask whatIsGround;
+    private int extraJumps;
+    public int extraJumpsValue;
+
     public bool isWallSliding;
     public Transform wallCheck;
     public float wallCheckDistance;
@@ -43,6 +50,7 @@ public class player : MonoBehaviour
         playerRB = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         exitOnce = true;
+        extraJumps = extraJumpsValue;
     }
 
     // Update is called once per frame
@@ -81,25 +89,30 @@ public class player : MonoBehaviour
         //    animator.SetBool("IsMoving", false);
         //}
 
-        if (playerRB.velocity.y < 0.005f&& playerRB.velocity.y >= -0.005f)
-            onTheGround = true;
-        else
-            onTheGround = false;
+        // -----------JUMP------------
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
-        if (onTheGround)
-            doubleJumpAllowed = true;
-
-        if (onTheGround && CrossPlatformInputManager.GetButtonDown("Jump") || onTheGround && Input.GetKeyDown(KeyCode.Space))
+        if (isGrounded)
         {
-            //playerRB.velocity = new Vector2(playerRB.velocity.x, 0f);
-            playerRB.AddForce(Vector2.up * jumpForce);
+            extraJumps = extraJumpsValue;
         }
-        else if (doubleJumpAllowed && CrossPlatformInputManager.GetButtonDown("Jump") && onTheGround==false || doubleJumpAllowed && Input.GetKeyDown(KeyCode.Space) && onTheGround == false)
+
+        if ((CrossPlatformInputManager.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.Space))&&extraJumps>0)
         {
             playerRB.velocity = new Vector2(playerRB.velocity.x, 0f);
             playerRB.AddForce(Vector2.up * jumpForce);
+            //playerRB.velocity = Vector2.up * jumpForce;
+            extraJumps--;
+        }
+        else if ((CrossPlatformInputManager.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.Space)) && extraJumps==0 && isGrounded)
+        {
+            playerRB.velocity = new Vector2(playerRB.velocity.x, 0f);
+            playerRB.AddForce(Vector2.up * jumpForce);
+            //playerRB.velocity = Vector2.up * jumpForce;
             doubleJumpAllowed = false;
         }
+
+       //--------WALL SLIDE--------------
 
         wallCheckHit = Physics2D.Raycast(wallCheck.position, wallCheck.right, wallCheckDistance, wall);
 
@@ -120,6 +133,8 @@ public class player : MonoBehaviour
             }
             
         }
+
+        //------------ATTACK------------
 
         if (attackTime <= 0 && isAttacking)
         {
