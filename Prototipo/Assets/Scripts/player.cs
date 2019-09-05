@@ -67,14 +67,14 @@ public class player : MonoBehaviour
         //    playerRB.AddForce(Vector2.up * jumpForce);
         //}
 
-        if (horizontal > 0)
+        if (playerRB.velocity.x > 0)
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
-            direction = 1;
+            direction = 2;
             animator.SetInteger("Direction", direction);
             animator.SetBool("IsMoving", true);
         }
-        if (horizontal < 0)
+        if (playerRB.velocity.x < 0)
         {
             transform.eulerAngles = new Vector3(0, -180, 0);
             direction = 2;
@@ -82,12 +82,12 @@ public class player : MonoBehaviour
             animator.SetBool("IsMoving", true);
         }
 
-        //if (horizontal == 0 && vertical == 0)
-        //{
-        //    direction = 0;
-        //    animator.SetInteger("Direction", direction);
-        //    animator.SetBool("IsMoving", false);
-        //}
+        if (playerRB.velocity == Vector2.zero)
+        {
+            direction = 0;
+            animator.SetInteger("Direction", direction);
+            animator.SetBool("IsMoving", false);
+        }
 
         // -----------JUMP------------
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
