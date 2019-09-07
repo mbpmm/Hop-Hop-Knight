@@ -18,14 +18,7 @@ public class player : MonoBehaviour
     public bool onTheGround;
     public bool doubleJumpAllowed;
 
-    public float attackTime;
-    public float startAttackTime;
-    public Transform attackPos;
-    public LayerMask enemies;
-    public float attackRange;
-    public int damage;
-    public Button attackBtn;
-    public bool isAttacking;
+   
 
     public bool isGrounded;
     public Transform groundCheck;
@@ -58,7 +51,7 @@ public class player : MonoBehaviour
     {
         vertical = CrossPlatformInputManager.GetAxis("Vertical");
         horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
-        Vector2 movement = new Vector2(horizontal*speed, playerRB.velocity.y);
+        Vector2 movement = new Vector2(horizontal * speed, playerRB.velocity.y);
 
         playerRB.velocity = movement;
 
@@ -97,14 +90,14 @@ public class player : MonoBehaviour
             extraJumps = extraJumpsValue;
         }
 
-        if ((CrossPlatformInputManager.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.Space))&&extraJumps>0)
+        if ((CrossPlatformInputManager.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.Space)) && extraJumps > 0)
         {
             playerRB.velocity = new Vector2(playerRB.velocity.x, 0f);
             playerRB.AddForce(Vector2.up * jumpForce);
             //playerRB.velocity = Vector2.up * jumpForce;
             extraJumps--;
         }
-        else if ((CrossPlatformInputManager.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.Space)) && extraJumps==0 && isGrounded)
+        else if ((CrossPlatformInputManager.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.Space)) && extraJumps == 0 && isGrounded)
         {
             playerRB.velocity = new Vector2(playerRB.velocity.x, 0f);
             playerRB.AddForce(Vector2.up * jumpForce);
@@ -112,7 +105,7 @@ public class player : MonoBehaviour
             doubleJumpAllowed = false;
         }
 
-       //--------WALL SLIDE--------------
+        //--------WALL SLIDE--------------
 
         wallCheckHit = Physics2D.Raycast(wallCheck.position, wallCheck.right, wallCheckDistance, wall);
 
@@ -127,46 +120,15 @@ public class player : MonoBehaviour
 
         if (isWallSliding)
         {
-            if (playerRB.velocity.y< -maxWallSlidingVel)
+            if (playerRB.velocity.y < -maxWallSlidingVel)
             {
                 playerRB.velocity = new Vector2(playerRB.velocity.x, -maxWallSlidingVel);
             }
-            
+
         }
 
         //------------ATTACK------------
-
-        if (attackTime <= 0 && isAttacking)
-        {
-            attackTime = startAttackTime;
-            isAttacking = false;
-        }
-        else
-        {
-            attackTime -= Time.deltaTime;
-        }
     }
-
-    public void Attack()
-    {
-        if (attackTime <= 0 )
-        {
-            isAttacking = true;
-            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, enemies);
-            for (int i = 0; i < enemiesToDamage.Length; i++)
-            {
-                enemiesToDamage[i].GetComponent<EnemyAI>().TakeDamage(damage);
-            }
-        }
-       
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(attackPos.position, attackRange);
-    }
-
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -184,4 +146,6 @@ public class player : MonoBehaviour
         //    isWallSliding = false;
         //}
     }
+
+    
 }

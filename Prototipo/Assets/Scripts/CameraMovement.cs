@@ -18,7 +18,7 @@ public class CameraMovement : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        transform.position = new Vector3(target.position.x, target.position.y, target.position.z)+offset;
+        transform.position = new Vector3(transform.position.x, target.position.y, target.position.z)+offset;
         transform.eulerAngles = rotation;
     }
 }
