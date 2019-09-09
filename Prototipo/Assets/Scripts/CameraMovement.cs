@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
+    public bool follow;
     public Transform target;
     public Vector3 offset;
     public Vector3 rotation;
@@ -13,12 +14,27 @@ public class CameraMovement : MonoBehaviour
     void Start()
     {
         initialPos = transform.position;
+        follow = true;
     }
 
-    // Update is called once per frame
     void LateUpdate()
     {
-        transform.position = new Vector3(transform.position.x, target.position.y, target.position.z)+offset;
-        transform.eulerAngles = rotation;
+        if (follow)
+        {
+            transform.position = new Vector3(transform.position.x, target.position.y, target.position.z) + offset;
+            transform.eulerAngles = rotation;
+        }
+
     }
+    private void OnMouseDown()
+    {
+        follow = false;
+    }
+
+    private void OnMouseUp()
+    {
+        follow = true;
+    }
+    // Update is called once per frame
+    
 }
