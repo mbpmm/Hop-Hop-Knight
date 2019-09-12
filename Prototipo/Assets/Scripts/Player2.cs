@@ -7,6 +7,7 @@ public class Player2 : MonoBehaviour
     Rigidbody2D rbody;
     Vector2 startpos;
     Vector2 endpos;
+    Vector2 mousePos;
     public Vector2 direction;
     public float power = 5f; // power of shot
     public float distance;
@@ -19,14 +20,29 @@ public class Player2 : MonoBehaviour
     public float checkRadius;
     public LayerMask whatIsGround;
     public bool launched;
+
+    public GameObject mira;
+    public GameObject miraVisual;
+    float miraSize;
+    float angle;
+
     void Start()
     {
         rbody = GetComponent<Rigidbody2D>();
     }
 
+    void MiraUpdate()
+    {
+        direction = startpos - endpos;
+
+        angle = Vector3.Angle(direction, Vector3.up);
+
+        miraVisual.transform.rotation = Quaternion.Euler(0,0,angle);
+    }
+
     void Update()
     {
-
+        MiraUpdate();
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
         if (isGrounded)
@@ -49,12 +65,10 @@ public class Player2 : MonoBehaviour
             Debug.Log(endpos);
             LaunchPlayer();
         }
-
         //if (rbody.velocity.y < -0.57f)
         //{
         //    launched = false;
         //}
-
 
         Debug.Log("distancia: " + direction);
     }
@@ -67,6 +81,16 @@ public class Player2 : MonoBehaviour
         {
             direction = new Vector2(direction.x, 5f);
         }
+
+        if (direction.x < -6f)
+        {
+            direction = new Vector2(-6f, direction.y);
+        }
+
+        if (direction.x > 6f )
+        {
+            direction = new Vector2(6f, direction.y);
+        }
         rbody.velocity = power*direction; // swap subtraction to switch direction of launch
         //rbody.AddForce(direction *  power);
     }
@@ -78,11 +102,6 @@ public class Player2 : MonoBehaviour
             transform.position = Vector2.zero;
             rbody.velocity = Vector2.zero;
         }
-
-        //if (collision.gameObject.tag == "Floor")
-        //{
-        //    launched = false;
-        //}
     }
 
     //public Vector2 startPos;
