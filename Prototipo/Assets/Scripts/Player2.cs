@@ -13,6 +13,12 @@ public class Player2 : MonoBehaviour
     public float timeStart;
     public float timeEnd;
     public float timeInterval;
+
+    public bool isGrounded;
+    public Transform groundCheck;
+    public float checkRadius;
+    public LayerMask whatIsGround;
+    public bool launched;
     void Start()
     {
         rbody = GetComponent<Rigidbody2D>();
@@ -20,20 +26,35 @@ public class Player2 : MonoBehaviour
 
     void Update()
     {
+
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
+
+        if (isGrounded)
+        {
+            launched = false;
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
             startpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             timeStart = Time.time;
             Debug.Log(startpos);
         }
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0) && !launched)
         {
+            launched = true;
             endpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             timeEnd = Time.time;
             timeInterval = timeEnd - timeStart;
             Debug.Log(endpos);
             LaunchPlayer();
         }
+
+        //if (rbody.velocity.y < -0.57f)
+        //{
+        //    launched = false;
+        //}
+
 
         Debug.Log("distancia: " + direction);
     }
@@ -42,12 +63,12 @@ public class Player2 : MonoBehaviour
     {
         direction = startpos - endpos;
 
-        if (direction.y > 5f)
+        if (direction.y > 5f )
         {
             direction = new Vector2(direction.x, 5f);
         }
-        //rbody.velocity = (startpos - endpos).normalized*power*distance; // swap subtraction to switch direction of launch
-        rbody.AddForce(direction *  power);
+        rbody.velocity = power*direction; // swap subtraction to switch direction of launch
+        //rbody.AddForce(direction *  power);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -57,6 +78,11 @@ public class Player2 : MonoBehaviour
             transform.position = Vector2.zero;
             rbody.velocity = Vector2.zero;
         }
+
+        //if (collision.gameObject.tag == "Floor")
+        //{
+        //    launched = false;
+        //}
     }
 
     //public Vector2 startPos;
