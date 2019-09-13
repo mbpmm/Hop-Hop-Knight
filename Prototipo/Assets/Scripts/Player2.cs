@@ -23,8 +23,11 @@ public class Player2 : MonoBehaviour
 
     public GameObject mira;
     public GameObject miraVisual;
-    float miraSize;
-    float angle;
+    public Vector3 scale;
+    public float miraSize=1;
+    public float miraDivider= 0.1f;
+
+    public float angle;
 
     void Start()
     {
@@ -35,9 +38,25 @@ public class Player2 : MonoBehaviour
     {
         direction = startpos - endpos;
 
+        miraSize = direction.magnitude*miraDivider;
+
+        scale = miraVisual.transform.localScale;
+
+        scale.y = miraSize;
+
+        miraVisual.transform.localScale = scale;
+        miraVisual.transform.localPosition = Vector3.zero + Vector3.up * miraSize;
+
         angle = Vector3.Angle(direction, Vector3.up);
 
-        miraVisual.transform.rotation = Quaternion.Euler(0,0,angle);
+        if (startpos.x>endpos.x)
+        {
+            angle = -angle;
+        }
+
+
+        mira.transform.rotation = Quaternion.Euler(0,0,angle);
+        mira.transform.position = transform.position;
     }
 
     void Update()
@@ -52,24 +71,28 @@ public class Player2 : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            Invoke("DisableMira", 0.1f);
+            
             startpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             timeStart = Time.time;
-            Debug.Log(startpos);
         }
+
+        if (Input.GetMouseButton(0))
+        {
+            endpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        }
+
         if (Input.GetMouseButtonUp(0) && !launched)
         {
+            miraVisual.gameObject.SetActive(false);
             launched = true;
             endpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             timeEnd = Time.time;
             timeInterval = timeEnd - timeStart;
-            Debug.Log(endpos);
             LaunchPlayer();
         }
-        //if (rbody.velocity.y < -0.57f)
-        //{
-        //    launched = false;
-        //}
 
+        
         Debug.Log("distancia: " + direction);
     }
 
@@ -93,6 +116,11 @@ public class Player2 : MonoBehaviour
         }
         rbody.velocity = power*direction; // swap subtraction to switch direction of launch
         //rbody.AddForce(direction *  power);
+    }
+
+    void DisableMira()
+    {
+        miraVisual.gameObject.SetActive(true);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
