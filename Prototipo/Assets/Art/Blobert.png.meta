@@ -1,0 +1,691 @@
+fileFormatVersion: 2
+guid: ebe857ec20e153941b8552f127ed95a2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5959580247166559461
+    second: Blobert_0
+  - first:
+      213: 8181121360426943645
+    second: Blobert_1
+  - first:
+      213: -8950687806196744315
+    second: Blobert_2
+  - first:
+      213: 6833042262007660856
+    second: Blobert_3
+  - first:
+      213: 6833562549643792939
+    second: Blobert_4
+  - first:
+      213: 3821616478908118551
+    second: Blobert_5
+  - first:
+      213: 5477543143395755316
+    second: Blobert_6
+  - first:
+      213: 5460285787657181296
+    second: Blobert_7
+  - first:
+      213: 518308482099605033
+    second: Blobert_8
+  - first:
+      213: -752003244565334067
+    second: Blobert_9
+  - first:
+      213: -2561902613309643375
+    second: Blobert_10
+  - first:
+      213: -3562770979719170059
+    second: Blobert_11
+  - first:
+      213: 3422822430477709339
+    second: Blobert_12
+  - first:
+      213: 5678037499108246602
+    second: Blobert_13
+  - first:
+      213: 2167056798106995893
+    second: Blobert_14
+  - first:
+      213: -5036231689866481728
+    second: Blobert_15
+  - first:
+      213: -6652669459969352207
+    second: Blobert_16
+  - first:
+      213: 2611069245208303331
+    second: Blobert_17
+  - first:
+      213: 5182865639975725477
+    second: Blobert_18
+  - first:
+      213: -9100216662821287966
+    second: Blobert_19
+  - first:
+      213: 5211511504865254574
+    second: Blobert_20
+  - first:
+      213: -2880120905415665258
+    second: Blobert_21
+  - first:
+      213: 2474288759895630159
+    second: Blobert_22
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Blobert_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4650
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34c43245d2345045a8f67f8391c7b39
+      internalID: -5959580247166559461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_1
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 4650
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93f680040de55da488461b2e685fd824
+      internalID: 8181121360426943645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_2
+      rect:
+        serializedVersion: 2
+        x: 3926
+        y: 4650
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4250292edeaf10648976ff10b3ac77da
+      internalID: -8950687806196744315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_3
+      rect:
+        serializedVersion: 2
+        x: 5889
+        y: 4650
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf15d53dc8344a94a907dc8ee55962b4
+      internalID: 6833042262007660856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3720
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c43b8e5b57597469a77aa3ca6e7461
+      internalID: 6833562549643792939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_5
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 3720
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ba55cb30185b84aa5f4df4db1831d1
+      internalID: 3821616478908118551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_6
+      rect:
+        serializedVersion: 2
+        x: 3926
+        y: 3720
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95030449af565b84fa5eb1bbd0b74c12
+      internalID: 5477543143395755316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_7
+      rect:
+        serializedVersion: 2
+        x: 5889
+        y: 3720
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb4dd22f02d1ee34a886863090734900
+      internalID: 5460285787657181296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2790
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 226a07ce99990e34faab2760bba2f932
+      internalID: 518308482099605033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_9
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 2790
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5a334c34d10024497f5b03f20ce9c9
+      internalID: -752003244565334067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_10
+      rect:
+        serializedVersion: 2
+        x: 3926
+        y: 2790
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89459a4b0a016324bbbe48acd28247a2
+      internalID: -2561902613309643375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_11
+      rect:
+        serializedVersion: 2
+        x: 5889
+        y: 2790
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b0960d0bc01094a8f2916dc03c6512
+      internalID: -3562770979719170059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1860
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b7bbe99eb86d942b69c613474ffe3b
+      internalID: 3422822430477709339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_13
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 1860
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e7798eaf71a79438266159aa2b806d
+      internalID: 5678037499108246602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_14
+      rect:
+        serializedVersion: 2
+        x: 3926
+        y: 1860
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2115eb67beb05842ae10681a3768bed
+      internalID: 2167056798106995893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_15
+      rect:
+        serializedVersion: 2
+        x: 5889
+        y: 1860
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948be127c86497048a17e59c3670ad7e
+      internalID: -5036231689866481728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 930
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 283d9206f71a8484881fb98a3a33b775
+      internalID: -6652669459969352207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_17
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 930
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f3db3082b033045b6d52d3e0e7ce5d
+      internalID: 2611069245208303331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_18
+      rect:
+        serializedVersion: 2
+        x: 3926
+        y: 930
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e56e864e5a43d4bb8abdf8b72a6a0c
+      internalID: 5182865639975725477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_19
+      rect:
+        serializedVersion: 2
+        x: 5889
+        y: 930
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c227433344c46a24785cd562a17093e3
+      internalID: -9100216662821287966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050567a41dd7e954cb31a5f4bf85900a
+      internalID: 5211511504865254574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_21
+      rect:
+        serializedVersion: 2
+        x: 1963
+        y: 0
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf2fc8b0433fd0540b2eca45a1779a9c
+      internalID: -2880120905415665258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blobert_22
+      rect:
+        serializedVersion: 2
+        x: 3926
+        y: 0
+        width: 1963
+        height: 930
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7919ab53bf9acb4d89f40d9568d8c95
+      internalID: 2474288759895630159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 49fb703e39e72d149ba5dd23b9223c52
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

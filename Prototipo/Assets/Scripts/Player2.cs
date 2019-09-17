@@ -25,7 +25,7 @@ public class Player2 : MonoBehaviour
     public GameObject miraVisual;
     public Vector3 scale;
     public float miraSize=1;
-    public float miraDivider= 0.1f;
+    public float miraDivider= 6000000f;
 
     public float angle;
 
@@ -57,6 +57,14 @@ public class Player2 : MonoBehaviour
 
         mira.transform.rotation = Quaternion.Euler(0,0,angle);
         mira.transform.position = transform.position;
+
+        Debug.Log(miraSize);
+        if (miraVisual.transform.localScale.y > 4.5f)
+        {
+            scale.y = 4.5f;
+            miraVisual.transform.localScale = scale;
+            miraVisual.transform.localPosition = Vector3.zero + Vector3.up * 4.5f;
+        }
     }
 
     void Update()
@@ -69,7 +77,7 @@ public class Player2 : MonoBehaviour
             launched = false;
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0)&&isGrounded)
         {
             Invoke("DisableMira", 0.1f);
             
@@ -93,7 +101,6 @@ public class Player2 : MonoBehaviour
         }
 
         
-        Debug.Log("distancia: " + direction);
     }
 
     void LaunchPlayer()
