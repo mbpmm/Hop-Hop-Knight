@@ -25,13 +25,20 @@ public class Player2 : MonoBehaviour
     public GameObject miraVisual;
     public Vector3 scale;
     public float miraSize=1;
-    public float miraDivider= 6000000f;
+    public float miraDivider;
 
     public float angle;
+
+    public Animator animator;
+    public int dir;
+    public float timeIdle;
+    public bool idleBlink;
+
 
     void Start()
     {
         rbody = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     void MiraUpdate()
@@ -59,11 +66,11 @@ public class Player2 : MonoBehaviour
         mira.transform.position = transform.position;
 
         Debug.Log(miraSize);
-        if (miraVisual.transform.localScale.y > 4.5f)
+        if (miraVisual.transform.localScale.y > 1.1f)
         {
-            scale.y = 4.5f;
+            scale.y = 1.1f;
             miraVisual.transform.localScale = scale;
-            miraVisual.transform.localPosition = Vector3.zero + Vector3.up * 4.5f;
+            miraVisual.transform.localPosition = Vector3.zero + Vector3.up * 1.1f;
         }
     }
 
@@ -100,7 +107,29 @@ public class Player2 : MonoBehaviour
             LaunchPlayer();
         }
 
-        
+        if (rbody.velocity == Vector2.zero)
+        {
+            dir = 0;
+            timeIdle += Time.deltaTime;
+            animator.SetBool("IsJumping", false);
+            animator.SetInteger("Direction", dir);
+            animator.SetFloat("TimeIdle", timeIdle);
+            animator.SetBool("IdleBlink", idleBlink);
+            if (timeIdle>4f)
+            {
+                idleBlink = true;
+
+            }
+            if (timeIdle>5.5f)
+            {
+                idleBlink = false;
+                timeIdle = 0;
+            }
+        }
+        else
+        {
+            animator.SetBool("IsJumping", true);
+        }
     }
 
     void LaunchPlayer()
@@ -112,14 +141,14 @@ public class Player2 : MonoBehaviour
             direction = new Vector2(direction.x, 5f);
         }
 
-        if (direction.x < -6f)
+        if (direction.x < -5f)
         {
-            direction = new Vector2(-6f, direction.y);
+            direction = new Vector2(-5f, direction.y);
         }
 
-        if (direction.x > 6f )
+        if (direction.x > 5f )
         {
-            direction = new Vector2(6f, direction.y);
+            direction = new Vector2(5f, direction.y);
         }
         rbody.velocity = power*direction; // swap subtraction to switch direction of launch
         //rbody.AddForce(direction *  power);
