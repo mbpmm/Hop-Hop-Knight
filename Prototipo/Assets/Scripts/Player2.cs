@@ -34,6 +34,7 @@ public class Player2 : MonoBehaviour
     public float timeIdle;
     public bool idleBlink;
 
+    public float dirLimit;
 
     void Start()
     {
@@ -65,7 +66,7 @@ public class Player2 : MonoBehaviour
         mira.transform.rotation = Quaternion.Euler(0,0,angle);
         mira.transform.position = transform.position;
 
-        Debug.Log(miraSize);
+        //Debug.Log(miraSize);
         if (miraVisual.transform.localScale.y > 1.1f)
         {
             scale.y = 1.1f;
@@ -130,25 +131,32 @@ public class Player2 : MonoBehaviour
         {
             animator.SetBool("IsJumping", true);
         }
+
+        Debug.Log(direction);
     }
 
     void LaunchPlayer()
     {
         direction = startpos - endpos;
 
-        if (direction.y > 5f )
+        if (direction.y > dirLimit )
         {
-            direction = new Vector2(direction.x, 5f);
+            direction = new Vector2(direction.x, dirLimit);
         }
 
-        if (direction.x < -5f)
+        if (direction.y < 0f)
         {
-            direction = new Vector2(-5f, direction.y);
+            direction = new Vector2(direction.x, 0f);
         }
 
-        if (direction.x > 5f )
+        if (direction.x < -dirLimit)
         {
-            direction = new Vector2(5f, direction.y);
+            direction = new Vector2(-dirLimit, direction.y);
+        }
+
+        if (direction.x > dirLimit)
+        {
+            direction = new Vector2(dirLimit, direction.y);
         }
         rbody.velocity = power*direction; // swap subtraction to switch direction of launch
         //rbody.AddForce(direction *  power);
