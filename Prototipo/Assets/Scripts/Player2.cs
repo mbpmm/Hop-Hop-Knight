@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Player2 : MonoBehaviour
 {
@@ -35,6 +36,8 @@ public class Player2 : MonoBehaviour
     public bool idleBlink;
 
     public float dirLimit;
+    public TextMeshProUGUI scoreText;
+    public int score;
 
     void Start()
     {
@@ -79,6 +82,8 @@ public class Player2 : MonoBehaviour
     {
         MiraUpdate();
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
+
+        scoreText.text = score.ToString();
 
         if (isGrounded)
         {
@@ -133,6 +138,11 @@ public class Player2 : MonoBehaviour
         }
 
         Debug.Log(direction);
+
+        if (Mathf.RoundToInt(transform.position.y)%8==0)
+        {
+            score++;
+        }
     }
 
     void LaunchPlayer()
@@ -173,6 +183,7 @@ public class Player2 : MonoBehaviour
         {
             transform.position = Vector2.zero;
             rbody.velocity = Vector2.zero;
+            score = 0;
         }
     }
 
