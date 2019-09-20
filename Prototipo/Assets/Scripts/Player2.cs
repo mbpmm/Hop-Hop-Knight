@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Player2 : MonoBehaviour
 {
@@ -96,6 +97,7 @@ public class Player2 : MonoBehaviour
             
             startpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             timeStart = Time.time;
+            Debug.Log(startpos);
         }
 
         if (Input.GetMouseButton(0))
@@ -138,11 +140,6 @@ public class Player2 : MonoBehaviour
         }
 
         Debug.Log(direction);
-
-        if (Mathf.RoundToInt(transform.position.y)%8==0)
-        {
-            score++;
-        }
     }
 
     void LaunchPlayer()
@@ -181,9 +178,16 @@ public class Player2 : MonoBehaviour
     {
         if (collision.gameObject.tag=="Enemies")
         {
-            transform.position = Vector2.zero;
-            rbody.velocity = Vector2.zero;
-            score = 0;
+            SceneManager.LoadScene("SampleScene");
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag=="Score")
+        {
+            score++;
+            collision.gameObject.SetActive(false);
         }
     }
 
