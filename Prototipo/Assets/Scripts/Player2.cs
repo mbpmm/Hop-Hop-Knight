@@ -195,6 +195,11 @@ public class Player2 : MonoBehaviour
                 platformTouch();
             collision.gameObject.SetActive(false);
         }
+        if (collision.gameObject.tag == "Enemies")
+        {
+            if (playerDeath != null)
+                playerDeath();
+        }
     }
 
     //public Vector2 startPos;
