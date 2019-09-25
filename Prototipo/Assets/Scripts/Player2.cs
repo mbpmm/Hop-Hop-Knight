@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class Player2 : MonoBehaviour
 {
+
+    public delegate void OnPlayerAction();
+    public static OnPlayerAction platformTouch;
+    public static OnPlayerAction playerDeath;
     Rigidbody2D rbody;
     Vector2 startpos;
     Vector2 endpos;
@@ -178,7 +182,8 @@ public class Player2 : MonoBehaviour
     {
         if (collision.gameObject.tag=="Enemies")
         {
-            SceneManager.LoadScene("SampleScene");
+            if (playerDeath != null)
+                playerDeath();
         }
     }
 
@@ -186,7 +191,8 @@ public class Player2 : MonoBehaviour
     {
         if (collision.gameObject.tag=="Score")
         {
-            score++;
+            if (platformTouch != null)
+                platformTouch();
             collision.gameObject.SetActive(false);
         }
     }
