@@ -83,7 +83,7 @@ public class Player2 : MonoBehaviour
         }
     }
 
-    void Update()
+    void FixedUpdate()
     {
         MiraUpdate();
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
@@ -101,7 +101,6 @@ public class Player2 : MonoBehaviour
             
             startpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             timeStart = Time.time;
-            Debug.Log(startpos);
         }
 
         if (Input.GetMouseButton(0))
@@ -143,7 +142,6 @@ public class Player2 : MonoBehaviour
             animator.SetBool("IsJumping", true);
         }
 
-        Debug.Log(direction);
     }
 
     void LaunchPlayer()
@@ -194,6 +192,7 @@ public class Player2 : MonoBehaviour
             if (platformTouch != null)
                 platformTouch();
             collision.gameObject.SetActive(false);
+            
         }
         if (collision.gameObject.tag == "Enemies")
         {
