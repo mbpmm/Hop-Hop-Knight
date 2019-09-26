@@ -13,6 +13,8 @@ public class Arrows : MonoBehaviour
     public GameObject posLeftWarning;
     public GameObject posRightWarning;
     public GameObject warningSign;
+    private GameObject warningAux;
+    public float warningTime;
     public bool throwOnce;
     public bool aux;
     public int score;
@@ -32,7 +34,8 @@ public class Arrows : MonoBehaviour
         {
             rnd = UnityEngine.Random.Range(0, 3);
             ShowSign();
-            DropArrow();
+            Invoke("DropArrow", warningTime);
+            //DropArrow();
             throwOnce = true;
         }
         else if (gameMan.score % 10 != 0&&throwOnce)
@@ -55,8 +58,6 @@ public class Arrows : MonoBehaviour
 
     void ShowSign()
     {
-        GameObject warningAux;
-
         if (rnd == 1)
         {
             warningAux = Instantiate(warningSign, posCenterWarning.transform.position, Quaternion.identity);
@@ -72,6 +73,8 @@ public class Arrows : MonoBehaviour
             warningAux = Instantiate(warningSign, posRightWarning.transform.position, Quaternion.identity);
             warningAux.transform.SetParent(posRightWarning.transform);
         }
+
+        Destroy(warningAux, warningTime);
             
     }
 }
