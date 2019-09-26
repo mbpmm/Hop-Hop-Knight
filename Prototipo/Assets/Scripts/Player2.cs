@@ -83,7 +83,7 @@ public class Player2 : MonoBehaviour
         }
     }
 
-    void FixedUpdate()
+    void Update()
     {
         MiraUpdate();
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
