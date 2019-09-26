@@ -15,7 +15,7 @@ public class Arrows : MonoBehaviour
     public GameObject warningSign;
     private GameObject warningAux;
     public float warningTime;
-    public bool throwOnce;
+    private int lastLevelSpikes;
     public bool aux;
     public int score;
     private int rnd;
@@ -30,17 +30,12 @@ public class Arrows : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameMan.score%10==0&&gameMan.score!=0&&!throwOnce)
+        if (gameMan.score%10==0 && gameMan.score != lastLevelSpikes)
         {
+            lastLevelSpikes = gameMan.score;
             rnd = UnityEngine.Random.Range(0, 3);
             ShowSign();
             Invoke("DropArrow", warningTime);
-            //DropArrow();
-            throwOnce = true;
-        }
-        else if (gameMan.score % 10 != 0&&throwOnce)
-        {
-            throwOnce = false;
         }
     }
 
