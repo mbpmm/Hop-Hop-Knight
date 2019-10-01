@@ -35,7 +35,7 @@ public class Arrows : MonoBehaviour
             lastLevelSpikes = gameMan.score;
             rnd = UnityEngine.Random.Range(0, 3);
             ShowSign();
-            Invoke("DropArrow", warningTime);
+            Invoke("DropArrow", warningTime-0.1f);
         }
     }
 
