@@ -183,6 +183,19 @@ public class Player2 : MonoBehaviour
             if (playerDeath != null)
                 playerDeath();
         }
+
+        if (collision.gameObject.tag == "MovingFloor")
+        {
+            this.transform.parent = collision.transform;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "MovingFloor")
+        {
+            this.transform.parent = null;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
