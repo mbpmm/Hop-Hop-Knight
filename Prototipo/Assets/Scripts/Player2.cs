@@ -41,8 +41,7 @@ public class Player2 : MonoBehaviour
     public bool idleBlink;
 
     public float dirLimit;
-    public TextMeshProUGUI scoreText;
-    public int score;
+    public GameObject activeParent;
 
     void Start()
     {
@@ -87,8 +86,6 @@ public class Player2 : MonoBehaviour
     {
         MiraUpdate();
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
-
-        scoreText.text = score.ToString();
 
         if (isGrounded)
         {
