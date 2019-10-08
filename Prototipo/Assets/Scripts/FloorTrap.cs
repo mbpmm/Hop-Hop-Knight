@@ -15,7 +15,7 @@ public class FloorTrap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x<-6f || transform.position.x > 6f)
+        if (transform.position.x<-7f || transform.position.x > 7f)
         {
             moving = false;
         }

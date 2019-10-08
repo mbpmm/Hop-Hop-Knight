@@ -183,7 +183,12 @@ public class Player2 : MonoBehaviour
 
         if (collision.gameObject.tag == "MovingFloor")
         {
-            this.transform.parent = collision.transform;
+            if (activeParent==null)
+            {
+                this.transform.parent = collision.transform;
+                activeParent=collision.gameObject;
+            }
+            
         }
     }
 
@@ -191,7 +196,12 @@ public class Player2 : MonoBehaviour
     {
         if (collision.gameObject.tag == "MovingFloor")
         {
-            this.transform.parent = null;
+            if (activeParent==collision.gameObject)
+            {
+                this.transform.parent = null;
+                activeParent = null;
+            }
+            
         }
     }
 
