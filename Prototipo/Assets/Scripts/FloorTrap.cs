@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class FloorTrap : MonoBehaviour
 {
-    public float speed;
+    public float speedClose;
+    public float speedOpen;
     private bool moving=true;
+    public bool stop;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,13 +23,13 @@ public class FloorTrap : MonoBehaviour
         }
 
 
-        if (moving)
+        if (moving&&!stop)
         {
-            transform.position += transform.right*-1f * Time.deltaTime * speed;
+            transform.position += transform.right*-1f * Time.deltaTime * speedClose;
         }
-        else
+        else if(!stop)
         {
-            transform.position += transform.right* Time.deltaTime * speed;
+            transform.position += transform.right* Time.deltaTime * speedOpen;
         }
     }
 
@@ -36,6 +38,13 @@ public class FloorTrap : MonoBehaviour
         if (collision.gameObject.tag == "TrapTrigger")
         {
             moving = true;
+        }
+
+        if (collision.gameObject.tag == "Score")
+        {
+            moving = true;
+            stop = true;
+            transform.position = transform.position;
         }
     }
 }

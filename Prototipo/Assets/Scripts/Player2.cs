@@ -40,7 +40,8 @@ public class Player2 : MonoBehaviour
     public float timeIdle;
     public bool idleBlink;
 
-    public float dirLimit;
+    public float dirLimitY;
+    public float dirLimitX;
     public GameObject activeParent;
 
     public SpriteRenderer spriteRenderer;
@@ -163,9 +164,9 @@ public class Player2 : MonoBehaviour
     {
         direction = startpos - endpos;
 
-        if (direction.y > dirLimit )
+        if (direction.y > dirLimitY )
         {
-            direction = new Vector2(direction.x, dirLimit);
+            direction = new Vector2(direction.x, dirLimitY);
         }
 
         if (direction.y < 0f)
@@ -173,14 +174,14 @@ public class Player2 : MonoBehaviour
             direction = new Vector2(direction.x, 0f);
         }
 
-        if (direction.x < -dirLimit)
+        if (direction.x < -dirLimitX)
         {
-            direction = new Vector2(-dirLimit, direction.y);
+            direction = new Vector2(-dirLimitX, direction.y);
         }
 
-        if (direction.x > dirLimit)
+        if (direction.x > dirLimitX)
         {
-            direction = new Vector2(dirLimit, direction.y);
+            direction = new Vector2(dirLimitX, direction.y);
         }
         rbody.velocity = power*direction; // swap subtraction to switch direction of launch
         //rbody.AddForce(direction *  power);
