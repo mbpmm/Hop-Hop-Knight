@@ -36,7 +36,6 @@ public class FloorTrap : MonoBehaviour
         if (collision.gameObject.tag == "TrapTrigger")
         {
             moving = true;
-            Debug.Log("que pasa aca amigo");
         }
     }
 }

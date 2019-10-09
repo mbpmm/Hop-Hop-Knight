@@ -35,7 +35,7 @@ public class Player2 : MonoBehaviour
 
     public float angle;
 
-    public Animator animator;
+    private Animator animator;
     public int dir;
     public float timeIdle;
     public bool idleBlink;
@@ -43,10 +43,14 @@ public class Player2 : MonoBehaviour
     public float dirLimit;
     public GameObject activeParent;
 
+    public SpriteRenderer spriteRenderer;
+    public Sprite jumpSprite;
+
     void Start()
     {
         rbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void MiraUpdate()
@@ -94,8 +98,9 @@ public class Player2 : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0)&&isGrounded)
         {
-            Invoke("DisableMira", 0.1f);
-            
+            Invoke("ActivateMira", 0.1f);
+            animator.SetBool("PreJump", true);
+            spriteRenderer.sprite = jumpSprite;
             startpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             timeStart = Time.time;
         }
@@ -107,6 +112,7 @@ public class Player2 : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0) && !launched)
         {
+            animator.SetBool("PreJump", false);
             miraVisual.gameObject.SetActive(false);
             launched = true;
             endpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -139,6 +145,18 @@ public class Player2 : MonoBehaviour
             animator.SetBool("IsJumping", true);
         }
 
+        
+    }
+
+    //void OnDrawGizmosSelected()
+    //{
+    //    Gizmos.color = Color.yellow;
+    //    Gizmos.DrawSphere(groundCheck.position, checkRadius);
+    //}
+
+    private void OnMouseDown()
+    {
+        spriteRenderer.sprite = jumpSprite;
     }
 
     void LaunchPlayer()
@@ -168,7 +186,7 @@ public class Player2 : MonoBehaviour
         //rbody.AddForce(direction *  power);
     }
 
-    void DisableMira()
+    void ActivateMira()
     {
         miraVisual.gameObject.SetActive(true);
     }
@@ -183,7 +201,7 @@ public class Player2 : MonoBehaviour
 
         if (collision.gameObject.tag == "MovingFloor")
         {
-            if (activeParent==null)
+            if (activeParent==null||activeParent.gameObject.tag=="MovingFloor")
             {
                 this.transform.parent = collision.transform;
                 activeParent=collision.gameObject;
