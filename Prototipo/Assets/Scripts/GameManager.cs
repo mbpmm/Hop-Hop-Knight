@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonobehaviourSingleton<GameManager>
 {
     public int score;
-    
+    public Player2 player;
 
     // Start is called before the first frame update
     void Start()
@@ -29,5 +29,6 @@ public class GameManager : MonobehaviourSingleton<GameManager>
     {
         score = 0;
         SceneManager.LoadScene("SampleScene");
+        
     }
 }

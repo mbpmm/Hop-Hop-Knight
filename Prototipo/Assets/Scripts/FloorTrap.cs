@@ -8,10 +8,11 @@ public class FloorTrap : MonoBehaviour
     public float speedOpen;
     private bool moving=true;
     public bool stop;
+    public bool finishMovement;
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameManager.Get().player.movingPlatformTouch += StopMovement;
     }
 
     // Update is called once per frame
@@ -23,13 +24,13 @@ public class FloorTrap : MonoBehaviour
         }
 
 
-        if (moving&&!stop)
+        if (moving&&!finishMovement)
         {
-            transform.position += transform.right*-1f * Time.deltaTime * speedClose;
+            transform.position += transform.right*-1f * Time.deltaTime * speedOpen;
         }
-        else if(!stop)
+        else if(!finishMovement)
         {
-            transform.position += transform.right* Time.deltaTime * speedOpen;
+            transform.position += transform.right* Time.deltaTime * speedClose;
         }
     }
 
@@ -37,14 +38,29 @@ public class FloorTrap : MonoBehaviour
     {
         if (collision.gameObject.tag == "TrapTrigger")
         {
-            moving = true;
+            if (stop)
+            {
+                finishMovement = true;
+            }
+            else
+            {
+                moving = true;
+            }
+            
         }
 
-        if (collision.gameObject.tag == "Score")
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag=="Player")
         {
-            moving = true;
-            stop = true;
-            transform.position = transform.position;
         }
+    }
+
+    public void StopMovement()
+    {
+        moving = false;
+        stop = true;
     }
 }

@@ -12,10 +12,6 @@ public class SceneTransition : MonoBehaviour
         {
             FadeToLevel(1);
         }
-        //if (levelToLoad==1)
-        //{
-        //    animator.SetTrigger("FadeOut");
-        //}
     }
 
     public void FadeToLevel(int levelIndex)
