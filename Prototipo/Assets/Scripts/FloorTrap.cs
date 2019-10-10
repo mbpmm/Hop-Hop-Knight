@@ -9,10 +9,13 @@ public class FloorTrap : MonoBehaviour
     private bool moving=true;
     public bool stop;
     public bool finishMovement;
+    public GameObject score;
+    private ScorePlatformMovement scoreScript;
     // Start is called before the first frame update
     void Start()
     {
-        GameManager.Get().player.movingPlatformTouch += StopMovement;
+        scoreScript = score.GetComponent<ScorePlatformMovement>();
+        scoreScript.movingPlatformTouch += StopMovement;
     }
 
     // Update is called once per frame

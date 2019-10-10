@@ -9,7 +9,6 @@ public class Player2 : MonoBehaviour
 
     public delegate void OnPlayerAction();
     public static OnPlayerAction platformTouch;
-    public OnPlayerAction movingPlatformTouch;
     public static OnPlayerAction playerDeath;
     Rigidbody2D rbody;
     Vector2 startpos;
@@ -232,8 +231,6 @@ public class Player2 : MonoBehaviour
         {
             if (platformTouch != null)
                 platformTouch();
-            if (movingPlatformTouch != null)
-                movingPlatformTouch();
             collision.gameObject.SetActive(false);
             
         }
