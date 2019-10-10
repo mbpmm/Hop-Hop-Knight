@@ -6,35 +6,46 @@ public class CameraMovement : MonoBehaviour
 {
     public bool follow;
     public Transform target;
+    private Rigidbody2D playerRB;
     public Vector3 offset;
     public Vector3 rotation;
     private Vector3 initialPos;
+    public Vector3 desiredPos;
+    public Vector3 smoothedPos;
+    public AnimationCurve animCurve;
+    public float speed;
+    public float totalTime;
     
-    // Start is called before the first frame update
     void Start()
     {
         initialPos = transform.position;
         follow = true;
+        playerRB = target.gameObject.GetComponent<Rigidbody2D>();
     }
 
-    void LateUpdate()
+    void Update()
     {
-        if (follow)
+        if (playerRB.velocity==Vector2.zero)
         {
-            transform.position = new Vector3(transform.position.x, target.position.y, target.position.z) + offset;
-            transform.eulerAngles = rotation;
+            desiredPos= new Vector3(transform.position.x, target.position.y, target.position.z) + offset;
         }
 
-    }
-    private void OnMouseDown()
-    {
-        follow = false;
+        Advance();
     }
 
-    private void OnMouseUp()
+    public void Advance()
     {
-        follow = true;
+        StartCoroutine(Animate());
     }
-    // Update is called once per frame
     
+    IEnumerator Animate()
+    {
+        float t = 0;
+        if (t<=totalTime)
+        {
+            t += Time.deltaTime*speed;
+            transform.position = Vector3.Lerp(transform.position, desiredPos, animCurve.Evaluate(t / totalTime));
+            yield return null;
+        }
+    }
 }
