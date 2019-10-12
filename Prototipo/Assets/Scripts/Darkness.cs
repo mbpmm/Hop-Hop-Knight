@@ -30,7 +30,7 @@ public class Darkness : MonoBehaviour
         }
         else
         {
-            transform.position -= transform.up * Time.deltaTime * speed* playerRB.velocity.y;
+            //transform.position -= transform.up * Time.deltaTime * speed* playerRB.velocity.y;
         }
 
         if (transform.position.y<startPos.position.y)

@@ -123,6 +123,11 @@ public class Player2 : MonoBehaviour
             LaunchPlayer();
         }
 
+        if (Input.GetMouseButtonUp(0) && rbody.velocity == Vector2.zero && Time.timeScale!=0)
+        {
+            animator.SetTrigger("GoToIdle");
+        }
+
         if (rbody.velocity == Vector2.zero)
         {
             dir = 0;
@@ -238,6 +243,11 @@ public class Player2 : MonoBehaviour
         {
             if (playerDeath != null)
                 playerDeath();
+        }
+
+        if (collision.gameObject.tag == "Gem")
+        {
+            Destroy(collision.gameObject);
         }
     }
 

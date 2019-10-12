@@ -4,22 +4,16 @@ using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
 {
-    public bool follow;
     public Transform target;
     private Rigidbody2D playerRB;
     public Vector3 offset;
-    public Vector3 rotation;
-    private Vector3 initialPos;
     public Vector3 desiredPos;
-    public Vector3 smoothedPos;
     public AnimationCurve animCurve;
     public float speed;
     public float totalTime;
     
     void Start()
     {
-        initialPos = transform.position;
-        follow = true;
         playerRB = target.gameObject.GetComponent<Rigidbody2D>();
     }
 

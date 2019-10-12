@@ -6,6 +6,11 @@ public class SceneTransition : MonoBehaviour
     public Animator animator;
 
     private int levelToLoad;
+
+    private void Start()
+    {
+        Time.timeScale = 1;
+    }
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
