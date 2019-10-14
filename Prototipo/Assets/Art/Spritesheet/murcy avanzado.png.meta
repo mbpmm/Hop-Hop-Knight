@@ -1,0 +1,511 @@
+fileFormatVersion: 2
+guid: 904542e8fb8ec774fa7659a7c1238ca2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6935266077984781208
+    second: murcy avanzado_0
+  - first:
+      213: 5468961818958050908
+    second: murcy avanzado_1
+  - first:
+      213: -2101594511886176014
+    second: murcy avanzado_2
+  - first:
+      213: -640533068366626198
+    second: murcy avanzado_3
+  - first:
+      213: 8258401160251976668
+    second: murcy avanzado_4
+  - first:
+      213: -7000297147909416497
+    second: murcy avanzado_5
+  - first:
+      213: -8982209069415309100
+    second: murcy avanzado_6
+  - first:
+      213: -9098272289115083161
+    second: murcy avanzado_7
+  - first:
+      213: -727484328425885449
+    second: murcy avanzado_8
+  - first:
+      213: 6016395916256206922
+    second: murcy avanzado_9
+  - first:
+      213: -5848326773808319019
+    second: murcy avanzado_10
+  - first:
+      213: -662120428898064862
+    second: murcy avanzado_11
+  - first:
+      213: 8731975478285891232
+    second: murcy avanzado_12
+  - first:
+      213: 7174860697906650067
+    second: murcy avanzado_13
+  - first:
+      213: 8560561377542349720
+    second: murcy avanzado_14
+  - first:
+      213: 4395717694121381143
+    second: murcy avanzado_15
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: murcy avanzado_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 3326
+        width: 1205
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09df2575b20f3c645a2c2026e83a96d2
+      internalID: 6935266077984781208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: murcy avanzado_1
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 3323
+        width: 1203
+        height: 617
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b2517b9e7b61e4e8f0cc0092c2f3f8
+      internalID: 5468961818958050908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: murcy avanzado_2
+      rect:
+        serializedVersion: 2
+        x: 2711
+        y: 3326
+        width: 1201
+        height: 588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8dd70f12a8521d448651dee812d625e
+      internalID: -2101594511886176014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: murcy avanzado_3
+      rect:
+        serializedVersion: 2
+        x: 4042
+        y: 3326
+        width: 1199
+        height: 562
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7285eed7524eda64ab8dc9c063866c64
+      internalID: -640533068366626198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: murcy avanzado_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2336
+        width: 1315
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af9c99fe4549534f9bdc0afae7cbba6
+      internalID: 8258401160251976668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: murcy avanzado_5
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 2336
+        width: 1315
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f5a02c8007549418e1088a6303d73f
+      internalID: -7000297147909416497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: murcy avanzado_6
+      rect:
+        serializedVersion: 2
+        x: 2724
+        y: 2166
+        width: 1154
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 537c23d726944e344a1a1429190b841f
+      internalID: -8982209069415309100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: murcy avanzado_7
+      rect:
+        serializedVersion: 2
+        x: 4055
+        y: 2166
+        width: 1155
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a780ed6f696b7844db0f8fd8203b676c
+      internalID: -9098272289115083161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: murcy avanzado_8
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1176
+        width: 1071
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02102743acafdc4fa78e1637e7c9c83
+      internalID: -727484328425885449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: murcy avanzado_9
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 1033
+        width: 969
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1555f5b85eeb7418a1ab8dbe0feadb
+      internalID: 6016395916256206922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: murcy avanzado_10
+      rect:
+        serializedVersion: 2
+        x: 2818
+        y: 1033
+        width: 969
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5511db6a848319342873d2196ddd8a24
+      internalID: -5848326773808319019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: murcy avanzado_11
+      rect:
+        serializedVersion: 2
+        x: 4152
+        y: 1012
+        width: 956
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9fa3a1ce56af234694b680802a41f0f
+      internalID: -662120428898064862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: murcy avanzado_12
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 186
+        width: 1071
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 264de255c97c5104db71b42c650d18bb
+      internalID: 8731975478285891232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: murcy avanzado_13
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 186
+        width: 1071
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82895c54e3a295a4ebed3c044c764c34
+      internalID: 7174860697906650067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: murcy avanzado_14
+      rect:
+        serializedVersion: 2
+        x: 2667
+        y: 353
+        width: 1312
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a979dfb61a2784485f1726beff4d9c
+      internalID: 8560561377542349720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: murcy avanzado_15
+      rect:
+        serializedVersion: 2
+        x: 3996
+        y: 354
+        width: 1315
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93dc4a3f18582b419e5a1b36c2579cb
+      internalID: 4395717694121381143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

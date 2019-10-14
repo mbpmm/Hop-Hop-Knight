@@ -1,0 +1,511 @@
+fileFormatVersion: 2
+guid: afe06f9a5947bf24c8077d4755cf317f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3041261755443865449
+    second: Murcy basico_0
+  - first:
+      213: -8473329394090034978
+    second: Murcy basico_1
+  - first:
+      213: -3068438542571422266
+    second: Murcy basico_2
+  - first:
+      213: 8608557313116204993
+    second: Murcy basico_3
+  - first:
+      213: 3593155364595896975
+    second: Murcy basico_4
+  - first:
+      213: -5064234952904941314
+    second: Murcy basico_5
+  - first:
+      213: -4194280853205167985
+    second: Murcy basico_6
+  - first:
+      213: 8542208649887379530
+    second: Murcy basico_7
+  - first:
+      213: 5633514424871109771
+    second: Murcy basico_8
+  - first:
+      213: 3586273227922245811
+    second: Murcy basico_9
+  - first:
+      213: -118436248599907319
+    second: Murcy basico_10
+  - first:
+      213: 4000734486553944294
+    second: Murcy basico_11
+  - first:
+      213: 6141660177401972006
+    second: Murcy basico_12
+  - first:
+      213: 2350172944717337771
+    second: Murcy basico_13
+  - first:
+      213: 1666675665852076758
+    second: Murcy basico_14
+  - first:
+      213: 8861282059261822144
+    second: Murcy basico_15
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Murcy basico_0
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 3326
+        width: 1205
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 362902eb6310c3948bd4311bae76b358
+      internalID: -3041261755443865449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Murcy basico_1
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 3323
+        width: 1203
+        height: 617
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b761340d8a12b5049bcb36d8dd9a1323
+      internalID: -8473329394090034978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Murcy basico_2
+      rect:
+        serializedVersion: 2
+        x: 2711
+        y: 3326
+        width: 1201
+        height: 588
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d63a6fa57042e7f47a251b6a8b0f4041
+      internalID: -3068438542571422266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Murcy basico_3
+      rect:
+        serializedVersion: 2
+        x: 4042
+        y: 3326
+        width: 1199
+        height: 562
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6454cdc4260eb0498ec7f4e0d5fe6bd
+      internalID: 8608557313116204993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Murcy basico_4
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2336
+        width: 1315
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d14f04b2eb10e704b933f3a607b29b67
+      internalID: 3593155364595896975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Murcy basico_5
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 2336
+        width: 1315
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23369519bbe26544494ab57cca99b5ee
+      internalID: -5064234952904941314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Murcy basico_6
+      rect:
+        serializedVersion: 2
+        x: 2724
+        y: 2166
+        width: 1154
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc61272cb620e214482c8a8a8787e2f9
+      internalID: -4194280853205167985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Murcy basico_7
+      rect:
+        serializedVersion: 2
+        x: 4055
+        y: 2166
+        width: 1155
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9060d4bf83a91a5468e28d381d978f12
+      internalID: 8542208649887379530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Murcy basico_8
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 1176
+        width: 1071
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d8aa9239dc75e4486df0d15a2f70d2
+      internalID: 5633514424871109771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Murcy basico_9
+      rect:
+        serializedVersion: 2
+        x: 1487
+        y: 1033
+        width: 969
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50f7c370df45e294b9fe261e3f9c58d8
+      internalID: 3586273227922245811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Murcy basico_10
+      rect:
+        serializedVersion: 2
+        x: 2818
+        y: 1033
+        width: 969
+        height: 755
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 833bb4e881fbc514b9a3015e8eeb3b57
+      internalID: -118436248599907319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Murcy basico_11
+      rect:
+        serializedVersion: 2
+        x: 4152
+        y: 1012
+        width: 956
+        height: 776
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c84ec23d5ab03514089c91b0c99cfcb5
+      internalID: 4000734486553944294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Murcy basico_12
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 186
+        width: 1071
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33fd6ae30a5e9ff4f9606784afcdf2e5
+      internalID: 6141660177401972006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Murcy basico_13
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 186
+        width: 1071
+        height: 612
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e389723bb3430e043a0def209d55253b
+      internalID: 2350172944717337771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Murcy basico_14
+      rect:
+        serializedVersion: 2
+        x: 2667
+        y: 353
+        width: 1312
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79af4f64ddf5d3e43b3b5a2f34147d1f
+      internalID: 1666675665852076758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Murcy basico_15
+      rect:
+        serializedVersion: 2
+        x: 3996
+        y: 354
+        width: 1315
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fbd35da2cea5be4897fccb85dfe7ba0
+      internalID: 8861282059261822144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

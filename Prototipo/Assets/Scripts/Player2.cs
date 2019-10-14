@@ -26,11 +26,12 @@ public class Player2 : MonoBehaviour
     public float checkRadius;
     public LayerMask whatIsGround;
     public bool launched;
+    public bool hideMira;
 
     public GameObject mira;
     public GameObject miraVisual;
     public Vector3 scale;
-    public float miraSize=1;
+    public float miraSize = 1;
     public float miraDivider;
 
     public float angle;
@@ -59,7 +60,7 @@ public class Player2 : MonoBehaviour
     {
         direction = startpos - endpos;
 
-        miraSize = direction.magnitude*miraDivider;
+        miraSize = direction.magnitude * miraDivider;
 
         scale = miraVisual.transform.localScale;
 
@@ -70,13 +71,20 @@ public class Player2 : MonoBehaviour
 
         angle = Vector3.Angle(direction, Vector3.up);
 
-        if (startpos.x>endpos.x)
+        if (startpos.x > endpos.x)
         {
             angle = -angle;
         }
 
-
-        mira.transform.rotation = Quaternion.Euler(0,0,angle);
+        if (angle > 90)
+        {
+            angle = 90;
+        }
+        else if (angle < -90)
+        {
+            angle = -90;
+        }
+        mira.transform.rotation = Quaternion.Euler(0, 0, angle);
         mira.transform.position = transform.position;
 
         //Debug.Log(miraSize);
@@ -85,6 +93,15 @@ public class Player2 : MonoBehaviour
             scale.y = 1.1f;
             miraVisual.transform.localScale = scale;
             miraVisual.transform.localPosition = Vector3.zero + Vector3.up * 1.1f;
+        }
+
+        if (direction.y < 0f || hideMira)
+        {
+            miraVisual.gameObject.SetActive(false);
+        }
+        else
+        {
+            Invoke("ActivateMira", 0.1f);
         }
     }
 
@@ -98,8 +115,9 @@ public class Player2 : MonoBehaviour
             launched = false;
         }
 
-        if (Input.GetMouseButtonDown(0)&&isGrounded)
+        if (Input.GetMouseButtonDown(0) && isGrounded)
         {
+            hideMira = false;
             Invoke("ActivateMira", 0.1f);
             animator.SetBool("PreJump", true);
             spriteRenderer.sprite = jumpSprite;
@@ -114,6 +132,7 @@ public class Player2 : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0) && !launched)
         {
+            hideMira = true;
             animator.SetBool("PreJump", false);
             miraVisual.gameObject.SetActive(false);
             launched = true;
@@ -123,7 +142,7 @@ public class Player2 : MonoBehaviour
             LaunchPlayer();
         }
 
-        if (Input.GetMouseButtonUp(0) && rbody.velocity == Vector2.zero && Time.timeScale!=0)
+        if (Input.GetMouseButtonUp(0) && rbody.velocity == Vector2.zero && Time.timeScale != 0)
         {
             animator.SetTrigger("GoToIdle");
         }
@@ -136,12 +155,12 @@ public class Player2 : MonoBehaviour
             animator.SetInteger("Direction", dir);
             animator.SetFloat("TimeIdle", timeIdle);
             animator.SetBool("IdleBlink", idleBlink);
-            if (timeIdle>4f)
+            if (timeIdle > 4f)
             {
                 idleBlink = true;
 
             }
-            if (timeIdle>5.5f)
+            if (timeIdle > 5.5f)
             {
                 idleBlink = false;
                 timeIdle = 0;
@@ -149,10 +168,11 @@ public class Player2 : MonoBehaviour
         }
         else
         {
+            launched = true;
             animator.SetBool("IsJumping", true);
         }
 
-        
+
     }
 
     //void OnDrawGizmosSelected()
@@ -170,14 +190,14 @@ public class Player2 : MonoBehaviour
     {
         direction = startpos - endpos;
 
-        if (direction.y > dirLimitY )
+        if (direction.y > dirLimitY)
         {
             direction = new Vector2(direction.x, dirLimitY);
         }
 
         if (direction.y < 0f)
         {
-            direction = new Vector2(direction.x, 0f);
+            direction = new Vector2(0f, 0f);
         }
 
         if (direction.x < -dirLimitX)
@@ -189,7 +209,7 @@ public class Player2 : MonoBehaviour
         {
             direction = new Vector2(dirLimitX, direction.y);
         }
-        rbody.velocity = power*direction; // swap subtraction to switch direction of launch
+        rbody.velocity = power * direction; // swap subtraction to switch direction of launch
         //rbody.AddForce(direction *  power);
     }
 
@@ -200,7 +220,7 @@ public class Player2 : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag=="Enemies")
+        if (collision.gameObject.tag == "Enemies")
         {
             if (playerDeath != null)
                 playerDeath();
@@ -208,12 +228,12 @@ public class Player2 : MonoBehaviour
 
         if (collision.gameObject.tag == "MovingFloor")
         {
-            if (activeParent==null||activeParent.gameObject.tag=="MovingFloor")
+            if (activeParent == null || activeParent.gameObject.tag == "MovingFloor")
             {
                 this.transform.parent = collision.transform;
-                activeParent=collision.gameObject;
+                activeParent = collision.gameObject;
             }
-            
+
         }
     }
 
@@ -221,23 +241,23 @@ public class Player2 : MonoBehaviour
     {
         if (collision.gameObject.tag == "MovingFloor")
         {
-            if (activeParent==collision.gameObject)
+            if (activeParent == collision.gameObject)
             {
                 this.transform.parent = null;
                 activeParent = null;
             }
-            
+
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag=="Score")
+        if (collision.gameObject.tag == "Score")
         {
             if (platformTouch != null)
                 platformTouch();
             collision.gameObject.SetActive(false);
-            
+
         }
         if (collision.gameObject.tag == "Enemies")
         {
@@ -251,5 +271,5 @@ public class Player2 : MonoBehaviour
         }
     }
 
-    
+
 }

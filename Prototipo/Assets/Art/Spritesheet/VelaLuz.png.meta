@@ -1,0 +1,727 @@
+fileFormatVersion: 2
+guid: 9ea61a81c73959a468d6580cecb1e5b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1826504783568549136
+    second: VelaLuz_0
+  - first:
+      213: -1183178692232308042
+    second: VelaLuz_1
+  - first:
+      213: 1723501333489871039
+    second: VelaLuz_2
+  - first:
+      213: 2978828034169718531
+    second: VelaLuz_3
+  - first:
+      213: 579629601398430110
+    second: VelaLuz_4
+  - first:
+      213: 8902257522687994880
+    second: VelaLuz_5
+  - first:
+      213: 2205845886402764509
+    second: VelaLuz_6
+  - first:
+      213: 4143539001999042270
+    second: VelaLuz_7
+  - first:
+      213: 2238112518845026143
+    second: VelaLuz_8
+  - first:
+      213: -5209698022414881625
+    second: VelaLuz_9
+  - first:
+      213: -7584398663002909496
+    second: VelaLuz_10
+  - first:
+      213: 8141515602007245421
+    second: VelaLuz_11
+  - first:
+      213: 1307978904478998568
+    second: VelaLuz_12
+  - first:
+      213: -4668474199929829307
+    second: VelaLuz_13
+  - first:
+      213: -710404626601395273
+    second: VelaLuz_14
+  - first:
+      213: 9121539566037428876
+    second: VelaLuz_15
+  - first:
+      213: -7799996340353906003
+    second: VelaLuz_16
+  - first:
+      213: 6474348747582737495
+    second: VelaLuz_17
+  - first:
+      213: 1206512367503489164
+    second: VelaLuz_18
+  - first:
+      213: 1457654452311988608
+    second: VelaLuz_19
+  - first:
+      213: 6450860701407821462
+    second: VelaLuz_20
+  - first:
+      213: 7863857010507542747
+    second: VelaLuz_21
+  - first:
+      213: 4953869405897798355
+    second: VelaLuz_22
+  - first:
+      213: 6596630996193862122
+    second: VelaLuz_23
+  - first:
+      213: 3645732682819121980
+    second: VelaLuz_24
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: VelaLuz_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b6b402d6a392247baa4e4d8e26c260
+      internalID: 1826504783568549136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_1
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 960
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76401dafdb4c144bb5ed7dcd3884f17
+      internalID: -1183178692232308042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_2
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 960
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c519d84f36fe510428bb40cd1e876480
+      internalID: 1723501333489871039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_3
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 960
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e1e16a1ac0b8e42889fd2ba7a9996f
+      internalID: 2978828034169718531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_4
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 960
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a6e871a261c13439ecda5d07bc30b5
+      internalID: 579629601398430110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66fc86c6bfefbaf4f826ffe715a14d3f
+      internalID: 8902257522687994880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_6
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 720
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1fd25f98557fbf43b2b5b8b15d1b6f6
+      internalID: 2205845886402764509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_7
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 720
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e5936418068e44ab932f2020610d4b
+      internalID: 4143539001999042270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_8
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 720
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2d7a6ce63ec5d4ea58b97ca5ebce73
+      internalID: 2238112518845026143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_9
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 720
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ae807d559b96d448c0a6b1d8fae29f
+      internalID: -5209698022414881625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 480
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8118630d910f76345a7e9240d803494c
+      internalID: -7584398663002909496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_11
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 480
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea1e547a402d934e838414b900cc559
+      internalID: 8141515602007245421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_12
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 480
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d38637401dbd1043a75ff7e79ffc33c
+      internalID: 1307978904478998568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_13
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 480
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd45ae9929792a449c19f905223c4af
+      internalID: -4668474199929829307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_14
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 480
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef16846d792fc042bc056f94c3eb619
+      internalID: -710404626601395273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 240
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd5a989e2a505a4a88db8cb6dd0128c
+      internalID: 9121539566037428876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_16
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 240
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc409cea733051469c21f972067bf0b
+      internalID: -7799996340353906003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_17
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 240
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9502c537dcd243e44b86f6bfafaa443c
+      internalID: 6474348747582737495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_18
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 240
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80ecfea771503a148b7538507da79aa7
+      internalID: 1206512367503489164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_19
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 240
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc56de6d0213ab448b51bb0e54e90234
+      internalID: 1457654452311988608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b0b92ec43da1443b1b2c2f8b7f5dde
+      internalID: 6450860701407821462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_21
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 0
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0de5ba49adbe1438a4d414beb13f98
+      internalID: 7863857010507542747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_22
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 0
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b61ee6106dabb48925f1eb73df0b10
+      internalID: 4953869405897798355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_23
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 0
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fd891d733bb284d9ba56d297f805bb
+      internalID: 6596630996193862122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: VelaLuz_24
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 0
+        width: 115
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6a32ee24129004a862bf88393f63bd
+      internalID: 3645732682819121980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
