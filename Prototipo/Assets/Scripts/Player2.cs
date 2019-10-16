@@ -47,7 +47,9 @@ public class Player2 : MonoBehaviour
 
     public SpriteRenderer spriteRenderer;
     public Sprite jumpSprite;
-
+    public int cantGemas=0;
+    public int totalGemas=5;
+    public bool powerUpActivated;
     void Start()
     {
         GameManager.Get().player = this;
@@ -172,7 +174,14 @@ public class Player2 : MonoBehaviour
             animator.SetBool("IsJumping", true);
         }
 
-
+        if (cantGemas==totalGemas)
+        {
+            powerUpActivated = true;
+        }
+        else
+        {
+            powerUpActivated = false;
+        }
     }
 
     //void OnDrawGizmosSelected()
@@ -222,8 +231,12 @@ public class Player2 : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemies")
         {
-            if (playerDeath != null)
-                playerDeath();
+            if (!powerUpActivated)
+            {
+                if (playerDeath != null)
+                    playerDeath();
+            }
+            
         }
 
         if (collision.gameObject.tag == "MovingFloor")
@@ -267,6 +280,7 @@ public class Player2 : MonoBehaviour
 
         if (collision.gameObject.tag == "Gem")
         {
+            cantGemas++;
             Destroy(collision.gameObject);
         }
     }

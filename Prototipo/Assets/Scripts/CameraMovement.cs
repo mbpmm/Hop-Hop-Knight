@@ -11,6 +11,7 @@ public class CameraMovement : MonoBehaviour
     public AnimationCurve animCurve;
     public float speed;
     public float totalTime;
+    public bool isMoving;
     
     void Start()
     {
@@ -34,6 +35,7 @@ public class CameraMovement : MonoBehaviour
     
     IEnumerator Animate()
     {
+        isMoving = true;
         float t = 0;
         if (t<=totalTime)
         {
