@@ -11,8 +11,6 @@ public class CameraMovement : MonoBehaviour
     public AnimationCurve animCurve;
     public float speed;
     public float totalTime;
-    public bool isMoving;
-    
     void Start()
     {
         playerRB = target.gameObject.GetComponent<Player2>();
@@ -22,7 +20,7 @@ public class CameraMovement : MonoBehaviour
     {
         if (playerRB.isGrounded)
         {
-            desiredPos= new Vector3(transform.position.x, target.position.y, target.position.z) + offset;
+            desiredPos = new Vector3(transform.position.x, target.position.y, target.position.z) + offset;
         }
 
         Advance();
@@ -35,7 +33,6 @@ public class CameraMovement : MonoBehaviour
     
     IEnumerator Animate()
     {
-        isMoving = true;
         float t = 0;
         if (t<=totalTime)
         {
