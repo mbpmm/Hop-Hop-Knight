@@ -9,16 +9,34 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenu;
     public Image[] powerBarLevel;
     public GameObject player;
+    private Rigidbody2D playerRB;
     private Player2 playerScript;
+    public Slider dragSlider;
+    public Slider powerSlider;
+    public Slider gravitySlider;
+    public Text gravity;
+    public Text drag;
+    public Text power;
     // Start is called before the first frame update
     void Start()
     {
         playerScript = player.GetComponent<Player2>();
+        playerRB = player.GetComponent<Rigidbody2D>();
+        dragSlider.value = playerRB.drag;
+        powerSlider.value = playerScript.power;
+        gravitySlider.value = playerRB.gravityScale;
     }
 
     // Update is called once per frame
     void Update()
     {
+        playerRB.drag=dragSlider.value;
+        playerScript.power=powerSlider.value;
+        playerRB.gravityScale = gravitySlider.value;
+        gravity.text = "GravityScale: " + playerRB.gravityScale;
+        drag.text="Drag:"+ playerRB.drag;
+        power.text = "Power: " + playerScript.power;
+
         for (int i = 0; i < powerBarLevel.Length; i++)
         {
             powerBarLevel[i].gameObject.SetActive(i < playerScript.cantGemas);

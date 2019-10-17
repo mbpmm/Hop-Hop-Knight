@@ -62,6 +62,8 @@ public class Player2 : MonoBehaviour
     {
         direction = startpos - endpos;
 
+        LimitMira();
+
         miraSize = direction.magnitude * miraDivider;
 
         scale = miraVisual.transform.localScale;
@@ -178,10 +180,6 @@ public class Player2 : MonoBehaviour
         {
             powerUpActivated = true;
         }
-        else
-        {
-            powerUpActivated = false;
-        }
     }
 
     //void OnDrawGizmosSelected()
@@ -199,6 +197,14 @@ public class Player2 : MonoBehaviour
     {
         direction = startpos - endpos;
 
+        LimitMira();
+
+        rbody.velocity = power * direction; // swap subtraction to switch direction of launch
+        //rbody.AddForce(direction *  power);
+    }
+
+    public void LimitMira()
+    {
         if (direction.y > dirLimitY)
         {
             direction = new Vector2(direction.x, dirLimitY);
@@ -218,8 +224,6 @@ public class Player2 : MonoBehaviour
         {
             direction = new Vector2(dirLimitX, direction.y);
         }
-        rbody.velocity = power * direction; // swap subtraction to switch direction of launch
-        //rbody.AddForce(direction *  power);
     }
 
     void ActivateMira()
@@ -274,8 +278,11 @@ public class Player2 : MonoBehaviour
         }
         if (collision.gameObject.tag == "Enemies")
         {
-            if (playerDeath != null)
-                playerDeath();
+            if (!powerUpActivated)
+            {
+                if (playerDeath != null)
+                    playerDeath();
+            }
         }
 
         if (collision.gameObject.tag == "Gem")

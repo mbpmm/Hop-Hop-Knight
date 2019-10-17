@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     public Transform target;
-    private Rigidbody2D playerRB;
+    private Player2 playerRB;
     public Vector3 offset;
     public Vector3 desiredPos;
     public AnimationCurve animCurve;
@@ -15,12 +15,12 @@ public class CameraMovement : MonoBehaviour
     
     void Start()
     {
-        playerRB = target.gameObject.GetComponent<Rigidbody2D>();
+        playerRB = target.gameObject.GetComponent<Player2>();
     }
 
     void Update()
     {
-        if (playerRB.velocity==Vector2.zero)
+        if (playerRB.isGrounded)
         {
             desiredPos= new Vector3(transform.position.x, target.position.y, target.position.z) + offset;
         }

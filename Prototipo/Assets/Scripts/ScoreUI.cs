@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class HUD : MonoBehaviour
+public class ScoreUI : MonoBehaviour
 {
     public TextMeshProUGUI scoreText;
     public GameObject gameManager;
