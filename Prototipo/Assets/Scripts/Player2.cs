@@ -47,15 +47,22 @@ public class Player2 : MonoBehaviour
 
     public SpriteRenderer spriteRenderer;
     public Sprite jumpSprite;
+
+    //POWER UP
     public int cantGemas=0;
     public int totalGemas=5;
     public bool powerUpActivated;
+
+    //CAMERA SHAKE
+    public GameObject cam;
+    private CameraMovement camShake;
     void Start()
     {
         GameManager.Get().player = this;
         rbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        camShake = cam.GetComponent<CameraMovement>();
     }
 
     void MiraUpdate()
@@ -237,6 +244,7 @@ public class Player2 : MonoBehaviour
         {
             if (!powerUpActivated)
             {
+                StartCoroutine(camShake.Shake(.5f, .08f));
                 if (playerDeath != null)
                     playerDeath();
             }
@@ -280,6 +288,7 @@ public class Player2 : MonoBehaviour
         {
             if (!powerUpActivated)
             {
+                StartCoroutine(camShake.Shake(.5f, .08f));
                 if (playerDeath != null)
                     playerDeath();
             }

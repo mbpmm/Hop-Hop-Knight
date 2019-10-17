@@ -28,7 +28,12 @@ public class GameManager : MonobehaviourSingleton<GameManager>
     void PlayerDied()
     {
         score = 0;
+        StartCoroutine(LoadSceneAfterTime(0.5f));
+    }
+
+    IEnumerator LoadSceneAfterTime(float time)
+    {
+        yield return new WaitForSeconds(time);
         SceneManager.LoadScene("SampleScene");
-        
     }
 }
