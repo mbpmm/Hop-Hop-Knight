@@ -1,0 +1,1603 @@
+fileFormatVersion: 2
+guid: cf7e375f9b40df647b46ca237dfa2046
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7021448948357082050
+    second: TrampaPinches_0
+  - first:
+      213: 4948920548684238769
+    second: TrampaPinches_1
+  - first:
+      213: -3486783924768300484
+    second: TrampaPinches_2
+  - first:
+      213: -6969913329854207578
+    second: TrampaPinches_3
+  - first:
+      213: -3524105704592833532
+    second: TrampaPinches_4
+  - first:
+      213: -6095803813469365176
+    second: TrampaPinches_5
+  - first:
+      213: -4466163344289430253
+    second: TrampaPinches_6
+  - first:
+      213: 724830077926450353
+    second: TrampaPinches_7
+  - first:
+      213: 5579596608663043464
+    second: TrampaPinches_8
+  - first:
+      213: -2664067600139388873
+    second: TrampaPinches_9
+  - first:
+      213: 5752557509041605394
+    second: TrampaPinches_10
+  - first:
+      213: -2728499768214593969
+    second: TrampaPinches_11
+  - first:
+      213: -4750689837037877812
+    second: TrampaPinches_12
+  - first:
+      213: -5759394642584630526
+    second: TrampaPinches_13
+  - first:
+      213: 895132116211191492
+    second: TrampaPinches_14
+  - first:
+      213: 5243836841596688422
+    second: TrampaPinches_15
+  - first:
+      213: -1270596464774016589
+    second: TrampaPinches_16
+  - first:
+      213: -5918288134355535404
+    second: TrampaPinches_17
+  - first:
+      213: 6853254309146535438
+    second: TrampaPinches_18
+  - first:
+      213: -3977970387990703934
+    second: TrampaPinches_19
+  - first:
+      213: 136910234648592621
+    second: TrampaPinches_20
+  - first:
+      213: 1411687232960640325
+    second: TrampaPinches_21
+  - first:
+      213: -6929113266398292826
+    second: TrampaPinches_22
+  - first:
+      213: -1901046367101662549
+    second: TrampaPinches_23
+  - first:
+      213: -671122918145304445
+    second: TrampaPinches_24
+  - first:
+      213: -5371629979784294213
+    second: TrampaPinches_25
+  - first:
+      213: -7802711462136327248
+    second: TrampaPinches_26
+  - first:
+      213: 7624269725965820585
+    second: TrampaPinches_27
+  - first:
+      213: 2027247863694860318
+    second: TrampaPinches_28
+  - first:
+      213: -2589954292554992834
+    second: TrampaPinches_29
+  - first:
+      213: 4381080914548492580
+    second: TrampaPinches_30
+  - first:
+      213: -9178772456013112727
+    second: TrampaPinches_31
+  - first:
+      213: -6746492401112414332
+    second: TrampaPinches_32
+  - first:
+      213: 6344093634608144112
+    second: TrampaPinches_33
+  - first:
+      213: -1867533859166490248
+    second: TrampaPinches_34
+  - first:
+      213: 5774714849006996418
+    second: TrampaPinches_35
+  - first:
+      213: 3198365978897444992
+    second: TrampaPinches_36
+  - first:
+      213: -1720091777671876219
+    second: TrampaPinches_37
+  - first:
+      213: 9206394702069279039
+    second: TrampaPinches_38
+  - first:
+      213: -4555509053216740234
+    second: TrampaPinches_39
+  - first:
+      213: 4984754770723920222
+    second: TrampaPinches_40
+  - first:
+      213: 3558478852752445812
+    second: TrampaPinches_41
+  - first:
+      213: 5223661862904542841
+    second: TrampaPinches_42
+  - first:
+      213: -1835222792383000046
+    second: TrampaPinches_43
+  - first:
+      213: 2103871852767910378
+    second: TrampaPinches_44
+  - first:
+      213: 1776354934056217405
+    second: TrampaPinches_45
+  - first:
+      213: 7492334441044933192
+    second: TrampaPinches_46
+  - first:
+      213: -8439754241863989347
+    second: TrampaPinches_47
+  - first:
+      213: -7448876119570282650
+    second: TrampaPinches_48
+  - first:
+      213: -988557689268818502
+    second: TrampaPinches_49
+  - first:
+      213: 6028275449771470718
+    second: TrampaPinches_50
+  - first:
+      213: -749242843400240270
+    second: TrampaPinches_51
+  - first:
+      213: -3778446541026225824
+    second: TrampaPinches_52
+  - first:
+      213: 1851375648931882513
+    second: TrampaPinches_53
+  - first:
+      213: -2782601156348234085
+    second: TrampaPinches_54
+  - first:
+      213: -7171442043349109514
+    second: TrampaPinches_55
+  - first:
+      213: -8386009343533977705
+    second: TrampaPinches_56
+  - first:
+      213: -3611854139357869817
+    second: TrampaPinches_57
+  - first:
+      213: -4668762148702379202
+    second: TrampaPinches_58
+  - first:
+      213: 4159575115024389058
+    second: TrampaPinches_59
+  - first:
+      213: -3404784099570759618
+    second: TrampaPinches_60
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TrampaPinches_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 3882
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e0de9bdaea5dc43825f4caa649dda7
+      internalID: -7021448948357082050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_1
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 3882
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dcc4154f1d84e24597551bc1c0e2056
+      internalID: 4948920548684238769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_2
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 3882
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5645fe1c2b4e01489abc791f27ea9e1
+      internalID: -3486783924768300484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_3
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 3882
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d3d3ac2b82d14c44b5d40b9feb1a42f
+      internalID: -6969913329854207578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_4
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 3882
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 191e1f68649bf814db851ca163309f4e
+      internalID: -3524105704592833532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_5
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 3882
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c234900faf7741648a5e0b54a95ceb7c
+      internalID: -6095803813469365176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_6
+      rect:
+        serializedVersion: 2
+        x: 4230
+        y: 3882
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75512fc1314150b4d919188ea70d5b3d
+      internalID: -4466163344289430253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_7
+      rect:
+        serializedVersion: 2
+        x: 4930
+        y: 3866
+        width: 648
+        height: 634
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24e01789991d52849a29f8f7e9187a55
+      internalID: 724830077926450353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_8
+      rect:
+        serializedVersion: 2
+        x: 5630
+        y: 3870
+        width: 648
+        height: 630
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839e8a095941bf447b92e48f1e16d0ee
+      internalID: 5579596608663043464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_9
+      rect:
+        serializedVersion: 2
+        x: 6330
+        y: 3882
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580925ccfce923746ac12f6d9a6d96d3
+      internalID: -2664067600139388873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_10
+      rect:
+        serializedVersion: 2
+        x: 7030
+        y: 3882
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8d996de5644134ca0d7a1aa899edba
+      internalID: 5752557509041605394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_11
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 3182
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664bdb050d66aba489fea883ce60e5d1
+      internalID: -2728499768214593969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_12
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 3182
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a36cfc698c4a447bfa5ce0f1655277
+      internalID: -4750689837037877812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_13
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 3182
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392376531c780484a8f4a9c96b15d2ac
+      internalID: -5759394642584630526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_14
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 3182
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c09ff34ba16c54eaad125ef62d7b8d
+      internalID: 895132116211191492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_15
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 3182
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e612186fe1f80fa4ea8a4e1a0d4e6507
+      internalID: 5243836841596688422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_16
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 3182
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b691aeab8b0ab449b72bba707775a97
+      internalID: -1270596464774016589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_17
+      rect:
+        serializedVersion: 2
+        x: 4230
+        y: 3170
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9437df836f96504896df3e4e1859cdf
+      internalID: -5918288134355535404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_18
+      rect:
+        serializedVersion: 2
+        x: 4926
+        y: 3174
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46847f921e697940a7112b7dba06a80
+      internalID: 6853254309146535438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_19
+      rect:
+        serializedVersion: 2
+        x: 5630
+        y: 3182
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79119705f4e4f24a9cdbe2b9f0999c6
+      internalID: -3977970387990703934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_20
+      rect:
+        serializedVersion: 2
+        x: 6330
+        y: 3182
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39cc83a6ea4c1c4c92250dfaab50c74
+      internalID: 136910234648592621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_21
+      rect:
+        serializedVersion: 2
+        x: 7030
+        y: 3182
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434ccb02dd682aa4db9dba1d6fd14a16
+      internalID: 1411687232960640325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_22
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 2482
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ff6233af88a124694dd7f901d34a89
+      internalID: -6929113266398292826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_23
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 2482
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed21e3d92a1cbf44780f1f87430ced52
+      internalID: -1901046367101662549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_24
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 2482
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ce1fa7138e1f24d904c20fb830a324
+      internalID: -671122918145304445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_25
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 2482
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6535ff31991fdbc42a2db0523c0830e4
+      internalID: -5371629979784294213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_26
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 2482
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98ca0fcde04ccd4899451a4e7a44da1
+      internalID: -7802711462136327248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_27
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 2482
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990f2b8624364d644a79bbfe8893e2b8
+      internalID: 7624269725965820585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_28
+      rect:
+        serializedVersion: 2
+        x: 4230
+        y: 2482
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6c262687b0c2f446b0b2ab41650a9a7
+      internalID: 2027247863694860318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_29
+      rect:
+        serializedVersion: 2
+        x: 4930
+        y: 2482
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af594fd487fc744b8be29885a3b1d2d
+      internalID: -2589954292554992834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_30
+      rect:
+        serializedVersion: 2
+        x: 5630
+        y: 2482
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0168fc738513742a426114d2cf5168
+      internalID: 4381080914548492580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_31
+      rect:
+        serializedVersion: 2
+        x: 6330
+        y: 2482
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f73eb1cd741664cb0a1c07f8194921
+      internalID: -9178772456013112727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_32
+      rect:
+        serializedVersion: 2
+        x: 7030
+        y: 2482
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a76fde875d390db4eba917dd5c4cbcbc
+      internalID: -6746492401112414332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_33
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1782
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be251aca530bc86408fc400a9f216087
+      internalID: 6344093634608144112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_34
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 1782
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249bd8b781170f3499b3a2def6adccfe
+      internalID: -1867533859166490248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_35
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 1782
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7ba77789b0b4d64d8da5d28ded417cb
+      internalID: 5774714849006996418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_36
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 1782
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 702e3da5fffc8a84aa04ab36e82ca93a
+      internalID: 3198365978897444992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_37
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 1782
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f38b15e2840f8b74fabfa9c0b18cbd1c
+      internalID: -1720091777671876219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_38
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 1782
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044777aed12827c4bafcc5dd2212acb8
+      internalID: 9206394702069279039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_39
+      rect:
+        serializedVersion: 2
+        x: 4230
+        y: 1782
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8da469471536342a2212228faa043b
+      internalID: -4555509053216740234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_40
+      rect:
+        serializedVersion: 2
+        x: 4930
+        y: 1782
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3562388ed42688144afbe9cf30f8cff3
+      internalID: 4984754770723920222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_41
+      rect:
+        serializedVersion: 2
+        x: 5630
+        y: 1782
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e057182e35ea64f8bbb8bf5a07469f
+      internalID: 3558478852752445812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_42
+      rect:
+        serializedVersion: 2
+        x: 6330
+        y: 1782
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988470b5ed616fa4985ab5b88c30e85a
+      internalID: 5223661862904542841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_43
+      rect:
+        serializedVersion: 2
+        x: 7030
+        y: 1782
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8869e21c04149af4fa70f3c241b86e44
+      internalID: -1835222792383000046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_44
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1082
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e481f04c43e9dd48abf77092cf3245b
+      internalID: 2103871852767910378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_45
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 1082
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a291d7e929389444d9ebf5de71bcf202
+      internalID: 1776354934056217405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_46
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 1082
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f598c3635143f429267b3a8a9e436f
+      internalID: 7492334441044933192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_47
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 1082
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27f9beaa00645a14e91fb4c0a42b5afd
+      internalID: -8439754241863989347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_48
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 1082
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7792c955606f0249bd1ce0563eb3de5
+      internalID: -7448876119570282650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_49
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 1082
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6aca66db11babf40b54a62dc98cd816
+      internalID: -988557689268818502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_50
+      rect:
+        serializedVersion: 2
+        x: 4230
+        y: 1082
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10627d0cde924bf4885852ed6c49bc23
+      internalID: 6028275449771470718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_51
+      rect:
+        serializedVersion: 2
+        x: 4930
+        y: 1082
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661cd30a5ae33b8468321f5e7d574c88
+      internalID: -749242843400240270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_52
+      rect:
+        serializedVersion: 2
+        x: 5630
+        y: 1082
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c58e850b4134d4f89721546872ce0e
+      internalID: -3778446541026225824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_53
+      rect:
+        serializedVersion: 2
+        x: 6330
+        y: 1082
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e68ac94126ce1141bd439516b757ba7
+      internalID: 1851375648931882513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_54
+      rect:
+        serializedVersion: 2
+        x: 7030
+        y: 1082
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7bc6090e029f8745ad81671af16e0a5
+      internalID: -2782601156348234085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_55
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 382
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c413faf56cc48cf4fbdff037416c2dbc
+      internalID: -7171442043349109514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_56
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 382
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb193bec78990840a1dd291e27d8450
+      internalID: -8386009343533977705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_57
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 382
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 270a7c0c592888a4ba6ac66ee43e43ab
+      internalID: -3611854139357869817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_58
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 382
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2e9a2c19d50f540b501e1404037420
+      internalID: -4668762148702379202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_59
+      rect:
+        serializedVersion: 2
+        x: 2830
+        y: 382
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9608004958d8c49ad900e29c207cae
+      internalID: 4159575115024389058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrampaPinches_60
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 382
+        width: 648
+        height: 618
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a126b4cb640dac744821919a090d300a
+      internalID: -3404784099570759618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

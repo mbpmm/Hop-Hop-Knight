@@ -22,6 +22,7 @@ public class Player2 : MonoBehaviour
     public float timeInterval;
 
     public bool isGrounded;
+    public bool isDead;
     public Transform groundCheck;
     public float checkRadius;
     public LayerMask whatIsGround;
@@ -126,7 +127,7 @@ public class Player2 : MonoBehaviour
             launched = false;
         }
 
-        if (Input.GetMouseButtonDown(0) && isGrounded)
+        if (Input.GetMouseButtonDown(0) && isGrounded && !isDead)
         {
             hideMira = false;
             Invoke("ActivateMira", 0.1f);
@@ -141,7 +142,7 @@ public class Player2 : MonoBehaviour
             endpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
 
-        if (Input.GetMouseButtonUp(0) && !launched)
+        if (Input.GetMouseButtonUp(0) && !launched && !isDead)
         {
             hideMira = true;
             animator.SetBool("PreJump", false);
@@ -244,6 +245,7 @@ public class Player2 : MonoBehaviour
         {
             if (!powerUpActivated)
             {
+                isDead = true;
                 StartCoroutine(camShake.Shake(.5f, .08f));
                 if (playerDeath != null)
                     playerDeath();
@@ -288,6 +290,7 @@ public class Player2 : MonoBehaviour
         {
             if (!powerUpActivated)
             {
+                isDead = true;
                 StartCoroutine(camShake.Shake(.5f, .08f));
                 if (playerDeath != null)
                     playerDeath();

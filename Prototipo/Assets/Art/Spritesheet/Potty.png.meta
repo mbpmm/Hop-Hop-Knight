@@ -1,0 +1,1339 @@
+fileFormatVersion: 2
+guid: 391d400ae4a76744a84627c03b119143
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5256641370942864298
+    second: Potty_0
+  - first:
+      213: 4132447925427006421
+    second: Potty_1
+  - first:
+      213: 760875619503866766
+    second: Potty_2
+  - first:
+      213: 3174493561459612659
+    second: Potty_3
+  - first:
+      213: 6968959608717640926
+    second: Potty_4
+  - first:
+      213: 318450651976929114
+    second: Potty_5
+  - first:
+      213: 2933626273998468786
+    second: Potty_6
+  - first:
+      213: -9211966619616953450
+    second: Potty_7
+  - first:
+      213: 2598478298880374318
+    second: Potty_8
+  - first:
+      213: 8670726117868167555
+    second: Potty_9
+  - first:
+      213: 181089466031790058
+    second: Potty_10
+  - first:
+      213: -6213525818116987262
+    second: Potty_11
+  - first:
+      213: 7559722877022599212
+    second: Potty_12
+  - first:
+      213: 412210359609316886
+    second: Potty_13
+  - first:
+      213: 4002862963501823450
+    second: Potty_14
+  - first:
+      213: 2076548770994312911
+    second: Potty_15
+  - first:
+      213: 3699342291135835280
+    second: Potty_16
+  - first:
+      213: 1553819856795192631
+    second: Potty_17
+  - first:
+      213: -1706717668101809898
+    second: Potty_18
+  - first:
+      213: -1571422193328002323
+    second: Potty_19
+  - first:
+      213: -5315972408241353746
+    second: Potty_20
+  - first:
+      213: -6511703413797935275
+    second: Potty_21
+  - first:
+      213: -2772320508673974878
+    second: Potty_22
+  - first:
+      213: -5453236202263612704
+    second: Potty_23
+  - first:
+      213: -528231629553438546
+    second: Potty_24
+  - first:
+      213: 8518373701451646492
+    second: Potty_25
+  - first:
+      213: -7325315619763682810
+    second: Potty_26
+  - first:
+      213: -9007402888360259402
+    second: Potty_27
+  - first:
+      213: 1636000530446476024
+    second: Potty_28
+  - first:
+      213: -5537398901178222558
+    second: Potty_29
+  - first:
+      213: -5321430786763207018
+    second: Potty_30
+  - first:
+      213: -649655865246237689
+    second: Potty_31
+  - first:
+      213: 1078698585889321677
+    second: Potty_32
+  - first:
+      213: 6026292905955225468
+    second: Potty_33
+  - first:
+      213: -7529872961889054742
+    second: Potty_34
+  - first:
+      213: 7632412707487947545
+    second: Potty_35
+  - first:
+      213: 5433770783962394276
+    second: Potty_36
+  - first:
+      213: 83733513766913365
+    second: Potty_37
+  - first:
+      213: -2893868927109736884
+    second: Potty_38
+  - first:
+      213: 5691826963438849889
+    second: Potty_39
+  - first:
+      213: 7940341174828745077
+    second: Potty_40
+  - first:
+      213: -4575972548502364434
+    second: Potty_41
+  - first:
+      213: -3443267378072255873
+    second: Potty_42
+  - first:
+      213: 5588992463829617107
+    second: Potty_43
+  - first:
+      213: -6325300342825593929
+    second: Potty_44
+  - first:
+      213: 5934845935708559487
+    second: Potty_45
+  - first:
+      213: -240533575987390405
+    second: Potty_46
+  - first:
+      213: -848804054296762010
+    second: Potty_47
+  - first:
+      213: -344266550416219153
+    second: Potty_48
+  - first:
+      213: -799102229240609727
+    second: Potty_49
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Potty_0
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 5634
+        width: 568
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492e51e8c2f4a934bacf731959d0356a
+      internalID: -5256641370942864298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_1
+      rect:
+        serializedVersion: 2
+        x: 1218
+        y: 5634
+        width: 564
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73fc788d7fdaa604ab938e16dd5915e6
+      internalID: 4132447925427006421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_2
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 5634
+        width: 560
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502ab519c1325bd478aa0470fb916f6d
+      internalID: 760875619503866766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_3
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 5634
+        width: 560
+        height: 644
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ecfe757c10e32448d5c2107c2ba447
+      internalID: 3174493561459612659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_4
+      rect:
+        serializedVersion: 2
+        x: 4206
+        y: 5634
+        width: 556
+        height: 639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7560936b724454b87158ea672736b3
+      internalID: 6968959608717640926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_5
+      rect:
+        serializedVersion: 2
+        x: 5214
+        y: 5634
+        width: 563
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d118c183470a64899340b64a25b89b
+      internalID: 318450651976929114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_6
+      rect:
+        serializedVersion: 2
+        x: 6226
+        y: 5634
+        width: 564
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bc0a0d3cdc953841ac7ebb09a3eeb9c
+      internalID: 2933626273998468786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_7
+      rect:
+        serializedVersion: 2
+        x: 7235
+        y: 5634
+        width: 567
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1306126e1bb4d004e91accf8babd1a44
+      internalID: -9211966619616953450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_8
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 4766
+        width: 568
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb1e70515cd7044687868a7a3558926
+      internalID: 2598478298880374318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_9
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 4766
+        width: 568
+        height: 640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45afaecbd11911441877f8c290ff74ea
+      internalID: 8670726117868167555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_10
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 4766
+        width: 564
+        height: 644
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95edcde259e107848ba1127bbf1a9a37
+      internalID: 181089466031790058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_11
+      rect:
+        serializedVersion: 2
+        x: 3222
+        y: 4766
+        width: 564
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d203d64480a5849b050a3f92ca9690
+      internalID: -6213525818116987262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_12
+      rect:
+        serializedVersion: 2
+        x: 4230
+        y: 4766
+        width: 560
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842526b0f1e576a439ee4d0783270cc2
+      internalID: 7559722877022599212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_13
+      rect:
+        serializedVersion: 2
+        x: 5235
+        y: 4766
+        width: 562
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555e3a50d27968b4ca122cd529cdc8b5
+      internalID: 412210359609316886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_14
+      rect:
+        serializedVersion: 2
+        x: 6242
+        y: 4766
+        width: 560
+        height: 661
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f14a5c45bf59acf43b62707eb7e44e71
+      internalID: 4002862963501823450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_15
+      rect:
+        serializedVersion: 2
+        x: 7250
+        y: 4766
+        width: 560
+        height: 663
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f38060aedb9434ba4c7f0a1f9a2adc
+      internalID: 2076548770994312911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_16
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 3894
+        width: 560
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c85dbe2b51314241898feaa4fd4f4fe
+      internalID: 3699342291135835280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_17
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 3894
+        width: 564
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a482be76d6d8e542a81dccc3d295813
+      internalID: 1553819856795192631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_18
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 3894
+        width: 568
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89fba00e0252da468bbf210094c0382
+      internalID: -1706717668101809898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_19
+      rect:
+        serializedVersion: 2
+        x: 3222
+        y: 3894
+        width: 568
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82485bf10a75d354baeb0255389399a3
+      internalID: -1571422193328002323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_20
+      rect:
+        serializedVersion: 2
+        x: 4230
+        y: 3894
+        width: 568
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a56dd1ef5b187841aca142182583ffc
+      internalID: -5315972408241353746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_21
+      rect:
+        serializedVersion: 2
+        x: 5234
+        y: 3894
+        width: 568
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4238e9f01a0a6574b83218fdf7336968
+      internalID: -6511703413797935275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_22
+      rect:
+        serializedVersion: 2
+        x: 6238
+        y: 3894
+        width: 572
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69ed85c64adcee4997cb04c9d50efd3
+      internalID: -2772320508673974878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_23
+      rect:
+        serializedVersion: 2
+        x: 7242
+        y: 3894
+        width: 572
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d56397253fd33e44a3879819ea7b481
+      internalID: -5453236202263612704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_24
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 3022
+        width: 573
+        height: 672
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67545600f5c8aae43ba4d76a84b124ca
+      internalID: -528231629553438546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_25
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 3022
+        width: 568
+        height: 676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e4b4d2272a812468a3414947efa182
+      internalID: 8518373701451646492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_26
+      rect:
+        serializedVersion: 2
+        x: 2218
+        y: 3022
+        width: 568
+        height: 676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cec5cc6f2c010841906dcf2f037ef5e
+      internalID: -7325315619763682810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_27
+      rect:
+        serializedVersion: 2
+        x: 3230
+        y: 3022
+        width: 560
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d258224a3837dad469540e7a57482220
+      internalID: -9007402888360259402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_28
+      rect:
+        serializedVersion: 2
+        x: 4238
+        y: 3022
+        width: 557
+        height: 683
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408b2ae0e5befdf43a06d91b9b0413ce
+      internalID: 1636000530446476024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_29
+      rect:
+        serializedVersion: 2
+        x: 5250
+        y: 3022
+        width: 552
+        height: 684
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c610675eb0e31e449dc87abec9fa548
+      internalID: -5537398901178222558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_30
+      rect:
+        serializedVersion: 2
+        x: 6206
+        y: 3022
+        width: 556
+        height: 711
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5183aaa7db51ebd46b93e2c22bc74bab
+      internalID: -5321430786763207018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_31
+      rect:
+        serializedVersion: 2
+        x: 7154
+        y: 3022
+        width: 568
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbb46da2804a8143809ed8537eee736
+      internalID: -649655865246237689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_32
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 2150
+        width: 628
+        height: 752
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee7e85e030f1d84eb1ac10338b659e0
+      internalID: 1078698585889321677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_33
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 2150
+        width: 572
+        height: 728
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca97841660995324582f17eed3dc1a56
+      internalID: 6026292905955225468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_34
+      rect:
+        serializedVersion: 2
+        x: 2266
+        y: 2150
+        width: 640
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4683675b3ce3a446879eb85ff3dcba3
+      internalID: -7529872961889054742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_35
+      rect:
+        serializedVersion: 2
+        x: 3270
+        y: 2150
+        width: 740
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61ad5f17e7ce3f74f9d708f5adde445a
+      internalID: 7632412707487947545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_36
+      rect:
+        serializedVersion: 2
+        x: 4277
+        y: 2150
+        width: 713
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92fb981003e611a418fd0e388f02cc58
+      internalID: 5433770783962394276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_37
+      rect:
+        serializedVersion: 2
+        x: 5282
+        y: 2150
+        width: 684
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c4f8e8de1ab69c47ac5d1dd02699868
+      internalID: 83733513766913365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_38
+      rect:
+        serializedVersion: 2
+        x: 6290
+        y: 2150
+        width: 656
+        height: 676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd0a798af893d143b18f6e46fb9ab50
+      internalID: -2893868927109736884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_39
+      rect:
+        serializedVersion: 2
+        x: 7294
+        y: 2150
+        width: 628
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75a7c0678c64cd459b075d86192f73d
+      internalID: 5691826963438849889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_40
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1282
+        width: 592
+        height: 680
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1234ab294d10f004699a559ca3c06a18
+      internalID: 7940341174828745077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_41
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 1282
+        width: 568
+        height: 676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a766f9a224a26d74bbfb99a629dbe559
+      internalID: -4575972548502364434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_42
+      rect:
+        serializedVersion: 2
+        x: 2242
+        y: 1282
+        width: 552
+        height: 676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5b8f53eef7d404a94bd9503f602310
+      internalID: -3443267378072255873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_43
+      rect:
+        serializedVersion: 2
+        x: 3246
+        y: 1282
+        width: 556
+        height: 672
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f85b54bd3e5865248bda7180fb39ab2b
+      internalID: 5588992463829617107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_44
+      rect:
+        serializedVersion: 2
+        x: 4250
+        y: 1282
+        width: 560
+        height: 668
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7c32b5a253f814db389d642d4b2e01
+      internalID: -6325300342825593929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_45
+      rect:
+        serializedVersion: 2
+        x: 5255
+        y: 1282
+        width: 563
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c42dd44b22152e49b2da4b2c0bb15a2
+      internalID: 5934845935708559487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_46
+      rect:
+        serializedVersion: 2
+        x: 6262
+        y: 1282
+        width: 564
+        height: 660
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47be3503df054ef44b22507c8fb73770
+      internalID: -240533575987390405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_47
+      rect:
+        serializedVersion: 2
+        x: 7266
+        y: 1282
+        width: 571
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d796134ca1040234bb80095def0fc19b
+      internalID: -848804054296762010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_48
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 410
+        width: 576
+        height: 652
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 753b6d4e38baf714fa88754c5ef5870a
+      internalID: -344266550416219153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potty_49
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 410
+        width: 576
+        height: 648
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 339ca34832f7ff24a9cdc41adaee9c16
+      internalID: -799102229240609727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

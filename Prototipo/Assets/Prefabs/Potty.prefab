@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7870413324701813935}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.9, y: 1.8, z: 0}
+  m_LocalPosition: {x: 1.94, y: 1.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7870413325336832520}
@@ -41,7 +41,8 @@ GameObject:
   - component: {fileID: 7870413325336832520}
   - component: {fileID: 7870413325336832521}
   - component: {fileID: 7870413325336832526}
-  - component: {fileID: 7870413325336832527}
+  - component: {fileID: 8638416646139234088}
+  - component: {fileID: 5871900112987357597}
   m_Layer: 0
   m_Name: Potty
   m_TagString: Enemies
@@ -58,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 7870413325336832524}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.16, y: 14.13, z: 0}
-  m_LocalScale: {x: 0.253, y: 0.253, z: 0.253}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 7870413324701813934}
   m_Father: {fileID: 0}
@@ -102,7 +103,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 7ed792a5b5fcca94a9c8dc0e3d95b0be, type: 3}
+  m_Sprite: {fileID: -5256641370942864298, guid: 391d400ae4a76744a84627c03b119143,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -127,9 +129,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletEmitter: {fileID: 7870413324701813935}
   bullet: {fileID: 6398016911770423741, guid: 4001bdfc1e681f145b5dcf40403c84f8, type: 3}
-  fireRate: 4.63
---- !u!68 &7870413325336832527
-EdgeCollider2D:
+--- !u!95 &8638416646139234088
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7870413325336832524}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0333957d52003774c916961da7cd0b99, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!70 &5871900112987357597
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -138,23 +158,9 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -6.55}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -3.7450762, y: -0.0704031}
-  - {x: -5.370085, y: 3.5906167}
-  - {x: -3.6018865, y: 3.0431645}
-  - {x: -4.728895, y: 7.0575624}
-  - {x: -4.4337535, y: 12.065016}
-  - {x: 0.9528338, y: 13.697963}
-  - {x: 4.914496, y: 11.803223}
-  - {x: 5.254784, y: 10.285627}
-  - {x: 3.535413, y: 6.419117}
-  - {x: -2.6220098, y: 6.428876}
-  - {x: -1.8736469, y: 3.221722}
-  - {x: 2.5333087, y: 3.088743}
-  - {x: 1.4901557, y: 0.07040501}
-  - {x: -3.745076, y: -0.0704031}
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 3.9, y: 6.52}
+  m_Direction: 0
