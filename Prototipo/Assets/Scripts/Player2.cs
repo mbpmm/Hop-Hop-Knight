@@ -167,12 +167,12 @@ public class Player2 : MonoBehaviour
             animator.SetInteger("Direction", dir);
             animator.SetFloat("TimeIdle", timeIdle);
             animator.SetBool("IdleBlink", idleBlink);
-            if (timeIdle > 4f)
+            if (timeIdle > 5.8f)
             {
                 idleBlink = true;
 
             }
-            if (timeIdle > 5.5f)
+            if (timeIdle > 9f)
             {
                 idleBlink = false;
                 timeIdle = 0;

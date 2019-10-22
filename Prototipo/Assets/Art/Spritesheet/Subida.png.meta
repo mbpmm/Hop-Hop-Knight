@@ -1,0 +1,691 @@
+fileFormatVersion: 2
+guid: b231d3ec329d0dd4191727cf2f78662e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3004280447048365664
+    second: Subida_0
+  - first:
+      213: 6124450786390939550
+    second: Subida_1
+  - first:
+      213: -873502405805797615
+    second: Subida_2
+  - first:
+      213: 8892042048970494034
+    second: Subida_3
+  - first:
+      213: 3594507553471343822
+    second: Subida_4
+  - first:
+      213: 4552427690555763871
+    second: Subida_5
+  - first:
+      213: -7892924695062156707
+    second: Subida_6
+  - first:
+      213: -5281689912825211772
+    second: Subida_7
+  - first:
+      213: -665106367575793584
+    second: Subida_8
+  - first:
+      213: 7677067057128210991
+    second: Subida_9
+  - first:
+      213: 5168355603915952697
+    second: Subida_10
+  - first:
+      213: 5907894101494009686
+    second: Subida_11
+  - first:
+      213: -4117673992929157770
+    second: Subida_12
+  - first:
+      213: -6730233274912551124
+    second: Subida_13
+  - first:
+      213: -772837766905905108
+    second: Subida_14
+  - first:
+      213: -356654121393165259
+    second: Subida_15
+  - first:
+      213: -1555741618937865424
+    second: Subida_16
+  - first:
+      213: -8156022363279770033
+    second: Subida_17
+  - first:
+      213: 1724839547331639256
+    second: Subida_18
+  - first:
+      213: -6904911856730532707
+    second: Subida_19
+  - first:
+      213: -4731585525729498905
+    second: Subida_20
+  - first:
+      213: 5390809499131210527
+    second: Subida_21
+  - first:
+      213: 6202000638570074404
+    second: Subida_22
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Subida_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 8344
+        width: 1161
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a2706f092f90f44bced8c8b7b92f7c
+      internalID: 3004280447048365664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_1
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 8349
+        width: 1132
+        height: 1532
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48756654e5a4308469a779cb61f99cd4
+      internalID: 6124450786390939550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_2
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 8349
+        width: 1112
+        height: 1552
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1312e377631234793a142b96832cbf
+      internalID: -873502405805797615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_3
+      rect:
+        serializedVersion: 2
+        x: 3799
+        y: 8344
+        width: 1112
+        height: 1576
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe2359a4c1cd8141acd57f3dfdec2d1
+      internalID: 8892042048970494034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_4
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 6679
+        width: 1107
+        height: 1596
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e97ef4eb89b7b4498f81edb90f297b
+      internalID: 3594507553471343822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_5
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 6679
+        width: 1093
+        height: 1611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea3611dd137bfc4e8a0b9e099ea61f3
+      internalID: 4552427690555763871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_6
+      rect:
+        serializedVersion: 2
+        x: 2593
+        y: 6675
+        width: 1079
+        height: 1635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0fb7d4acb005a244811eb83546d969e
+      internalID: -7892924695062156707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_7
+      rect:
+        serializedVersion: 2
+        x: 3862
+        y: 6675
+        width: 1059
+        height: 1649
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ab66baee7cb364bb02933207ecb008
+      internalID: -5281689912825211772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_8
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 5010
+        width: 1054
+        height: 1647
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1794b1d2722c77744b6e4c2ba1d9bf00
+      internalID: -665106367575793584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_9
+      rect:
+        serializedVersion: 2
+        x: 1364
+        y: 5015
+        width: 1034
+        height: 1640
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e51a0a08c34e545809bee8ebf79c98
+      internalID: 7677067057128210991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_10
+      rect:
+        serializedVersion: 2
+        x: 2633
+        y: 5025
+        width: 1004
+        height: 1620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c4fbd2608b867145989f7c9362bc466
+      internalID: 5168355603915952697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_11
+      rect:
+        serializedVersion: 2
+        x: 3845
+        y: 5018
+        width: 1022
+        height: 1622
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60dfd9982cdf78c4d99b5b36c28b3a06
+      internalID: 5907894101494009686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_12
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 3346
+        width: 990
+        height: 1606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a96eabe7d3490542837f50629dcab8b
+      internalID: -4117673992929157770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_13
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 3351
+        width: 990
+        height: 1571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f638e03caf55d64baeb4ba6c2fd00a1
+      internalID: -6730233274912551124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_14
+      rect:
+        serializedVersion: 2
+        x: 2584
+        y: 3365
+        width: 1009
+        height: 1572
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1aeda7a019e73a4b9a6cbe63e2519f9
+      internalID: -772837766905905108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_15
+      rect:
+        serializedVersion: 2
+        x: 3828
+        y: 3385
+        width: 1020
+        height: 1561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c19c10f2cd628f4398293207c983375
+      internalID: -356654121393165259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_16
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1701
+        width: 1039
+        height: 1567
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37dff1c6c148b1f468cf8e1890a8196f
+      internalID: -1555741618937865424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_17
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 1687
+        width: 1058
+        height: 1570
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a524803c1b88b4e954a4251ef16354
+      internalID: -8156022363279770033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_18
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 1677
+        width: 1073
+        height: 1566
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3209ce338a7925498dd803556887760
+      internalID: 1724839547331639256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_19
+      rect:
+        serializedVersion: 2
+        x: 3808
+        y: 1672
+        width: 1084
+        height: 1561
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97aa62bce6e8de34faf66676faf51287
+      internalID: -6904911856730532707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_20
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 7
+        width: 1098
+        height: 1547
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8295af6e82d8a74392f68d1ef1ff685
+      internalID: -4731585525729498905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_21
+      rect:
+        serializedVersion: 2
+        x: 1291
+        y: 7
+        width: 1122
+        height: 1533
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094221350f01f544f85051ed0a8b21c2
+      internalID: 5390809499131210527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Subida_22
+      rect:
+        serializedVersion: 2
+        x: 2515
+        y: 17
+        width: 1161
+        height: 1525
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da55cf346ea41a479512dcee22725bf
+      internalID: 6202000638570074404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

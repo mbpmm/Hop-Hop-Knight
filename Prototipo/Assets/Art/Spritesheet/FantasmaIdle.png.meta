@@ -1,0 +1,1507 @@
+fileFormatVersion: 2
+guid: 2dc1d260741ef5e499d97644961e7996
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -659079613129068537
+    second: FantasmaIdle_0
+  - first:
+      213: -6307522028936766684
+    second: FantasmaIdle_1
+  - first:
+      213: -8672888741970073738
+    second: FantasmaIdle_2
+  - first:
+      213: 8643085985134297869
+    second: FantasmaIdle_3
+  - first:
+      213: -6560760303247098715
+    second: FantasmaIdle_4
+  - first:
+      213: 7347822128465758817
+    second: FantasmaIdle_5
+  - first:
+      213: 2545497023977833233
+    second: FantasmaIdle_6
+  - first:
+      213: 3471207718808718435
+    second: FantasmaIdle_7
+  - first:
+      213: -1773549705503516199
+    second: FantasmaIdle_8
+  - first:
+      213: 2291574736572805335
+    second: FantasmaIdle_9
+  - first:
+      213: 3271839619330530860
+    second: FantasmaIdle_10
+  - first:
+      213: 650373565552170741
+    second: FantasmaIdle_11
+  - first:
+      213: 7342609431235451796
+    second: FantasmaIdle_12
+  - first:
+      213: 3776826586679045317
+    second: FantasmaIdle_13
+  - first:
+      213: -8632388052957961549
+    second: FantasmaIdle_14
+  - first:
+      213: -1659169670877639
+    second: FantasmaIdle_15
+  - first:
+      213: -703094475777581723
+    second: FantasmaIdle_16
+  - first:
+      213: 673649982267613773
+    second: FantasmaIdle_17
+  - first:
+      213: 9210253610266826955
+    second: FantasmaIdle_18
+  - first:
+      213: 1362260511172442294
+    second: FantasmaIdle_19
+  - first:
+      213: 7074799683522234141
+    second: FantasmaIdle_20
+  - first:
+      213: -5152638885886423282
+    second: FantasmaIdle_21
+  - first:
+      213: -7232140287895228778
+    second: FantasmaIdle_22
+  - first:
+      213: 6771513255077158361
+    second: FantasmaIdle_23
+  - first:
+      213: -1366313909719493704
+    second: FantasmaIdle_24
+  - first:
+      213: -2541852833333270281
+    second: FantasmaIdle_25
+  - first:
+      213: 753815789707571034
+    second: FantasmaIdle_26
+  - first:
+      213: -3459186695454287725
+    second: FantasmaIdle_27
+  - first:
+      213: 7327147545923008066
+    second: FantasmaIdle_28
+  - first:
+      213: -8083909267438130238
+    second: FantasmaIdle_29
+  - first:
+      213: 5373119666235970931
+    second: FantasmaIdle_30
+  - first:
+      213: -8865665582031589046
+    second: FantasmaIdle_31
+  - first:
+      213: 2221400691475676159
+    second: FantasmaIdle_32
+  - first:
+      213: -3681267258358315788
+    second: FantasmaIdle_33
+  - first:
+      213: 6558529020990466682
+    second: FantasmaIdle_34
+  - first:
+      213: 3651326021721100094
+    second: FantasmaIdle_35
+  - first:
+      213: 7974840093115144275
+    second: FantasmaIdle_36
+  - first:
+      213: -8949075609419934194
+    second: FantasmaIdle_37
+  - first:
+      213: 1893039477828780246
+    second: FantasmaIdle_38
+  - first:
+      213: -4508430964629250041
+    second: FantasmaIdle_39
+  - first:
+      213: -4794986387561998897
+    second: FantasmaIdle_40
+  - first:
+      213: 8043780156692252858
+    second: FantasmaIdle_41
+  - first:
+      213: 4310295124682343751
+    second: FantasmaIdle_42
+  - first:
+      213: 1751390367417316240
+    second: FantasmaIdle_43
+  - first:
+      213: -8340363682766959679
+    second: FantasmaIdle_44
+  - first:
+      213: -13569835788592224
+    second: FantasmaIdle_45
+  - first:
+      213: 7875578297110104693
+    second: FantasmaIdle_46
+  - first:
+      213: -8596304845829530647
+    second: FantasmaIdle_47
+  - first:
+      213: 6955858800233677218
+    second: FantasmaIdle_48
+  - first:
+      213: -8729161315637458586
+    second: FantasmaIdle_49
+  - first:
+      213: 6696385684778639098
+    second: FantasmaIdle_50
+  - first:
+      213: -7233975239865332702
+    second: FantasmaIdle_51
+  - first:
+      213: -2475278038302142452
+    second: FantasmaIdle_52
+  - first:
+      213: -7881736011708976196
+    second: FantasmaIdle_53
+  - first:
+      213: -3028448168342043802
+    second: FantasmaIdle_54
+  - first:
+      213: -3141963171004883483
+    second: FantasmaIdle_55
+  - first:
+      213: 354137087676558175
+    second: FantasmaIdle_56
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FantasmaIdle_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 4194
+        width: 680
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0faadcdd72dff294ba6719f266f759f4
+      internalID: -659079613129068537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_1
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 4194
+        width: 672
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df8f8989c7af7a449df1c9aa26469e8
+      internalID: -6307522028936766684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_2
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 4194
+        width: 671
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63284db09d3cbf439e249d8584843c6
+      internalID: -8672888741970073738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_3
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 4194
+        width: 668
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d273e960e1d79294b9efc481e1f0a809
+      internalID: 8643085985134297869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_4
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 4194
+        width: 664
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88153c5651d6d7d44a37e4b4ec98080d
+      internalID: -6560760303247098715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_5
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 4194
+        width: 656
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20520626ff73b564186771d032b44222
+      internalID: 7347822128465758817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_6
+      rect:
+        serializedVersion: 2
+        x: 4214
+        y: 4194
+        width: 660
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f3b70681a8bc44498a185b9ec980e8
+      internalID: 2545497023977833233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_7
+      rect:
+        serializedVersion: 2
+        x: 4914
+        y: 4194
+        width: 667
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef8557c41fce684888acc4f22edca1f
+      internalID: 3471207718808718435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_8
+      rect:
+        serializedVersion: 2
+        x: 5614
+        y: 4194
+        width: 672
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43c7b043571eb864d91cce6fc720a461
+      internalID: -1773549705503516199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_9
+      rect:
+        serializedVersion: 2
+        x: 6318
+        y: 4194
+        width: 675
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3c71a7c14963c40bc7f18de5e9ee02
+      internalID: 2291574736572805335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_10
+      rect:
+        serializedVersion: 2
+        x: 7018
+        y: 4194
+        width: 680
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1ecbe5dc2cd6849a1847d8e7dc6f21
+      internalID: 3271839619330530860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_11
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3386
+        width: 683
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba29eabeb7ff18349a91cecc5a976504
+      internalID: 650373565552170741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_12
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 3386
+        width: 680
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f247173fa3537464a9b834e80f3062ef
+      internalID: 7342609431235451796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_13
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 3386
+        width: 680
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 042fc257494d4bf44abc8e2775fea48f
+      internalID: 3776826586679045317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_14
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 3386
+        width: 680
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adfe7f122c601644f9a0b0580bd684ff
+      internalID: -8632388052957961549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_15
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 3386
+        width: 684
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b464b0c695c3c914f814b94648422798
+      internalID: -1659169670877639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_16
+      rect:
+        serializedVersion: 2
+        x: 3522
+        y: 3386
+        width: 672
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d9c409d8917544fac2d4bbe6fba691
+      internalID: -703094475777581723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_17
+      rect:
+        serializedVersion: 2
+        x: 4230
+        y: 3386
+        width: 664
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0664f2c9569c65a4cb2f57714bac9e1d
+      internalID: 673649982267613773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_18
+      rect:
+        serializedVersion: 2
+        x: 4938
+        y: 3386
+        width: 660
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02a8db4ad10a12b4a8a958e621072616
+      internalID: 9210253610266826955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_19
+      rect:
+        serializedVersion: 2
+        x: 5650
+        y: 3386
+        width: 648
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de81aae140fee548b82c04d161b9f55
+      internalID: 1362260511172442294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_20
+      rect:
+        serializedVersion: 2
+        x: 6346
+        y: 3386
+        width: 652
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1ee7409aec871746bd37f9962b633b5
+      internalID: 7074799683522234141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_21
+      rect:
+        serializedVersion: 2
+        x: 7042
+        y: 3386
+        width: 656
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45bdb1a65cc968045ab0c4e3e3f8e65e
+      internalID: -5152638885886423282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_22
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 2574
+        width: 660
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef61b9c761fe4954f9a92ceb445c2e10
+      internalID: -7232140287895228778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_23
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 2574
+        width: 664
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09402d86db77e33458b3129473b567c9
+      internalID: 6771513255077158361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_24
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 2574
+        width: 664
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581222546d34abf429644fcec0f7d7e9
+      internalID: -1366313909719493704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_25
+      rect:
+        serializedVersion: 2
+        x: 2122
+        y: 2574
+        width: 668
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab42e84606b0a4642980613b9ebdffd9
+      internalID: -2541852833333270281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_26
+      rect:
+        serializedVersion: 2
+        x: 2818
+        y: 2574
+        width: 676
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da21f0f343ce08349a2afcac049203d8
+      internalID: 753815789707571034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_27
+      rect:
+        serializedVersion: 2
+        x: 3515
+        y: 2574
+        width: 679
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c93d67f4a39ee4ea2953b836adb4c9
+      internalID: -3459186695454287725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_28
+      rect:
+        serializedVersion: 2
+        x: 4214
+        y: 2574
+        width: 680
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2974f56291740247a559d2b0e3533f8
+      internalID: 7327147545923008066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_29
+      rect:
+        serializedVersion: 2
+        x: 4914
+        y: 2574
+        width: 680
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c26d6fd6546fa469476f27cf8ace5c
+      internalID: -8083909267438130238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_30
+      rect:
+        serializedVersion: 2
+        x: 5614
+        y: 2574
+        width: 683
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f2d172bbbffb444988fab40d8733e8f
+      internalID: 5373119666235970931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_31
+      rect:
+        serializedVersion: 2
+        x: 6318
+        y: 2574
+        width: 680
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c562275dc02144fb83f43987cea9f6
+      internalID: -8865665582031589046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_32
+      rect:
+        serializedVersion: 2
+        x: 7018
+        y: 2574
+        width: 680
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f7a04895c8f6524e93bd5060c212e58
+      internalID: 2221400691475676159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_33
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1766
+        width: 680
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c63747558a20b041a28e5b26f3a943c
+      internalID: -3681267258358315788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_34
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 1766
+        width: 680
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f17fe2252148c74418d8cb8a9cacd921
+      internalID: 6558529020990466682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_35
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 1766
+        width: 680
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcad6a2b7e3f716418ecee95b11a4e46
+      internalID: 3651326021721100094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_36
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 1766
+        width: 680
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9af52ef42447dd146ade53a919a127fc
+      internalID: 7974840093115144275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_37
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 1766
+        width: 680
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c2de171a9f60e4094e9210a896cc6e
+      internalID: -8949075609419934194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_38
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 1766
+        width: 680
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6dfa2d24b46eb419a3cec72acfa42a
+      internalID: 1893039477828780246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_39
+      rect:
+        serializedVersion: 2
+        x: 4214
+        y: 1766
+        width: 680
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fcf47b0b1d578d4e8aaaf854b9e7871
+      internalID: -4508430964629250041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_40
+      rect:
+        serializedVersion: 2
+        x: 4914
+        y: 1766
+        width: 680
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5e39ae509d584541a3975bb627530fe
+      internalID: -4794986387561998897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_41
+      rect:
+        serializedVersion: 2
+        x: 5614
+        y: 1766
+        width: 680
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cfc764e7d4d44f4f8eb813684cb71d4
+      internalID: 8043780156692252858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_42
+      rect:
+        serializedVersion: 2
+        x: 6318
+        y: 1766
+        width: 680
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 300fdd4b823d33143a5794268095a0e4
+      internalID: 4310295124682343751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_43
+      rect:
+        serializedVersion: 2
+        x: 7018
+        y: 1766
+        width: 680
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d84e3c06c2d95e9479c80d321d51f8a0
+      internalID: 1751390367417316240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_44
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 954
+        width: 680
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85efdd10721849a48815bc71735c336a
+      internalID: -8340363682766959679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_45
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 954
+        width: 676
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64008d05ffbb4de428d1ce330ef73e45
+      internalID: -13569835788592224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_46
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 954
+        width: 679
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65bd9abf2be54d448b64c356a0bb6ee3
+      internalID: 7875578297110104693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_47
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 954
+        width: 676
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527c5153dc4f04645861a2a65e06cb4e
+      internalID: -8596304845829530647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_48
+      rect:
+        serializedVersion: 2
+        x: 2810
+        y: 954
+        width: 675
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b784735137ba541a38ba431ecc7249
+      internalID: 6955858800233677218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_49
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 954
+        width: 668
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5a4e804b50ba040a1cbd7cc7e415d0
+      internalID: -8729161315637458586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_50
+      rect:
+        serializedVersion: 2
+        x: 4214
+        y: 954
+        width: 668
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f53866d8a095840bc2933ede64104a
+      internalID: 6696385684778639098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_51
+      rect:
+        serializedVersion: 2
+        x: 4914
+        y: 954
+        width: 664
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78732a64267004a4783bdcbf1fc25047
+      internalID: -7233975239865332702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_52
+      rect:
+        serializedVersion: 2
+        x: 5614
+        y: 954
+        width: 668
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f731c6126ad3664db1b49c63fe18cca
+      internalID: -2475278038302142452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_53
+      rect:
+        serializedVersion: 2
+        x: 6318
+        y: 954
+        width: 668
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e9edfee21868aa4a85afea11ec1ab05
+      internalID: -7881736011708976196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_54
+      rect:
+        serializedVersion: 2
+        x: 7018
+        y: 954
+        width: 672
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f1364667c4f1146a8469725c12c6e2
+      internalID: -3028448168342043802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_55
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 146
+        width: 679
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e1c2f9895a3f744a4e7e79b722f94a
+      internalID: -3141963171004883483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FantasmaIdle_56
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 146
+        width: 679
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eafe63b05c2c8ef4994be11769c4e256
+      internalID: 354137087676558175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

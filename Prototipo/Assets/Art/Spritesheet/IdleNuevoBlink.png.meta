@@ -1,0 +1,955 @@
+fileFormatVersion: 2
+guid: a7ec0f14627233f4f9ee9b8897e34d80
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7975346250400421609
+    second: IdleNuevoBlink_0
+  - first:
+      213: 7598681543039198038
+    second: IdleNuevoBlink_1
+  - first:
+      213: 3803101662110491083
+    second: IdleNuevoBlink_2
+  - first:
+      213: 8668089747965946130
+    second: IdleNuevoBlink_3
+  - first:
+      213: -6272704364457994646
+    second: IdleNuevoBlink_4
+  - first:
+      213: -1668355483861879167
+    second: IdleNuevoBlink_5
+  - first:
+      213: 784371029081580313
+    second: IdleNuevoBlink_6
+  - first:
+      213: -3553958270149869684
+    second: IdleNuevoBlink_7
+  - first:
+      213: -8354976046200754725
+    second: IdleNuevoBlink_8
+  - first:
+      213: 5089552730068664124
+    second: IdleNuevoBlink_9
+  - first:
+      213: 5708915262721430786
+    second: IdleNuevoBlink_10
+  - first:
+      213: 1887634594433590479
+    second: IdleNuevoBlink_11
+  - first:
+      213: 292443835329973892
+    second: IdleNuevoBlink_12
+  - first:
+      213: 1985126511542733578
+    second: IdleNuevoBlink_13
+  - first:
+      213: 4419936335653009829
+    second: IdleNuevoBlink_14
+  - first:
+      213: 6479164691705204780
+    second: IdleNuevoBlink_15
+  - first:
+      213: -1949364555049221650
+    second: IdleNuevoBlink_16
+  - first:
+      213: 1598863060022825383
+    second: IdleNuevoBlink_17
+  - first:
+      213: -6673371802681632108
+    second: IdleNuevoBlink_18
+  - first:
+      213: 2007094466798298435
+    second: IdleNuevoBlink_19
+  - first:
+      213: 2151841426976723795
+    second: IdleNuevoBlink_20
+  - first:
+      213: 2212114982685660758
+    second: IdleNuevoBlink_21
+  - first:
+      213: 7855077304256561193
+    second: IdleNuevoBlink_22
+  - first:
+      213: -4224630394403488813
+    second: IdleNuevoBlink_23
+  - first:
+      213: -5678626605186387271
+    second: IdleNuevoBlink_24
+  - first:
+      213: -5259438571195181531
+    second: IdleNuevoBlink_25
+  - first:
+      213: -6732405862916218121
+    second: IdleNuevoBlink_26
+  - first:
+      213: 5433622679657818870
+    second: IdleNuevoBlink_27
+  - first:
+      213: 4595658474432200792
+    second: IdleNuevoBlink_28
+  - first:
+      213: 4673213421147558292
+    second: IdleNuevoBlink_29
+  - first:
+      213: 4432281208367672350
+    second: IdleNuevoBlink_30
+  - first:
+      213: -3127296020864181308
+    second: IdleNuevoBlink_31
+  - first:
+      213: 7550492917545212360
+    second: IdleNuevoBlink_32
+  - first:
+      213: 5501246491298830311
+    second: IdleNuevoBlink_33
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IdleNuevoBlink_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9078
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0438ee75faf435b45af74ef1acf3b2a2
+      internalID: 7975346250400421609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_1
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 9078
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a55847e44c81e9459fcd5749c89e3d5
+      internalID: 7598681543039198038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_2
+      rect:
+        serializedVersion: 2
+        x: 3046
+        y: 9078
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324c442d01a2bc842b9c2ab0236c8b4e
+      internalID: 3803101662110491083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_3
+      rect:
+        serializedVersion: 2
+        x: 4569
+        y: 9078
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf73137e8f1d1946845af34bae56d00
+      internalID: 8668089747965946130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_4
+      rect:
+        serializedVersion: 2
+        x: 6092
+        y: 9078
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1782445664cc1e4392faf1e45e5f057
+      internalID: -6272704364457994646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7565
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706889f916a8e4e4e81bf1a89b17add1
+      internalID: -1668355483861879167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_6
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 7565
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccadbbea5bf9d944e871c65de1027361
+      internalID: 784371029081580313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_7
+      rect:
+        serializedVersion: 2
+        x: 3046
+        y: 7565
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a27777180f0d3914d9f214142c2dc1cb
+      internalID: -3553958270149869684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_8
+      rect:
+        serializedVersion: 2
+        x: 4569
+        y: 7565
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420ea40b1871abd4e8f937d7478c4ba5
+      internalID: -8354976046200754725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_9
+      rect:
+        serializedVersion: 2
+        x: 6092
+        y: 7565
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0288f79fd2c4c044f87cddc1ec36ece0
+      internalID: 5089552730068664124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6052
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c995f2905e1ac3e4cae4890bbf066ebb
+      internalID: 5708915262721430786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_11
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 6052
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec03a87957c8f8e48ae9209c53734799
+      internalID: 1887634594433590479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_12
+      rect:
+        serializedVersion: 2
+        x: 3046
+        y: 6052
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4560dbc8550e154499ca11fb42d93198
+      internalID: 292443835329973892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_13
+      rect:
+        serializedVersion: 2
+        x: 4569
+        y: 6052
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd9f029d3a4853449ac7d9b16444a08
+      internalID: 1985126511542733578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_14
+      rect:
+        serializedVersion: 2
+        x: 6092
+        y: 6052
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e773bbfc35929846a7c1b2a14edf944
+      internalID: 4419936335653009829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4539
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1441f81a5b2e6441a5231aac34f1153
+      internalID: 6479164691705204780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_16
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 4539
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de12d1a9b9880d4dbd6a8849800de41
+      internalID: -1949364555049221650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_17
+      rect:
+        serializedVersion: 2
+        x: 3046
+        y: 4539
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6c8e75675f85c4190d03e69e134a2f
+      internalID: 1598863060022825383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_18
+      rect:
+        serializedVersion: 2
+        x: 4569
+        y: 4539
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65e334cf35450de4c9c6bf994b0e1392
+      internalID: -6673371802681632108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_19
+      rect:
+        serializedVersion: 2
+        x: 6092
+        y: 4539
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb86dc2166bffbf43be68f4e479847df
+      internalID: 2007094466798298435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3026
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a3192a4857b144ab73beb463d1ff8e
+      internalID: 2151841426976723795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_21
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 3026
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac08a09e5eed434b8e0959371c3babe
+      internalID: 2212114982685660758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_22
+      rect:
+        serializedVersion: 2
+        x: 3046
+        y: 3026
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040aee24631d5a74787e1908d223039c
+      internalID: 7855077304256561193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_23
+      rect:
+        serializedVersion: 2
+        x: 4569
+        y: 3026
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efdcff3f1d90fa244852d64d8aba6c10
+      internalID: -4224630394403488813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_24
+      rect:
+        serializedVersion: 2
+        x: 6092
+        y: 3026
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2dff42e6494aa94cab64fa0910c2797
+      internalID: -5678626605186387271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1513
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604dff5c0ba4b6541b35b30c85016f8b
+      internalID: -5259438571195181531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_26
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 1513
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674c9c7b01033ee44bc7ea1681f5c057
+      internalID: -6732405862916218121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_27
+      rect:
+        serializedVersion: 2
+        x: 3046
+        y: 1513
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ddf519311d6c664b8e5812f8fe03c4b
+      internalID: 5433622679657818870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_28
+      rect:
+        serializedVersion: 2
+        x: 4569
+        y: 1513
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8f69ab341970df4aa490a8605ba6db6
+      internalID: 4595658474432200792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_29
+      rect:
+        serializedVersion: 2
+        x: 6092
+        y: 1513
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c48e378356d514dbb3b9e897cf4258
+      internalID: 4673213421147558292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa013e1f04005244e9e043ed34fc0ca7
+      internalID: 4432281208367672350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_31
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 0
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d17c7a4f1098cd46a105a5914adfb27
+      internalID: -3127296020864181308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_32
+      rect:
+        serializedVersion: 2
+        x: 3046
+        y: 0
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e61a034a2ea2614597acfcb871fb015
+      internalID: 7550492917545212360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleNuevoBlink_33
+      rect:
+        serializedVersion: 2
+        x: 4569
+        y: 0
+        width: 1523
+        height: 1513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c2d9fc3d16563478405d5dcd1aaf2c
+      internalID: 5501246491298830311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
