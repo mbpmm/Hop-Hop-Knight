@@ -246,7 +246,6 @@ public class Player2 : MonoBehaviour
             if (!powerUpActivated)
             {
                 isDead = true;
-                StartCoroutine(camShake.Shake(.5f, .08f));
                 if (playerDeath != null)
                     playerDeath();
             }
@@ -291,7 +290,6 @@ public class Player2 : MonoBehaviour
             if (!powerUpActivated)
             {
                 isDead = true;
-                StartCoroutine(camShake.Shake(.5f, .08f));
                 if (playerDeath != null)
                     playerDeath();
             }
