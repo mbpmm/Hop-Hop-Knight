@@ -6,14 +6,31 @@ public class CameraMovement : MonoBehaviour
 {
     public Transform target;
     private Player2 playerRB;
+    public Transform darknessStart;
     public Vector3 offset;
     public Vector3 desiredPos;
     public AnimationCurve animCurve;
     public float speed;
     public float totalTime;
+    public float currentAspect;
     void Start()
     {
         playerRB = target.gameObject.GetComponent<Player2>();
+
+        currentAspect= (float)Screen.height / (float)Screen.width;
+
+        if (currentAspect > 1.9f)
+        {
+            Camera.main.orthographicSize = 13.05f;
+            offset = new Vector3(0, 6.52f, -80f);
+            darknessStart.position=new Vector3(0, -18.70f, 33f);
+        }
+        else
+        {
+            Camera.main.orthographicSize = 12.03f;
+            offset = new Vector3(0, 5.52f, -80f);
+            darknessStart.position = new Vector3(0, -17.81f, 33f);
+        }
     }
 
     void Update()

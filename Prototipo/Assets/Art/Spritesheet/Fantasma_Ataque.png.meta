@@ -1,0 +1,1507 @@
+fileFormatVersion: 2
+guid: 856d96bcefbcbfc4395aee2598eefe8f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5196514421513350683
+    second: Fantasma_Ataque_0
+  - first:
+      213: -1754370037803759551
+    second: Fantasma_Ataque_1
+  - first:
+      213: 5009338912730085108
+    second: Fantasma_Ataque_2
+  - first:
+      213: -259506671725525437
+    second: Fantasma_Ataque_3
+  - first:
+      213: 2702129053720905733
+    second: Fantasma_Ataque_4
+  - first:
+      213: 8394501799763633987
+    second: Fantasma_Ataque_5
+  - first:
+      213: 2936324099448883211
+    second: Fantasma_Ataque_6
+  - first:
+      213: -6270800975102350273
+    second: Fantasma_Ataque_7
+  - first:
+      213: 8202099345382931372
+    second: Fantasma_Ataque_8
+  - first:
+      213: -3021520747899061350
+    second: Fantasma_Ataque_9
+  - first:
+      213: 1178004675439102574
+    second: Fantasma_Ataque_10
+  - first:
+      213: 7754016572565236857
+    second: Fantasma_Ataque_11
+  - first:
+      213: -5816082570624515767
+    second: Fantasma_Ataque_12
+  - first:
+      213: -8337246447298499768
+    second: Fantasma_Ataque_13
+  - first:
+      213: 3626796626400735849
+    second: Fantasma_Ataque_14
+  - first:
+      213: 2481559898975185601
+    second: Fantasma_Ataque_15
+  - first:
+      213: -5253413155126139102
+    second: Fantasma_Ataque_16
+  - first:
+      213: 1954963171641822787
+    second: Fantasma_Ataque_17
+  - first:
+      213: -8086220649172629944
+    second: Fantasma_Ataque_18
+  - first:
+      213: -5641407055190491488
+    second: Fantasma_Ataque_19
+  - first:
+      213: -8642979266178593409
+    second: Fantasma_Ataque_20
+  - first:
+      213: 3400509149547477421
+    second: Fantasma_Ataque_21
+  - first:
+      213: 6291179302160908651
+    second: Fantasma_Ataque_22
+  - first:
+      213: -6915280728143647981
+    second: Fantasma_Ataque_23
+  - first:
+      213: -2176034135452814993
+    second: Fantasma_Ataque_24
+  - first:
+      213: 5520138012505962628
+    second: Fantasma_Ataque_25
+  - first:
+      213: -170506735849549689
+    second: Fantasma_Ataque_26
+  - first:
+      213: -663851149290728852
+    second: Fantasma_Ataque_27
+  - first:
+      213: -7787991079872721806
+    second: Fantasma_Ataque_28
+  - first:
+      213: -6899740199634976159
+    second: Fantasma_Ataque_29
+  - first:
+      213: -8523953189897901547
+    second: Fantasma_Ataque_30
+  - first:
+      213: 7798316624009444215
+    second: Fantasma_Ataque_31
+  - first:
+      213: -5907758431664750859
+    second: Fantasma_Ataque_32
+  - first:
+      213: 7996328915217757807
+    second: Fantasma_Ataque_33
+  - first:
+      213: -3439903062545107181
+    second: Fantasma_Ataque_34
+  - first:
+      213: -8425557667643267139
+    second: Fantasma_Ataque_35
+  - first:
+      213: -6695043628072450854
+    second: Fantasma_Ataque_36
+  - first:
+      213: 1354006132069114241
+    second: Fantasma_Ataque_37
+  - first:
+      213: 74906067168710421
+    second: Fantasma_Ataque_38
+  - first:
+      213: -5553489469447839338
+    second: Fantasma_Ataque_39
+  - first:
+      213: 157266102897564040
+    second: Fantasma_Ataque_40
+  - first:
+      213: 7907633162989641406
+    second: Fantasma_Ataque_41
+  - first:
+      213: -8853890875735170207
+    second: Fantasma_Ataque_42
+  - first:
+      213: 2378340410048101812
+    second: Fantasma_Ataque_43
+  - first:
+      213: 4010062481227546699
+    second: Fantasma_Ataque_44
+  - first:
+      213: 7485934976950564808
+    second: Fantasma_Ataque_45
+  - first:
+      213: -1864420022617711783
+    second: Fantasma_Ataque_46
+  - first:
+      213: 1822457851436862729
+    second: Fantasma_Ataque_47
+  - first:
+      213: -1170627614669898492
+    second: Fantasma_Ataque_48
+  - first:
+      213: 7059574103165987757
+    second: Fantasma_Ataque_49
+  - first:
+      213: -6077527416937044901
+    second: Fantasma_Ataque_50
+  - first:
+      213: 3900055188470379782
+    second: Fantasma_Ataque_51
+  - first:
+      213: 9172898924678415441
+    second: Fantasma_Ataque_52
+  - first:
+      213: -483294737064937018
+    second: Fantasma_Ataque_53
+  - first:
+      213: 8282843120212282180
+    second: Fantasma_Ataque_54
+  - first:
+      213: 8439220376234966209
+    second: Fantasma_Ataque_55
+  - first:
+      213: -4346859008108402729
+    second: Fantasma_Ataque_56
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Fantasma_Ataque_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 5194
+        width: 679
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5c4ef2aa67d0c4d9f06cf633bd409b
+      internalID: 5196514421513350683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_1
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 5194
+        width: 672
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddefce80b0441b64080d2a9f6b0d56a7
+      internalID: -1754370037803759551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_2
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 5194
+        width: 671
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95630d1844b75ba458204d136138eb44
+      internalID: 5009338912730085108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_3
+      rect:
+        serializedVersion: 2
+        x: 2518
+        y: 5194
+        width: 668
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56f71283a2323e48911c8c4d6a794a8
+      internalID: -259506671725525437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_4
+      rect:
+        serializedVersion: 2
+        x: 3344
+        y: 5194
+        width: 674
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14641a0de1847e040a9e2c98163f231d
+      internalID: 2702129053720905733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_5
+      rect:
+        serializedVersion: 2
+        x: 4194
+        y: 5194
+        width: 656
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e8ea13d27f3c548ab8d2d1f79b5d69
+      internalID: 8394501799763633987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_6
+      rect:
+        serializedVersion: 2
+        x: 5030
+        y: 5194
+        width: 660
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526a0b138557e1544a98f32d06bc4bba
+      internalID: 2936324099448883211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_7
+      rect:
+        serializedVersion: 2
+        x: 5866
+        y: 5194
+        width: 668
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d4c2dbdd5ec884da29b5a26bcd5551
+      internalID: -6270800975102350273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_8
+      rect:
+        serializedVersion: 2
+        x: 6702
+        y: 5194
+        width: 672
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 461df3814694d714786ab13c670f8553
+      internalID: 8202099345382931372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_9
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 4382
+        width: 676
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f9ace6b905aa342968bc037d08e43c
+      internalID: -3021520747899061350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_10
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 4386
+        width: 680
+        height: 799
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634266eab3c145740971498a8a49fcf6
+      internalID: 1178004675439102574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_11
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 4386
+        width: 684
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df5e74ed862605498545afdc1ec12f2
+      internalID: 7754016572565236857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_12
+      rect:
+        serializedVersion: 2
+        x: 2518
+        y: 4382
+        width: 768
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27497e3b3119d604d825d7393ef82ca7
+      internalID: -5816082570624515767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_13
+      rect:
+        serializedVersion: 2
+        x: 3358
+        y: 4382
+        width: 800
+        height: 803
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e46012657de193428719f28781aa6ee
+      internalID: -8337246447298499768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_14
+      rect:
+        serializedVersion: 2
+        x: 4191
+        y: 4382
+        width: 819
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3406b6349e821d45a432480a0d79e99
+      internalID: 3626796626400735849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_15
+      rect:
+        serializedVersion: 2
+        x: 5030
+        y: 4382
+        width: 816
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de7c197e95923145b53064fce63139d
+      internalID: 2481559898975185601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_16
+      rect:
+        serializedVersion: 2
+        x: 5876
+        y: 4382
+        width: 806
+        height: 803
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7bc067d589ed2f4d863f66ab1af3a06
+      internalID: -5253413155126139102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_17
+      rect:
+        serializedVersion: 2
+        x: 6720
+        y: 4382
+        width: 798
+        height: 803
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347374a250b8ce74a8c02904762851f9
+      internalID: 1954963171641822787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_18
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 3574
+        width: 791
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500cf72686464164c8a66cf4f197fd70
+      internalID: -8086220649172629944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_19
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 3574
+        width: 780
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a35521913241d4f81fdbd03c1d5640
+      internalID: -5641407055190491488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_20
+      rect:
+        serializedVersion: 2
+        x: 1711
+        y: 3574
+        width: 783
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f689c5fa3b7b3da409597b97504dadf3
+      internalID: -8642979266178593409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_21
+      rect:
+        serializedVersion: 2
+        x: 2543
+        y: 3574
+        width: 787
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbf96ded8fbbef479095b2677c273a8
+      internalID: 3400509149547477421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_22
+      rect:
+        serializedVersion: 2
+        x: 3378
+        y: 3574
+        width: 788
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f45f4bca7eb4384e8819a78cf424d32
+      internalID: 6291179302160908651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_23
+      rect:
+        serializedVersion: 2
+        x: 4214
+        y: 3574
+        width: 780
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca0da47e4023a6a429a65392c28ef6a8
+      internalID: -6915280728143647981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_24
+      rect:
+        serializedVersion: 2
+        x: 5046
+        y: 3574
+        width: 772
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3602ecdb879d1204e960c60c54423daa
+      internalID: -2176034135452814993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_25
+      rect:
+        serializedVersion: 2
+        x: 5878
+        y: 3574
+        width: 768
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94dcdf7f1293573428fa7321e6c9470b
+      internalID: 5520138012505962628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_26
+      rect:
+        serializedVersion: 2
+        x: 6714
+        y: 3574
+        width: 759
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aab172aea6f22a409e8d7dbe7cc05fe
+      internalID: -170506735849549689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_27
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 2762
+        width: 752
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 633a0449eed74504b8fc670ac189e1a0
+      internalID: -663851149290728852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_28
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 2762
+        width: 756
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d34d1e5af11024c9e349b486aa35b0
+      internalID: -7787991079872721806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_29
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 2762
+        width: 756
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6e49f3283257bd4780d0a36a21dce92
+      internalID: -6899740199634976159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_30
+      rect:
+        serializedVersion: 2
+        x: 2519
+        y: 2762
+        width: 755
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a4deb26c54f9a04992cb9e69b289041
+      internalID: -8523953189897901547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_31
+      rect:
+        serializedVersion: 2
+        x: 3358
+        y: 2762
+        width: 752
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af48c96bb70b99f45a6318d3a2897ba0
+      internalID: 7798316624009444215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_32
+      rect:
+        serializedVersion: 2
+        x: 4191
+        y: 2762
+        width: 755
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ac50018a3e1cbf41b4528945d536890
+      internalID: -5907758431664750859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_33
+      rect:
+        serializedVersion: 2
+        x: 5030
+        y: 2762
+        width: 756
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0a16731c3e18945a8bbc0b63ef5bcd
+      internalID: 7996328915217757807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_34
+      rect:
+        serializedVersion: 2
+        x: 5856
+        y: 2762
+        width: 769
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10125f0d0ff10d44ebb77b27e53809b0
+      internalID: -3439903062545107181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_35
+      rect:
+        serializedVersion: 2
+        x: 6703
+        y: 2762
+        width: 759
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56b1266f59be434b8aa9dc22a31a7ba
+      internalID: -8425557667643267139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_36
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1950
+        width: 759
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab50900be73f6a4d8a4871183d71909
+      internalID: -6695043628072450854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_37
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1950
+        width: 760
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8f3b997588a7d4daa8a21ad184574c
+      internalID: 1354006132069114241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_38
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 1950
+        width: 764
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f60aff89535904daaa90034f108567
+      internalID: 74906067168710421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_39
+      rect:
+        serializedVersion: 2
+        x: 2519
+        y: 1954
+        width: 763
+        height: 792
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4acb444a475416d4eb7f906f98825e47
+      internalID: -5553489469447839338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_40
+      rect:
+        serializedVersion: 2
+        x: 3358
+        y: 1950
+        width: 764
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0445776287fcae4692dcf8142d65300
+      internalID: 157266102897564040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_41
+      rect:
+        serializedVersion: 2
+        x: 4191
+        y: 1950
+        width: 771
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d19d13d22474b741a989708a6779141
+      internalID: 7907633162989641406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_42
+      rect:
+        serializedVersion: 2
+        x: 5030
+        y: 1950
+        width: 768
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f365ded3c9575740b64cde00feec89b
+      internalID: -8853890875735170207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_43
+      rect:
+        serializedVersion: 2
+        x: 5856
+        y: 1950
+        width: 782
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d57d1f04de6ac641bc5666d968847cb
+      internalID: 2378340410048101812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_44
+      rect:
+        serializedVersion: 2
+        x: 6706
+        y: 1950
+        width: 772
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601034d7f29bd7a419bde03912c95f88
+      internalID: 4010062481227546699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_45
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1142
+        width: 772
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5940e313bf7588419662dc8d624b9a4
+      internalID: 7485934976950564808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_46
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1142
+        width: 776
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825e357ac70cef6408d6f0bc92fe70c5
+      internalID: -1864420022617711783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_47
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 1135
+        width: 776
+        height: 803
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8444317c4bfab474bb77d9d2ce609fe1
+      internalID: 1822457851436862729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_48
+      rect:
+        serializedVersion: 2
+        x: 2519
+        y: 1136
+        width: 779
+        height: 802
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71d9af9a1cfc4042b12fc86d8288c70
+      internalID: -1170627614669898492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_49
+      rect:
+        serializedVersion: 2
+        x: 3358
+        y: 1142
+        width: 779
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380c3d2a9e0de4949af57f95ebaf0aeb
+      internalID: 7059574103165987757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_50
+      rect:
+        serializedVersion: 2
+        x: 4191
+        y: 1138
+        width: 783
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5c0ae297e3306428625b28c1fa35a1
+      internalID: -6077527416937044901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_51
+      rect:
+        serializedVersion: 2
+        x: 5030
+        y: 1142
+        width: 784
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a694fd037a5521e44bf22c15dbb21049
+      internalID: 3900055188470379782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_52
+      rect:
+        serializedVersion: 2
+        x: 5856
+        y: 1142
+        width: 794
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c111079ccb68e34f8cbc4945a04f6e8
+      internalID: 9172898924678415441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_53
+      rect:
+        serializedVersion: 2
+        x: 6704
+        y: 1142
+        width: 786
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5004391b28454e42846c2a5ba08922d
+      internalID: -483294737064937018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_54
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 330
+        width: 784
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fdf2ed476d0b4946b0122ba0e770622
+      internalID: 8282843120212282180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_55
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 330
+        width: 784
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8458c40af98d44e962951c11e6667b
+      internalID: 8439220376234966209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fantasma_Ataque_56
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 330
+        width: 788
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6e4e1019c2bdef4f8912aa52f50d1cf
+      internalID: -4346859008108402729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
