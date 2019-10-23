@@ -20,10 +20,8 @@ public class Fantasma : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
-
         if (follow&&timer<timeFollowing)
         {
             timer += Time.deltaTime;
@@ -42,8 +40,9 @@ public class Fantasma : MonoBehaviour
             transform.Translate(Vector2.right * Time.deltaTime * speed);
 
             RaycastHit2D groundInfo = Physics2D.Raycast(groundDetection.position, Vector2.down, distance);
-            if (groundInfo.collider.tag == "Wall")
+            if (groundInfo.collider == false || groundInfo.collider.tag == "Wall")
             {
+                Debug.Log("toco");
                 if (movingRight == true)
                 {
                     transform.eulerAngles = new Vector3(0, -180, 0);
@@ -56,8 +55,6 @@ public class Fantasma : MonoBehaviour
                 }
             }
         }
-
-        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

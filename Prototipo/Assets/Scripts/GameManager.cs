@@ -27,6 +27,11 @@ public class GameManager : MonobehaviourSingleton<GameManager>
 
     void PlayerDied()
     {
+        if (score>PlayerPrefs.GetInt("Highscore",0))
+        {
+            PlayerPrefs.SetInt("Highscore", score);
+        }
+        
         score = 0;
         SceneManager.LoadScene("SampleScene");
     }
