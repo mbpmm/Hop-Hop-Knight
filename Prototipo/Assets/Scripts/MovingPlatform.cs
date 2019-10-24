@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FloorTrap : MonoBehaviour
+public class MovingPlatform : MonoBehaviour
 {
     public float speedClose;
     public float speedOpen;
@@ -10,11 +10,11 @@ public class FloorTrap : MonoBehaviour
     public bool stop;
     public bool finishMovement;
     public GameObject score;
-    private ScorePlatformMovement scoreScript;
+    private StopPlatformMovement scoreScript;
     // Start is called before the first frame update
     void Start()
     {
-        scoreScript = score.GetComponent<ScorePlatformMovement>();
+        scoreScript = score.GetComponent<StopPlatformMovement>();
         scoreScript.movingPlatformTouch += StopMovement;
     }
 

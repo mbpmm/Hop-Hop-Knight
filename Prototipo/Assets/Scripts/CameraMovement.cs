@@ -13,6 +13,7 @@ public class CameraMovement : MonoBehaviour
     public float speed;
     public float totalTime;
     public float currentAspect;
+
     void Start()
     {
         playerRB = target.gameObject.GetComponent<Player2>();

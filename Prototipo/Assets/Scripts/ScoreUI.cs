@@ -9,7 +9,7 @@ public class ScoreUI : MonoBehaviour
     public GameObject gameManager;
     public int score;
     private GameManager gameMan;
-    // Start is called before the first frame update
+
     void Start()
     {
         gameManager = GameObject.Find("GameManager");
@@ -17,12 +17,11 @@ public class ScoreUI : MonoBehaviour
         score = gameMan.score;
         scoreText.text = score.ToString();
     }
+    
 
-    // Update is called once per frame
     void Update()
     {
         score = gameMan.score;
         scoreText.text = score.ToString();
-        //scoreText.ForceMeshUpdate(true);
     }
 }

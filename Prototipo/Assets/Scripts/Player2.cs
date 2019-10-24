@@ -29,12 +29,12 @@ public class Player2 : MonoBehaviour
     public bool launched;
     public bool hideMira;
 
+    //MIRA
     public GameObject mira;
     public GameObject miraVisual;
     public Vector3 scale;
     public float miraSize = 1;
     public float miraDivider;
-
     public float angle;
 
     private Animator animator;
@@ -42,28 +42,25 @@ public class Player2 : MonoBehaviour
     public float timeIdle;
     public bool idleBlink;
 
+    //POOF
+    public Animator poofAnim;
+    public bool doPoof;
+    private Vector2 velocityFrameAnt;
+
     public float dirLimitY;
     public float dirLimitX;
     public GameObject activeParent;
-
-    public SpriteRenderer spriteRenderer;
-    public Sprite jumpSprite;
 
     //POWER UP
     public int cantGemas=0;
     public int totalGemas=5;
     public bool powerUpActivated;
 
-    //CAMERA SHAKE
-    public GameObject cam;
-    private CameraMovement camShake;
     void Start()
     {
         GameManager.Get().player = this;
         rbody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        camShake = cam.GetComponent<CameraMovement>();
     }
 
     void MiraUpdate()
@@ -98,8 +95,7 @@ public class Player2 : MonoBehaviour
         }
         mira.transform.rotation = Quaternion.Euler(0, 0, angle);
         mira.transform.position = transform.position;
-
-        //Debug.Log(miraSize);
+        
         if (miraVisual.transform.localScale.y > 1.1f)
         {
             scale.y = 1.1f;
@@ -132,7 +128,6 @@ public class Player2 : MonoBehaviour
             hideMira = false;
             Invoke("ActivateMira", 0.1f);
             animator.SetBool("PreJump", true);
-            spriteRenderer.sprite = jumpSprite;
             startpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             timeStart = Time.time;
         }
@@ -159,12 +154,15 @@ public class Player2 : MonoBehaviour
             animator.SetTrigger("GoToIdle");
         }
 
+        if (velocityFrameAnt!=Vector2.zero && rbody.velocity==Vector2.zero)
+        {
+            poofAnim.SetTrigger("PoofTrigger");
+        }
+
         if (rbody.velocity == Vector2.zero)
         {
-            dir = 0;
             timeIdle += Time.deltaTime;
             animator.SetBool("IsJumping", false);
-            animator.SetInteger("Direction", dir);
             animator.SetFloat("TimeIdle", timeIdle);
             animator.SetBool("IdleBlink", idleBlink);
             if (timeIdle > 5.8f)
@@ -183,22 +181,13 @@ public class Player2 : MonoBehaviour
             launched = true;
             animator.SetBool("IsJumping", true);
         }
-
+        
         if (cantGemas==totalGemas)
         {
             powerUpActivated = true;
         }
-    }
 
-    //void OnDrawGizmosSelected()
-    //{
-    //    Gizmos.color = Color.yellow;
-    //    Gizmos.DrawSphere(groundCheck.position, checkRadius);
-    //}
-
-    private void OnMouseDown()
-    {
-        spriteRenderer.sprite = jumpSprite;
+        velocityFrameAnt = rbody.velocity;
     }
 
     void LaunchPlayer()

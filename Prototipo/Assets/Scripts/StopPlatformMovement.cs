@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScorePlatformMovement : MonoBehaviour
+public class StopPlatformMovement : MonoBehaviour
 {
     public delegate void OnPlayerEnter();
     public OnPlayerEnter movingPlatformTouch;

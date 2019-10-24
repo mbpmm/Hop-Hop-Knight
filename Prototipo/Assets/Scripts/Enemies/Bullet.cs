@@ -23,7 +23,6 @@ public class Bullet : MonoBehaviour
     {
         if (collision.gameObject.tag == "Wall")
         {
-            Debug.Log("queondaTrigger");
             Destroy(gameObject);
         }
     }

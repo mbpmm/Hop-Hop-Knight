@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-public class SceneTransition : MonoBehaviour
+
+public class MainMenu : MonoBehaviour
 {
     public Animator animator;
     public Text version;
