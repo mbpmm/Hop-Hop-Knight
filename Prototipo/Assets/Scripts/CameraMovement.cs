@@ -22,9 +22,9 @@ public class CameraMovement : MonoBehaviour
 
         if (currentAspect > 1.9f)
         {
-            Camera.main.orthographicSize = 13.05f;
-            offset = new Vector3(0, 6.52f, -80f);
-            darknessStart.position=new Vector3(0, -18.70f, 33f);
+            Camera.main.orthographicSize = 13.85f;
+            offset = new Vector3(0, 7.5f, -80f);
+            darknessStart.position=new Vector3(0, -19.20f, 33f);
         }
         else
         {
