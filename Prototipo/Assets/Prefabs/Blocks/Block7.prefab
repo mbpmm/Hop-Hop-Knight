@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8279416275994030017
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2134870000402081743}
+  m_Layer: 0
+  m_Name: InitPosFantasma
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2134870000402081743
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8279416275994030017}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.72, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8434937181873243889}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8434937181381669151
 GameObject:
   m_ObjectHideFlags: 0
@@ -17,7 +47,7 @@ GameObject:
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8434937181381669150
 Transform:
@@ -173,7 +203,7 @@ GameObject:
   m_TagString: Score
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8434937181685190370
 Transform:
@@ -236,7 +266,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8434937181715536484}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.18, y: 2.72, z: 1}
+  m_LocalPosition: {x: 0, y: 2.72, z: 1}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children:
   - {fileID: 8434937181621313722}
@@ -370,6 +400,7 @@ MonoBehaviour:
   distance: 15.46
   movingRight: 1
   groundDetection: {fileID: 8434937181621313722}
+  initPos: {fileID: 2134870000402081743}
 --- !u!1 &8434937182123088822
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +482,7 @@ Transform:
   - {fileID: 8434937182587996149}
   - {fileID: 8434937181715536475}
   - {fileID: 3590992604721481286}
+  - {fileID: 2134870000402081743}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -564,7 +596,7 @@ GameObject:
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8434937182907039230
 Transform:
@@ -671,7 +703,7 @@ GameObject:
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8434937182923916699
 Transform:
@@ -769,11 +801,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8434937181873243889}
     m_Modifications:
-    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
-        type: 3}
-      propertyPath: m_Name
-      value: Vela_0 (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 1312685765036992111, guid: 6e32da781d3aca34982ace7faa509fad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -828,6 +855,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
+        type: 3}
+      propertyPath: m_Name
+      value: Vela_0 (4)
       objectReference: {fileID: 0}
     - target: {fileID: 1312685765036992110, guid: 6e32da781d3aca34982ace7faa509fad,
         type: 3}

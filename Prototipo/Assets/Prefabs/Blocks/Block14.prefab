@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8878988021834859004
 Transform:
@@ -246,11 +246,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8410773673226389365}
     m_Modifications:
-    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
-        type: 3}
-      propertyPath: m_Name
-      value: Vela_0
-      objectReference: {fileID: 0}
     - target: {fileID: 1312685765036992111, guid: 6e32da781d3aca34982ace7faa509fad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -306,6 +301,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
+        type: 3}
+      propertyPath: m_Name
+      value: Vela_0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e32da781d3aca34982ace7faa509fad, type: 3}
 --- !u!4 &1919056701110142172 stripped
@@ -321,11 +321,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8410773673226389365}
     m_Modifications:
-    - target: {fileID: 3584817659800403962, guid: 268636fca35097e4abadab1c76cd1a74,
-        type: 3}
-      propertyPath: m_Name
-      value: Enemy2
-      objectReference: {fileID: 0}
     - target: {fileID: 3584817659800403942, guid: 268636fca35097e4abadab1c76cd1a74,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -381,6 +376,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3584817659800403962, guid: 268636fca35097e4abadab1c76cd1a74,
+        type: 3}
+      propertyPath: m_Name
+      value: Enemy2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 268636fca35097e4abadab1c76cd1a74, type: 3}
 --- !u!4 &6011140365328948481 stripped
@@ -396,11 +396,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8410773673226389365}
     m_Modifications:
-    - target: {fileID: 3584817659800403962, guid: 268636fca35097e4abadab1c76cd1a74,
-        type: 3}
-      propertyPath: m_Name
-      value: Enemy2 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 3584817659800403942, guid: 268636fca35097e4abadab1c76cd1a74,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -456,6 +451,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3584817659800403962, guid: 268636fca35097e4abadab1c76cd1a74,
+        type: 3}
+      propertyPath: m_Name
+      value: Enemy2 (1)
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 268636fca35097e4abadab1c76cd1a74, type: 3}
 --- !u!4 &6011140365617869332 stripped
@@ -471,21 +471,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8410773673226389365}
     m_Modifications:
-    - target: {fileID: 1179463858806804804, guid: 885e89f5d0cdd7348ac831786dd8ae8d,
-        type: 3}
-      propertyPath: m_Name
-      value: Middleground_everyOtherFloor_Right
-      objectReference: {fileID: 0}
-    - target: {fileID: 1179463858806804804, guid: 885e89f5d0cdd7348ac831786dd8ae8d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Wall
-      objectReference: {fileID: 0}
-    - target: {fileID: 1179463858806804804, guid: 885e89f5d0cdd7348ac831786dd8ae8d,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1179463858806804802, guid: 885e89f5d0cdd7348ac831786dd8ae8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -545,6 +530,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 1.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179463858806804804, guid: 885e89f5d0cdd7348ac831786dd8ae8d,
+        type: 3}
+      propertyPath: m_Name
+      value: Middleground_everyOtherFloor_Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179463858806804804, guid: 885e89f5d0cdd7348ac831786dd8ae8d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 1179463858806804804, guid: 885e89f5d0cdd7348ac831786dd8ae8d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 885e89f5d0cdd7348ac831786dd8ae8d, type: 3}

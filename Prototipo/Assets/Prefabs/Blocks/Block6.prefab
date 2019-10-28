@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2881031804919235667
 Transform:
@@ -122,7 +122,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2881031805169683069
 Transform:
@@ -206,7 +206,7 @@ GameObject:
   m_TagString: MovingFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2881031805410680305
 Transform:
@@ -285,6 +285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedClose: 11.1
   speedOpen: 1.7
+  moving: 1
   stop: 0
   finishMovement: 0
   score: {fileID: 2881031806414675442}
@@ -369,7 +370,7 @@ GameObject:
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2881031805602586736
 Transform:
@@ -479,7 +480,7 @@ GameObject:
   m_TagString: MovingFloor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2881031806088002708
 Transform:
@@ -558,6 +559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedClose: 11.1
   speedOpen: 1.7
+  moving: 1
   stop: 0
   finishMovement: 0
   score: {fileID: 2881031806414675442}
@@ -641,7 +643,7 @@ GameObject:
   m_TagString: TrapTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2881031806193096568
 Transform:
@@ -694,7 +696,7 @@ GameObject:
   m_TagString: Score
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2881031806414675441
 Transform:
@@ -755,7 +757,7 @@ GameObject:
   m_TagString: 6
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2881031805234480094
 Transform:
@@ -798,11 +800,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2881031805234480094}
     m_Modifications:
-    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
-        type: 3}
-      propertyPath: m_Name
-      value: Vela_0 (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 1312685765036992111, guid: 6e32da781d3aca34982ace7faa509fad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -858,10 +855,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
+        type: 3}
+      propertyPath: m_Name
+      value: Vela_0 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1312685765036992110, guid: 6e32da781d3aca34982ace7faa509fad,
         type: 3}
       propertyPath: m_FlipX
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6061181544872250653, guid: 6e32da781d3aca34982ace7faa509fad,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e32da781d3aca34982ace7faa509fad, type: 3}
@@ -878,11 +890,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2881031805234480094}
     m_Modifications:
-    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
-        type: 3}
-      propertyPath: m_Name
-      value: Vela_0 (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 1312685765036992111, guid: 6e32da781d3aca34982ace7faa509fad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -937,6 +944,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
+        type: 3}
+      propertyPath: m_Name
+      value: Vela_0 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 6061181544872250653, guid: 6e32da781d3aca34982ace7faa509fad,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e32da781d3aca34982ace7faa509fad, type: 3}

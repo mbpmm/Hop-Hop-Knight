@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8987175026338178783
 Transform:
@@ -454,7 +454,7 @@ GameObject:
   m_TagString: Score
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8987175027920240320
 Transform:
@@ -675,7 +675,7 @@ GameObject:
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8987175028174014865
 Transform:
@@ -832,7 +832,7 @@ GameObject:
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8987175028313805919
 Transform:
@@ -930,11 +930,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8987175026313434738}
     m_Modifications:
-    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
-        type: 3}
-      propertyPath: m_Name
-      value: Vela_0 (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 1312685765036992111, guid: 6e32da781d3aca34982ace7faa509fad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -989,6 +984,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
+        type: 3}
+      propertyPath: m_Name
+      value: Vela_0 (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e32da781d3aca34982ace7faa509fad, type: 3}

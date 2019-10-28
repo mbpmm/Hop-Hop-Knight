@@ -13,6 +13,7 @@ public class Fantasma : MonoBehaviour
     public bool movingRight = true;
     public Transform groundDetection;
     private Animator anim;
+    public Transform initPos;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,7 @@ public class Fantasma : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (follow&&timer<timeFollowing)
+        if (follow && timer<timeFollowing)
         {
             anim.SetBool("Attacking", true);
             timer += Time.deltaTime;
@@ -72,5 +73,12 @@ public class Fantasma : MonoBehaviour
     public void Attack()
     {
         anim.SetTrigger("Attackloop");
+    }
+
+    private void OnEnable()
+    {
+        transform.position = initPos.position;
+        timer = 0;
+        follow = false;
     }
 }

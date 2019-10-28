@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4489004754061500230
 Transform:
@@ -256,6 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockDestructionPoint: {fileID: 0}
+  scoreZone: {fileID: 0}
 --- !u!1001 &6252446514985275709
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -263,11 +264,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6726455664079433113}
     m_Modifications:
-    - target: {fileID: 1179463858806804804, guid: 885e89f5d0cdd7348ac831786dd8ae8d,
-        type: 3}
-      propertyPath: m_Name
-      value: 'Middleground_everyOtherFloor_Left '
-      objectReference: {fileID: 0}
     - target: {fileID: 1179463858806804802, guid: 885e89f5d0cdd7348ac831786dd8ae8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -328,6 +324,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.62
       objectReference: {fileID: 0}
+    - target: {fileID: 1179463858806804804, guid: 885e89f5d0cdd7348ac831786dd8ae8d,
+        type: 3}
+      propertyPath: m_Name
+      value: 'Middleground_everyOtherFloor_Left '
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 885e89f5d0cdd7348ac831786dd8ae8d, type: 3}
 --- !u!4 &5087777693265870975 stripped
@@ -343,11 +344,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6726455664079433113}
     m_Modifications:
-    - target: {fileID: 1179463858806804804, guid: 885e89f5d0cdd7348ac831786dd8ae8d,
-        type: 3}
-      propertyPath: m_Name
-      value: 'Middleground_everyOtherFloor_Right '
-      objectReference: {fileID: 0}
     - target: {fileID: 1179463858806804802, guid: 885e89f5d0cdd7348ac831786dd8ae8d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -408,6 +404,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1.62
       objectReference: {fileID: 0}
+    - target: {fileID: 1179463858806804804, guid: 885e89f5d0cdd7348ac831786dd8ae8d,
+        type: 3}
+      propertyPath: m_Name
+      value: 'Middleground_everyOtherFloor_Right '
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 885e89f5d0cdd7348ac831786dd8ae8d, type: 3}
 --- !u!4 &5334885527113009916 stripped
@@ -423,16 +424,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6726455664079433113}
     m_Modifications:
-    - target: {fileID: 2991158892010518767, guid: aff4de150eff69744b32eb467332f5e7,
-        type: 3}
-      propertyPath: m_Name
-      value: Middleground_firstFloorOnly_AmbientLight
-      objectReference: {fileID: 0}
-    - target: {fileID: 2991158892010518767, guid: aff4de150eff69744b32eb467332f5e7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2991158892010518765, guid: aff4de150eff69744b32eb467332f5e7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -487,6 +478,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991158892010518767, guid: aff4de150eff69744b32eb467332f5e7,
+        type: 3}
+      propertyPath: m_Name
+      value: Middleground_firstFloorOnly_AmbientLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991158892010518767, guid: aff4de150eff69744b32eb467332f5e7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2991158892010518767, guid: aff4de150eff69744b32eb467332f5e7,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aff4de150eff69744b32eb467332f5e7, type: 3}
