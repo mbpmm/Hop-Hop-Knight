@@ -426,9 +426,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8434937181873243889}
+  - component: {fileID: 215773042668964397}
   m_Layer: 0
   m_Name: Block7
-  m_TagString: Untagged
+  m_TagString: 7
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -453,6 +454,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &215773042668964397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8434937182571105572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 751e12ebd7a2fb84289d934d3b1ff6dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockDestructionPoint: {fileID: 0}
+  scoreZone: {fileID: 8434937181685190371}
 --- !u!1 &8434937182587996150
 GameObject:
   m_ObjectHideFlags: 0
@@ -543,9 +558,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8434937182907039230}
   - component: {fileID: 8434937182907039229}
+  - component: {fileID: 1387322981318095658}
   m_Layer: 0
   m_Name: Middleground_everyOtherFloor_Right (4)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -613,6 +629,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1387322981318095658
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8434937182907039231}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 7d41fe8f1115e8149a7d1871e7def0d0, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.2, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.9, y: 5.01}
+    newSize: {x: 1.9, y: 5.01}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.18, y: 5.01}
+  m_EdgeRadius: 0
 --- !u!1 &8434937182923916708
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,9 +665,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8434937182923916699}
   - component: {fileID: 8434937182923916698}
+  - component: {fileID: 8560368178990081589}
   m_Layer: 0
   m_Name: Middleground_everyOtherFloor_Right (5)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -693,6 +736,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &8560368178990081589
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8434937182923916708}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 7d41fe8f1115e8149a7d1871e7def0d0, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.2, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.9, y: 5.01}
+    newSize: {x: 1.9, y: 5.01}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.18, y: 5.01}
+  m_EdgeRadius: 0
 --- !u!1001 &2585730291499229225
 PrefabInstance:
   m_ObjectHideFlags: 0

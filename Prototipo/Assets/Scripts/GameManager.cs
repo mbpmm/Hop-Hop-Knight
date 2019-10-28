@@ -33,12 +33,12 @@ public class GameManager : MonobehaviourSingleton<GameManager>
         }
         
         score = 0;
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("GameScene");
     }
 
     IEnumerator LoadSceneAfterTime(float time)
     {
         yield return new WaitForSeconds(time);
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("GameScene");
     }
 }

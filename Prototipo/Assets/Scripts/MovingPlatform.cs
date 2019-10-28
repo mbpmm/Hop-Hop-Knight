@@ -35,6 +35,12 @@ public class MovingPlatform : MonoBehaviour
         {
             transform.position += transform.right* Time.deltaTime * speedClose;
         }
+
+        if (gameObject.activeInHierarchy==false)
+        {
+            moving = true;
+            stop = false;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

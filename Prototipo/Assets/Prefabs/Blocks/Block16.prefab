@@ -89,9 +89,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1771102984614423878}
+  - component: {fileID: 6861241128498406748}
   m_Layer: 0
   m_Name: Block16
-  m_TagString: Untagged
+  m_TagString: 13
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,6 +117,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6861241128498406748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8508894605601020501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 751e12ebd7a2fb84289d934d3b1ff6dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blockDestructionPoint: {fileID: 0}
+  scoreZone: {fileID: 3966668578139415972}
 --- !u!1001 &1315589133762206255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -188,6 +203,12 @@ PrefabInstance:
 --- !u!4 &7679369546841512046 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8706426417634755137, guid: 0ff8c6d06742f2f439c5f56f53e8bd82,
+    type: 3}
+  m_PrefabInstance: {fileID: 1315589133762206255}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3966668578139415972 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2687973151449989003, guid: 0ff8c6d06742f2f439c5f56f53e8bd82,
     type: 3}
   m_PrefabInstance: {fileID: 1315589133762206255}
   m_PrefabAsset: {fileID: 0}
