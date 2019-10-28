@@ -1393,7 +1393,7 @@ ParticleSystem:
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 90, y: 0, z: 0}
-    m_Scale: {x: 1.7, y: 240.73, z: 1}
+    m_Scale: {x: 1.7, y: 52.79, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
     m_MeshNormalOffset: 0
@@ -5424,11 +5424,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269398798}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -11.318537, y: 100.6, z: 6.1}
+  m_LocalPosition: {x: -10.9, y: 0, z: 33.397205}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1528495693}
-  m_RootOrder: 0
+  m_Father: {fileID: 519420032}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &289636796
 GameObject:
@@ -6227,6 +6227,7 @@ Transform:
   - {fileID: 1132095776}
   - {fileID: 424970290}
   - {fileID: 1614456211}
+  - {fileID: 269398801}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8859,8 +8860,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.41853672, y: 6.038337, z: -7.762795}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 269398801}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11111,7 +11111,7 @@ PrefabInstance:
     - target: {fileID: 7988497065375096708, guid: d6560371192199948940a5316245f3e4,
         type: 3}
       propertyPath: power
-      value: 11.88
+      value: 11.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6560371192199948940a5316245f3e4, type: 3}
