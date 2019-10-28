@@ -754,7 +754,7 @@ GameObject:
   - component: {fileID: 1204096955363001408}
   m_Layer: 0
   m_Name: Block6
-  m_TagString: 6
+  m_TagString: 8
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295

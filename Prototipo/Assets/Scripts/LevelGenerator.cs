@@ -16,13 +16,51 @@ public class LevelGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y<generationPoint.position.y)
+        if (GameManager.Get().score == 0 )
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
-            randomBlock = Random.Range(1, 15);
-            GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
+            if (transform.position.y < generationPoint.position.y-8f)
+            {
+                transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
+                randomBlock = 3;
+                GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
 
-            go.transform.position =transform.position;
+                go.transform.position = transform.position;
+            }
+            
         }
+        else if (GameManager.Get().score > 0 && GameManager.Get().score < 10)
+        {
+            if (transform.position.y < generationPoint.position.y)
+            {
+                transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
+                randomBlock = Random.Range(1, 5);
+                GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
+
+                go.transform.position = transform.position;
+            }
+        }
+        else if (GameManager.Get().score >= 10 && GameManager.Get().score < 20)
+        {
+            if (transform.position.y < generationPoint.position.y)
+            {
+                transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
+                randomBlock = Random.Range(1, 10);
+                GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
+
+                go.transform.position = transform.position;
+            }
+        }
+        else if (GameManager.Get().score >= 20 )
+        {
+            if (transform.position.y < generationPoint.position.y)
+            {
+                transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
+                randomBlock = Random.Range(1, 15);
+                GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
+
+                go.transform.position = transform.position;
+            }
+        }
+        
     }
 }

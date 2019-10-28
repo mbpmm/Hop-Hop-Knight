@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 5065046130072978049}
   m_Layer: 0
   m_Name: Block8
-  m_TagString: 8
+  m_TagString: 9
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

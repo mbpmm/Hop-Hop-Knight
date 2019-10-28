@@ -169,7 +169,7 @@ PlayerSettings:
     tvOS: com.Company.ProductName
   buildNumber:
     iPhone: 0
-  AndroidBundleVersionCode: 39
+  AndroidBundleVersionCode: 40
   AndroidMinSdkVersion: 16
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 0
