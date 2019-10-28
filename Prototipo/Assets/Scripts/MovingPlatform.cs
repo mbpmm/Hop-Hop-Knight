@@ -6,7 +6,7 @@ public class MovingPlatform : MonoBehaviour
 {
     public float speedClose;
     public float speedOpen;
-    private bool moving=true;
+    public bool moving=true;
     public bool stop;
     public bool finishMovement;
     public GameObject score;
@@ -71,5 +71,12 @@ public class MovingPlatform : MonoBehaviour
     {
         moving = false;
         stop = true;
+    }
+
+    private void OnEnable()
+    {
+        stop = false;
+        moving = true;
+        finishMovement = false;
     }
 }
