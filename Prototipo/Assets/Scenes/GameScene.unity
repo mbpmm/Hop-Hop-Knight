@@ -440,6 +440,7 @@ MonoBehaviour:
   block: {fileID: 6114215429795319565, guid: cbfca2d47ec4c48478fc15f23e63b3f1, type: 3}
   generationPoint: {fileID: 424970290}
   randomBlock: 0
+  gemRate: 0.2
 --- !u!1 &217006915
 GameObject:
   m_ObjectHideFlags: 0
@@ -8160,6 +8161,9 @@ MonoBehaviour:
       type: 3}
     amountToPool: 6
   - objectToPool: {fileID: 7060288274717597477, guid: 82eb4cf48c6c9534e8457b736e7c0848,
+      type: 3}
+    amountToPool: 6
+  - objectToPool: {fileID: 413939151785656497, guid: 5cc64c8cc3c8bf046a59816cf9ee5651,
       type: 3}
     amountToPool: 6
   pooledObjects: []

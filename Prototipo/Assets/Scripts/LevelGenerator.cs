@@ -7,10 +7,19 @@ public class LevelGenerator : MonoBehaviour
     public GameObject block;
     public Transform generationPoint;
     public float randomBlock;
+    public float gemRate;
+    private bool hasGem;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if ((UnityEngine.Random.Range(0f, 1f)) <= gemRate)
+        {
+            hasGem = true;
+        }
+        else
+        {
+            hasGem = false;
+        }
     }
 
     // Update is called once per frame
@@ -35,7 +44,7 @@ public class LevelGenerator : MonoBehaviour
                 transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
                 randomBlock = Random.Range(1, 5);
                 GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
-
+                HasGem();
                 go.transform.position = transform.position;
             }
         }
@@ -46,7 +55,7 @@ public class LevelGenerator : MonoBehaviour
                 transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
                 randomBlock = Random.Range(1, 10);
                 GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
-
+                HasGem();
                 go.transform.position = transform.position;
             }
         }
@@ -57,9 +66,28 @@ public class LevelGenerator : MonoBehaviour
                 transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
                 randomBlock = Random.Range(1, 15);
                 GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
-
+                HasGem();
                 go.transform.position = transform.position;
             }
+        }
+    }
+
+    public void HasGem()
+    {
+        if ((Random.Range(0f, 1f)) <= gemRate)
+        {
+            hasGem = true;
+        }
+        else
+        {
+            hasGem = false;
+        }
+
+        if (hasGem)
+        {
+            GameObject go = ObjectPool.instance.GetPooledObject("Gem");
+
+            go.transform.position = new Vector3(transform.position.x + Random.Range(-5f, 5f), transform.position.y + 3f, transform.position.z);
         }
         
     }

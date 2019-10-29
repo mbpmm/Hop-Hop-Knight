@@ -287,7 +287,7 @@ public class Player2 : MonoBehaviour
         if (collision.gameObject.tag == "Gem")
         {
             cantGemas++;
-            Destroy(collision.gameObject);
+            collision.gameObject.SetActive(false);
         }
     }
 
