@@ -16,10 +16,7 @@ public class MainMenu : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            FadeToLevel(1);
-        }
+
     }
 
     public void FadeToLevel(int levelIndex)
@@ -31,5 +28,10 @@ public class MainMenu : MonoBehaviour
     public void OnFadeComplete()
     {
         SceneManager.LoadScene(levelToLoad);
+    }
+
+    public void GoToGame()
+    {
+        FadeToLevel(1);
     }
 }

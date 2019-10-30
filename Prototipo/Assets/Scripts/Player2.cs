@@ -43,7 +43,7 @@ public class Player2 : MonoBehaviour
     public bool idleBlink;
 
     //POOF
-    public Animator poofAnim;
+    public ParticleSystem poofPS;
     public bool doPoof;
     private Vector2 velocityFrameAnt;
 
@@ -156,7 +156,7 @@ public class Player2 : MonoBehaviour
 
         if (velocityFrameAnt!=Vector2.zero && rbody.velocity==Vector2.zero)
         {
-            poofAnim.SetTrigger("PoofTrigger");
+            poofPS.Play();
         }
 
         if (rbody.velocity == Vector2.zero)

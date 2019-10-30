@@ -24,13 +24,13 @@ public class CameraMovement : MonoBehaviour
         {
             Camera.main.orthographicSize = 13.85f;
             offset = new Vector3(0, 7.5f, -80f);
-            darknessStart.position=new Vector3(0, -19.20f, 33f);
+            darknessStart.position=new Vector3(0, -20.3f, 33f);
         }
         else
         {
             Camera.main.orthographicSize = 12.03f;
             offset = new Vector3(0, 5.52f, -80f);
-            darknessStart.position = new Vector3(0, -17.81f, 33f);
+            darknessStart.position = new Vector3(0, -18.55f, 33f);
         }
     }
 
