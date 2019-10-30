@@ -56,6 +56,8 @@ public class Player2 : MonoBehaviour
     public int totalGemas=5;
     public bool powerUpActivated;
 
+    public Animator deathAnim;
+
     void Start()
     {
         GameManager.Get().player = this;
@@ -235,6 +237,7 @@ public class Player2 : MonoBehaviour
             if (!powerUpActivated)
             {
                 isDead = true;
+                deathAnim.SetTrigger("OpenDeathScreen");
                 if (playerDeath != null)
                     playerDeath();
             }
@@ -279,6 +282,7 @@ public class Player2 : MonoBehaviour
             if (!powerUpActivated)
             {
                 isDead = true;
+                deathAnim.SetTrigger("OpenDeathScreen");
                 if (playerDeath != null)
                     playerDeath();
             }
