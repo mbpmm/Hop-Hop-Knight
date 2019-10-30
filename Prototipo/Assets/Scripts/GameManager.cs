@@ -8,16 +8,12 @@ public class GameManager : MonobehaviourSingleton<GameManager>
 {
     public int score;
     public Player2 player;
-    public GameObject deathScreen;
-    private Animator deathAnim;
 
     // Start is called before the first frame update
     void Start()
     {
         Player2.platformTouch += AddScore;
         Player2.playerDeath += PlayerDied;
-        deathScreen = GameObject.Find("SceneFade");
-        deathAnim = deathScreen.GetComponent<Animator>();
     }
     private void Update()
     {
