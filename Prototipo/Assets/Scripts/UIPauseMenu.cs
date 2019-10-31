@@ -58,13 +58,7 @@ public class UIPauseMenu : MonoBehaviour
     public void Menu()
     {
         SceneManager.LoadScene("IntroScene");
-        Destroy(GameObject.Find("GameManager"));
+        GameManager.Get().score = 0;
     }
-
-    public void ResetGame()
-    {
-        Time.timeScale = 1;
-        SceneManager.LoadScene("SampleScene");
-        Destroy(GameObject.Find("GameManager"));
-    }
+    
 }

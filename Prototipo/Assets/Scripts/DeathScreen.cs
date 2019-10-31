@@ -19,7 +19,7 @@ public class DeathScreen : MonoBehaviour
     void Update()
     {
         scoreText.text = GameManager.Get().score.ToString();
-        highScoreText.text = "Best: " + PlayerPrefs.GetInt("Highscore");
+        highScoreText.text =PlayerPrefs.GetInt("Highscore").ToString();
     }
 
     public void PlayAgain()
@@ -32,7 +32,7 @@ public class DeathScreen : MonoBehaviour
     {
         
         SceneManager.LoadScene("IntroScene");
-        Destroy(GameObject.Find("GameManager"));
+        GameManager.Get().score = 0;
     }
 
     public void ResetScore()

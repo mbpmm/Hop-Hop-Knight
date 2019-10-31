@@ -191,6 +191,11 @@ public class Player2 : MonoBehaviour
             powerUpActivated = true;
         }
 
+        if (isDead)
+        {
+            animator.SetBool("PreJump", false);
+        }
+
         velocityFrameAnt = rbody.velocity;
     }
 
