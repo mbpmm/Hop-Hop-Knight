@@ -11,6 +11,7 @@ public class Player2 : MonoBehaviour
     public static OnPlayerAction platformTouch;
     public static OnPlayerAction playerDeath;
     Rigidbody2D rbody;
+    BoxCollider2D boxCol;
     Vector2 startpos;
     Vector2 endpos;
     Vector2 mousePos;
@@ -62,6 +63,7 @@ public class Player2 : MonoBehaviour
     {
         GameManager.Get().player = this;
         rbody = GetComponent<Rigidbody2D>();
+        boxCol = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
     }
 
@@ -237,7 +239,10 @@ public class Player2 : MonoBehaviour
             if (!powerUpActivated)
             {
                 isDead = true;
-                deathAnim.SetTrigger("OpenDeathScreen");
+                animator.SetTrigger("IsDead");
+                rbody.velocity = Vector2.zero;
+                boxCol.enabled = false;
+                //deathAnim.SetTrigger("OpenDeathScreen");
                 if (playerDeath != null)
                     playerDeath();
             }
@@ -282,7 +287,10 @@ public class Player2 : MonoBehaviour
             if (!powerUpActivated)
             {
                 isDead = true;
-                deathAnim.SetTrigger("OpenDeathScreen");
+                animator.SetTrigger("IsDead");
+                rbody.velocity = Vector2.zero;
+                boxCol.enabled = false;
+                //deathAnim.SetTrigger("OpenDeathScreen");
                 if (playerDeath != null)
                     playerDeath();
             }
@@ -293,6 +301,11 @@ public class Player2 : MonoBehaviour
             cantGemas++;
             collision.gameObject.SetActive(false);
         }
+    }
+
+    public void PlayDeathScreen()
+    {
+        deathAnim.SetTrigger("OpenDeathScreen");
     }
 
 

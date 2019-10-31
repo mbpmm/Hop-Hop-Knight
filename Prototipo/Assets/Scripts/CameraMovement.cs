@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     public Transform target;
-    private Player2 playerRB;
+    private Player2 player;
     public Transform darknessStart;
     public Vector3 offset;
     public Vector3 desiredPos;
@@ -16,7 +16,7 @@ public class CameraMovement : MonoBehaviour
 
     void Start()
     {
-        playerRB = target.gameObject.GetComponent<Player2>();
+        player = target.gameObject.GetComponent<Player2>();
 
         currentAspect= (float)Screen.height / (float)Screen.width;
 
@@ -36,12 +36,20 @@ public class CameraMovement : MonoBehaviour
 
     void Update()
     {
-        if (playerRB.isGrounded)
+        if (player.isGrounded)
         {
             desiredPos = new Vector3(transform.position.x, target.position.y, target.position.z) + offset;
         }
 
-        Advance();
+        if (!player.isDead)
+        {
+            Advance();
+        }
+        else
+        {
+
+        }
+        
     }
 
     public void Advance()
