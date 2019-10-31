@@ -5746,7 +5746,7 @@ GameObject:
   - component: {fileID: 277694455}
   - component: {fileID: 277694454}
   m_Layer: 5
-  m_Name: Music (1)
+  m_Name: Sound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5809,7 +5809,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 277694455}
   m_OnClick:
     m_PersistentCalls:
@@ -11541,7 +11541,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1684524012}
   m_OnClick:
     m_PersistentCalls:
