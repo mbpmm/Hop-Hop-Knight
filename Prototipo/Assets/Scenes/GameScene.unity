@@ -13736,6 +13736,16 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6296547457241530634, guid: d6560371192199948940a5316245f3e4,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 6296547457241530634, guid: d6560371192199948940a5316245f3e4,
+        type: 3}
+      propertyPath: moveWithTransform
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6560371192199948940a5316245f3e4, type: 3}
 --- !u!1 &7689260754087491844
