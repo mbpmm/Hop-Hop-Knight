@@ -13925,6 +13925,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7988497066353574836, guid: d6560371192199948940a5316245f3e4,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988497066353574836, guid: d6560371192199948940a5316245f3e4,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7988497065375096708, guid: d6560371192199948940a5316245f3e4,
         type: 3}
       propertyPath: deathAnim

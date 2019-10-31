@@ -238,11 +238,11 @@ public class Player2 : MonoBehaviour
         {
             if (!powerUpActivated)
             {
+                rbody.mass = 0.01f;
                 isDead = true;
                 animator.SetTrigger("IsDead");
                 rbody.velocity = Vector2.zero;
                 boxCol.enabled = false;
-                //deathAnim.SetTrigger("OpenDeathScreen");
                 if (playerDeath != null)
                     playerDeath();
             }
@@ -286,11 +286,11 @@ public class Player2 : MonoBehaviour
         {
             if (!powerUpActivated)
             {
+                rbody.mass = 0.01f;
                 isDead = true;
                 animator.SetTrigger("IsDead");
                 rbody.velocity = Vector2.zero;
                 boxCol.enabled = false;
-                //deathAnim.SetTrigger("OpenDeathScreen");
                 if (playerDeath != null)
                     playerDeath();
             }
