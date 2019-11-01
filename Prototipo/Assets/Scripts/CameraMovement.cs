@@ -41,7 +41,7 @@ public class CameraMovement : MonoBehaviour
             desiredPos = new Vector3(transform.position.x, target.position.y, target.position.z) + offset;
         }
 
-        if (!player.isDead)
+        if (!player.isDead )
         {
             Advance();
         }
@@ -49,7 +49,6 @@ public class CameraMovement : MonoBehaviour
         {
 
         }
-        
     }
 
     public void Advance()

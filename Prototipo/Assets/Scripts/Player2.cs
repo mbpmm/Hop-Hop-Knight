@@ -58,6 +58,10 @@ public class Player2 : MonoBehaviour
     public bool powerUpActivated;
 
     public Animator deathAnim;
+    public float timerPU;
+    public float totalTimePU;
+    public Vector3 desiredPos;
+    public bool goToIdle;
 
     void Start()
     {
@@ -189,6 +193,7 @@ public class Player2 : MonoBehaviour
         if (cantGemas==totalGemas)
         {
             powerUpActivated = true;
+            animator.SetTrigger("PowerUp");
         }
 
         if (isDead)
@@ -196,7 +201,36 @@ public class Player2 : MonoBehaviour
             animator.SetBool("PreJump", false);
         }
 
+        if (powerUpActivated)
+        {
+            timerPU += Time.deltaTime;
+            transform.Translate(0, 15f*Time.deltaTime, 0);
+            rbody.velocity = Vector2.zero;
+            rbody.simulated = false;
+            if (timerPU > totalTimePU)
+            {
+                Invoke("DeactivatePU", 2f);
+                rbody.simulated = true;
+                timerPU = 0;
+                cantGemas = 0;
+                GameManager.Get().score += 10;
+                goToIdle = true;
+            }
+        }
+        else if (goToIdle)
+        {
+            animator.SetTrigger("GoToIdle");
+            goToIdle = false;
+        }
+        
+
+        
         velocityFrameAnt = rbody.velocity;
+    }
+
+    public void DeactivatePU()
+    {
+        powerUpActivated = false;
     }
 
     void LaunchPlayer()

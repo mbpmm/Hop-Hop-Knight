@@ -48,7 +48,6 @@ public class CheatScreen : MonoBehaviour
     public void CloseCheats()
     {
         Time.timeScale = 1;
-        PlayerPrefs.DeleteAll();
         cheatScreen.gameObject.SetActive(false);
     }
 
