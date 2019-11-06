@@ -34,4 +34,10 @@ public class MainMenu : MonoBehaviour
     {
         FadeToLevel(1);
     }
+
+    public void QuitApp()
+    {
+        Application.Quit();
+    }
+
 }
