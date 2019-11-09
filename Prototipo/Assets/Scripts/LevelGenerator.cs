@@ -42,7 +42,7 @@ public class LevelGenerator : MonoBehaviour
             if (transform.position.y < generationPoint.position.y)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
-                randomBlock = Random.Range(1, 5);
+                randomBlock = Random.Range(1, 6);
                 GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
                 HasGem();
                 go.transform.position = transform.position;
@@ -53,7 +53,7 @@ public class LevelGenerator : MonoBehaviour
             if (transform.position.y < generationPoint.position.y)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
-                randomBlock = Random.Range(1, 10);
+                randomBlock = Random.Range(1, 13);
                 GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
                 HasGem();
                 go.transform.position = transform.position;
@@ -64,7 +64,7 @@ public class LevelGenerator : MonoBehaviour
             if (transform.position.y < generationPoint.position.y)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
-                randomBlock = Random.Range(1, 15);
+                randomBlock = Random.Range(1, 17);
                 GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
                 HasGem();
                 go.transform.position = transform.position;
