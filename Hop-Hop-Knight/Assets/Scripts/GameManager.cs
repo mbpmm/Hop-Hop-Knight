@@ -8,7 +8,7 @@ public class GameManager : MonobehaviourSingleton<GameManager>
 {
     public int score;
     public Player2 player;
-
+    public GameObject playerGO;
     // Start is called before the first frame update
     void Start()
     {

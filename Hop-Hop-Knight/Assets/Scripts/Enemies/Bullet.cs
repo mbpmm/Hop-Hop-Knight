@@ -15,15 +15,8 @@ public class Bullet : MonoBehaviour
 
         if (timer >= lifeSpan)
         {
-            Destroy(gameObject);
-        }
-    }
-    
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Wall")
-        {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
+            timer = 0;
         }
     }
 }

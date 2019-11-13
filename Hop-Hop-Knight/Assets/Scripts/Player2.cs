@@ -66,6 +66,7 @@ public class Player2 : MonoBehaviour
     void Start()
     {
         GameManager.Get().player = this;
+        GameManager.Get().playerGO = this.gameObject;
         rbody = GetComponent<Rigidbody2D>();
         boxCol = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
@@ -321,7 +322,7 @@ public class Player2 : MonoBehaviour
             collision.gameObject.SetActive(false);
 
         }
-        if (collision.gameObject.tag == "Enemies")
+        if (collision.gameObject.tag == "Enemies" || collision.gameObject.tag == "Bullet")
         {
             if (!powerUpActivated)
             {

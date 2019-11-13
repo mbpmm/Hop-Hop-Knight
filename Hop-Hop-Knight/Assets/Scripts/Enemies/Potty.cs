@@ -8,7 +8,8 @@ public class Potty : MonoBehaviour
     public GameObject bullet;
     void Shoot()
     {
-        GameObject bulletAux;
-        bulletAux = Instantiate(bullet, bulletEmitter.transform.position, bulletEmitter.transform.rotation);
+        GameObject go = ObjectPool.instance.GetPooledObject("Bullet");
+        go.transform.position = bulletEmitter.transform.position;
+        go.transform.rotation = bulletEmitter.transform.rotation;
     }
 }

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 413939151785656495}
   - component: {fileID: 413939151785656494}
   - component: {fileID: 413939151785656493}
+  - component: {fileID: 4120270280086884780}
   m_Layer: 0
   m_Name: gemas
   m_TagString: Gem
@@ -4840,3 +4841,15 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &4120270280086884780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413939151785656497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2910859cc4d3ab84c960c4d3d1b9dd0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

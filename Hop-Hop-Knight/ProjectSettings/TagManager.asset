@@ -29,6 +29,7 @@ TagManager:
   - 15
   - 16
   - 17
+  - Bullet
   layers:
   - Default
   - TransparentFX
