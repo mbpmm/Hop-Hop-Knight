@@ -132,7 +132,7 @@ public class Player2 : MonoBehaviour
             launched = false;
         }
 
-        if (Input.GetMouseButtonDown(0) && isGrounded && !isDead)
+        if (Input.GetMouseButtonDown(0) && isGrounded && !isDead && !powerUpActivated)
         {
             hideMira = false;
             Invoke("ActivateMira", 0.1f);
@@ -158,7 +158,7 @@ public class Player2 : MonoBehaviour
             LaunchPlayer();
         }
 
-        if (Input.GetMouseButtonUp(0) && rbody.velocity == Vector2.zero && Time.timeScale != 0)
+        if (Input.GetMouseButtonUp(0) && rbody.velocity == Vector2.zero && Time.timeScale != 0 && !powerUpActivated)
         {
             animator.SetTrigger("GoToIdle");
         }
@@ -191,13 +191,13 @@ public class Player2 : MonoBehaviour
             animator.SetBool("IsJumping", true);
         }
         
-        if (cantGemas==totalGemas)
+        if (cantGemas==totalGemas&&!powerUpActivated)
         {
             powerUpActivated = true;
             animator.SetTrigger("PowerUp");
         }
 
-        if (isDead)
+        if (isDead && powerUpActivated)
         {
             animator.SetBool("PreJump", false);
         }
@@ -221,6 +221,7 @@ public class Player2 : MonoBehaviour
         else if (goToIdle)
         {
             animator.SetTrigger("GoToIdle");
+            rbody.simulated = true;
             goToIdle = false;
         }
         

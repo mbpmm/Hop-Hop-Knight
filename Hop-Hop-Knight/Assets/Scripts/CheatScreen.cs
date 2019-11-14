@@ -28,9 +28,9 @@ public class CheatScreen : MonoBehaviour
         {
             playerScript.powerUpActivated = true;
         }
-        else
+        else if (!invulnerabilidad.isOn)
         {
-            playerScript.powerUpActivated = false;
+            //playerScript.powerUpActivated = false;
         }
     }
 
