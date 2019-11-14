@@ -23,17 +23,18 @@ public class CameraMovement : MonoBehaviour
         if (currentAspect > 1.9f)
         {
             Camera.main.orthographicSize = 13.85f;
-            offset = new Vector3(0, 7.5f, -80f);
+            //offset = new Vector3(0, 15f, -80f);
             darknessStart.position=new Vector3(0, -20.3f, 33f);
         }
         else
         {
             Camera.main.orthographicSize = 12.03f;
-            offset = new Vector3(0, 5.52f, -80f);
+           // offset = new Vector3(0, 13f, -80f);
             darknessStart.position = new Vector3(0, -18.55f, 33f);
         }
+        //desiredPos = new Vector3(transform.position.x, target.position.y, target.position.z) + offset;
+        Advance();
     }
-
     void Update()
     {
         if (player.isGrounded)
@@ -43,7 +44,6 @@ public class CameraMovement : MonoBehaviour
 
         if (!player.isDead )
         {
-            Advance();
         }
         else
         {
@@ -53,36 +53,26 @@ public class CameraMovement : MonoBehaviour
 
     public void Advance()
     {
-        StartCoroutine(Animate());
+        StartCoroutine(Animate(totalTime));
     }
-    
-    IEnumerator Animate()
+    public float delta;
+    //x = x0 + (x1-x0) * eval;
+    IEnumerator Animate(float time)
     {
         float t = 0;
-        if (t<=totalTime)
+        float initPosY = transform.position.y;
+        delta = (desiredPos.y - initPosY);
+        while (t<time)
         {
             t += Time.deltaTime*speed;
-            transform.position = Vector3.Lerp(transform.position, desiredPos, animCurve.Evaluate(t / totalTime));
+            if (t>time)
+            {
+                t = time;
+            }
+            float y = initPosY + (delta * animCurve.Evaluate(t / time));
+            transform.position = new Vector3(transform.position.x,y ,transform.position.z);
+            //transform.position = Vector3.LerpUnclamped(transform.position, desiredPos, animCurve.Evaluate(t / time));
             yield return null;
         }
-    }
-
-    public IEnumerator Shake(float duration, float magnitude)
-    {
-        Vector3 originalPos = transform.position;
-
-        float elapsed = 0f;
-
-        while (elapsed < duration)
-        {
-            float x = Random.Range(-1f, 1f) * magnitude;
-            float y = Random.Range(-1f, 1f) * magnitude;
-
-            transform.position = new Vector3(transform.position.x+x, transform.position.y+ y, originalPos.z);
-            elapsed += Time.deltaTime;
-            yield return null;
-        }
-
-        transform.position = originalPos;
     }
 }

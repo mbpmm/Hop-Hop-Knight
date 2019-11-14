@@ -121,7 +121,7 @@ public class Player2 : MonoBehaviour
             Invoke("ActivateMira", 0.1f);
         }
     }
-
+    bool lastGroundState = false;
     void Update()
     {
         MiraUpdate();
@@ -131,6 +131,12 @@ public class Player2 : MonoBehaviour
         {
             launched = false;
         }
+
+        if (!lastGroundState && isGrounded)
+        {
+            FindObjectOfType<CameraMovement>().Advance();
+        }
+
 
         if (Input.GetMouseButtonDown(0) && isGrounded && !isDead && !powerUpActivated)
         {
@@ -228,6 +234,8 @@ public class Player2 : MonoBehaviour
 
         
         velocityFrameAnt = rbody.velocity;
+
+        lastGroundState = isGrounded;
     }
 
     public void DeactivatePU()
