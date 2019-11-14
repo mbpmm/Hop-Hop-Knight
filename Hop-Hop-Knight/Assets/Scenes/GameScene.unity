@@ -7135,53 +7135,54 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1105131616}
   darknessStart: {fileID: 1132095776}
-  offset: {x: 0, y: 5.52, z: -80.62}
-  desiredPos: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 13, z: -80.62}
+  desiredPos: {x: 0, y: 8, z: 0}
   animCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -0.6361667
+      outSlope: -0.6361667
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0
+      outWeight: 0.043441936
     - serializedVersion: 3
-      time: 0.5031526
-      value: 0.30104965
-      inSlope: 1.1781933
-      outSlope: 1.1781933
+      time: 0.4537673
+      value: 0.54311
+      inSlope: 1.3320087
+      outSlope: 1.3320087
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.62820894
-      value: 0.44512007
-      inSlope: 1.1189764
-      outSlope: 1.1189764
+      time: 0.95407486
+      value: 1.0217011
+      inSlope: -1.2625654
+      outSlope: -1.2625654
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.33333334
+      outWeight: 0.6361811
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 2
-      outSlope: 2
+      inSlope: -0.7205932
+      outSlope: -0.7205932
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.03759396
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  speed: 9.27
+  speed: 1
   totalTime: 1
   currentAspect: 0
+  delta: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -10188,7 +10189,7 @@ PrefabInstance:
     - target: {fileID: 4489004754061500226, guid: b947ca536188bfc4b9d9223885f1ab79,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b947ca536188bfc4b9d9223885f1ab79, type: 3}
