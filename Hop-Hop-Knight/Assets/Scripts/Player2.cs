@@ -121,7 +121,7 @@ public class Player2 : MonoBehaviour
             Invoke("ActivateMira", 0.1f);
         }
     }
-    bool lastGroundState = false;
+    int lastGroundState = 0;
     void Update()
     {
         MiraUpdate();
@@ -132,22 +132,26 @@ public class Player2 : MonoBehaviour
             launched = false;
         }
 
-        if (!lastGroundState && isGrounded)
+        if (lastGroundState<GameManager.Get().score)
         {
             FindObjectOfType<CameraMovement>().Advance();
         }
 
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    animator.SetTrigger("PreJ");
+        //}
 
         if (Input.GetMouseButtonDown(0) && isGrounded && !isDead && !powerUpActivated)
         {
             hideMira = false;
             Invoke("ActivateMira", 0.1f);
-            animator.SetBool("PreJump", true);
+            animator.SetTrigger("PreJ");
             startpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             timeStart = Time.time;
         }
 
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && !isDead)
         {
             endpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
@@ -155,7 +159,7 @@ public class Player2 : MonoBehaviour
         if (Input.GetMouseButtonUp(0) && !launched && !isDead)
         {
             hideMira = true;
-            animator.SetBool("PreJump", false);
+            animator.SetTrigger("PreJ");
             miraVisual.gameObject.SetActive(false);
             launched = true;
             endpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -230,12 +234,15 @@ public class Player2 : MonoBehaviour
             rbody.simulated = true;
             goToIdle = false;
         }
-        
 
+        if (isDead)
+        {
+            hideMira=true;
+        }
         
         velocityFrameAnt = rbody.velocity;
 
-        lastGroundState = isGrounded;
+        lastGroundState = GameManager.Get().score;
     }
 
     public void DeactivatePU()

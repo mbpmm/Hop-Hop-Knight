@@ -23,16 +23,16 @@ public class CameraMovement : MonoBehaviour
         if (currentAspect > 1.9f)
         {
             Camera.main.orthographicSize = 13.85f;
-            //offset = new Vector3(0, 15f, -80f);
-            darknessStart.position=new Vector3(0, -20.3f, 33f);
+            offset = new Vector3(0, 9f, -80f);
+            darknessStart.position=new Vector3(0, -21.3f, 33f);
         }
         else
         {
             Camera.main.orthographicSize = 12.03f;
-           // offset = new Vector3(0, 13f, -80f);
-            darknessStart.position = new Vector3(0, -18.55f, 33f);
+            offset = new Vector3(0, 7f, -80f);
+            darknessStart.position = new Vector3(0, -19.55f, 33f);
         }
-        //desiredPos = new Vector3(transform.position.x, target.position.y, target.position.z) + offset;
+        desiredPos = new Vector3(transform.position.x, target.position.y, target.position.z) + offset;
         Advance();
     }
     void Update()
@@ -40,14 +40,6 @@ public class CameraMovement : MonoBehaviour
         if (player.isGrounded)
         {
             desiredPos = new Vector3(transform.position.x, target.position.y, target.position.z) + offset;
-        }
-
-        if (!player.isDead )
-        {
-        }
-        else
-        {
-
         }
     }
 
