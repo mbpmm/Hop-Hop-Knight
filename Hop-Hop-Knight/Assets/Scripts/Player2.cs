@@ -132,7 +132,7 @@ public class Player2 : MonoBehaviour
             launched = false;
         }
 
-        if (lastGroundState<GameManager.Get().score)
+        if (lastGroundState<GameManager.Get().score && !powerUpActivated)
         {
             FindObjectOfType<CameraMovement>().Advance();
         }
