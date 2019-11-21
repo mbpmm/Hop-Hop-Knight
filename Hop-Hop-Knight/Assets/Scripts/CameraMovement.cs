@@ -45,7 +45,8 @@ public class CameraMovement : MonoBehaviour
 
         if (player.powerUpActivated)
         {
-            transform.position = new Vector3(transform.position.x, target.position.y, target.position.z) + new Vector3(0,0,offset.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y, target.position.z) + new Vector3(0,0,offset.z);
+            transform.Translate(0, 15f * Time.deltaTime, 0);
         }
     }
 
