@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     public Transform target;
-    private Player2 player;
+    private Player player;
     public Transform darknessStart;
     public Vector3 offset;
     public Vector3 desiredPos;
@@ -16,7 +16,7 @@ public class CameraMovement : MonoBehaviour
 
     void Start()
     {
-        player = target.gameObject.GetComponent<Player2>();
+        player = target.gameObject.GetComponent<Player>();
 
         currentAspect= (float)Screen.height / (float)Screen.width;
 
@@ -34,6 +34,8 @@ public class CameraMovement : MonoBehaviour
         }
         desiredPos = new Vector3(transform.position.x, target.position.y, target.position.z) + offset;
         Advance();
+
+        Player.platformTouch += Advance;
     }
     void Update()
     {
@@ -47,6 +49,11 @@ public class CameraMovement : MonoBehaviour
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, target.position.z) + new Vector3(0,0,offset.z);
             transform.Translate(0, 15f * Time.deltaTime, 0);
+        }
+
+        if (player.isDead)
+        {
+            Player.platformTouch -= Advance;
         }
     }
 

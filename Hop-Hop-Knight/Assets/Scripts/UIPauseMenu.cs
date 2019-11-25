@@ -10,7 +10,7 @@ public class UIPauseMenu : MonoBehaviour
     public Image[] powerBarLevel;
     public GameObject player;
     private Rigidbody2D playerRB;
-    private Player2 playerScript;
+    private Player playerScript;
     public Slider dragSlider;
     public Slider powerSlider;
     public Slider gravitySlider;
@@ -20,7 +20,7 @@ public class UIPauseMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerScript = player.GetComponent<Player2>();
+        playerScript = player.GetComponent<Player>();
         playerRB = player.GetComponent<Rigidbody2D>();
         dragSlider.value = playerRB.drag;
         powerSlider.value = playerScript.power;

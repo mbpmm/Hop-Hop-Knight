@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-public class Player2 : MonoBehaviour
+public class Player : MonoBehaviour
 {
 
     public delegate void OnPlayerAction();
@@ -121,7 +121,6 @@ public class Player2 : MonoBehaviour
             Invoke("ActivateMira", 0.1f);
         }
     }
-    int lastGroundState = 0;
     void Update()
     {
         MiraUpdate();
@@ -131,16 +130,6 @@ public class Player2 : MonoBehaviour
         {
             launched = false;
         }
-
-        if (lastGroundState<GameManager.Get().score && !powerUpActivated)
-        {
-            FindObjectOfType<CameraMovement>().Advance();
-        }
-
-        //if (Input.GetMouseButtonDown(0))
-        //{
-        //    animator.SetTrigger("PreJ");
-        //}
 
         if (Input.GetMouseButtonDown(0) && isGrounded && !isDead && !powerUpActivated)
         {
@@ -241,8 +230,6 @@ public class Player2 : MonoBehaviour
         }
         
         velocityFrameAnt = rbody.velocity;
-
-        lastGroundState = GameManager.Get().score;
     }
 
     public void DeactivatePU()
@@ -355,7 +342,7 @@ public class Player2 : MonoBehaviour
         if (collision.gameObject.tag == "Gem")
         {
             cantGemas++;
-            collision.gameObject.SetActive(false);
+            //collision.gameObject.SetActive(false);
         }
     }
 

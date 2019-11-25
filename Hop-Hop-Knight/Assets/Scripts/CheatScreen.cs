@@ -8,13 +8,13 @@ public class CheatScreen : MonoBehaviour
 {
     public GameObject cheatScreen;
     public GameObject player;
-    private Player2 playerScript;
+    private Player playerScript;
     public Toggle invulnerabilidad;
     private int timesTouched;
     // Start is called before the first frame update
     void Start()
     {
-        playerScript = player.GetComponent<Player2>();
+        playerScript = player.GetComponent<Player>();
     }
 
     // Update is called once per frame

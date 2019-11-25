@@ -7,13 +7,13 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonobehaviourSingleton<GameManager>
 {
     public int score;
-    public Player2 player;
+    public Player player;
     public GameObject playerGO;
     // Start is called before the first frame update
     void Start()
     {
-        Player2.platformTouch += AddScore;
-        Player2.playerDeath += PlayerDied;
+        Player.platformTouch += AddScore;
+        Player.playerDeath += PlayerDied;
     }
     private void Update()
     {

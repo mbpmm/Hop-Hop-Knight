@@ -5,15 +5,12 @@ using UnityEngine;
 public class Arrows : MonoBehaviour
 {
     public GameObject gameManager;
-    public GameObject posCenter;
-    public GameObject posLeft;
-    public GameObject posRight;
     public GameObject arrows;
-    public GameObject posCenterWarning;
-    public GameObject posLeftWarning;
-    public GameObject posRightWarning;
     public GameObject warningSign;
     private GameObject warningAux;
+    public GameObject[] positions;
+    public GameObject[] warningPositions;
+
     public float warningTime;
     private int lastLevelSpikes;
     public bool aux;
@@ -42,34 +39,14 @@ public class Arrows : MonoBehaviour
     void DropArrow()
     {
         GameObject arrowAux;
-
-        if (rnd == 1)
-            arrowAux = Instantiate(arrows, posCenter.transform.position, Quaternion.Euler(new Vector3(0,0,90)));
-        else if(rnd==2)
-            arrowAux = Instantiate(arrows, posLeft.transform.position, Quaternion.Euler(new Vector3(0, 0, 90)));
-        else if (rnd == 0)
-            arrowAux = Instantiate(arrows, posRight.transform.position, Quaternion.Euler(new Vector3(0, 0, 90)));
+        arrowAux = Instantiate(arrows, positions[rnd].transform.position, Quaternion.Euler(new Vector3(0,0,90)));
     }
 
     void ShowSign()
     {
-        if (rnd == 1)
-        {
-            warningAux = Instantiate(warningSign, posCenterWarning.transform.position, Quaternion.identity);
-            warningAux.transform.SetParent(posCenterWarning.transform);
-        }
-        else if (rnd == 2)
-        {
-            warningAux = Instantiate(warningSign, posLeftWarning.transform.position, Quaternion.identity);
-            warningAux.transform.SetParent(posLeftWarning.transform);
-        }
-        else if (rnd == 0)
-        {
-            warningAux = Instantiate(warningSign, posRightWarning.transform.position, Quaternion.identity);
-            warningAux.transform.SetParent(posRightWarning.transform);
-        }
+        warningAux = Instantiate(warningSign, warningPositions[rnd].transform.position, Quaternion.identity);
+        warningAux.transform.SetParent(positions[rnd].transform);
 
         Destroy(warningAux, warningTime);
-            
     }
 }
