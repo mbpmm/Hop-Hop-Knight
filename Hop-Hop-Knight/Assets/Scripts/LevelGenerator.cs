@@ -6,10 +6,13 @@ public class LevelGenerator : MonoBehaviour
 {
     public GameObject block;
     public Transform generationPoint;
-    public float randomBlock;
+    public int randomBlock;
     public float gemRate;
     private bool hasGem;
     public float timerPULG;
+    public int maxEasy = 6;
+    public int maxMedium = 13;
+    public int maxHard = 17;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,53 +29,83 @@ public class LevelGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.Get().score == 0 )
-        {
-            if (transform.position.y < generationPoint.position.y-8f)
-            {
-                transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
-                randomBlock = 3;
-                GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
+        //if (GameManager.Get().score == 0 )
+        //{
+        //    if (transform.position.y < generationPoint.position.y-8f)
+        //    {
+        //        transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
+        //        randomBlock = 3;
+        //        GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
 
-                go.transform.position = transform.position;
-            }
+        //        go.transform.position = transform.position;
+        //    }
             
-        }
-        else if ((GameManager.Get().score > 0 && GameManager.Get().score < 15) && !GameManager.Get().player.powerUpActivated)
+        //}
+        //else if ((GameManager.Get().score > 0 && GameManager.Get().score < 15) && !GameManager.Get().player.powerUpActivated)
+        //{
+        //    timerPULG = 0;
+        //    if (transform.position.y < generationPoint.position.y)
+        //    {
+        //        transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
+        //        randomBlock = Random.Range(1, 6);
+        //        GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
+        //        HasGem();
+        //        go.transform.position = transform.position;
+        //    }
+        //}
+        //else if ((GameManager.Get().score >= 15 && GameManager.Get().score < 30) && !GameManager.Get().player.powerUpActivated)
+        //{
+        //    timerPULG = 0;
+        //    if (transform.position.y < generationPoint.position.y)
+        //    {
+        //        transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
+        //        randomBlock = Random.Range(1, 13);
+        //        GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
+        //        HasGem();
+        //        go.transform.position = transform.position;
+        //    }
+        //}
+        //else if (GameManager.Get().score >= 30 && !GameManager.Get().player.powerUpActivated)
+        //{
+        //    timerPULG = 0;
+        //    if (transform.position.y < generationPoint.position.y)
+        //    {
+        //        transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
+        //        randomBlock = Random.Range(1, 17);
+        //        GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
+        //        HasGem();
+        //        go.transform.position = transform.position;
+        //    }
+        //}
+
+        if (GameManager.Get().score >= 0 && !GameManager.Get().player.powerUpActivated)
         {
             timerPULG = 0;
-            if (transform.position.y < generationPoint.position.y)
+            randomBlock = 3;
+            if ((GameManager.Get().score > 0 && GameManager.Get().score < 15))
+            {
+                randomBlock = Random.Range(1, maxEasy);
+            }
+            if ((GameManager.Get().score >= 15 && GameManager.Get().score < 30))
+            {
+                randomBlock = Random.Range(1, maxMedium);
+            }
+            if (GameManager.Get().score >= 30)
+            {
+                randomBlock = Random.Range(1, maxHard);
+            }
+
+            if (transform.position.y < generationPoint.position.y - 8f)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
-                randomBlock = Random.Range(1, 6);
                 GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
-                HasGem();
+                if (GameManager.Get().score > 0)
+                {
+                    HasGem();
+                }
                 go.transform.position = transform.position;
             }
-        }
-        else if ((GameManager.Get().score >= 15 && GameManager.Get().score < 30) && !GameManager.Get().player.powerUpActivated)
-        {
-            timerPULG = 0;
-            if (transform.position.y < generationPoint.position.y)
-            {
-                transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
-                randomBlock = Random.Range(1, 13);
-                GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
-                HasGem();
-                go.transform.position = transform.position;
-            }
-        }
-        else if (GameManager.Get().score >= 30 && !GameManager.Get().player.powerUpActivated)
-        {
-            timerPULG = 0;
-            if (transform.position.y < generationPoint.position.y)
-            {
-                transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
-                randomBlock = Random.Range(1, 17);
-                GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
-                HasGem();
-                go.transform.position = transform.position;
-            }
+
         }
 
         if (GameManager.Get().player.powerUpActivated)
@@ -80,7 +113,6 @@ public class LevelGenerator : MonoBehaviour
             timerPULG += Time.deltaTime;
             if (transform.position.y < generationPoint.position.y)
             {
-                
                 transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
                 if (timerPULG < GameManager.Get().player.totalTimePU-0.5f)
                 {
