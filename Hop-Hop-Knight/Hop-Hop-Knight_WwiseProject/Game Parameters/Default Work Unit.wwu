@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{242170DE-D90C-4CFA-85C4-4369AC500566}" SchemaVersion="94">
+<WwiseDocument Type="WorkUnit" ID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}" SchemaVersion="94">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{242170DE-D90C-4CFA-85C4-4369AC500566}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="volume_music" ID="{AA45939A-CEE8-4F36-ADDD-CEC6E02EB90D}"/>
+				<GameParameter Name="volume_sfx" ID="{BD05C201-F762-470A-B477-40E9B0D6FB9E}"/>
+				<GameParameter Name="velocity_jump" ID="{26711F8B-E964-46B7-9576-3C794A1F9396}"/>
+				<GameParameter Name="distance_tentacle" ID="{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}"/>
+				<GameParameter Name="distance_gem_to_powerbar" ID="{7EE4E0A6-BD02-43B1-8ADB-E28F8AB3A0FA}"/>
+				<GameParameter Name="floor_number" ID="{09461037-B19D-4369-906E-CB4F5A99AA7D}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{3A0DF080-BE06-4229-89F9-B5872717E84D}" SchemaVersion="94">
+<WwiseDocument Type="WorkUnit" ID="{BF88A622-63C2-4B94-8505-42A50FA6F1E8}" SchemaVersion="94">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{3A0DF080-BE06-4229-89F9-B5872717E84D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{BF88A622-63C2-4B94-8505-42A50FA6F1E8}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="menu_screen" ID="{3E1DAA80-2BC9-4BA0-B60E-577B44E5F998}">
+					<ChildrenList>
+						<State Name="None" ID="{9B39799A-BA28-4531-A04E-F2BDE9BB6421}"/>
+						<State Name="menu" ID="{09EDFD27-A48F-4328-8037-47EFE3B809D9}"/>
+						<State Name="credits" ID="{BE9A8535-A131-4F62-9D43-47F374681E4A}"/>
+						<State Name="config" ID="{21A440EA-EAD4-46D0-AFF8-EAECEB108C99}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="player" ID="{E68E1284-45D8-423D-963A-255A39C8534E}">
+					<ChildrenList>
+						<State Name="None" ID="{9F5E1ACD-9C69-4196-9B81-C7CB8D737B75}"/>
+						<State Name="alive" ID="{32DE1AA7-312B-43BF-973E-22F9BAAC529F}"/>
+						<State Name="dead" ID="{6D8DAF9D-2166-4310-97C9-66F34B631362}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="ingame" ID="{7C48FE1A-1ADE-42A3-8E26-0EC5E5E69D86}">
+					<ChildrenList>
+						<State Name="None" ID="{5D6C69C7-E5E2-460A-A034-2ACDB6AF3C56}"/>
+						<State Name="play" ID="{2495BA82-9647-41EA-931E-DE727C31889E}"/>
+						<State Name="pause" ID="{606DA000-F6DE-4DE1-B854-58E7E5DED81E}"/>
+						<State Name="ghost" ID="{AFDBBF27-BB57-4EA8-938A-AC702A03A6A1}"/>
+						<State Name="score" ID="{B1030D0F-0A75-47F0-9A67-8B44BAC8B3BF}"/>
+						<State Name="powerup" ID="{689820FE-30B4-4A24-B6E6-1DC82957CF23}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>
