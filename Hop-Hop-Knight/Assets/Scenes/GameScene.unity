@@ -544,6 +544,7 @@ MonoBehaviour:
   generationPoint: {fileID: 424970290}
   randomBlock: 0
   gemRate: 0.84
+  timerPULG: 0
 --- !u!1 &205536390
 GameObject:
   m_ObjectHideFlags: 0
@@ -9346,6 +9347,11 @@ PrefabInstance:
         type: 3}
       propertyPath: totalTimePU
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7988497065375096708, guid: d6560371192199948940a5316245f3e4,
+        type: 3}
+      propertyPath: checkRadius
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 7988497066353574839, guid: d6560371192199948940a5316245f3e4,
         type: 3}

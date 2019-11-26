@@ -148,7 +148,7 @@ public class Player : MonoBehaviour
         if (Input.GetMouseButtonUp(0) && !launched && !isDead)
         {
             hideMira = true;
-            animator.SetTrigger("PreJ");
+            //animator.SetTrigger("PreJ");
             miraVisual.gameObject.SetActive(false);
             launched = true;
             endpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -235,6 +235,7 @@ public class Player : MonoBehaviour
     public void DeactivatePU()
     {
         powerUpActivated = false;
+        timerPU = 0;
     }
 
     void LaunchPlayer()

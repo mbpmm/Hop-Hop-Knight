@@ -9,6 +9,7 @@ public class LevelGenerator : MonoBehaviour
     public float randomBlock;
     public float gemRate;
     private bool hasGem;
+    public float timerPULG;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,8 +38,9 @@ public class LevelGenerator : MonoBehaviour
             }
             
         }
-        else if (GameManager.Get().score > 0 && GameManager.Get().score < 10)
+        else if ((GameManager.Get().score > 0 && GameManager.Get().score < 15) && !GameManager.Get().player.powerUpActivated)
         {
+            timerPULG = 0;
             if (transform.position.y < generationPoint.position.y)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
@@ -48,8 +50,9 @@ public class LevelGenerator : MonoBehaviour
                 go.transform.position = transform.position;
             }
         }
-        else if (GameManager.Get().score >= 10 && GameManager.Get().score < 20)
+        else if ((GameManager.Get().score >= 15 && GameManager.Get().score < 30) && !GameManager.Get().player.powerUpActivated)
         {
+            timerPULG = 0;
             if (transform.position.y < generationPoint.position.y)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
@@ -59,14 +62,35 @@ public class LevelGenerator : MonoBehaviour
                 go.transform.position = transform.position;
             }
         }
-        else if (GameManager.Get().score >= 20 )
+        else if (GameManager.Get().score >= 30 && !GameManager.Get().player.powerUpActivated)
         {
+            timerPULG = 0;
             if (transform.position.y < generationPoint.position.y)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
                 randomBlock = Random.Range(1, 17);
                 GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
                 HasGem();
+                go.transform.position = transform.position;
+            }
+        }
+
+        if (GameManager.Get().player.powerUpActivated)
+        {
+            timerPULG += Time.deltaTime;
+            if (transform.position.y < generationPoint.position.y)
+            {
+                
+                transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
+                if (timerPULG < GameManager.Get().player.totalTimePU-0.5f)
+                {
+                    randomBlock = Random.Range(1, 17);
+                }
+                else
+                {
+                    randomBlock = 3;
+                }
+                GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
                 go.transform.position = transform.position;
             }
         }

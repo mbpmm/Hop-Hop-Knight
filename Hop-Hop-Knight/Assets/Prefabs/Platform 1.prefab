@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7489361499607180551}
   - component: {fileID: 1444422951383689676}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: ScoreZone
   m_TagString: Score
   m_Icon: {fileID: 0}
