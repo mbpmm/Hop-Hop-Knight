@@ -1,0 +1,36 @@
+Event	ID	Name			Wwise Object Path	Notes
+	12137035	ui_home			\Default Work Unit\ui_home	
+	40631397	trap_arrows			\Default Work Unit\trap_arrows	
+	52976355	player_grab_gem			\Default Work Unit\player_grab_gem	
+	104469174	ui_ingame_highscore			\Default Work Unit\ui_ingame_highscore	
+	157712808	ui_ingame_score_off			\Default Work Unit\ui_ingame_score_off	
+	584352822	trap_spikes			\Default Work Unit\trap_spikes	
+	590715968	player_release			\Default Work Unit\player_release	
+	676410594	powerup_start			\Default Work Unit\powerup_start	
+	733168346	game_start			\Default Work Unit\game_start	
+	952138190	ui_pause_off			\Default Work Unit\ui_pause_off	
+	1098871033	enemy_plant			\Default Work Unit\enemy_plant	
+	1170205103	ui_ingame_hand			\Default Work Unit\ui_ingame_hand	
+	1542330065	player_die			\Default Work Unit\player_die	
+	1731872944	ui_pause_on			\Default Work Unit\ui_pause_on	
+	1974222287	enemy_ghost			\Default Work Unit\enemy_ghost	
+	2249769530	ui_click			\Default Work Unit\ui_click	
+	2582092671	enemy_blob			\Default Work Unit\enemy_blob	
+	2768764968	enemy_bat1			\Default Work Unit\enemy_bat1	
+	2768764971	enemy_bat2			\Default Work Unit\enemy_bat2	
+	2850178896	ui_ingame_warning			\Default Work Unit\ui_ingame_warning	
+	2961968006	ui_menu_start			\Default Work Unit\ui_menu_start	
+	2967661922	ui_ingame_score			\Default Work Unit\ui_ingame_score	
+	2993297310	player_touch			\Default Work Unit\player_touch	
+	3064100384	trap_tentacles			\Default Work Unit\trap_tentacles	
+	3131684436	ui_menu_credits			\Default Work Unit\ui_menu_credits	
+	3239602367	player_wings			\Default Work Unit\player_wings	
+	3550371055	trap_platform_close			\Default Work Unit\trap_platform_close	
+	3584997169	powerup_end			\Default Work Unit\powerup_end	
+	3629196698	player_land			\Default Work Unit\player_land	
+	4293073065	trap_platform_open			\Default Work Unit\trap_platform_open	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	230413577	trap_arrows	C:\Users\Administrador\Documents\GitHub\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\SFX\trap_arrows_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Traps\trap_arrows		267824
+	951430034	UI_menu_start	C:\Users\Administrador\Documents\GitHub\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\SFX\ui_menu_play_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Menu\UI_menu_start		821552
+

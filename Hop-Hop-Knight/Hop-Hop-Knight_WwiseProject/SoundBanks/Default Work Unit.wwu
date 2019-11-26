@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{D0547CBD-6357-46CC-A222-6BCE96675EF8}" SchemaVersion="94">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{D0547CBD-6357-46CC-A222-6BCE96675EF8}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{D0547CBD-6357-46CC-A222-6BCE96675EF8}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{78E02100-5A19-4702-8429-A3F1BECFB59B}">
+					<ObjectInclusionList>
+						<ObjectRef Name="ui_ingame_warning" ID="{73258A54-B373-4037-BC10-46551403091B}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="player_release" ID="{A9B777CB-0A2B-406C-866B-A1ECF68F2DDB}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="player_land" ID="{039C5A30-6233-40E8-A4B6-3C3084408E8A}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="player_wings" ID="{E603A4DE-EBD9-415B-98B1-9073D40E1935}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="player_touch" ID="{2C98039F-9EE8-427D-87F8-A4D33CD58201}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="enemy_blob" ID="{E4D1E1FA-BAE7-42CC-8D6D-40BE3465D260}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ui_ingame_highscore" ID="{5D295C08-607E-4316-BAD1-649074F5C685}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ui_home" ID="{81D507B7-3B19-43D6-9DC0-85599D9BF2D2}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="trap_arrows" ID="{EFCB9218-E943-4440-80D1-86EEDA82445D}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="player_grab_gem" ID="{A250C783-E995-44B1-8E26-F07B4AF5950E}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ui_menu_credits" ID="{772A466F-03D4-44ED-9EAA-F1FC6FCB285E}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="game_start" ID="{A7545A09-46E6-4561-8008-07D224946F78}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ui_pause_off" ID="{4456BDDE-78F0-46EC-BCC4-149E6479DB36}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="trap_platform_open" ID="{3E301F7C-75C6-4744-B3CF-51F223BD8742}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="trap_spikes" ID="{19BC56A3-101C-475D-ABD1-BE2CD91A33D7}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="enemy_bat2" ID="{EEB230E9-7C6D-4869-8E94-FB689996083B}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="trap_platform_close" ID="{21F999B7-33A5-48AE-89C4-6D29B6FCEC43}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ui_ingame_score_off" ID="{A7463DB6-8C55-48E3-904A-81A9E2F1BBC8}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ui_pause_on" ID="{10A147B5-584C-4930-99B3-59CE53F81E2F}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="enemy_plant" ID="{5CECFE0F-98FE-4969-9728-2FF5E15154B0}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="powerup_start" ID="{E62FB467-D086-4A40-8651-9DC5114C6134}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="enemy_ghost" ID="{07C3B47F-7769-4A48-9A76-0099C6EFC295}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ui_ingame_score" ID="{5601E053-2EEB-4A62-BDD7-91B15BAAB770}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="enemy_bat1" ID="{34C9B9C8-0CA5-4B0A-89AF-736CFA2938A9}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="powerup_end" ID="{7DA0414C-EAD2-4C73-B39E-917CB52157FF}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ui_ingame_hand" ID="{C208B5D0-A510-4CB1-AFF2-0C32410BBE96}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ui_menu_start" ID="{89ED94D6-6F78-4CC7-B769-BCFBC863918C}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="player_die" ID="{600796D5-2192-4E6C-8816-780FAB51AEA8}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ui_click" ID="{31D9D2B3-896D-4F60-B7BD-407459BE73B9}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="trap_tentacles" ID="{1D10AFE7-9940-4FBA-8BB3-00F5D3E2B944}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>
