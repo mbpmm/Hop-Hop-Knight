@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -5380,6 +5380,9 @@ MonoBehaviour:
       type: 3}
     amountToPool: 5
   - objectToPool: {fileID: 6398016911770423741, guid: 4001bdfc1e681f145b5dcf40403c84f8,
+      type: 3}
+    amountToPool: 6
+  - objectToPool: {fileID: 5000821899211640431, guid: 2199a4ebe21be804aa0f8c130c4492f1,
       type: 3}
     amountToPool: 6
   pooledObjects: []

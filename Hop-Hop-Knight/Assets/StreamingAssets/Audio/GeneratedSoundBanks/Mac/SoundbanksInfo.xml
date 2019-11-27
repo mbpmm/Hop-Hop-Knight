@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
+	<RootPaths>
+		<ProjectRoot>C:\Users\maria\OneDrive\Documentos\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\maria\OneDrive\Documentos\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\maria\OneDrive\Documentos\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\maria\OneDrive\Documentos\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2768764968" Name="enemy_bat1" ObjectPath="\Events\Default Work Unit\enemy_bat1" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2768764971" Name="enemy_bat2" ObjectPath="\Events\Default Work Unit\enemy_bat2" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2582092671" Name="enemy_blob" ObjectPath="\Events\Default Work Unit\enemy_blob" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1974222287" Name="enemy_ghost" ObjectPath="\Events\Default Work Unit\enemy_ghost" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1098871033" Name="enemy_plant" ObjectPath="\Events\Default Work Unit\enemy_plant" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="733168346" Name="game_start" ObjectPath="\Events\Default Work Unit\game_start" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1542330065" Name="player_die" ObjectPath="\Events\Default Work Unit\player_die" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="52976355" Name="player_grab_gem" ObjectPath="\Events\Default Work Unit\player_grab_gem" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3629196698" Name="player_land" ObjectPath="\Events\Default Work Unit\player_land" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="590715968" Name="player_release" ObjectPath="\Events\Default Work Unit\player_release" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2993297310" Name="player_touch" ObjectPath="\Events\Default Work Unit\player_touch" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3239602367" Name="player_wings" ObjectPath="\Events\Default Work Unit\player_wings" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3584997169" Name="powerup_end" ObjectPath="\Events\Default Work Unit\powerup_end" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="676410594" Name="powerup_start" ObjectPath="\Events\Default Work Unit\powerup_start" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="40631397" Name="trap_arrows" ObjectPath="\Events\Default Work Unit\trap_arrows" DurationType="OneShot" DurationMin="1.394583" DurationMax="1.394583"/>
+				<Event Id="3550371055" Name="trap_platform_close" ObjectPath="\Events\Default Work Unit\trap_platform_close" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4293073065" Name="trap_platform_open" ObjectPath="\Events\Default Work Unit\trap_platform_open" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="584352822" Name="trap_spikes" ObjectPath="\Events\Default Work Unit\trap_spikes" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3064100384" Name="trap_tentacles" ObjectPath="\Events\Default Work Unit\trap_tentacles" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2249769530" Name="ui_click" ObjectPath="\Events\Default Work Unit\ui_click" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="12137035" Name="ui_home" ObjectPath="\Events\Default Work Unit\ui_home" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1170205103" Name="ui_ingame_hand" ObjectPath="\Events\Default Work Unit\ui_ingame_hand" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="104469174" Name="ui_ingame_highscore" ObjectPath="\Events\Default Work Unit\ui_ingame_highscore" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2967661922" Name="ui_ingame_score" ObjectPath="\Events\Default Work Unit\ui_ingame_score" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="157712808" Name="ui_ingame_score_off" ObjectPath="\Events\Default Work Unit\ui_ingame_score_off" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2850178896" Name="ui_ingame_warning" ObjectPath="\Events\Default Work Unit\ui_ingame_warning" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3131684436" Name="ui_menu_credits" ObjectPath="\Events\Default Work Unit\ui_menu_credits" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2961968006" Name="ui_menu_start" ObjectPath="\Events\Default Work Unit\ui_menu_start" DurationType="OneShot" DurationMin="4.278584" DurationMax="4.278584"/>
+				<Event Id="952138190" Name="ui_pause_off" ObjectPath="\Events\Default Work Unit\ui_pause_off" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1731872944" Name="ui_pause_on" ObjectPath="\Events\Default Work Unit\ui_pause_on" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="230413577" Language="SFX">
+					<ShortName>trap_arrows_1.wav</ShortName>
+					<Path>SFX\trap_arrows_1_10C4C929.wem</Path>
+				</File>
+				<File Id="951430034" Language="SFX">
+					<ShortName>ui_menu_play.wav</ShortName>
+					<Path>SFX\ui_menu_play_10C4C929.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

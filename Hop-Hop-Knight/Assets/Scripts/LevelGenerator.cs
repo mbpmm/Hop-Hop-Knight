@@ -10,9 +10,9 @@ public class LevelGenerator : MonoBehaviour
     public float gemRate;
     private bool hasGem;
     public float timerPULG;
-    public int maxEasy = 6;
-    public int maxMedium = 13;
-    public int maxHard = 17;
+    public int maxEasy = 7;
+    public int maxMedium = 14;
+    public int maxHard = 19;
     // Start is called before the first frame update
     void Start()
     {

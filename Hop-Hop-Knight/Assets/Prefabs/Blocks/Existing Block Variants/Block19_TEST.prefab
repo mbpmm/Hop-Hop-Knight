@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block19_TEST
       objectReference: {fileID: 0}
+    - target: {fileID: 2264730267315614319, guid: 1d160da60b89d7e4ca6cd46c0a875228,
+        type: 3}
+      propertyPath: m_TagString
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 1586170577445403931, guid: 1d160da60b89d7e4ca6cd46c0a875228,
         type: 3}
       propertyPath: m_LocalPosition.x
