@@ -17,21 +17,21 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 0045439b9a1d5e4dadb0f3cf624c9a7a
     GuidInternal: 
-    m_lastTime: -8586268062876043674
+    m_lastTime: -8586267326939768292
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 7bc4049f00399649b243228ca2bd4d0c
     GuidInternal: 
-    m_lastTime: -8586268062876790253
+    m_lastTime: -8586267326940526219
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: bd7c54d05763cc46a2226bce96675ef8
     GuidInternal: 
-    m_lastTime: -8586268062876208720
+    m_lastTime: -8586267326940276882
     List:
     - name: Main
       guid: 0021e078195a02478429a3f1becfb59b
@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d8b9ad9780102b4f9d64a9a8ce529b1e
     GuidInternal: 
-    m_lastTime: -8586268062877808602
+    m_lastTime: -8586267326940735968
     List:
     - name: enemy_bat1
       guid: c8b9c934a50c0a4b89af736cfa2938a9
@@ -59,8 +59,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\enemy_bat1
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: enemy_bat2
       guid: e930b2ee6d7c69488e94fb689996083b
       id: 2768764971
@@ -71,8 +71,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\enemy_bat2
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: enemy_blob
       guid: fae1d1e4e7bacc428d6d40be3465d260
       id: 2582092671
@@ -83,8 +83,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\enemy_blob
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: enemy_ghost
       guid: 7fb4c3076977484a9a760099c6efc295
       id: 1974222287
@@ -95,8 +95,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\enemy_ghost
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: enemy_plant
       guid: 0ffeec5cfe98694997282ff5e15154b0
       id: 1098871033
@@ -107,8 +107,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\enemy_plant
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: game_start
       guid: 095a54a7e6466145800807d224946f78
       id: 733168346
@@ -119,8 +119,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\game_start
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: player_die
       guid: d596076092216c4e8816780fab51aea8
       id: 1542330065
@@ -131,8 +131,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\player_die
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: player_grab_gem
       guid: 83c750a295e9b1448e26f07b4af5950e
       id: 52976355
@@ -143,8 +143,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\player_grab_gem
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: player_land
       guid: 305a9c033362e840a4b63c3084408e8a
       id: 3629196698
@@ -155,8 +155,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\player_land
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: player_release
       guid: cb77b7a92b0a6c40866ba1ecf68f2ddb
       id: 590715968
@@ -167,8 +167,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\player_release
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: player_touch
       guid: 9f03982ce89e7d4287f8a4d33cd58201
       id: 2993297310
@@ -179,8 +179,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\player_touch
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: player_wings
       guid: dea403e6d9eb5b4198b19073d40e1935
       id: 3239602367
@@ -191,8 +191,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\player_wings
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: powerup_end
       guid: 4c41a07dd2ea734cb39e917cb52157ff
       id: 3584997169
@@ -203,8 +203,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\powerup_end
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: powerup_start
       guid: 67b42fe686d0404a86519dc5114c6134
       id: 676410594
@@ -215,8 +215,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\powerup_start
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: trap_arrows
       guid: 1892cbef43e9404480d186eeda82445d
       id: 40631397
@@ -227,8 +227,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\trap_arrows
       maxAttenuation: 0
-      maxDuration: 1.394583
-      minDuration: 1.394583
+      maxDuration: -1
+      minDuration: -1
     - name: trap_platform_close
       guid: b799f921a533ae4889c46d29b6fcec43
       id: 3550371055
@@ -239,8 +239,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\trap_platform_close
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: trap_platform_open
       guid: 7c1f303ec6754447b3cf51f223bd8742
       id: 4293073065
@@ -251,8 +251,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\trap_platform_open
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: trap_spikes
       guid: a356bc191c105d47abd1be2cd91a33d7
       id: 584352822
@@ -263,8 +263,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\trap_spikes
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: trap_tentacles
       guid: e7af101d4099ba4f8bb300f5d3e2b944
       id: 3064100384
@@ -275,8 +275,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\trap_tentacles
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: ui_click
       guid: b3d2d9316d89604fb7bd407459be73b9
       id: 2249769530
@@ -287,8 +287,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\ui_click
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: ui_home
       guid: b707d581193bd6439dc085599d9bf2d2
       id: 12137035
@@ -299,8 +299,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\ui_home
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: ui_ingame_hand
       guid: d0b508c210a5b14caff20c32410bbe96
       id: 1170205103
@@ -311,8 +311,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\ui_ingame_hand
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: ui_ingame_highscore
       guid: 085c295d7e601643bad1649074f5c685
       id: 104469174
@@ -323,8 +323,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\ui_ingame_highscore
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: ui_ingame_score
       guid: 53e00156eb2e624abdd791b15baab770
       id: 2967661922
@@ -335,8 +335,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\ui_ingame_score
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: ui_ingame_score_off
       guid: b63d46a7558ce348904a81a9e2f1bbc8
       id: 157712808
@@ -347,8 +347,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\ui_ingame_score_off
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: ui_ingame_warning
       guid: 548a257373b33740bc1046551403091b
       id: 2850178896
@@ -359,8 +359,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\ui_ingame_warning
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: ui_menu_credits
       guid: 6f462a77d403ed449eaaf1fc6fcb285e
       id: 3131684436
@@ -371,8 +371,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\ui_menu_credits
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: ui_menu_start
       guid: d694ed89786fc74cb769bcfbc863918c
       id: 2961968006
@@ -383,8 +383,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\ui_menu_start
       maxAttenuation: 0
-      maxDuration: 4.278584
-      minDuration: 4.278584
+      maxDuration: -1
+      minDuration: -1
     - name: ui_pause_off
       guid: debd5644f078ec46bcc4149e6479db36
       id: 952138190
@@ -395,8 +395,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\ui_pause_off
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: ui_pause_on
       guid: b547a1104c58304999b359ce53f81e2f
       id: 1731872944
@@ -407,14 +407,14 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\ui_pause_on
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 08af918ee41a90438e9caf483bd4279d
     GuidInternal: 
-    m_lastTime: -8586268062877774074
+    m_lastTime: -8586267326940177146
     List:
     - name: distance_gem_to_powerbar
       guid: a6e0e47e02bdb1438adbe28f8ab3a0fa
@@ -475,7 +475,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 22a688bfc263944b850542a50fa6f1e8
     GuidInternal: 
-    m_lastTime: -8586268062876134652
+    m_lastTime: -8586267326940446419
     List:
     - name: ingame
       guid: 1afe487cde1aa3428e260ec5e5e69d86
@@ -599,14 +599,14 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 9df82dc1e9a7f2459ad157bcf9e99737
     GuidInternal: 
-    m_lastTime: -8586268062876115797
+    m_lastTime: -8586267326940366640
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 5133e24cd9d4c84d8b32e2d9c005eeb8
     GuidInternal: 
-    m_lastTime: -8586268062876083847
+    m_lastTime: -8586267326939070413
     List: []
   ExpandedItems:
   - /Hop-Hop-Knight_WwiseProject

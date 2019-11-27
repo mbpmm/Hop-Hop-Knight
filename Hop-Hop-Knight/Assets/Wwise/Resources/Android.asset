@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 50b08e8b4a9a2684bb23a7718391b2c2, type: 3}
-  m_Name: Windows
+  m_Script: {fileID: 11500000, guid: 381adde47c28e8d4eaca785a985a760c, type: 3}
+  m_Name: Android
   m_EditorClassIdentifier: 
   IgnorePropertyNameList: []
   GlobalPropertyNameList:
@@ -27,9 +27,6 @@ MonoBehaviour:
   - UserSettings.m_SamplesPerFrame
   - UserSettings.m_MainOutputSettings.m_AudioDeviceShareset
   - UserSettings.m_MainOutputSettings.m_DeviceID
-  - UserSettings.m_MainOutputSettings.m_PanningRule
-  - UserSettings.m_MainOutputSettings.m_ChannelConfig.m_ChannelConfigType
-  - UserSettings.m_MainOutputSettings.m_ChannelConfig.m_ChannelMask
   - UserSettings.m_MainOutputSettings.m_ChannelConfig.m_NumberOfChannels
   - UserSettings.m_StreamingLookAheadRatio
   - UserSettings.m_StreamManagerPoolSize
@@ -75,10 +72,10 @@ MonoBehaviour:
     m_MainOutputSettings:
       m_AudioDeviceShareset: 
       m_DeviceID: 0
-      m_PanningRule: 0
+      m_PanningRule: 1
       m_ChannelConfig:
-        m_ChannelConfigType: 0
-        m_ChannelMask: 0
+        m_ChannelConfigType: 1
+        m_ChannelMask: 3
         m_NumberOfChannels: 0
     m_StreamingLookAheadRatio: 1
     m_StreamManagerPoolSize: 65536
@@ -106,8 +103,7 @@ MonoBehaviour:
       m_DiffractionShadowAttenuationFactor: 2
       m_DiffractionShadowDegrees: 30
     m_RenderDuringFocusLoss: 0
-    m_AudioAPI: -1
-    m_GlobalFocus: 1
+    m_RoundFrameSizeToHardwareSize: 1
   CommsSettings:
     m_PoolSize: 262144
     m_DiscoveryBroadcastPort: 24024
