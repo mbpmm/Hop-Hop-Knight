@@ -5,14 +5,18 @@
 			<PropertyList>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
-					<ValueList/>
+					<ValueList>
+						<Value Platform="Android"></Value>
+					</ValueList>
 				</Property>
 				<Property Name="ExternalSourcesOutputPath" Type="string">
-					<ValueList/>
+					<ValueList>
+						<Value Platform="Android">GeneratedSoundBanks\Android\</Value>
+					</ValueList>
 				</Property>
 				<Property Name="Game Profiler\Voice Monitor\LastBus" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="General\LatestLanguage" Type="int32" Value="684519430"/>
-				<Property Name="General\LatestPlatform" Type="string" Value=""/>
+				<Property Name="General\LatestPlatform" Type="string" Value="Android"/>
 				<Property Name="General\SourceControlPluginID" Type="string" Value="{C403A906-0C19-4ED5-808E-748707065301}"/>
 				<Property Name="GenerateSoundBanks\x64_SelectedLanguages" Type="string" Value=""/>
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value=""/>
@@ -64,19 +68,29 @@
 				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value=""/>
 				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
 				<Property Name="SoundBankPaths" Type="string">
-					<ValueList/>
+					<ValueList>
+						<Value Platform="Android">GeneratedSoundBanks\Android\</Value>
+					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
-					<ValueList/>
+					<ValueList>
+						<Value Platform="Android">Copy Streamed Files</Value>
+					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdLines" Type="string">
-					<ValueList/>
+					<ValueList>
+						<Value Platform="Android">"$(WwiseExePath)\CopyStreamedFiles.exe" -info "$(InfoFilePath)" -outputpath "$(SoundBankPath)" -banks "$(SoundBankListAsTextFile)" -languages "$(LanguageList)"</Value>
+					</ValueList>
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdDescription" Type="string">
-					<ValueList/>
+					<ValueList>
+						<Value Platform="Android"></Value>
+					</ValueList>
 				</Property>
 				<Property Name="SoundBankPreGenerateCustomCmdLines" Type="string">
-					<ValueList/>
+					<ValueList>
+						<Value Platform="Android"></Value>
+					</ValueList>
 				</Property>
 			</PropertyList>
 		</UserProjectSettings>
