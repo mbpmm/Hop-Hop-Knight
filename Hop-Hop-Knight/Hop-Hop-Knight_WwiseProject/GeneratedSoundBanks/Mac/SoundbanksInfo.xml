@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Administrador\Documents\GitHub\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Administrador\Documents\GitHub\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Mac\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Administrador\Documents\GitHub\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\maria\OneDrive\Documentos\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\maria\OneDrive\Documentos\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\maria\OneDrive\Documentos\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Administrador\Documents\GitHub\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\maria\OneDrive\Documentos\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>

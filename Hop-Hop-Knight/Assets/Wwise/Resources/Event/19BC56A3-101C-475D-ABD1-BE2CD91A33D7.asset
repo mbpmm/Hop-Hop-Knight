@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d6c5013154280d4fa61169de7446e36, type: 3}
+  m_Name: 19BC56A3-101C-475D-ABD1-BE2CD91A33D7
+  m_EditorClassIdentifier: 
+  objectName: trap_spikes
+  id: 584352822
+  guid: 19BC56A3-101C-475D-ABD1-BE2CD91A33D7

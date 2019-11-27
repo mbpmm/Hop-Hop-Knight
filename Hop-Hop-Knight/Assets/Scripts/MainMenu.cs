@@ -32,7 +32,13 @@ public class MainMenu : MonoBehaviour
 
     public void GoToGame()
     {
+        AkSoundEngine.PostEvent("ui_menu_start", gameObject);
         FadeToLevel(1);
+    }
+
+    public void Credits()
+    {
+        AkSoundEngine.PostEvent("ui_menu_credits", gameObject);
     }
 
     public void QuitApp()

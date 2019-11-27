@@ -29,6 +29,7 @@ public class GameManager : MonobehaviourSingleton<GameManager>
     {
         if (score>PlayerPrefs.GetInt("Highscore",0))
         {
+            AkSoundEngine.PostEvent("ui_ingame_highscore", gameObject);
             PlayerPrefs.SetInt("Highscore", score);
         }
     }

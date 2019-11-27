@@ -128,11 +128,13 @@ public class Player : MonoBehaviour
 
         if (isGrounded)
         {
+            AkSoundEngine.PostEvent("player_land", gameObject);
             launched = false;
         }
 
         if (Input.GetMouseButtonDown(0) && isGrounded && !isDead && !powerUpActivated)
         {
+            AkSoundEngine.PostEvent("player_touch", gameObject);
             hideMira = false;
             Invoke("ActivateMira", 0.1f);
             animator.SetTrigger("PreJ");
@@ -147,6 +149,7 @@ public class Player : MonoBehaviour
 
         if (Input.GetMouseButtonUp(0) && !launched && !isDead)
         {
+            AkSoundEngine.PostEvent("player_release", gameObject);
             hideMira = true;
             miraVisual.gameObject.SetActive(false);
             launched = true;
@@ -202,6 +205,8 @@ public class Player : MonoBehaviour
 
         if (powerUpActivated)
         {
+            AkSoundEngine.PostEvent("player_wings", gameObject);
+            AkSoundEngine.PostEvent("powerup_start", gameObject);
             timerPU += Time.deltaTime;
             transform.Translate(0, 15f*Time.deltaTime, 0);
             rbody.velocity = Vector2.zero;
@@ -233,6 +238,7 @@ public class Player : MonoBehaviour
 
     public void DeactivatePU()
     {
+        AkSoundEngine.PostEvent("powerup_end", gameObject);
         powerUpActivated = false;
         timerPU = 0;
     }
@@ -281,6 +287,7 @@ public class Player : MonoBehaviour
         {
             if (!powerUpActivated)
             {
+                AkSoundEngine.PostEvent("player_die", gameObject);
                 rbody.mass = 0.01f;
                 isDead = true;
                 animator.SetTrigger("IsDead");
@@ -341,6 +348,7 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.tag == "Gem")
         {
+            AkSoundEngine.PostEvent("player_grab_gem", gameObject);
             cantGemas++;
             //collision.gameObject.SetActive(false);
         }
@@ -348,6 +356,7 @@ public class Player : MonoBehaviour
 
     public void PlayDeathScreen()
     {
+        AkSoundEngine.PostEvent("ui_ingame_score", gameObject);
         deathAnim.SetTrigger("OpenDeathScreen");
     }
 

@@ -17,21 +17,21 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 0045439b9a1d5e4dadb0f3cf624c9a7a
     GuidInternal: 
-    m_lastTime: -8586268285945242379
+    m_lastTime: -8586268062876043674
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 7bc4049f00399649b243228ca2bd4d0c
     GuidInternal: 
-    m_lastTime: -8586268285945471774
+    m_lastTime: -8586268062876790253
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: bd7c54d05763cc46a2226bce96675ef8
     GuidInternal: 
-    m_lastTime: -8586268276581152737
+    m_lastTime: -8586268062876208720
     List:
     - name: Main
       guid: 0021e078195a02478429a3f1becfb59b
@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d8b9ad9780102b4f9d64a9a8ce529b1e
     GuidInternal: 
-    m_lastTime: -8586268285945591440
+    m_lastTime: -8586268062877808602
     List:
     - name: enemy_bat1
       guid: c8b9c934a50c0a4b89af736cfa2938a9
@@ -227,8 +227,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\trap_arrows
       maxAttenuation: 0
-      maxDuration: 1394583
-      minDuration: 1394583
+      maxDuration: 1.394583
+      minDuration: 1.394583
     - name: trap_platform_close
       guid: b799f921a533ae4889c46d29b6fcec43
       id: 3550371055
@@ -383,8 +383,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\ui_menu_start
       maxAttenuation: 0
-      maxDuration: 4278584
-      minDuration: 4278584
+      maxDuration: 4.278584
+      minDuration: 4.278584
     - name: ui_pause_off
       guid: debd5644f078ec46bcc4149e6479db36
       id: 952138190
@@ -414,7 +414,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 08af918ee41a90438e9caf483bd4279d
     GuidInternal: 
-    m_lastTime: -8586268285945581477
+    m_lastTime: -8586268062877774074
     List:
     - name: distance_gem_to_powerbar
       guid: a6e0e47e02bdb1438adbe28f8ab3a0fa
@@ -475,7 +475,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 22a688bfc263944b850542a50fa6f1e8
     GuidInternal: 
-    m_lastTime: -8586268285945252352
+    m_lastTime: -8586268062876134652
     List:
     - name: ingame
       guid: 1afe487cde1aa3428e260ec5e5e69d86
@@ -599,25 +599,18 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 9df82dc1e9a7f2459ad157bcf9e99737
     GuidInternal: 
-    m_lastTime: -8586268285945252352
+    m_lastTime: -8586268062876115797
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 5133e24cd9d4c84d8b32e2d9c005eeb8
     GuidInternal: 
-    m_lastTime: -8586268285945252352
+    m_lastTime: -8586268062876083847
     List: []
   ExpandedItems:
   - /Hop-Hop-Knight_WwiseProject
   - /Hop-Hop-Knight_WwiseProject/Events
   - /Hop-Hop-Knight_WwiseProject/Events/Default Work Unit
-  - /Hop-Hop-Knight_WwiseProject/SoundBanks
-  - /Hop-Hop-Knight_WwiseProject/SoundBanks/Default Work Unit
-  - /Hop-Hop-Knight_WwiseProject/States
-  - /Hop-Hop-Knight_WwiseProject/States/Default Work Unit
-  - /Hop-Hop-Knight_WwiseProject/States/Default Work Unit/ingame
-  - /Hop-Hop-Knight_WwiseProject/States/Default Work Unit/menu_screen
-  - /Hop-Hop-Knight_WwiseProject/States/Default Work Unit/player
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

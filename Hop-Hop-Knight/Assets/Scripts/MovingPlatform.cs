@@ -29,10 +29,12 @@ public class MovingPlatform : MonoBehaviour
 
         if (moving&&!finishMovement)
         {
+            AkSoundEngine.PostEvent("trap_platform_open", gameObject);
             transform.position += transform.right*-1f * Time.deltaTime * speedOpen;
         }
         else if(!finishMovement)
         {
+            AkSoundEngine.PostEvent("trap_platform_close", gameObject);
             transform.position += transform.right* Time.deltaTime * speedClose;
         }
 

@@ -31,6 +31,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	4293073065	trap_platform_open			\Default Work Unit\trap_platform_open	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	230413577	trap_arrows	C:\Users\Administrador\Documents\GitHub\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\SFX\trap_arrows_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Traps\trap_arrows		267824
-	951430034	UI_menu_start	C:\Users\Administrador\Documents\GitHub\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\SFX\ui_menu_play_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Menu\UI_menu_start		821552
+	230413577	trap_arrows	C:\Users\maria\OneDrive\Documentos\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\SFX\trap_arrows_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Traps\trap_arrows		267824
+	951430034	UI_menu_start	C:\Users\maria\OneDrive\Documentos\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\SFX\ui_menu_play_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Menu\UI_menu_start		821552
 

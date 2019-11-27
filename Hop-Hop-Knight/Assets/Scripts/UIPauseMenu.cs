@@ -45,18 +45,22 @@ public class UIPauseMenu : MonoBehaviour
 
     public void Pause()
     {
+        AkSoundEngine.PostEvent("ui_pause_on", gameObject);
         Time.timeScale = 0;
         pauseMenu.gameObject.SetActive(true);
     }
 
     public void Unpause()
     {
+        AkSoundEngine.PostEvent("ui_pause_off", gameObject);
         Time.timeScale = 1;
         pauseMenu.gameObject.SetActive(false);
     }
 
     public void Menu()
     {
+        AkSoundEngine.PostEvent("ui_home", gameObject);
+        Player.platformTouch -= FindObjectOfType<CameraMovement>().Advance;
         SceneManager.LoadScene("IntroScene");
         GameManager.Get().score = 0;
     }

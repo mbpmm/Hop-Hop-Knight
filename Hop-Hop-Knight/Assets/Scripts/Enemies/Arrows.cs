@@ -40,12 +40,14 @@ public class Arrows : MonoBehaviour
     {
         GameObject arrowAux;
         arrowAux = Instantiate(arrows, positions[rnd].transform.position, Quaternion.Euler(new Vector3(0,0,90)));
+        AkSoundEngine.PostEvent("trap_arrows", gameObject);
     }
 
     void ShowSign()
     {
         warningAux = Instantiate(warningSign, warningPositions[rnd].transform.position, Quaternion.identity);
         warningAux.transform.SetParent(positions[rnd].transform);
+        AkSoundEngine.PostEvent("ui_ingame_warning", gameObject);
 
         Destroy(warningAux, warningTime);
     }
