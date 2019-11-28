@@ -545,11 +545,8 @@ MonoBehaviour:
   randomBlock: 0
   gemRate: 0.45
   timerPULG: 0
-  difficulties: 070000000e00000013000000
+  difficulties: 070000000e00000012000000
   aux: 0
-  maxEasy: 6
-  maxMedium: 13
-  maxHard: 17
 --- !u!1 &205536390
 GameObject:
   m_ObjectHideFlags: 0
@@ -5332,61 +5329,61 @@ MonoBehaviour:
   itemsToPool:
   - objectToPool: {fileID: 6114215429795319565, guid: cbfca2d47ec4c48478fc15f23e63b3f1,
       type: 3}
-    amountToPool: 6
+    amountToPool: 8
   - objectToPool: {fileID: 3392280736618948891, guid: f2ac422dd4296d74fb1eda6328c904fe,
       type: 3}
-    amountToPool: 6
+    amountToPool: 8
   - objectToPool: {fileID: 965407981446414055, guid: 72045ee4d7ebb4b4cb94550174c6aec8,
       type: 3}
-    amountToPool: 6
+    amountToPool: 8
   - objectToPool: {fileID: 861217456804202936, guid: 642d9b48fb03e4a41ba1508c079c945e,
       type: 3}
-    amountToPool: 6
+    amountToPool: 8
   - objectToPool: {fileID: 1835282735892076662, guid: 1246c6763326b8d48a040d98430a2e0e,
       type: 3}
-    amountToPool: 6
+    amountToPool: 8
   - objectToPool: {fileID: 2881031806668482508, guid: a9737b35dadd65349afe533a38eaa197,
       type: 3}
-    amountToPool: 6
+    amountToPool: 8
   - objectToPool: {fileID: 8434937182571105572, guid: 4acb3681c37899e46bd330b4bd14ecb2,
       type: 3}
-    amountToPool: 6
+    amountToPool: 8
   - objectToPool: {fileID: 8987175026625427893, guid: fa657411f84a3ab4b976bf6391e180a9,
       type: 3}
-    amountToPool: 6
+    amountToPool: 8
   - objectToPool: {fileID: 293020570922614792, guid: 2bd009a1e2a9fbe4d96c55f9f70dea32,
       type: 3}
-    amountToPool: 6
+    amountToPool: 8
   - objectToPool: {fileID: 1642356960298859729, guid: e171a9f666a49584aa43df3c252be9bb,
       type: 3}
-    amountToPool: 6
+    amountToPool: 8
   - objectToPool: {fileID: 1894891814193784345, guid: 6cf1b90479df96e44bc74cd995fc979c,
       type: 3}
-    amountToPool: 6
+    amountToPool: 8
   - objectToPool: {fileID: 8410773673226389362, guid: eba259a1ab26e8e41b1be8339132caf8,
       type: 3}
-    amountToPool: 6
+    amountToPool: 8
   - objectToPool: {fileID: 8508894605601020501, guid: 58fed07a968718f44b6d4bc87fdbf4a1,
       type: 3}
-    amountToPool: 6
+    amountToPool: 8
   - objectToPool: {fileID: 328490883052701497, guid: c258eccb00c79cf468adafba48c0fcd7,
       type: 3}
-    amountToPool: 6
+    amountToPool: 8
   - objectToPool: {fileID: 7060288274717597477, guid: 82eb4cf48c6c9534e8457b736e7c0848,
       type: 3}
-    amountToPool: 6
+    amountToPool: 8
   - objectToPool: {fileID: 413939151785656497, guid: 5cc64c8cc3c8bf046a59816cf9ee5651,
       type: 3}
     amountToPool: 10
   - objectToPool: {fileID: 861217456804202936, guid: 18d31a37472cfd04096ca5f0b45201ff,
       type: 3}
-    amountToPool: 5
+    amountToPool: 8
   - objectToPool: {fileID: 6398016911770423741, guid: 4001bdfc1e681f145b5dcf40403c84f8,
       type: 3}
-    amountToPool: 6
+    amountToPool: 8
   - objectToPool: {fileID: 5000821899211640431, guid: 2199a4ebe21be804aa0f8c130c4492f1,
       type: 3}
-    amountToPool: 6
+    amountToPool: 8
   pooledObjects: []
 --- !u!4 &1243914751
 Transform:
