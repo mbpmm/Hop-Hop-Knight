@@ -545,7 +545,7 @@ MonoBehaviour:
   randomBlock: 0
   gemRate: 0.45
   timerPULG: 0
-  difficulties: 070000000e00000012000000
+  difficulties: 060000000e00000011000000
   aux: 0
 --- !u!1 &205536390
 GameObject:
