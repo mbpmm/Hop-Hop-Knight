@@ -322,7 +322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockDestructionPoint: {fileID: 0}
-  scoreZone: {fileID: 0}
+  scoreZone: {fileID: 4906960827951695886}
 --- !u!1 &8434937182587996150
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,11 +764,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1444422951383689676, guid: 0ff8c6d06742f2f439c5f56f53e8bd82,
+        type: 3}
+      propertyPath: m_Points.Array.data[0].x
+      value: -6.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444422951383689676, guid: 0ff8c6d06742f2f439c5f56f53e8bd82,
+        type: 3}
+      propertyPath: m_Points.Array.data[1].x
+      value: 6.41
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ff8c6d06742f2f439c5f56f53e8bd82, type: 3}
 --- !u!4 &1839702012490790340 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8706426417634755137, guid: 0ff8c6d06742f2f439c5f56f53e8bd82,
+    type: 3}
+  m_PrefabInstance: {fileID: 7013405930702763909}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4906960827951695886 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2687973151449989003, guid: 0ff8c6d06742f2f439c5f56f53e8bd82,
     type: 3}
   m_PrefabInstance: {fileID: 7013405930702763909}
   m_PrefabAsset: {fileID: 0}

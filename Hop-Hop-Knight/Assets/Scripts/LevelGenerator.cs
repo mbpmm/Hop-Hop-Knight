@@ -29,6 +29,7 @@ public class LevelGenerator : MonoBehaviour
             if (GameManager.Get().score > 0)
             {
                 aux = GameManager.Get().score / 15;
+                aux = Mathf.Clamp(aux, 0, 2);
                 randomBlock = Random.Range(1, difficulties[aux]);
             }
 

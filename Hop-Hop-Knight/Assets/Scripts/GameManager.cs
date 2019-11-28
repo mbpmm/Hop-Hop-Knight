@@ -15,6 +15,7 @@ public class GameManager : MonobehaviourSingleton<GameManager>
         Player.platformTouch += AddScore;
         Player.playerDeath += PlayerDied;
         Player.playerStarted += PlayerSetter;
+        Player.powerUpScore += AddScorePowerUp;
     }
     private void Update()
     {
@@ -24,6 +25,11 @@ public class GameManager : MonobehaviourSingleton<GameManager>
     void AddScore()
     {
         score++;
+    }
+
+    void AddScorePowerUp()
+    {
+        score+=10;
     }
 
     void PlayerSetter(Player go)
@@ -52,5 +58,6 @@ public class GameManager : MonobehaviourSingleton<GameManager>
         Player.platformTouch -= AddScore;
         Player.playerDeath -= PlayerDied;
         Player.playerStarted -= PlayerSetter;
+        Player.powerUpScore -= AddScorePowerUp;
     }
 }

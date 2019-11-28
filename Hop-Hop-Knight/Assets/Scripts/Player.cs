@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public delegate void OnPlayerAction();
     public static OnPlayerAction platformTouch;
     public static OnPlayerAction playerDeath;
+    public static OnPlayerAction powerUpScore;
     public static Action<Player> playerStarted;
     Rigidbody2D rbody;
     BoxCollider2D boxCol;
@@ -68,7 +69,6 @@ public class Player : MonoBehaviour
     void Start()
     {
         playerStarted.Invoke(this);
-        
         rbody = GetComponent<Rigidbody2D>();
         boxCol = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
@@ -219,7 +219,7 @@ public class Player : MonoBehaviour
                 rbody.simulated = true;
                 timerPU = 0;
                 cantGemas = 0;
-                GameManager.Get().score += 10;
+                powerUpScore();
                 goToIdle = true;
             }
         }
