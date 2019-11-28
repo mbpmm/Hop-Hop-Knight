@@ -10,10 +10,11 @@ public class GameManager : MonobehaviourSingleton<GameManager>
     public Player player;
     public GameObject playerGO;
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         Player.platformTouch += AddScore;
         Player.playerDeath += PlayerDied;
+        Player.playerStarted += PlayerSetter;
     }
     private void Update()
     {
@@ -23,6 +24,12 @@ public class GameManager : MonobehaviourSingleton<GameManager>
     void AddScore()
     {
         score++;
+    }
+
+    void PlayerSetter(Player go)
+    {
+        player = go;
+        playerGO = go.gameObject;
     }
 
     void PlayerDied()
@@ -38,5 +45,12 @@ public class GameManager : MonobehaviourSingleton<GameManager>
     {
         yield return new WaitForSeconds(time);
         SceneManager.LoadScene("GameScene");
+    }
+
+    private void OnDisable()
+    {
+        Player.platformTouch -= AddScore;
+        Player.playerDeath -= PlayerDied;
+        Player.playerStarted -= PlayerSetter;
     }
 }

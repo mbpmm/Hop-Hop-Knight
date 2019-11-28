@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System;
 
 public class Player : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class Player : MonoBehaviour
     public delegate void OnPlayerAction();
     public static OnPlayerAction platformTouch;
     public static OnPlayerAction playerDeath;
+    public static Action<Player> playerStarted;
     Rigidbody2D rbody;
     BoxCollider2D boxCol;
     Vector2 startpos;
@@ -65,8 +67,8 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        GameManager.Get().player = this;
-        GameManager.Get().playerGO = this.gameObject;
+        playerStarted.Invoke(this);
+        
         rbody = GetComponent<Rigidbody2D>();
         boxCol = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
