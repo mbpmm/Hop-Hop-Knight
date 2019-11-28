@@ -545,6 +545,8 @@ MonoBehaviour:
   randomBlock: 0
   gemRate: 0.45
   timerPULG: 0
+  difficulties: 070000000e00000013000000
+  aux: 0
   maxEasy: 6
   maxMedium: 13
   maxHard: 17
