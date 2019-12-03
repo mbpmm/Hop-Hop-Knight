@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="11" SoundbankVersion="134">
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\marian\Desktop\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\marian\Desktop\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\marian\Desktop\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\GeneratedSoundBanks\Android\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\maria\OneDrive\Documentos\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\maria\OneDrive\Documentos\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\maria\OneDrive\Documentos\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\marian\Desktop\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\GeneratedSoundBanks\Android</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\maria\OneDrive\Documentos\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
