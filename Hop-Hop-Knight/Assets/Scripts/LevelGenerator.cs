@@ -74,5 +74,6 @@ public class LevelGenerator : MonoBehaviour
             GameObject go = ObjectPool.instance.GetPooledObject("Gem");
 
             go.transform.position = new Vector3(transform.position.x + Random.Range(-5f, 5f), transform.position.y + 3f, transform.position.z);
-        }    }
+        }
+    }
 }

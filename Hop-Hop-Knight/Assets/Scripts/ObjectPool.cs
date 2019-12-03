@@ -15,7 +15,7 @@ public class ObjectPool : MonoBehaviour
 
     public List<PoolItem> itemsToPool;
     public List<GameObject> pooledObjects;
-
+    public Transform parent;
     public void Awake()
     {
         instance = this;
@@ -32,6 +32,7 @@ public class ObjectPool : MonoBehaviour
                 GameObject obj = (GameObject)Instantiate(item.objectToPool);
                 obj.SetActive(false);
                 pooledObjects.Add(obj);
+                obj.transform.SetParent(parent);
             }
         }
     }
