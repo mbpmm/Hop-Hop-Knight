@@ -71,6 +71,7 @@ public class Player : MonoBehaviour
     public AK.Wwise.State PlayerDead;
     public AK.Wwise.State PlayerPowerUpEnter;
     public AK.Wwise.State PlayerPowerUpExit;
+    public AK.Wwise.State Score;
 
     void Start()
     {
@@ -370,6 +371,7 @@ public class Player : MonoBehaviour
 
     public void PlayDeathScreen()
     {
+        Score.SetValue();
         AkSoundEngine.PostEvent("ui_ingame_score", gameObject);
         deathAnim.SetTrigger("OpenDeathScreen");
     }
