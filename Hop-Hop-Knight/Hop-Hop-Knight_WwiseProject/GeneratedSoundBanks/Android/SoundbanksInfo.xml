@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Android" BasePlatform="Android" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\marian\Desktop\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\marian\Desktop\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\marian\Desktop\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\GeneratedSoundBanks\Android\</SoundBanksRoot>
+		<ProjectRoot>/Users/macbookpro/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/z:/Volumes/LaCie/Proyectos Diego/Game Audio/Implementacion/HopHopKnight/Repo/Hop-Hop-Knight/Hop-Hop-Knight_WwiseProject/</ProjectRoot>
+		<SourceFilesRoot>/Users/macbookpro/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/z:/Volumes/LaCie/Proyectos Diego/Game Audio/Implementacion/HopHopKnight/Repo/Hop-Hop-Knight/Hop-Hop-Knight_WwiseProject/.cache/Android/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/macbookpro/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/z:/Volumes/LaCie/Proyectos Diego/Game Audio/Implementacion/HopHopKnight/Repo/Hop-Hop-Knight/Hop-Hop-Knight_WwiseProject/GeneratedSoundBanks/Android/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\marian\Desktop\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\GeneratedSoundBanks\Android</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/macbookpro/Library/Application Support/Wwise2019/Bottles/wwise/dosdevices/z:/Volumes/LaCie/Proyectos Diego/Game Audio/Implementacion/HopHopKnight/Repo/Hop-Hop-Knight/Hop-Hop-Knight_WwiseProject/GeneratedSoundBanks/Android</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -26,7 +26,7 @@
 				<Event Id="2582092671" Name="enemy_blob" ObjectPath="\Events\Default Work Unit\enemy_blob" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1974222287" Name="enemy_ghost" ObjectPath="\Events\Default Work Unit\enemy_ghost" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1098871033" Name="enemy_plant" ObjectPath="\Events\Default Work Unit\enemy_plant" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="733168346" Name="game_start" ObjectPath="\Events\Default Work Unit\game_start" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="733168346" Name="game_start" ObjectPath="\Events\Default Work Unit\game_start" DurationType="Infinite"/>
 				<Event Id="1542330065" Name="player_die" ObjectPath="\Events\Default Work Unit\player_die" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="52976355" Name="player_grab_gem" ObjectPath="\Events\Default Work Unit\player_grab_gem" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3629196698" Name="player_land" ObjectPath="\Events\Default Work Unit\player_land" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -53,13 +53,137 @@
 				<Event Id="1731872944" Name="ui_pause_on" ObjectPath="\Events\Default Work Unit\ui_pause_on" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="20415555" Language="SFX">
+					<ShortName>HHK_InGame_A_SpaceGuitar_125bpm4-4_L08.wav</ShortName>
+					<Path>SFX/HHK_InGame_A_SpaceGuitar_125bpm4-4_L08_9B96ECC7.wem</Path>
+				</File>
+				<File Id="42107965" Language="SFX">
+					<ShortName>HHK_InGame_HighScore_125bpm4-4_L04_P01.wav</ShortName>
+					<Path>SFX/HHK_InGame_HighScore_125bpm4-4_L04_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="44685779" Language="SFX">
+					<ShortName>HHK_InGame_C_DrumNBass_125bpm4-4_L08_P01.wav</ShortName>
+					<Path>SFX/HHK_InGame_C_DrumNBass_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="55638435" Language="SFX">
+					<ShortName>HHK_InGame_C_PadsNBells_125bpm4-4_L08_P01.wav</ShortName>
+					<Path>SFX/HHK_InGame_C_PadsNBells_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="103908315" Language="SFX">
+					<ShortName>HHK_InGame_C_Ostinatto_125bpm4-4_L08_P01.wav</ShortName>
+					<Path>SFX/HHK_InGame_C_Ostinatto_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="118963139" Language="SFX">
+					<ShortName>HHK_InGame_B_Harpsichord_125bpm4-4_L08_P01.wav</ShortName>
+					<Path>SFX/HHK_InGame_B_Harpsichord_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="129905550" Language="SFX">
+					<ShortName>HHK_InGame_A_DrumNBass_125bpm4-4_L08.wav</ShortName>
+					<Path>SFX/HHK_InGame_A_DrumNBass_125bpm4-4_L08_9B96ECC7.wem</Path>
+				</File>
+				<File Id="136575938" Language="SFX">
+					<ShortName>HHK_InGame_B_DrumNBass_125bpm4-4_L08_P01.wav</ShortName>
+					<Path>SFX/HHK_InGame_B_DrumNBass_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="164732613" Language="SFX">
+					<ShortName>HHK_Credits_FullMix_100bpm4-4_L16_P01.wav</ShortName>
+					<Path>SFX/HHK_Credits_FullMix_100bpm4-4_L16_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="180378388" Language="SFX">
+					<ShortName>HHK_InGame_B_FullMix_125bpm4-4_L08_P01.wav</ShortName>
+					<Path>SFX/HHK_InGame_B_FullMix_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="183111726" Language="SFX">
+					<ShortName>HHK_Main_FullMix_100bpm4-4_L16_P01.wav</ShortName>
+					<Path>SFX/HHK_Main_FullMix_100bpm4-4_L16_P01_9B96ECC7.wem</Path>
+				</File>
 				<File Id="230413577" Language="SFX">
 					<ShortName>trap_arrows_1.wav</ShortName>
-					<Path>SFX\trap_arrows_1_10C4C929.wem</Path>
+					<Path>SFX/trap_arrows_1_10C4C929.wem</Path>
+				</File>
+				<File Id="250821060" Language="SFX">
+					<ShortName>HHK_InGame_A_HarpNBells_125bpm4-4_L08.wav</ShortName>
+					<Path>SFX/HHK_InGame_A_HarpNBells_125bpm4-4_L08_9B96ECC7.wem</Path>
+				</File>
+				<File Id="378412274" Language="SFX">
+					<ShortName>HHK_InGame_Tentacles_C_125bpm4-4_L08.wav</ShortName>
+					<Path>SFX/HHK_InGame_Tentacles_C_125bpm4-4_L08_9B96ECC7.wem</Path>
+				</File>
+				<File Id="392152971" Language="SFX">
+					<ShortName>HHK_InGame_A_SynthMelody_125bpm4-4_L08.wav</ShortName>
+					<Path>SFX/HHK_InGame_A_SynthMelody_125bpm4-4_L08_9B96ECC7.wem</Path>
+				</File>
+				<File Id="397206738" Language="SFX">
+					<ShortName>HHK_InGame_C_Orchestral_125bpm4-4_L08_P01.wav</ShortName>
+					<Path>SFX/HHK_InGame_C_Orchestral_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="404007180" Language="SFX">
+					<ShortName>HHK_InGame_C_FullMix_125bpm4-4_L08_P01.wav</ShortName>
+					<Path>SFX/HHK_InGame_C_FullMix_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="411729254" Language="SFX">
+					<ShortName>HHK_Main_Synths_100bpm4-4_L16_P01.wav</ShortName>
+					<Path>SFX/HHK_Main_Synths_100bpm4-4_L16_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="414575383" Language="SFX">
+					<ShortName>HHK_InGame_Trans_125bpm4-4_L02_P01.wav</ShortName>
+					<Path>SFX/HHK_InGame_Trans_125bpm4-4_L02_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="472413976" Language="SFX">
+					<ShortName>HHK_InGame_C_SurfGuitar_125bpm4-4_L08_P01.wav</ShortName>
+					<Path>SFX/HHK_InGame_C_SurfGuitar_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="532605471" Language="SFX">
+					<ShortName>HHK_InGame_C_Melody_125bpm4-4_L08_P01.wav</ShortName>
+					<Path>SFX/HHK_InGame_C_Melody_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="579386746" Language="SFX">
+					<ShortName>HHK_InGame_B_KnightMotif_125bpm4-4_L08_P01.wav</ShortName>
+					<Path>SFX/HHK_InGame_B_KnightMotif_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="580425381" Language="SFX">
+					<ShortName>HHK_InGame_Tentacles_B_125bpm4-4_L08.wav</ShortName>
+					<Path>SFX/HHK_InGame_Tentacles_B_125bpm4-4_L08_9B96ECC7.wem</Path>
+				</File>
+				<File Id="618008961" Language="SFX">
+					<ShortName>HHK_Main_MainMotif_100bpm4-4_L16_P01.wav</ShortName>
+					<Path>SFX/HHK_Main_MainMotif_100bpm4-4_L16_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="625212588" Language="SFX">
+					<ShortName>HHK_InGame_Tentacles_A_125bpm4-4_L08.wav</ShortName>
+					<Path>SFX/HHK_InGame_Tentacles_A_125bpm4-4_L08_9B96ECC7.wem</Path>
+				</File>
+				<File Id="642115803" Language="SFX">
+					<ShortName>HHK_InGame_C_Shaker_125bpm4-4_L08_P01.wav</ShortName>
+					<Path>SFX/HHK_InGame_C_Shaker_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="791954498" Language="SFX">
+					<ShortName>HHK_InGame_B_Orchestral_125bpm4-4_L08_P01.wav</ShortName>
+					<Path>SFX/HHK_InGame_B_Orchestral_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="799291975" Language="SFX">
+					<ShortName>HHK_Main_Back_100bpm4-4_L16_P01.wav</ShortName>
+					<Path>SFX/HHK_Main_Back_100bpm4-4_L16_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="804746590" Language="SFX">
+					<ShortName>HHK_Main_Trans_100bpm4-4_L02_P01.wav</ShortName>
+					<Path>SFX/HHK_Main_Trans_100bpm4-4_L02_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="815275819" Language="SFX">
+					<ShortName>HHK_InGame_Die_125bpm4-4_L04_P01.wav</ShortName>
+					<Path>SFX/HHK_InGame_Die_125bpm4-4_L04_P01_9B96ECC7.wem</Path>
+				</File>
+				<File Id="828028252" Language="SFX">
+					<ShortName>HHK_InGame_B_Ostinatto_125bpm4-4_L08_P01.wav</ShortName>
+					<Path>SFX/HHK_InGame_B_Ostinatto_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
 				</File>
 				<File Id="951430034" Language="SFX">
 					<ShortName>ui_menu_play.wav</ShortName>
-					<Path>SFX\ui_menu_play_10C4C929.wem</Path>
+					<Path>SFX/ui_menu_play_10C4C929.wem</Path>
+				</File>
+				<File Id="1049405448" Language="SFX">
+					<ShortName>HHK_InGame_A_FullMix_125bpm4-4_L08.wav</ShortName>
+					<Path>SFX/HHK_InGame_A_FullMix_125bpm4-4_L08_9B96ECC7.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

@@ -73,6 +73,17 @@ namespace AK
             } // namespace STATE
         } // namespace MENU_SCREEN
 
+        namespace MUSIC_PAUSE
+        {
+            static const AkUniqueID GROUP = 2895066125U;
+
+            namespace STATE
+            {
+                static const AkUniqueID PAUSE_OFF = 3967028551U;
+                static const AkUniqueID PAUSE_ON = 3537680115U;
+            } // namespace STATE
+        } // namespace MUSIC_PAUSE
+
         namespace PLAYER
         {
             static const AkUniqueID GROUP = 1069431850U;
@@ -84,17 +95,39 @@ namespace AK
             } // namespace STATE
         } // namespace PLAYER
 
+        namespace SCREEN
+        {
+            static const AkUniqueID GROUP = 804877345U;
+
+            namespace STATE
+            {
+                static const AkUniqueID INGAME = 984691642U;
+                static const AkUniqueID MENU = 2607556080U;
+            } // namespace STATE
+        } // namespace SCREEN
+
     } // namespace STATES
 
     namespace GAME_PARAMETERS
     {
-        static const AkUniqueID DISTANCE_GEM_TO_POWERBAR = 1177040469U;
-        static const AkUniqueID DISTANCE_TENTACLE = 3138403665U;
+        static const AkUniqueID DISTANCE_ENEMY_BAT1 = 381081086U;
+        static const AkUniqueID DISTANCE_ENEMY_BAT2 = 381081085U;
+        static const AkUniqueID DISTANCE_ENEMY_BLOB = 262799029U;
+        static const AkUniqueID DISTANCE_ENEMY_GHOST = 2622755353U;
+        static const AkUniqueID DISTANCE_ENEMY_PLANT = 1034163099U;
+        static const AkUniqueID DISTANCE_TRAP_MOVING_PLATFORM = 3732534371U;
+        static const AkUniqueID DISTANCE_TRAP_SPIKES = 2411429840U;
+        static const AkUniqueID DISTANCE_TRAP_TENTACLE = 2145236951U;
         static const AkUniqueID FLOOR_NUMBER = 1884276375U;
-        static const AkUniqueID VELOCITY_JUMP = 446565439U;
         static const AkUniqueID VOLUME_MUSIC = 3891337659U;
         static const AkUniqueID VOLUME_SFX = 3673881719U;
     } // namespace GAME_PARAMETERS
+
+    namespace TRIGGERS
+    {
+        static const AkUniqueID DIE = 445985469U;
+        static const AkUniqueID HIGHSCORE = 2808377621U;
+    } // namespace TRIGGERS
 
     namespace BANKS
     {

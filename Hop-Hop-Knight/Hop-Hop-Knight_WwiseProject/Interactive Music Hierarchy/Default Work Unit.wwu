@@ -3,32 +3,2691 @@
 	<InteractiveMusic>
 		<WorkUnit Name="Default Work Unit" ID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}" PersistMode="Standalone">
 			<ChildrenList>
-				<MusicSwitchContainer Name="Music" ID="{2B602410-6253-480A-A171-20E16759DE8C}" ShortID="73415405">
+				<MusicSwitchContainer Name="MusicSystem" ID="{6A5FE2F1-18AA-4B49-9722-0218F4AB9BF9}" ShortID="139840866">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+							<ObjectRef Name="Music Conversion Settings" ID="{3F593E94-6665-4FEE-8428-876DD3D7AF7B}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Music" ID="{68205EEF-6C17-489D-9A35-F56823EAAF50}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Folder Name="Ingame" ID="{3B27B201-E976-4EF1-9BDD-DA291F426DBF}" ShortID="672076031"/>
-						<Folder Name="Menu" ID="{6C28A9E2-99FA-41B6-99DD-6BB05A173062}" ShortID="886426263"/>
+						<MusicSwitchContainer Name="InGame" ID="{408BBC4A-0811-414D-8A50-22071C8FAD65}" ShortID="352376020">
+							<PropertyList>
+								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+								<Property Name="Tempo" Type="Real64" Value="125"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicPlaylistContainer Name="InGamePlaylist" ID="{0EFA0AFD-A7EE-476C-9DD7-CE7B0E255AA6}" ShortID="856856022">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="Part A" ID="{E363B991-C144-4EDF-9381-01D1847CD3D1}" ShortID="926888805">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="17280"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="HHK_InGame_A_DrumNBass_125bpm4-4_L08" ID="{3F2427BC-AE79-40CE-BA00-5C4FE557E764}" ShortID="763303172">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_A_DrumNBass_125bpm4-4_L08" ID="{6E7DD07F-49D9-4927-B649-A5188619C896}" ShortID="129905550">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_A_DrumNBass_125bpm4-4_L08.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{8963DA93-AF47-4ADA-9B7E-87AE69519586}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{5EE13085-E5FF-43D9-980B-92AF52280192}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_A_DrumNBass_125bpm4-4_L08" ID="{559644DD-1048-4424-B334-16BCA830E6C0}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="17280"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_A_DrumNBass_125bpm4-4_L08" ID="{6E7DD07F-49D9-4927-B649-A5188619C896}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{E8904778-EAC4-4DB6-9E6A-C7D11013B79D}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_InGame_A_HarpNBells_125bpm4-4_L08" ID="{C2C12928-588B-42D7-9E23-D8DA21CBED8A}" ShortID="1031775931">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_A_HarpNBells_125bpm4-4_L08" ID="{726F298D-69DE-4DA8-A372-B013E2353FD4}" ShortID="250821060">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_A_HarpNBells_125bpm4-4_L08.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{E14272C7-D8DC-4E80-B5E6-E38F1B054E95}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{FED325D1-1F2E-4596-A267-EF974AACFF95}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_A_HarpNBells_125bpm4-4_L08" ID="{54C17F37-0316-4D19-93C8-F2E02592A09C}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="17280"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_A_HarpNBells_125bpm4-4_L08" ID="{726F298D-69DE-4DA8-A372-B013E2353FD4}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{61ED228D-3765-4E40-A708-A2090DB3E82A}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_InGame_A_SpaceGuitar_125bpm4-4_L08" ID="{083AD84F-0D96-4506-84CF-628CF611292E}" ShortID="375953791">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_A_SpaceGuitar_125bpm4-4_L08" ID="{EE564DDC-493C-44E3-B84A-BBFB88133F64}" ShortID="20415555">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_A_SpaceGuitar_125bpm4-4_L08.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{C527095D-0E72-478C-9B97-B5BCE5EE0347}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{CD9C4583-3496-4407-9C23-A35C6D616027}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_A_SpaceGuitar_125bpm4-4_L08" ID="{A6EEB76B-66B0-4136-9480-6AB972A0B263}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="17280"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_A_SpaceGuitar_125bpm4-4_L08" ID="{EE564DDC-493C-44E3-B84A-BBFB88133F64}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{BCBFFD29-6DCB-4DCA-98A0-61295CC449A5}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_InGame_A_SynthMelody_125bpm4-4_L08" ID="{FD8CD749-FF8F-481B-81F1-AAAF855777B3}" ShortID="944407634">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_A_SynthMelody_125bpm4-4_L08" ID="{6007D217-D3F0-42B2-A822-B317F21421B1}" ShortID="392152971">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_A_SynthMelody_125bpm4-4_L08.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{88C28FBB-586E-4E5A-9548-DD13E8D74F60}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{ED6534B1-6714-472A-A2B4-92814D16ECF9}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_A_SynthMelody_125bpm4-4_L08" ID="{9EF77E14-83F2-4EB1-9BE2-08FD2B67A1EC}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="17280"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_A_SynthMelody_125bpm4-4_L08" ID="{6007D217-D3F0-42B2-A822-B317F21421B1}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{D25AFA5F-8A6F-46B2-8109-C75D9252D55E}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_InGame_Tentacles_A_125bpm4-4_L08" ID="{B0B09BB2-1A1B-4774-89A4-D8C78D33F5CB}" ShortID="592150254">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{E89D3FB1-068C-4250-9945-6BD6917E12BC}" ShortID="760253325">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="distance_trap_tentacle" ID="{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{31F1DD59-D848-42F1-9A0B-B664B198624B}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Log2</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_Tentacles_A_125bpm4-4_L08" ID="{D3657E2F-1BE2-4378-AF50-F0D0D8911F75}" ShortID="625212588">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_Tentacles_A_125bpm4-4_L08.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{84DD8D4A-AB77-46B3-8506-363C8E3552B6}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{B7ABECDF-8737-40DA-8DBB-82A868A643AA}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_Tentacles_A_125bpm4-4_L08" ID="{5479C785-A568-4415-95D7-7048FF3A6CD3}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="15360"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_Tentacles_A_125bpm4-4_L08" ID="{D3657E2F-1BE2-4378-AF50-F0D0D8911F75}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{BEEEFE7F-66CC-4A18-A3BF-174560E3FCF5}"/>
+												<MusicCue Name="Exit Cue" ID="{E72179A9-8EF1-4DB8-835D-6660CA08EFB9}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="15360"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+										<MusicSegment Name="Part B" ID="{34595372-5F26-4F43-95A5-8BAF1E1E5DFB}" ShortID="216987475">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="19661.9166666667"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="HHK_InGame_B_DrumNBass_125bpm4-4_L08_P01" ID="{656D7BBC-E6FF-4989-BC8B-C01A07AAF145}" ShortID="480234889">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_B_DrumNBass_125bpm4-4_L08_P01" ID="{AFA2584C-489D-4D0C-9BE3-156FA120BDC8}" ShortID="136575938">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_B_DrumNBass_125bpm4-4_L08_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{4F93DF24-C5AA-4B80-83DC-CF339C4445B8}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{155CE846-BB87-4A5F-B6F5-7E1ED235BFB9}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_B_DrumNBass_125bpm4-4_L08_P01" ID="{47C7A285-087C-4015-89E0-ECC5D1ABD92F}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_B_DrumNBass_125bpm4-4_L08_P01" ID="{AFA2584C-489D-4D0C-9BE3-156FA120BDC8}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{B63A3088-947A-4019-A886-C4667E5606D8}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_InGame_B_Harpsichord_125bpm4-4_L08_P01" ID="{041900E2-0BF0-461B-ADF8-CE08E67E4790}" ShortID="569235717">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_B_Harpsichord_125bpm4-4_L08_P01" ID="{5F821C7F-9AEC-4BF6-8D20-D062DAB6E34C}" ShortID="118963139">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_B_Harpsichord_125bpm4-4_L08_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{BBB63225-839B-4059-881D-C4D9762B557A}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{90D5A017-2B82-4099-B538-9AD8CDC69FBB}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_B_Harpsichord_125bpm4-4_L08_P01" ID="{7F250907-9156-497E-8BB8-4FA0F7607ACC}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_B_Harpsichord_125bpm4-4_L08_P01" ID="{5F821C7F-9AEC-4BF6-8D20-D062DAB6E34C}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{3F223DE4-77B6-4FFF-9583-E108BE75B3AF}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_InGame_B_KnightMotif_125bpm4-4_L08_P01" ID="{C3ACEF04-087B-4EA1-A1F0-867FA3E122E4}" ShortID="786716046">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_B_KnightMotif_125bpm4-4_L08_P01" ID="{40F25BC0-FF21-4035-98C4-7C395453C577}" ShortID="579386746">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_B_KnightMotif_125bpm4-4_L08_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{E5412C0B-C32A-4062-BDE7-4A0877E79983}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{373B8AC5-CB6B-400A-B3B0-1B6BEE441C11}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_B_KnightMotif_125bpm4-4_L08_P01" ID="{69534560-2ECD-47E6-A7CF-DFA318ED3DF8}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_B_KnightMotif_125bpm4-4_L08_P01" ID="{40F25BC0-FF21-4035-98C4-7C395453C577}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{641564EB-4805-44B4-84F3-7098A0CAF9ED}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_InGame_B_Orchestral_125bpm4-4_L08_P01" ID="{442DF08D-101C-4CC8-8D6B-6C641268BACF}" ShortID="635842028">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_B_Orchestral_125bpm4-4_L08_P01" ID="{13BE2C12-9692-4A3D-A6A0-26D1E9F043F9}" ShortID="791954498">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_B_Orchestral_125bpm4-4_L08_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{7F7CFE9E-9AB3-47B7-87B7-1A748E5767DD}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{67BAEEAA-1AEE-4E9A-9941-550FBBCE5EC9}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_B_Orchestral_125bpm4-4_L08_P01" ID="{E43F63A4-2433-4A4B-B7BB-1EB0181C0357}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_B_Orchestral_125bpm4-4_L08_P01" ID="{13BE2C12-9692-4A3D-A6A0-26D1E9F043F9}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{00F97A55-F4DC-4144-A417-13F714432419}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_InGame_B_Ostinatto_125bpm4-4_L08_P01" ID="{02A7729A-313F-48C6-A4E9-10413EC948AC}" ShortID="201498363">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_B_Ostinatto_125bpm4-4_L08_P01" ID="{627DCA15-AC5B-4FF6-BFB2-5D0A35D732AA}" ShortID="828028252">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_B_Ostinatto_125bpm4-4_L08_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{53243637-4921-4A20-BF31-C02531813E98}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{DB7F7B57-8C18-4689-A773-C7BCB3ECB970}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_B_Ostinatto_125bpm4-4_L08_P01" ID="{5D44CA6F-9255-4EFD-A1D9-EC22E360003E}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_B_Ostinatto_125bpm4-4_L08_P01" ID="{627DCA15-AC5B-4FF6-BFB2-5D0A35D732AA}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{83CA9BC5-2827-4698-B50F-357544D53543}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_InGame_Tentacles_B_125bpm4-4_L08" ID="{453F3CAA-1448-4080-8F68-2031E62967A5}" ShortID="304215669">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{A796B24A-956C-4EDE-BDD5-7AB6E150D371}" ShortID="201169844">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="distance_trap_tentacle" ID="{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{A4F6A06C-B52E-4228-BB02-71DD5C6040CF}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Log2</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_Tentacles_B_125bpm4-4_L08" ID="{3131B78E-23CB-41F2-9712-6F709C3AC902}" ShortID="580425381">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_Tentacles_B_125bpm4-4_L08.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{01575111-10BB-4E43-A7A9-040636DDD5AA}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{DE4FD1F5-B2BF-4583-AA9E-0A5815038A48}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_Tentacles_B_125bpm4-4_L08" ID="{96270C54-B165-49BD-B046-724E4D21D409}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="17741.9166666667"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1920"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_Tentacles_B_125bpm4-4_L08" ID="{3131B78E-23CB-41F2-9712-6F709C3AC902}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{F372A30C-8B66-43BC-9967-0C24E5C77A6E}">
+													<PropertyList>
+														<Property Name="TimeMs" Type="Real64" Value="1920"/>
+													</PropertyList>
+												</MusicCue>
+												<MusicCue Name="Exit Cue" ID="{07B51941-314B-4290-9E88-CC6DB6A3BD39}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="17280"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+										<MusicSegment Name="Part C" ID="{BB6C41E0-A15E-4CBB-A692-09FC582ABFD3}" ShortID="616905281">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="19680"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="HHK_InGame_C_DrumNBass_125bpm4-4_L08_P01" ID="{F2182B8B-92E7-4BB8-A24D-5771CA78D02D}" ShortID="14110213">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_C_DrumNBass_125bpm4-4_L08_P01" ID="{1E605741-D5B7-4AB1-8C52-4788DA62B4E9}" ShortID="44685779">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_C_DrumNBass_125bpm4-4_L08_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{125927C6-7CDB-47A6-9EBB-8E30EB71A8B3}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{64798D56-2831-496B-83CB-DC34727EB4FF}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_C_DrumNBass_125bpm4-4_L08_P01" ID="{BE5F0210-8F46-4D96-82DA-D75CC3D7915D}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_C_DrumNBass_125bpm4-4_L08_P01" ID="{1E605741-D5B7-4AB1-8C52-4788DA62B4E9}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{7057B19B-F715-4B3B-B30A-383C70C6ECFF}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_InGame_C_Melody_125bpm4-4_L08_P01" ID="{339D9D52-1E51-42AF-B8B0-019D7F88E823}" ShortID="662442958">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_C_Melody_125bpm4-4_L08_P01" ID="{3F308EC3-2EB3-404B-9FB9-529FDE27C5E5}" ShortID="532605471">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_C_Melody_125bpm4-4_L08_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{11F9D8C0-7EE2-460C-8CDC-92C967F415FD}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{ABEC13EB-666B-4BAE-BF0C-32ECDA417A51}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_C_Melody_125bpm4-4_L08_P01" ID="{A5F78D24-72A5-4AE4-8457-A4DC8295A78A}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_C_Melody_125bpm4-4_L08_P01" ID="{3F308EC3-2EB3-404B-9FB9-529FDE27C5E5}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{82BD2B7A-85D6-45D0-A9AC-7778330C6045}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_InGame_C_Orchestral_125bpm4-4_L08_P01" ID="{8DD9C75F-EFB2-4371-A7E8-039DA3A84976}" ShortID="421389152">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_C_Orchestral_125bpm4-4_L08_P01" ID="{70C791D8-FBEE-4082-B35B-F9540EB8163A}" ShortID="397206738">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_C_Orchestral_125bpm4-4_L08_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{5F36EC1C-3DD9-4D16-B60E-8923104C39EB}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{EE9D27C8-B3A5-4892-9891-096361352C8B}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_C_Orchestral_125bpm4-4_L08_P01" ID="{5AAA0CD3-63CE-452D-B1A7-B2D1B3B87CB4}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_C_Orchestral_125bpm4-4_L08_P01" ID="{70C791D8-FBEE-4082-B35B-F9540EB8163A}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{45011AE3-8088-4F74-8903-928DCC3E2DCA}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_InGame_C_Ostinatto_125bpm4-4_L08_P01" ID="{25A260B9-AF28-41F9-9A49-201718EEEA3B}" ShortID="347556649">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_C_Ostinatto_125bpm4-4_L08_P01" ID="{FFBF9475-FB74-4ABF-8396-D40129E3B665}" ShortID="103908315">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_C_Ostinatto_125bpm4-4_L08_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{68412307-5AE0-47E9-9C4B-E23B9B18D9D2}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{10F07A6C-7D73-4E02-BDED-609F06401FDE}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_C_Ostinatto_125bpm4-4_L08_P01" ID="{77FEAB7E-EBDA-46E9-BB75-E1ADFA3BF726}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_C_Ostinatto_125bpm4-4_L08_P01" ID="{FFBF9475-FB74-4ABF-8396-D40129E3B665}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{CA8F15C9-69AD-4AE7-84F2-F189237A34F4}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_InGame_C_PadsNBells_125bpm4-4_L08_P01" ID="{4BF2BDD0-845B-46B7-ADB3-DE3814270F2A}" ShortID="138913955">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_C_PadsNBells_125bpm4-4_L08_P01" ID="{FFF50793-962A-43BC-BCDD-A9F53823770E}" ShortID="55638435">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_C_PadsNBells_125bpm4-4_L08_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{2A9DE3E4-94FD-4B07-89BF-6F91E4B9083C}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{B0619E47-CC69-4EB4-B23A-983970B1C11F}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_C_PadsNBells_125bpm4-4_L08_P01" ID="{5D2AFC98-01BF-48D2-9EBA-5F105A5A53B3}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_C_PadsNBells_125bpm4-4_L08_P01" ID="{FFF50793-962A-43BC-BCDD-A9F53823770E}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{8E5B806D-1EB5-4E47-A955-35663FEFAD81}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_InGame_C_Shaker_125bpm4-4_L08_P01" ID="{C737A4A4-5991-47F8-A329-74F9DB14D673}" ShortID="224671936">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_C_Shaker_125bpm4-4_L08_P01" ID="{82309437-2861-423A-A7A6-455447DB43E7}" ShortID="642115803">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_C_Shaker_125bpm4-4_L08_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{7490489E-744D-4D60-9DCE-F50ABEE0AF33}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{A4DB812F-46AA-4CF6-81CF-2E877B7B17A3}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_C_Shaker_125bpm4-4_L08_P01" ID="{8C8FCFEA-89C3-4C65-9525-693E6D22A479}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_C_Shaker_125bpm4-4_L08_P01" ID="{82309437-2861-423A-A7A6-455447DB43E7}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{46534644-EBC4-4B6F-907C-0A6CB5FC8F3C}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_InGame_C_SurfGuitar_125bpm4-4_L08_P01" ID="{08C00616-E3BA-48F1-8271-D4DEB5486BE6}" ShortID="466401032">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_C_SurfGuitar_125bpm4-4_L08_P01" ID="{9297ED2B-1748-432A-8794-4B8085B66FC7}" ShortID="472413976">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_C_SurfGuitar_125bpm4-4_L08_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{DA1170B9-F473-47AF-8013-FFEF32B55157}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{ADF0E95C-AE35-499A-A368-69789C5CE5F2}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_C_SurfGuitar_125bpm4-4_L08_P01" ID="{91BE3FFF-032E-4E77-A6CE-A0C56EF42C8F}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_C_SurfGuitar_125bpm4-4_L08_P01" ID="{9297ED2B-1748-432A-8794-4B8085B66FC7}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{866C94B6-7BAA-4714-B796-D423830CF416}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_InGame_Tentacles_C_125bpm4-4_L08" ID="{1026EE00-8F82-45EA-8259-F80AA3569B28}" ShortID="591999817">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{A260657F-9CCC-421F-B99E-D922B5144B43}" ShortID="173690538">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="distance_trap_tentacle" ID="{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{3DD46771-D447-4C07-8AF7-25ABDACF3792}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Log2</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_Tentacles_C_125bpm4-4_L08" ID="{A840AAD7-B9BD-40BA-A18C-3B894D3F38E2}" ShortID="378412274">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_Tentacles_C_125bpm4-4_L08.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{87E5D4E6-442D-4F2A-8022-BF45992713F3}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{D97B6905-4768-454A-A796-BC5AAF0999EC}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_Tentacles_C_125bpm4-4_L08" ID="{8F5D98B8-3E46-4C29-B3EE-EA17601A3953}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="17280"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1920"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_Tentacles_C_125bpm4-4_L08" ID="{A840AAD7-B9BD-40BA-A18C-3B894D3F38E2}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{D922548E-BF1A-46E9-A520-DE990D3BEC56}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>17.28</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{26C164D9-7853-4C01-9956-66E2EC1BE9E5}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>17.28</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{E8F70BEE-C3C8-477A-878A-2FF17521ECE2}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>17.28</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{6EB6C750-06B8-493C-9DD6-CE7C815667B6}">
+													<PropertyList>
+														<Property Name="TimeMs" Type="Real64" Value="1920"/>
+													</PropertyList>
+												</MusicCue>
+												<MusicCue Name="Exit Cue" ID="{F76129AF-8D79-4E86-A050-FD7FD3F866C5}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="17280"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+										<MusicSegment Name="HHK_InGame_A_FullMix_125bpm4-4_L08" ID="{F444B7FB-9B4A-4206-B593-7CD157720E99}" ShortID="604411460">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="17280"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="HHK_InGame_A_FullMix_125bpm4-4_L08" ID="{A0FCE691-8F6D-4ED5-AB99-4DB97872D3A7}" ShortID="812915221">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_A_FullMix_125bpm4-4_L08" ID="{B05DFDD2-046D-4C4E-8AD9-EAAE8FDE84C0}" ShortID="1049405448">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_A_FullMix_125bpm4-4_L08.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{096402B8-F673-4BBC-B5D6-C030300AD242}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{5EA3A1CF-B696-450B-97FC-F470A6DE9E63}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_A_FullMix_125bpm4-4_L08" ID="{ACD9AF54-4341-455D-B19C-59DE73E8206C}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="17280"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_A_FullMix_125bpm4-4_L08" ID="{B05DFDD2-046D-4C4E-8AD9-EAAE8FDE84C0}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_InGame_Tentacles_A_125bpm4-4_L08" ID="{11248D15-10C9-4FF5-923F-572C30D3488A}" ShortID="103536225">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{3ADD8421-5461-4C29-B0F5-259AB1D2011C}" ShortID="69067227">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="distance_trap_tentacle" ID="{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{3236E8F2-7741-4EA9-8D43-07735815560E}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Log2</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_Tentacles_A_125bpm4-4_L08" ID="{37A33A68-5247-4F2F-ACA6-01EFEF315549}" ShortID="1034362334">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_Tentacles_A_125bpm4-4_L08.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="625212588"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{6A4803B9-E6F1-485B-8235-8FAC745ADE1E}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{31714E97-91ED-47A3-AE32-1E50758F6841}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_Tentacles_A_125bpm4-4_L08" ID="{902BEF48-4749-429B-BD9F-4414E38EE975}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="15360"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_Tentacles_A_125bpm4-4_L08" ID="{37A33A68-5247-4F2F-ACA6-01EFEF315549}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{50A76E9B-BEA1-4FF3-B9FB-3B566B4A892C}"/>
+												<MusicCue Name="Exit Cue" ID="{1D44C8DA-78DF-4689-9C86-505A1B9ED3B5}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="15360"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+										<MusicSegment Name="HHK_InGame_B_FullMix_125bpm4-4_L08_P01" ID="{01AE97E0-4299-4BFA-8F50-37C4DB26C5FD}" ShortID="957841406">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="21120"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="HHK_InGame_B_FullMix_125bpm4-4_L08_P01" ID="{36E74051-B860-42BF-9E7E-6A0B214C26B1}" ShortID="945227430">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_B_FullMix_125bpm4-4_L08_P01" ID="{7A427CBA-71D7-4D72-B75B-60A33C8554A1}" ShortID="180378388">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_B_FullMix_125bpm4-4_L08_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{F6BE43EF-98F9-49DC-8AF9-A140AC30355B}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{DB4277AD-6929-4701-A5B7-CF322F02FB24}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_B_FullMix_125bpm4-4_L08_P01" ID="{7E314F9A-87F9-4DE5-B4FA-935D0877DFDF}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_B_FullMix_125bpm4-4_L08_P01" ID="{7A427CBA-71D7-4D72-B75B-60A33C8554A1}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_InGame_Tentacles_B_125bpm4-4_L08" ID="{A28800FC-BD6E-4C42-BE3A-1D94882038D1}" ShortID="781324012">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{31C22EA6-01A5-400A-90D7-40186DE8D3AE}" ShortID="588177988">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="distance_trap_tentacle" ID="{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{B7E911C6-F414-41C2-A3E7-9A0E736F2672}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Log2</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_Tentacles_B_125bpm4-4_L08" ID="{E94E6092-0DAB-4304-BD2E-A8EF60A97413}" ShortID="839012930">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_Tentacles_B_125bpm4-4_L08.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="580425381"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{0CB3C50D-0F6E-46EA-9415-BAC08D9F8B4D}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{DDED06A7-EF7C-41FF-848C-5244C71F9DC5}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_Tentacles_B_125bpm4-4_L08" ID="{865E2402-E723-4C75-B6C0-16BDEB5A53AF}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="17741.9166666667"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1920"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_Tentacles_B_125bpm4-4_L08" ID="{E94E6092-0DAB-4304-BD2E-A8EF60A97413}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{015E14C1-5757-420C-A133-FC3E97E8D414}">
+													<PropertyList>
+														<Property Name="TimeMs" Type="Real64" Value="1920"/>
+													</PropertyList>
+												</MusicCue>
+												<MusicCue Name="Exit Cue" ID="{5CB1EE32-8ED4-43D6-B6BA-7BBCC85B7402}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="17280"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+										<MusicSegment Name="HHK_InGame_C_FullMix_125bpm4-4_L08_P01" ID="{D79580B0-9890-4B2F-BED0-C5BC5338A6B9}" ShortID="576844588">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="19200"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="HHK_InGame_C_FullMix_125bpm4-4_L08_P01" ID="{37BA30F3-9715-4D97-BDEE-FE6992C93401}" ShortID="794999984">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_C_FullMix_125bpm4-4_L08_P01" ID="{F5427A1F-BF6E-46DE-965D-567E7B9ECA4A}" ShortID="404007180">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_C_FullMix_125bpm4-4_L08_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{93C36A5D-D691-4F61-96E0-770B92B3B329}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{F96E796B-F1CB-4240-89E7-F6871B62387E}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_C_FullMix_125bpm4-4_L08_P01" ID="{5C8D3230-1A0A-431F-9111-32EFF81AD627}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="19200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_C_FullMix_125bpm4-4_L08_P01" ID="{F5427A1F-BF6E-46DE-965D-567E7B9ECA4A}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_InGame_Tentacles_C_125bpm4-4_L08" ID="{38639394-B675-4235-9641-937594A80B71}" ShortID="947984194">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<RTPCList>
+																<RTPC Name="" ID="{CE305B4A-99D1-4727-9EF5-3270DE810C6A}" ShortID="834914985">
+																	<ReferenceList>
+																		<Reference Name="ControlInput">
+																			<ObjectRef Name="distance_trap_tentacle" ID="{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<Curve Name="" ID="{08B2EDE9-6686-406C-BB63-684615F7E742}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="3"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-200</YPos>
+																				<Flags>5</Flags>
+																				<SegmentShape>Log2</SegmentShape>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>0</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</RTPC>
+															</RTPCList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_Tentacles_C_125bpm4-4_L08" ID="{F97F3E0B-AD2C-4301-950C-59AAF0FCCBCA}" ShortID="381914710">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_Tentacles_C_125bpm4-4_L08.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="378412274"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{CCBB0CEF-4FD3-4357-A2B5-355251196FE6}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{9B5C4DAE-4B90-4CE4-8C85-D906656E8C42}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_Tentacles_C_125bpm4-4_L08" ID="{9997248C-0A4D-46A2-9330-2F66EF04627C}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="17280"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="1920"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_Tentacles_C_125bpm4-4_L08" ID="{F97F3E0B-AD2C-4301-950C-59AAF0FCCBCA}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{AB8A999B-1DB1-466E-86E0-54B3D1DC24B1}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>17.28</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{A9B96C73-7599-4A21-8A78-9CBAC1D64AAC}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>17.28</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{1469A292-18A6-4837-B7C8-0304899EDDD0}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>17.28</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{15B80AEC-F417-4E11-8808-36EF0B1ED200}">
+													<PropertyList>
+														<Property Name="TimeMs" Type="Real64" Value="1920"/>
+													</PropertyList>
+												</MusicCue>
+												<MusicCue Name="Exit Cue" ID="{A43F135E-C7A4-4A29-9C91-231FC2497CD1}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="17280"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+										<MusicSegment Name="HHK_InGame_Trans_125bpm4-4_L02_P01" ID="{DCBB822D-714A-4FDD-AEE0-DCF86E0453B3}" ShortID="260535403">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="4304.77024070022"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="HHK_InGame_Trans_125bpm4-4_L02_P01" ID="{7E0F0F55-B581-4EF0-A15A-F2452D57FB49}" ShortID="976605613">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_Trans_125bpm4-4_L02_P01" ID="{C0BEFDF7-44DE-47BF-B0A6-1C08960F629A}" ShortID="414575383">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_Trans_125bpm4-4_L02_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{D6F49EF4-DA5A-434F-B65B-CC6A0C8A4E9D}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{7C955284-B96D-44D8-AE30-3A0D405A3E8B}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_Trans_125bpm4-4_L02_P01" ID="{313A463B-FFCA-47D3-99C7-3E42033498A4}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="4080"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="1014.6170678337"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_Trans_125bpm4-4_L02_P01" ID="{C0BEFDF7-44DE-47BF-B0A6-1C08960F629A}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{55F6DF99-72C3-4B0B-BA81-249297BB8319}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>4.08</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{D43C21BF-754F-4459-83D3-D3419EDABBBE}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>4.08</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{AE805F34-1B77-43F7-9480-064837A72BEA}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>4.08</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{836981C1-9296-414B-8EB4-357C43F9F929}">
+													<PropertyList>
+														<Property Name="TimeMs" Type="Real64" Value="1920"/>
+													</PropertyList>
+												</MusicCue>
+												<MusicCue Name="Exit Cue" ID="{1CB8784C-C95B-48EE-9118-CF6FBDF736F2}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="3840"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{08EC1DBE-8F3A-4E85-8C3E-90B89FA4F668}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{BEE5A1A1-422D-487B-BB4F-B7244A7F5920}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<StingerList>
+										<MusicStinger Name="" ID="{E3D431F0-232A-49E2-A3A0-D7826ED15C9B}">
+											<PropertyList>
+												<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+											</PropertyList>
+											<TriggerRef Name="Die" ID="{125DEA90-F6F8-4082-B037-67D72E66AAC6}" WorkUnitID="{4CE23351-D4D9-4DC8-8B32-E2D9C005EEB8}"/>
+											<SegmentRef Name="HHK_InGame_Die_125bpm4-4_L04_P01" ID="{2D4FDB6B-72FF-4E39-A914-17D97E81D7A8}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+										</MusicStinger>
+										<MusicStinger Name="" ID="{06C2AE89-3DEE-45B3-B804-8DEBBB956DB9}">
+											<PropertyList>
+												<Property Name="PlaySegmentAt" Type="int16" Value="3"/>
+											</PropertyList>
+											<TriggerRef Name="HighScore" ID="{03E61E3E-2534-4CB9-94D4-21B40457AF0C}" WorkUnitID="{4CE23351-D4D9-4DC8-8B32-E2D9C005EEB8}"/>
+											<SegmentRef Name="HHK_InGame_HighScore_125bpm4-4_L04_P01" ID="{69D380A1-F835-4E05-B53B-5A4A6AC144B9}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+										</MusicStinger>
+									</StingerList>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{439DD858-2285-49CE-9EB4-C9C4A0318CED}" ShortID="979014094">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{D034CD89-6849-4EC3-A8C3-58BA2332926C}" ShortID="228672735">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Part A" ID="{E363B991-C144-4EDF-9381-01D1847CD3D1}"/>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{7AFA10E6-2DC2-404A-BF6E-87298EA109AB}" ShortID="181129160">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlayMode" Type="int16" Value="2"/>
+													</PropertyList>
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{E5424EEA-3359-41FE-A27D-0E2F16A2AE4E}" ShortID="119905150">
+															<PropertyList>
+																<Property Name="PlayMode" Type="int16" Value="3"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicPlaylistItem Name="" ID="{72B159CD-7E3A-4893-B523-C3983A5A475A}" ShortID="334675756">
+																	<PropertyList>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="HHK_InGame_C_FullMix_125bpm4-4_L08_P01" ID="{D79580B0-9890-4B2F-BED0-C5BC5338A6B9}"/>
+																</MusicPlaylistItem>
+																<MusicPlaylistItem Name="" ID="{B469DFC6-93A0-4B78-A4DF-E3B60792E20F}" ShortID="940901957">
+																	<PropertyList>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="Part C" ID="{BB6C41E0-A15E-4CBB-A692-09FC582ABFD3}"/>
+																</MusicPlaylistItem>
+															</ChildrenList>
+														</MusicPlaylistItem>
+														<MusicPlaylistItem Name="" ID="{F9628493-C65A-43D8-89BC-790E4805A2DA}" ShortID="477300764">
+															<PropertyList>
+																<Property Name="PlayMode" Type="int16" Value="3"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicPlaylistItem Name="" ID="{3509467A-1456-4296-A661-221B96A5666D}" ShortID="689664656">
+																	<PropertyList>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="Part A" ID="{E363B991-C144-4EDF-9381-01D1847CD3D1}"/>
+																</MusicPlaylistItem>
+																<MusicPlaylistItem Name="" ID="{5C3F5097-DC5A-4C8E-B5E2-80869B5B466C}" ShortID="386869505">
+																	<PropertyList>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="HHK_InGame_A_FullMix_125bpm4-4_L08" ID="{F444B7FB-9B4A-4206-B593-7CD157720E99}"/>
+																</MusicPlaylistItem>
+															</ChildrenList>
+														</MusicPlaylistItem>
+														<MusicPlaylistItem Name="" ID="{1E0F8310-3BB2-4ED4-B562-C88C84FF3132}" ShortID="524784948">
+															<PropertyList>
+																<Property Name="PlayMode" Type="int16" Value="3"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicPlaylistItem Name="" ID="{AF1ABC83-FAAB-4051-9956-7A988BD8B736}" ShortID="976631033">
+																	<PropertyList>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="Part B" ID="{34595372-5F26-4F43-95A5-8BAF1E1E5DFB}"/>
+																</MusicPlaylistItem>
+																<MusicPlaylistItem Name="" ID="{1403BD64-18D0-4AA8-BC99-31DC878BC517}" ShortID="230275464">
+																	<PropertyList>
+																		<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+																	</PropertyList>
+																	<SegmentRef Name="HHK_InGame_B_FullMix_125bpm4-4_L08_P01" ID="{01AE97E0-4299-4BFA-8F50-37C4DB26C5FD}"/>
+																</MusicPlaylistItem>
+															</ChildrenList>
+														</MusicPlaylistItem>
+													</ChildrenList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
+								<Folder Name="Stingers" ID="{E4D995E7-71E2-4A71-9231-12A823FD8582}" ShortID="643474228">
+									<ChildrenList>
+										<MusicSegment Name="HHK_InGame_Die_125bpm4-4_L04_P01" ID="{2D4FDB6B-72FF-4E39-A914-17D97E81D7A8}" ShortID="148839200">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="7680"/>
+												<Property Name="Tempo" Type="Real64" Value="125"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="HHK_InGame_Die_125bpm4-4_L04_P01" ID="{D694FE69-CEAE-46E6-8949-DBF0B2BA29AB}" ShortID="251996140">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_Die_125bpm4-4_L04_P01" ID="{573DE9D0-A500-45B7-91F7-A327E40BD8D1}" ShortID="815275819">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_Die_125bpm4-4_L04_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{15E32EDC-3C07-4C6C-AA0B-180D90DAB3A0}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{7D1D3002-5D0A-4E4D-A3EB-3808B922DB27}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_Die_125bpm4-4_L04_P01" ID="{BC2DA33F-C46F-4879-A0B6-3E3DC1434225}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="7680"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_Die_125bpm4-4_L04_P01" ID="{573DE9D0-A500-45B7-91F7-A327E40BD8D1}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{D5629BC2-0F94-4CF9-9ABE-35BBBCE4A5F8}">
+													<PropertyList>
+														<Property Name="TimeMs" Type="Real64" Value="1920"/>
+													</PropertyList>
+												</MusicCue>
+												<MusicCue Name="Exit Cue" ID="{84F2A7E0-E5E8-426E-9F45-84AB1E779C74}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="3840"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+										<MusicSegment Name="HHK_InGame_HighScore_125bpm4-4_L04_P01" ID="{69D380A1-F835-4E05-B53B-5A4A6AC144B9}" ShortID="486305147">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="9080"/>
+												<Property Name="Tempo" Type="Real64" Value="125"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="HHK_InGame_HighScore_125bpm4-4_L04_P01" ID="{872B8238-6F51-402B-9082-84DCDC113E61}" ShortID="407257910">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_InGame_HighScore_125bpm4-4_L04_P01" ID="{F031E85C-EBE0-4304-A5DE-170FF87BC4A1}" ShortID="42107965">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_InGame_HighScore_125bpm4-4_L04_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{519BD518-A40F-4007-A05D-BF8A7AB2C162}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{A83950C5-2E14-4D3B-9E66-A21D4936A357}">
+															<ClipList>
+																<MusicClip Name="HHK_InGame_HighScore_125bpm4-4_L04_P01" ID="{BE0FB00F-3F67-44A7-B33D-B98683C61E09}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8000"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_InGame_HighScore_125bpm4-4_L04_P01" ID="{F031E85C-EBE0-4304-A5DE-170FF87BC4A1}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{486919A3-27C6-423B-B560-EA9C901961D2}">
+													<PropertyList>
+														<Property Name="TimeMs" Type="Real64" Value="1920"/>
+													</PropertyList>
+												</MusicCue>
+												<MusicCue Name="Exit Cue" ID="{441F3B41-B898-4F9B-951F-B50DAEB6F381}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="5760"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{41C7234D-6CF6-4FB3-AAC1-179921AF9912}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{3E8B86EE-AABA-4B4E-824E-034C3D801B4F}">
+											<TransitionInfo/>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{EB416F0C-7BC5-48B4-A5BD-4152A7CA867B}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="1"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+												<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo>
+												<TransitionObjectRef Name="HHK_InGame_Trans_125bpm4-4_L02_P01" ID="{DCBB822D-714A-4FDD-AEE0-DCF86E0453B3}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+											</TransitionInfo>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ArgumentList>
+								<ArgumentRef Name="ingame" ID="{7C48FE1A-1ADE-42A3-8E26-0EC5E5E69D86}"/>
+							</ArgumentList>
+							<EntryList>
+								<Entry>
+									<Path>
+										<PathElementRef Name="play" ID="{2495BA82-9647-41EA-931E-DE727C31889E}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="InGamePlaylist" ID="{0EFA0AFD-A7EE-476C-9DD7-CE7B0E255AA6}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="score" ID="{B1030D0F-0A75-47F0-9A67-8B44BAC8B3BF}"/>
+									</Path>
+									<AudioNodeInfo>
+										<NoObject Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+							</EntryList>
+						</MusicSwitchContainer>
+						<MusicSwitchContainer Name="Menu" ID="{2B602410-6253-480A-A171-20E16759DE8C}" ShortID="73415405">
+							<PropertyList>
+								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+								<Property Name="Tempo" Type="Real64" Value="100"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Music" ID="{68205EEF-6C17-489D-9A35-F56823EAAF50}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicPlaylistContainer Name="MainTheme" ID="{296C3B65-97BC-42AB-BEA9-9126FA37B6A9}" ShortID="374824551">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="HHK_Main_FullMix_100bpm4-4_L16_P01" ID="{984F9955-64DD-4BE9-AFF4-830F9C5A172B}" ShortID="772623409">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="45600"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="HHK_Main_FullMix_100bpm4-4_L16_P01" ID="{11D2B84F-DDA7-4686-A0A0-DF03DA613F05}" ShortID="672677653">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_Main_FullMix_100bpm4-4_L16_P01" ID="{37B50693-2064-4F21-A509-BA0B1C6D9118}" ShortID="183111726">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_Main_FullMix_100bpm4-4_L16_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{6BE1BDDE-DECA-46E7-8454-BA6DA20C773A}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{218C0D88-1EEE-4A3A-A92F-95E402259B11}">
+															<ClipList>
+																<MusicClip Name="HHK_Main_FullMix_100bpm4-4_L16_P01" ID="{A767CF50-B995-42CE-AAB1-131681981E6A}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="43200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_Main_FullMix_100bpm4-4_L16_P01" ID="{37B50693-2064-4F21-A509-BA0B1C6D9118}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{B03861C9-14C9-4F53-8BF4-96787A6EF814}">
+													<PropertyList>
+														<Property Name="TimeMs" Type="Real64" Value="2400"/>
+													</PropertyList>
+												</MusicCue>
+												<MusicCue Name="Exit Cue" ID="{14E642D3-9AE1-4410-9A6B-F85D7B91D6DA}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="40800"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+										<MusicSegment Name="HHK_Main_Stems" ID="{FE5AA976-8364-41D3-9C01-1187260BBFA3}" ShortID="489206978">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="45600"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="HHK_Main_Back_100bpm4-4_L16_P01" ID="{C32043B2-525A-4D2D-9B3A-B2DF023C156F}" ShortID="407177557">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_Main_Back_100bpm4-4_L16_P01" ID="{36FE0743-E87F-4991-B6FF-2EDA68AF5CE8}" ShortID="799291975">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_Main_Back_100bpm4-4_L16_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{09490EB5-4DB0-4FC3-A5D4-BDC4CFD637B3}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{877F3ADF-48E3-4058-AD2A-0004FC3512EA}">
+															<ClipList>
+																<MusicClip Name="HHK_Main_Back_100bpm4-4_L16_P01" ID="{7D1AAE5C-D0C6-439D-B579-B9D8B8774EC4}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="43200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_Main_Back_100bpm4-4_L16_P01" ID="{36FE0743-E87F-4991-B6FF-2EDA68AF5CE8}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_Main_MainMotif_100bpm4-4_L16_P01" ID="{94BD246D-19DB-4B62-9528-64B6764AC7CD}" ShortID="514875519">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_Main_MainMotif_100bpm4-4_L16_P01" ID="{13C10228-B6BF-4051-AA68-9B6D0362CAFA}" ShortID="618008961">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_Main_MainMotif_100bpm4-4_L16_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{1F31E6FC-9332-4B4C-8456-61A3D2F7D510}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{0EE65BE1-DDA6-4C98-AC1B-9C84FB214FC3}">
+															<ClipList>
+																<MusicClip Name="HHK_Main_MainMotif_100bpm4-4_L16_P01" ID="{02883409-F081-477E-9EB0-D810B3D7D277}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="43200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_Main_MainMotif_100bpm4-4_L16_P01" ID="{13C10228-B6BF-4051-AA68-9B6D0362CAFA}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{ED3FBF79-A6A5-46AF-9D1A-97913ADCC2B4}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_Main_Synths_100bpm4-4_L16_P01" ID="{79A126D7-0873-4169-9BCB-2E9BBB4B148D}" ShortID="154595903">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_Main_Synths_100bpm4-4_L16_P01" ID="{E04E6837-E728-482B-BE67-78EA2FCDC1FB}" ShortID="411729254">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_Main_Synths_100bpm4-4_L16_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{61EBAF39-859D-46A9-A0C6-8B9BA4B42AA9}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{D9FF4C73-874B-4ED0-BDB8-59FEBF7D6FFA}">
+															<ClipList>
+																<MusicClip Name="HHK_Main_Synths_100bpm4-4_L16_P01" ID="{DCC95BB2-51B9-40F2-9BFA-2FDDB4197A85}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="43200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_Main_Synths_100bpm4-4_L16_P01" ID="{E04E6837-E728-482B-BE67-78EA2FCDC1FB}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{E39ECF2D-0269-4FD9-B2B1-8A72CA547839}"/>
+													</SequenceList>
+												</MusicTrack>
+												<MusicTrack Name="HHK_Credits_FullMix_100bpm4-4_L16_P01" ID="{9D51F5F8-AAD7-4398-82E2-39FD5C4F02DA}" ShortID="187062184">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Music" ID="{68205EEF-6C17-489D-9A35-F56823EAAF50}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_Credits_FullMix_100bpm4-4_L16_P01" ID="{DFFFFEF3-09C2-4E24-BD0E-D356D2751EE6}" ShortID="438359707">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_Credits_FullMix_100bpm4-4_L16_P01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File ID="164732613"/>
+															</ConvertedFileIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{8DB9745B-4638-4F2D-9CC2-3289D9CF5213}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{B8A81486-8898-4CEE-8B4A-70346C736AA2}">
+															<ClipList>
+																<MusicClip Name="HHK_Credits_FullMix_100bpm4-4_L16_P01" ID="{7A3179A6-1F04-4561-9D33-B80FCDF51E49}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="43200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_Credits_FullMix_100bpm4-4_L16_P01" ID="{DFFFFEF3-09C2-4E24-BD0E-D356D2751EE6}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+														<MusicTrackSequence Name="" ID="{7CC599FD-4372-43B8-8044-D818668BE7FE}"/>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{12BC5583-7DB4-4D37-8BC7-29F90A719153}">
+													<PropertyList>
+														<Property Name="TimeMs" Type="Real64" Value="2400"/>
+													</PropertyList>
+												</MusicCue>
+												<MusicCue Name="Exit Cue" ID="{C8EBB5F1-4DF6-4B5F-89A3-464C182D8934}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="40800"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+										<MusicSegment Name="HHK_Main_Trans_100bpm4-4_L02_P01" ID="{152C6224-7C2D-40F0-B6F7-3610CDAF4CB2}" ShortID="226494087">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="3659.1068188021"/>
+												<Property Name="Tempo" Type="Real64" Value="100"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{68205EEF-6C17-489D-9A35-F56823EAAF50}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="HHK_Main_Trans_100bpm4-4_L02_P01" ID="{56F0CA8D-D0F4-4D20-B137-0DD7CA6734BC}" ShortID="895991443">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_Main_Trans_100bpm4-4_L02_P01" ID="{4B011EAF-F6A5-4E79-8AD4-15F715B92BA6}" ShortID="804746590">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_Main_Trans_100bpm4-4_L02_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{B52905FD-9762-44C3-8265-97342F52B9CD}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{52794792-7D58-4B65-A47B-AC93DA1F33ED}">
+															<ClipList>
+																<MusicClip Name="HHK_Main_Trans_100bpm4-4_L02_P01" ID="{EC0919B9-E918-4FE6-A9B9-B37EB5C2FC95}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="3659.1068188021"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="2101.57577963026"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_Main_Trans_100bpm4-4_L02_P01" ID="{4B011EAF-F6A5-4E79-8AD4-15F715B92BA6}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Highpass">
+																			<Curve Name="" ID="{373CB53F-77A0-4A46-97C8-5410F18725EC}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3.65911</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{5211188B-D1D1-47F9-B113-DAF044AB69C1}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3.65911</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{A7F5E4B9-6270-4850-AFD1-5524D21A6672}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3.65911</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{B9345ACC-9D19-48F1-BD3A-8FA437ACDEC9}">
+													<PropertyList>
+														<Property Name="TimeMs" Type="Real64" Value="1200"/>
+													</PropertyList>
+												</MusicCue>
+												<MusicCue Name="Exit Cue" ID="{D42C8394-9610-4630-8738-EADA73D74DDE}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="2400"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{1A3DD602-D135-4EE7-8921-97C0DB8E3C08}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{425FEFA7-2A36-4F79-94AF-1DBBAB3EAF5B}">
+													<TransitionInfo/>
+												</MusicTransition>
+												<MusicTransition Name="Transition" ID="{8DC3901F-7F5B-48A7-836E-B248EE09FC0F}">
+													<PropertyList>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+														<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="HHK_Main_FullMix_100bpm4-4_L16_P01" ID="{984F9955-64DD-4BE9-AFF4-830F9C5A172B}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo>
+														<TransitionObjectRef Name="HHK_Main_Trans_100bpm4-4_L02_P01" ID="{152C6224-7C2D-40F0-B6F7-3610CDAF4CB2}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+													</TransitionInfo>
+												</MusicTransition>
+												<MusicTransition Name="Transition" ID="{35DC731C-BE29-410B-8653-DCD5ECA35603}">
+													<PropertyList>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+														<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="HHK_Main_Stems" ID="{FE5AA976-8364-41D3-9C01-1187260BBFA3}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo>
+														<TransitionObjectRef Name="HHK_Main_Trans_100bpm4-4_L02_P01" ID="{152C6224-7C2D-40F0-B6F7-3610CDAF4CB2}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+													</TransitionInfo>
+												</MusicTransition>
+												<MusicTransition Name="Transition" ID="{ADB3766E-E6FA-45E5-BA2A-3DFCA6F6DC45}">
+													<PropertyList>
+														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DestinationContextObject">
+															<ObjectRef Name="HHK_Main_Stems" ID="{FE5AA976-8364-41D3-9C01-1187260BBFA3}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+														</Reference>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="HHK_Main_FullMix_100bpm4-4_L16_P01" ID="{984F9955-64DD-4BE9-AFF4-830F9C5A172B}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo/>
+												</MusicTransition>
+												<MusicTransition Name="Transition" ID="{CF1BB092-2576-4E56-BF73-3B1488C637BE}">
+													<PropertyList>
+														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DestinationContextObject">
+															<ObjectRef Name="HHK_Main_Stems" ID="{FE5AA976-8364-41D3-9C01-1187260BBFA3}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+														</Reference>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="HHK_Main_Stems" ID="{FE5AA976-8364-41D3-9C01-1187260BBFA3}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{1E9D8368-175A-494E-8150-76EB5823FAA8}" ShortID="49617943">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{1BDAB9AA-A6D3-4CA0-B88A-D426A14F1AEA}" ShortID="13802302">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="HHK_Main_FullMix_100bpm4-4_L16_P01" ID="{984F9955-64DD-4BE9-AFF4-830F9C5A172B}"/>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{8081AE57-D17C-4196-8BD8-22BD0569812A}" ShortID="680200131">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="HHK_Main_Stems" ID="{FE5AA976-8364-41D3-9C01-1187260BBFA3}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="CreditsPlaylist" ID="{14A1CE6E-D7AD-4C35-A5B0-B207D3F1717D}" ShortID="905601509">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="Credits" ID="{288FB45F-62FC-45F5-A6D6-6C189CFE68E4}" ShortID="39359460">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="57000"/>
+												<Property Name="Tempo" Type="Real64" Value="100"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Music" ID="{68205EEF-6C17-489D-9A35-F56823EAAF50}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="HHK_Credits_FullMix_100bpm4-4_L16_P01" ID="{400800C1-8F28-4E6E-A12C-1E5BAA5868CA}" ShortID="785238092">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="HHK_Credits_FullMix_100bpm4-4_L16_P01" ID="{B9C644A5-1005-4483-8560-A15673A816E7}" ShortID="164732613">
+															<Language>SFX</Language>
+															<AudioFile>Music\HHK_Credits_FullMix_100bpm4-4_L16_P01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{49D40242-6680-4A95-A666-6A2024B32667}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<SequenceList>
+														<MusicTrackSequence Name="" ID="{BEB9F61D-9C4E-410C-BF1C-7E6C1431F2E6}">
+															<ClipList>
+																<MusicClip Name="HHK_Credits_FullMix_100bpm4-4_L16_P01" ID="{801660BA-9E5D-40A1-82DA-F01B102247A1}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="43200"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="HHK_Credits_FullMix_100bpm4-4_L16_P01" ID="{B9C644A5-1005-4483-8560-A15673A816E7}"/>
+																</MusicClip>
+															</ClipList>
+														</MusicTrackSequence>
+													</SequenceList>
+												</MusicTrack>
+											</ChildrenList>
+											<CueList>
+												<MusicCue Name="Entry Cue" ID="{62A7F348-0032-46B4-B022-48C3AED0A6F6}">
+													<PropertyList>
+														<Property Name="TimeMs" Type="Real64" Value="2400"/>
+													</PropertyList>
+												</MusicCue>
+												<MusicCue Name="Exit Cue" ID="{084F5809-8527-49AE-845A-3FDD37CACCAA}">
+													<PropertyList>
+														<Property Name="CueType" Type="int16" Value="1"/>
+														<Property Name="TimeMs" Type="Real64" Value="40800"/>
+													</PropertyList>
+												</MusicCue>
+											</CueList>
+										</MusicSegment>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{4C19DD7E-B5AE-4A49-8A25-32FB01CD39A1}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{2A01678B-6059-41F0-A842-43FDBB274BEB}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{476AFFFB-73AD-4BDC-BCEF-22E549E4CA65}" ShortID="21020147">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{FFD0F4EE-4CC2-494F-9B6A-60B8EC895072}" ShortID="1025340099">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="Credits" ID="{288FB45F-62FC-45F5-A6D6-6C189CFE68E4}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{E2BBB2BA-A5B0-41DF-B9C0-3893CE8A6A7F}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{AA632C2C-9983-4D1C-9682-AAE2EC8CE556}">
+											<PropertyList>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+											</PropertyList>
+											<TransitionInfo>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{A9744501-80B8-4946-892A-DA5417119B2A}">
+														<PropertyList>
+															<Property Name="FadeOffset" Type="Real64" Value="1"/>
+															<Property Name="FadeTime" Type="Real64" Value="2"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{DA00332D-DECD-4A92-BA2D-B4F384BF028B}">
+														<PropertyList>
+															<Property Name="FadeOffset" Type="Real64" Value="1"/>
+															<Property Name="FadeTime" Type="Real64" Value="2"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{9962D0C8-9355-4110-A3F8-D106943137DD}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="CreditsPlaylist" ID="{14A1CE6E-D7AD-4C35-A5B0-B207D3F1717D}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="MainTheme" ID="{296C3B65-97BC-42AB-BEA9-9126FA37B6A9}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{5B61439D-BB2F-496B-88A3-2B10CA1B90B9}">
+														<PropertyList>
+															<Property Name="FadeOffset" Type="Real64" Value="1"/>
+															<Property Name="FadeTime" Type="Real64" Value="2"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{E320B647-F7A1-4072-8E3C-A545BF8F6F3A}">
+														<PropertyList>
+															<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+															<Property Name="FadeTime" Type="Real64" Value="2"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{A08CB8C5-F6EA-4A90-9998-B1E6EB7E33FE}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="MainTheme" ID="{296C3B65-97BC-42AB-BEA9-9126FA37B6A9}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="CreditsPlaylist" ID="{14A1CE6E-D7AD-4C35-A5B0-B207D3F1717D}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{F774FF93-A024-4AFC-BC18-28F4009CB50F}">
+														<PropertyList>
+															<Property Name="FadeOffset" Type="Real64" Value="1"/>
+															<Property Name="FadeTime" Type="Real64" Value="2"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{3F4C8007-15EA-47CB-B7C4-F0FD1B66035F}">
+														<PropertyList>
+															<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+															<Property Name="FadeTime" Type="Real64" Value="2"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
+											</TransitionInfo>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<ArgumentList>
+								<ArgumentRef Name="menu_screen" ID="{3E1DAA80-2BC9-4BA0-B60E-577B44E5F998}"/>
+							</ArgumentList>
+							<EntryList>
+								<Entry>
+									<Path>
+										<PathElementRef Name="credits" ID="{BE9A8535-A131-4F62-9D43-47F374681E4A}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="CreditsPlaylist" ID="{14A1CE6E-D7AD-4C35-A5B0-B207D3F1717D}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="menu" ID="{09EDFD27-A48F-4328-8037-47EFE3B809D9}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="MainTheme" ID="{296C3B65-97BC-42AB-BEA9-9126FA37B6A9}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="config" ID="{21A440EA-EAD4-46D0-AFF8-EAECEB108C99}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="MainTheme" ID="{296C3B65-97BC-42AB-BEA9-9126FA37B6A9}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+							</EntryList>
+						</MusicSwitchContainer>
 					</ChildrenList>
 					<TransitionList>
-						<MusicTransition Name="Root" ID="{E2BBB2BA-A5B0-41DF-B9C0-3893CE8A6A7F}">
+						<MusicTransition Name="Root" ID="{1D31F1FB-132B-4DF7-9BCD-F6652DAE95E1}">
 							<PropertyList>
 								<Property Name="IsFolder" Type="bool" Value="True"/>
 							</PropertyList>
 							<ChildrenList>
-								<MusicTransition Name="Transition" ID="{AA632C2C-9983-4D1C-9682-AAE2EC8CE556}">
+								<MusicTransition Name="Transition" ID="{8D7F19C1-EF81-4A58-A59D-E822F797B333}">
+									<PropertyList>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+									</PropertyList>
 									<TransitionInfo/>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{DCE6E288-E87F-4539-BECD-9F4F0511E805}">
+									<PropertyList>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="HHK_Main_FullMix_100bpm4-4_L16_P01" ID="{984F9955-64DD-4BE9-AFF4-830F9C5A172B}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="HHK_Main_Trans_100bpm4-4_L02_P01" ID="{152C6224-7C2D-40F0-B6F7-3610CDAF4CB2}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+									</TransitionInfo>
+								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{62E6FADD-4164-4D75-9E12-96D19B3BFF26}">
+									<PropertyList>
+										<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+										<Property Name="UseTransitionObject" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="HHK_Main_Stems" ID="{FE5AA976-8364-41D3-9C01-1187260BBFA3}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<TransitionObjectRef Name="HHK_Main_Trans_100bpm4-4_L02_P01" ID="{152C6224-7C2D-40F0-B6F7-3610CDAF4CB2}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+									</TransitionInfo>
 								</MusicTransition>
 							</ChildrenList>
 							<TransitionInfo/>
 						</MusicTransition>
 					</TransitionList>
+					<ArgumentList>
+						<ArgumentRef Name="screen" ID="{3ABAB8E0-C99C-440C-967F-E3C2DF5C8BF0}"/>
+					</ArgumentList>
+					<EntryList>
+						<Entry>
+							<Path>
+								<PathElementRef Name="menu" ID="{4EEBF0E3-A47E-4C66-99ED-9172D611D718}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="Menu" ID="{2B602410-6253-480A-A171-20E16759DE8C}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+						<Entry>
+							<Path>
+								<PathElementRef Name="ingame" ID="{3A10E00D-D309-403E-8BDD-ECABD43BE359}"/>
+							</Path>
+							<AudioNodeInfo>
+								<AudioNodeRef Name="InGame" ID="{408BBC4A-0811-414D-8A50-22071C8FAD65}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}" Platform="Linked"/>
+							</AudioNodeInfo>
+						</Entry>
+					</EntryList>
 				</MusicSwitchContainer>
 			</ChildrenList>
 		</WorkUnit>

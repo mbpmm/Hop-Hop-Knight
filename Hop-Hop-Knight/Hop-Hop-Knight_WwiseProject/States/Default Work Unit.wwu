@@ -28,6 +28,20 @@
 						<State Name="powerup" ID="{689820FE-30B4-4A24-B6E6-1DC82957CF23}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="screen" ID="{3ABAB8E0-C99C-440C-967F-E3C2DF5C8BF0}">
+					<ChildrenList>
+						<State Name="None" ID="{907A2092-7AF6-4484-906F-9807123045AE}"/>
+						<State Name="menu" ID="{4EEBF0E3-A47E-4C66-99ED-9172D611D718}"/>
+						<State Name="ingame" ID="{3A10E00D-D309-403E-8BDD-ECABD43BE359}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="music_pause" ID="{41A94DF0-41E1-462A-9AC2-A6BAD0E8E15B}">
+					<ChildrenList>
+						<State Name="None" ID="{51FC8F70-6A38-49C3-86BF-ABC06FAD19EB}"/>
+						<State Name="pause_on" ID="{307A800D-0E80-4FCF-8BC8-A3AF8677C424}"/>
+						<State Name="pause_off" ID="{0F7B1890-6312-4D2B-875B-AFF3CEF74A12}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
