@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 7bc4049f00399649b243228ca2bd4d0c
     GuidInternal: 
-    m_lastTime: -8586266637149604054
+    m_lastTime: -8586261237389024974
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
@@ -47,7 +47,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: d8b9ad9780102b4f9d64a9a8ce529b1e
     GuidInternal: 
-    m_lastTime: -8586266637149993025
+    m_lastTime: -8586261237393420922
     List:
     - name: enemy_bat1
       guid: c8b9c934a50c0a4b89af736cfa2938a9
@@ -59,8 +59,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\enemy_bat1
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 12701583
+      minDuration: 12701583
     - name: enemy_bat2
       guid: e930b2ee6d7c69488e94fb689996083b
       id: 2768764971
@@ -71,8 +71,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\enemy_bat2
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 16608438
+      minDuration: 16608438
     - name: enemy_blob
       guid: fae1d1e4e7bacc428d6d40be3465d260
       id: 2582092671
@@ -107,8 +107,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\enemy_plant
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 2200789
+      minDuration: 1609736
     - name: game_start
       guid: 095a54a7e6466145800807d224946f78
       id: 733168346
@@ -119,8 +119,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\game_start
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: player_die
       guid: d596076092216c4e8816780fab51aea8
       id: 1542330065
@@ -143,8 +143,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\player_grab_gem
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 1620396
+      minDuration: 1500000
     - name: player_land
       guid: 305a9c033362e840a4b63c3084408e8a
       id: 3629196698
@@ -155,8 +155,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\player_land
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 448551
+      minDuration: 200598
     - name: player_release
       guid: cb77b7a92b0a6c40866ba1ecf68f2ddb
       id: 590715968
@@ -167,8 +167,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\player_release
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 689583
+      minDuration: 512284
     - name: player_touch
       guid: 9f03982ce89e7d4287f8a4d33cd58201
       id: 2993297310
@@ -179,8 +179,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\player_touch
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 535671
+      minDuration: 167661
     - name: player_wings
       guid: dea403e6d9eb5b4198b19073d40e1935
       id: 3239602367
@@ -227,8 +227,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\trap_arrows
       maxAttenuation: 0
-      maxDuration: 1394583
-      minDuration: 1394583
+      maxDuration: 2929250
+      minDuration: 1653042
     - name: trap_platform_close
       guid: b799f921a533ae4889c46d29b6fcec43
       id: 3550371055
@@ -239,8 +239,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\trap_platform_close
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 1210438
+      minDuration: 1026708
     - name: trap_platform_open
       guid: 7c1f303ec6754447b3cf51f223bd8742
       id: 4293073065
@@ -251,8 +251,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\trap_platform_open
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 2335625
+      minDuration: 2236833
     - name: trap_spikes
       guid: a356bc191c105d47abd1be2cd91a33d7
       id: 584352822
@@ -263,8 +263,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\trap_spikes
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 2533667
+      minDuration: 1986221
     - name: trap_tentacles
       guid: e7af101d4099ba4f8bb300f5d3e2b944
       id: 3064100384
@@ -335,8 +335,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\ui_ingame_score
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 2109833
+      minDuration: 1948167
     - name: ui_ingame_score_off
       guid: b63d46a7558ce348904a81a9e2f1bbc8
       id: 157712808
@@ -347,8 +347,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\ui_ingame_score_off
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 2776354
+      minDuration: 1827062
     - name: ui_ingame_warning
       guid: 548a257373b33740bc1046551403091b
       id: 2850178896
@@ -371,8 +371,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\ui_menu_credits
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: 2109833
+      minDuration: 1948167
     - name: ui_menu_start
       guid: d694ed89786fc74cb769bcfbc863918c
       id: 2961968006
@@ -414,26 +414,80 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 08af918ee41a90438e9caf483bd4279d
     GuidInternal: 
-    m_lastTime: -8586266637149983054
+    m_lastTime: -8586261237393420922
     List:
-    - name: distance_gem_to_powerbar
-      guid: a6e0e47e02bdb1438adbe28f8ab3a0fa
-      id: 1177040469
+    - name: distance_enemy_bat1
+      guid: d864a5f5fc111b48915b12e4e1c6363b
+      id: 381081086
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: distance_gem_to_powerbar
+      - ElementName: distance_enemy_bat1
         ObjectType: 13
-      Path: Default Work Unit\distance_gem_to_powerbar
-    - name: distance_tentacle
+      Path: Default Work Unit\distance_enemy_bat1
+    - name: distance_enemy_bat2
+      guid: ccca513e625c2e42ab53c434906738b1
+      id: 381081085
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: distance_enemy_bat2
+        ObjectType: 13
+      Path: Default Work Unit\distance_enemy_bat2
+    - name: distance_enemy_blob
+      guid: fb7288dd063ae0439fe079d8b9146c73
+      id: 262799029
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: distance_enemy_blob
+        ObjectType: 13
+      Path: Default Work Unit\distance_enemy_blob
+    - name: distance_enemy_ghost
+      guid: c453d827d269f04fbdf4b3c9c3055221
+      id: 2622755353
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: distance_enemy_ghost
+        ObjectType: 13
+      Path: Default Work Unit\distance_enemy_ghost
+    - name: distance_enemy_plant
+      guid: 34a3e04259bb06439caf86d018e94d8e
+      id: 1034163099
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: distance_enemy_plant
+        ObjectType: 13
+      Path: Default Work Unit\distance_enemy_plant
+    - name: distance_trap_moving_platform
+      guid: ee051123b167534fa8c34d22ebe6a67c
+      id: 3732534371
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: distance_trap_moving_platform
+        ObjectType: 13
+      Path: Default Work Unit\distance_trap_moving_platform
+    - name: distance_trap_spikes
+      guid: 8c00153b4a749e4faaecd19a626d0c0c
+      id: 2411429840
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: distance_trap_spikes
+        ObjectType: 13
+      Path: Default Work Unit\distance_trap_spikes
+    - name: distance_trap_tentacle
       guid: 0d918dd7dd4d64489cbfb6c1e6220a7a
-      id: 3138403665
+      id: 2145236951
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: distance_tentacle
+      - ElementName: distance_trap_tentacle
         ObjectType: 13
-      Path: Default Work Unit\distance_tentacle
+      Path: Default Work Unit\distance_trap_tentacle
     - name: floor_number
       guid: 371046099db16943906ecb4f5a99aa7d
       id: 1884276375
@@ -443,15 +497,6 @@ MonoBehaviour:
       - ElementName: floor_number
         ObjectType: 13
       Path: Default Work Unit\floor_number
-    - name: velocity_jump
-      guid: 8b1f712664e9b74695763c794a1f9396
-      id: 446565439
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: velocity_jump
-        ObjectType: 13
-      Path: Default Work Unit\velocity_jump
     - name: volume_music
       guid: 9a9345aae8ce364fadddcec6e02eb90d
       id: 3891337659
@@ -475,7 +520,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 22a688bfc263944b850542a50fa6f1e8
     GuidInternal: 
-    m_lastTime: -8586266637149384647
+    m_lastTime: -8586261237295157671
     List:
     - name: ingame
       guid: 1afe487cde1aa3428e260ec5e5e69d86
@@ -563,6 +608,37 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: music_pause
+      guid: f04da941e1412a469ac2a6bad0e8e15b
+      id: 2895066125
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: music_pause
+        ObjectType: 9
+      Path: Default Work Unit\music_pause
+      values:
+      - name: None
+        guid: 708ffc51386ac34986bfabc06fad19eb
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: pause_off
+        guid: 90187b0f12632b4d875baff3cef74a12
+        id: 3967028551
+        PathAndIcons:
+        - ElementName: pause_off
+          ObjectType: 8
+      - name: pause_on
+        guid: 0d807a30800ecf4f8bc8a3af8677c424
+        id: 3537680115
+        PathAndIcons:
+        - ElementName: pause_on
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: player
       guid: 84128ee6d8453d42963a255a39c8534e
       id: 1069431850
@@ -594,6 +670,37 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
+    - name: screen
+      guid: e0b8ba3a9cc90c44967fe3c2df5c8bf0
+      id: 804877345
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: screen
+        ObjectType: 9
+      Path: Default Work Unit\screen
+      values:
+      - name: ingame
+        guid: 0de0103a09d33e408bddecabd43be359
+        id: 984691642
+        PathAndIcons:
+        - ElementName: ingame
+          ObjectType: 8
+      - name: menu
+        guid: e3f0eb4e7ea4664c99ed9172d611d718
+        id: 2607556080
+        PathAndIcons:
+        - ElementName: menu
+          ObjectType: 8
+      - name: None
+        guid: 92207a90f67a8444906f9807123045ae
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -606,11 +713,32 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 5133e24cd9d4c84d8b32e2d9c005eeb8
     GuidInternal: 
-    m_lastTime: -8586266637149374680
-    List: []
+    m_lastTime: -8586261237295157671
+    List:
+    - name: Die
+      guid: 90ea5d12f8f68240b03767d72e66aac6
+      id: 445985469
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Die
+        ObjectType: 14
+      Path: Default Work Unit\Die
+    - name: HighScore
+      guid: 3e1ee6033425b94c94d421b40457af0c
+      id: 2808377621
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: HighScore
+        ObjectType: 14
+      Path: Default Work Unit\HighScore
   ExpandedItems:
   - /Hop-Hop-Knight_WwiseProject
   - /Hop-Hop-Knight_WwiseProject/Events
   - /Hop-Hop-Knight_WwiseProject/Events/Default Work Unit
+  - /Hop-Hop-Knight_WwiseProject/States
+  - /Hop-Hop-Knight_WwiseProject/States/Default Work Unit
+  - /Hop-Hop-Knight_WwiseProject/States/Default Work Unit/menu_screen
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -66,12 +66,20 @@ public class Player : MonoBehaviour
     public Vector3 desiredPos;
     public bool goToIdle;
 
+    public AK.Wwise.State Playing;
+    public AK.Wwise.State PlayerAlive;
+    public AK.Wwise.State PlayerDead;
+    public AK.Wwise.State PlayerPowerUpEnter;
+    public AK.Wwise.State PlayerPowerUpExit;
+
     void Start()
     {
         playerStarted.Invoke(this);
         rbody = GetComponent<Rigidbody2D>();
         boxCol = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
+        PlayerAlive.SetValue();
+        Playing.SetValue();
     }
 
     void MiraUpdate()
@@ -130,7 +138,7 @@ public class Player : MonoBehaviour
 
         if (isGrounded)
         {
-            AkSoundEngine.PostEvent("player_land", gameObject);
+            
             launched = false;
         }
 
@@ -168,6 +176,7 @@ public class Player : MonoBehaviour
 
         if (velocityFrameAnt!=Vector2.zero && rbody.velocity==Vector2.zero)
         {
+            AkSoundEngine.PostEvent("player_land", gameObject);
             poofPS.Play();
         }
 
@@ -196,6 +205,7 @@ public class Player : MonoBehaviour
         
         if (cantGemas==totalGemas&&!powerUpActivated)
         {
+            PlayerPowerUpEnter.SetValue();
             powerUpActivated = true;
             animator.SetTrigger("PowerUp");
         }
@@ -240,6 +250,7 @@ public class Player : MonoBehaviour
 
     public void DeactivatePU()
     {
+        PlayerPowerUpExit.SetValue();
         AkSoundEngine.PostEvent("powerup_end", gameObject);
         powerUpActivated = false;
         timerPU = 0;
@@ -340,6 +351,7 @@ public class Player : MonoBehaviour
             {
                 rbody.mass = 0.01f;
                 isDead = true;
+                PlayerDead.SetValue();
                 animator.SetTrigger("IsDead");
                 rbody.velocity = Vector2.zero;
                 boxCol.enabled = false;

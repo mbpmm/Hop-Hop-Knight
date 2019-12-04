@@ -17,6 +17,9 @@ public class UIPauseMenu : MonoBehaviour
     public Text gravity;
     public Text drag;
     public Text power;
+
+    public AK.Wwise.State PauseEnter;
+    public AK.Wwise.State PauseExit;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +48,7 @@ public class UIPauseMenu : MonoBehaviour
 
     public void Pause()
     {
+        PauseEnter.SetValue();
         AkSoundEngine.PostEvent("ui_pause_on", gameObject);
         Time.timeScale = 0;
         pauseMenu.gameObject.SetActive(true);
@@ -52,6 +56,7 @@ public class UIPauseMenu : MonoBehaviour
 
     public void Unpause()
     {
+        PauseExit.SetValue();
         AkSoundEngine.PostEvent("ui_pause_off", gameObject);
         Time.timeScale = 1;
         pauseMenu.gameObject.SetActive(false);

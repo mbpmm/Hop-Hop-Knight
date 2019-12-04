@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class LogoFade : MonoBehaviour
 {
+    private void Start()
+    {
+        AkSoundEngine.PostEvent("developer_logo", gameObject);
+    }
 
     public void GoToIntroScene()
     {

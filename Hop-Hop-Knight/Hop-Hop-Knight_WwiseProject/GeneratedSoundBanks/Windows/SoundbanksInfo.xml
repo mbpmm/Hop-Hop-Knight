@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\marian\Desktop\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\marian\Desktop\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\marian\Desktop\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\marian\Desktop\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -29,7 +29,7 @@
 				<Event Id="733168346" Name="game_start" ObjectPath="\Events\Default Work Unit\game_start" DurationType="Infinite"/>
 				<Event Id="1542330065" Name="player_die" ObjectPath="\Events\Default Work Unit\player_die" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="52976355" Name="player_grab_gem" ObjectPath="\Events\Default Work Unit\player_grab_gem" DurationType="OneShot" DurationMin="1.500000" DurationMax="1.620396"/>
-				<Event Id="3629196698" Name="player_land" ObjectPath="\Events\Default Work Unit\player_land" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3629196698" Name="player_land" ObjectPath="\Events\Default Work Unit\player_land" DurationType="OneShot" DurationMin="0.200598" DurationMax="0.448551"/>
 				<Event Id="590715968" Name="player_release" ObjectPath="\Events\Default Work Unit\player_release" DurationType="OneShot" DurationMin="0.512284" DurationMax="0.689583"/>
 				<Event Id="2993297310" Name="player_touch" ObjectPath="\Events\Default Work Unit\player_touch" DurationType="OneShot" DurationMin="0.167661" DurationMax="0.535671"/>
 				<Event Id="3239602367" Name="player_wings" ObjectPath="\Events\Default Work Unit\player_wings" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -121,6 +121,10 @@
 					<ShortName>Music\HHK_Main_FullMix_100bpm4-4_L16_P01.wav</ShortName>
 					<Path>SFX\Music\HHK_Main_FullMix_100bpm4-4_L16_P01_9B96ECC7.wem</Path>
 				</File>
+				<File Id="197487855" Language="SFX">
+					<ShortName>Player\Land\sfx_player_land_03.wav</ShortName>
+					<Path>SFX\Player\Land\sfx_player_land_03_10C4C929.wem</Path>
+				</File>
 				<File Id="250821060" Language="SFX">
 					<ShortName>Music\HHK_InGame_A_HarpNBells_125bpm4-4_L08.wav</ShortName>
 					<Path>SFX\Music\HHK_InGame_A_HarpNBells_125bpm4-4_L08_9B96ECC7.wem</Path>
@@ -172,6 +176,10 @@
 				<File Id="443491471" Language="SFX">
 					<ShortName>Traps\Arrows\sfx_trap_arrows_01.wav</ShortName>
 					<Path>SFX\Traps\Arrows\sfx_trap_arrows_01_10C4C929.wem</Path>
+				</File>
+				<File Id="445074273" Language="SFX">
+					<ShortName>Player\Land\sfx_player_land_01.wav</ShortName>
+					<Path>SFX\Player\Land\sfx_player_land_01_10C4C929.wem</Path>
 				</File>
 				<File Id="453613545" Language="SFX">
 					<ShortName>Traps\Spikes\sfx_trap_spikes_01.wav</ShortName>
@@ -232,6 +240,10 @@
 				<File Id="613897724" Language="SFX">
 					<ShortName>Enemies\Bat red\sfx_enemy_bat_red_01.wav</ShortName>
 					<Path>SFX\Enemies\Bat red\sfx_enemy_bat_red_01_10C4C929.wem</Path>
+				</File>
+				<File Id="616298961" Language="SFX">
+					<ShortName>Player\Land\sfx_player_land_02.wav</ShortName>
+					<Path>SFX\Player\Land\sfx_player_land_02_10C4C929.wem</Path>
 				</File>
 				<File Id="618008961" Language="SFX">
 					<ShortName>Music\HHK_Main_MainMotif_100bpm4-4_L16_P01.wav</ShortName>

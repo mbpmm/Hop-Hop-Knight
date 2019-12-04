@@ -9,6 +9,8 @@ public class MainMenu : MonoBehaviour
 
     private int levelToLoad;
 
+    public AK.Wwise.State OnCreditsEnter;
+    public AK.Wwise.State OnCreditsExit;
     private void Start()
     {
         Time.timeScale = 1;
@@ -38,7 +40,15 @@ public class MainMenu : MonoBehaviour
 
     public void Credits()
     {
-        AkSoundEngine.PostEvent("ui_menu_credits", gameObject);
+        AkSoundEngine.PostEvent("ui_menu_credits_in", gameObject);
+        OnCreditsEnter.SetValue();
+    }
+
+    public void CreditsExit()
+    {
+        AkSoundEngine.PostEvent("ui_menu_back", gameObject);
+        AkSoundEngine.PostEvent("ui_menu_credits_out", gameObject);
+        OnCreditsExit.SetValue();
     }
 
     public void QuitApp()
