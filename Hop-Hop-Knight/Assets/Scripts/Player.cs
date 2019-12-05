@@ -297,7 +297,7 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Enemies")
+        if (collision.gameObject.tag == "Blobert"|| collision.gameObject.tag == "Murcy" || collision.gameObject.tag == "Murcy2")
         {
             if (!powerUpActivated)
             {
@@ -346,7 +346,7 @@ public class Player : MonoBehaviour
             collision.gameObject.SetActive(false);
 
         }
-        if (collision.gameObject.tag == "Enemies" || collision.gameObject.tag == "Bullet")
+        if (collision.gameObject.tag == "Blobert" || collision.gameObject.tag == "Murcy" || collision.gameObject.tag == "Murcy2" || collision.gameObject.tag == "Bullet")
         {
             if (!powerUpActivated)
             {

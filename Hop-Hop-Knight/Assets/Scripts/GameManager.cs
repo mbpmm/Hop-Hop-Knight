@@ -19,7 +19,7 @@ public class GameManager : MonobehaviourSingleton<GameManager>
     }
     private void Update()
     {
-        
+        AkSoundEngine.SetRTPCValue("floor_number", score);
     }
 
     void AddScore()

@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: -5310355608671341356}
   m_Layer: 8
   m_Name: Enemy3
-  m_TagString: Enemies
+  m_TagString: Murcy2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,6 +104,10 @@ MonoBehaviour:
   distance: 14.23
   movingRight: 1
   groundDetection: {fileID: 3584817661353378709}
+  distancePlayer: 0
+  aux1: 0
+  aux2: 0
+  percentage: 0
 --- !u!50 &3584817659800403943
 Rigidbody2D:
   serializedVersion: 4

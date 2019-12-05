@@ -10,10 +10,20 @@ public class EnemyAI : MonoBehaviour
     public bool movingRight = true;
     public Transform groundDetection;
     private Rigidbody2D enemyRB;
+
+    private GameObject player;
+
+    public float distancePlayer;
+    public float aux1;
+    public float aux2;
+    private float maxValue = 16f;
+    public float percentage;
     // Start is called before the first frame update
     void Start()
     {
+        aux1 = -15f;
         enemyRB = GetComponent<Rigidbody2D>();
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -35,6 +45,41 @@ public class EnemyAI : MonoBehaviour
                 movingRight = true;
             }
         }
+
+
+        distancePlayer = Vector2.Distance(player.transform.position, transform.position);
+
+        if (distancePlayer<15f)
+        {
+            aux2 = Mathf.Abs(aux1 + distancePlayer);
+            percentage = (aux2 * 100f) / maxValue;
+            Mathf.Clamp(percentage, 0, 100);
+
+            if (gameObject.tag == "Murcy")
+            {
+                AkSoundEngine.SetRTPCValue("distance_enemy_bat1", percentage);
+            }
+            if (gameObject.tag == "Murcy2")
+            {
+                AkSoundEngine.SetRTPCValue("distance_enemy_bat2", percentage);
+            }
+            if (gameObject.tag == "Blobert")
+            {
+                AkSoundEngine.SetRTPCValue("distance_enemy_blob", percentage);
+            }
+
+        }
+        else
+        {
+            percentage = 0;
+        }
+        
+
+    }
+
+    private void OnDisable()
+    {
+        percentage = 0;
     }
 
 }

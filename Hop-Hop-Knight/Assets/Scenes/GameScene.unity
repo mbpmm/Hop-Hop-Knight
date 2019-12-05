@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2701,6 +2701,10 @@ MonoBehaviour:
   speed: 0.69
   player: {fileID: 1105131614}
   startPos: {fileID: 1132095776}
+  distance: 0
+  aux1: 0
+  aux2: 0
+  percentage: 0
 --- !u!114 &534976517
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9550,6 +9554,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: bebada14bc133bc4496ba7f5d3da023a,
         type: 2}
+    - target: {fileID: 7988497065375096708, guid: d6560371192199948940a5316245f3e4,
+        type: 3}
+      propertyPath: darkness
+      value: 
+      objectReference: {fileID: 534976512}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6560371192199948940a5316245f3e4, type: 3}
 --- !u!1 &7689260754087491844

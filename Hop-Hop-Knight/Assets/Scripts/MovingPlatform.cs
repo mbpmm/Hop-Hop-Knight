@@ -23,18 +23,19 @@ public class MovingPlatform : MonoBehaviour
     {
         if (transform.position.x<-7f || transform.position.x > 7f)
         {
+            AkSoundEngine.PostEvent("trap_platform_close", gameObject);
             moving = false;
         }
 
 
         if (moving&&!finishMovement)
         {
-            AkSoundEngine.PostEvent("trap_platform_open", gameObject);
+            
             transform.position += transform.right*-1f * Time.deltaTime * speedOpen;
         }
         else if(!finishMovement)
         {
-            AkSoundEngine.PostEvent("trap_platform_close", gameObject);
+            
             transform.position += transform.right* Time.deltaTime * speedClose;
         }
 
@@ -55,6 +56,7 @@ public class MovingPlatform : MonoBehaviour
             }
             else
             {
+                AkSoundEngine.PostEvent("trap_platform_open", gameObject);
                 moving = true;
             }
             

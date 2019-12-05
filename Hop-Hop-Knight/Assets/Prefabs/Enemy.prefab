@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: -5827990014422014398}
   m_Layer: 8
   m_Name: Enemy
-  m_TagString: Enemies
+  m_TagString: Blobert
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,6 +104,10 @@ MonoBehaviour:
   distance: 1.33
   movingRight: 1
   groundDetection: {fileID: 6082221945350332827}
+  distancePlayer: 0
+  aux1: 0
+  aux2: 0
+  percentage: 0
 --- !u!50 &6082221943791148521
 Rigidbody2D:
   serializedVersion: 4
