@@ -48,12 +48,17 @@
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="powerup_state" ID="{92313F99-67CB-4A4F-9E72-884B51F24E01}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="volume_music" ID="{AA45939A-CEE8-4F36-ADDD-CEC6E02EB90D}"/>
 							<Value>100</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="play" ID="{2495BA82-9647-41EA-931E-DE727C31889E}"/>
+						<CurrentStateRef Name="dead" ID="{6D8DAF9D-2166-4310-97C9-66F34B631362}"/>
+						<CurrentStateRef Name="score" ID="{B1030D0F-0A75-47F0-9A67-8B44BAC8B3BF}"/>
 						<CurrentStateRef Name="ingame" ID="{3A10E00D-D309-403E-8BDD-ECABD43BE359}"/>
 						<CurrentStateRef Name="pause_off" ID="{0F7B1890-6312-4D2B-875B-AFF3CEF74A12}"/>
 						<CurrentStateRef Name="menu" ID="{09EDFD27-A48F-4328-8037-47EFE3B809D9}"/>

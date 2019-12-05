@@ -135,6 +135,19 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{DA5AF8A9-6188-4CFE-8F6C-4FEEA86B9034}" ShortID="719755472">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="100"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="powerup_state" ID="{92313F99-67CB-4A4F-9E72-884B51F24E01}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="powerup_end" ID="{7DA0414C-EAD2-4C73-B39E-917CB52157FF}">
@@ -146,6 +159,18 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="play" ID="{2495BA82-9647-41EA-931E-DE727C31889E}" WorkUnitID="{BF88A622-63C2-4B94-8505-42A50FA6F1E8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{88B8C1FD-63BF-4A9E-9130-D53477E5CB8C}" ShortID="337138918">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="powerup_state" ID="{92313F99-67CB-4A4F-9E72-884B51F24E01}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
