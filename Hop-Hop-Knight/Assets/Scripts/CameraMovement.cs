@@ -13,7 +13,7 @@ public class CameraMovement : MonoBehaviour
     public float speed;
     public float totalTime;
     public float currentAspect;
-
+    public float initPosY;
     void Start()
     {
         player = target.gameObject.GetComponent<Player>();
@@ -67,8 +67,12 @@ public class CameraMovement : MonoBehaviour
     IEnumerator Animate(float time)
     {
         float t = 0;
-        float initPosY = transform.position.y;
+        initPosY = transform.position.y;
         delta = (desiredPos.y - initPosY);
+        if (delta<1f)
+        {
+            delta = 8f;
+        }
         while (t<time)
         {
             t += Time.deltaTime*speed;
@@ -78,7 +82,6 @@ public class CameraMovement : MonoBehaviour
             }
             float y = initPosY + (delta * animCurve.Evaluate(t / time));
             transform.position = new Vector3(transform.position.x,y ,transform.position.z);
-            //transform.position = Vector3.LerpUnclamped(transform.position, desiredPos, animCurve.Evaluate(t / time));
             yield return null;
         }
     }
