@@ -22,7 +22,6 @@
 						<ObjectRef Name="trap_spikes" ID="{19BC56A3-101C-475D-ABD1-BE2CD91A33D7}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="enemy_bat2" ID="{EEB230E9-7C6D-4869-8E94-FB689996083B}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="trap_platform_close" ID="{21F999B7-33A5-48AE-89C4-6D29B6FCEC43}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="ui_ingame_score_off" ID="{A7463DB6-8C55-48E3-904A-81A9E2F1BBC8}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ui_pause_on" ID="{10A147B5-584C-4930-99B3-59CE53F81E2F}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="enemy_plant" ID="{5CECFE0F-98FE-4969-9728-2FF5E15154B0}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="powerup_start" ID="{E62FB467-D086-4A40-8651-9DC5114C6134}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
@@ -32,8 +31,8 @@
 						<ObjectRef Name="powerup_end" ID="{7DA0414C-EAD2-4C73-B39E-917CB52157FF}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ui_ingame_hand" ID="{C208B5D0-A510-4CB1-AFF2-0C32410BBE96}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ui_menu_start" ID="{89ED94D6-6F78-4CC7-B769-BCFBC863918C}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ui_menu_back" ID="{268331E9-5C66-4E01-B0B5-9D4364D8F298}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="player_die" ID="{600796D5-2192-4E6C-8816-780FAB51AEA8}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="ui_click" ID="{31D9D2B3-896D-4F60-B7BD-407459BE73B9}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="trap_tentacles" ID="{1D10AFE7-9940-4FBA-8BB3-00F5D3E2B944}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

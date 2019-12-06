@@ -348,7 +348,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="ui_click" ID="{31D9D2B3-896D-4F60-B7BD-407459BE73B9}"/>
 				<Event Name="ui_ingame_score" ID="{5601E053-2EEB-4A62-BDD7-91B15BAAB770}">
 					<ChildrenList>
 						<Action Name="" ID="{C9707B47-D55E-4C06-9705-0008B12D1D5E}" ShortID="105494480">

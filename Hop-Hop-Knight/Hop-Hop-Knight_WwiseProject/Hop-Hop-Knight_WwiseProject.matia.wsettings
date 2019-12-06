@@ -30,6 +30,7 @@
 				<Property Name="Event Action List\{A7463DB6-8C55-48E3-904A-81A9E2F1BBC8}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A7545A09-46E6-4561-8008-07D224946F78}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A9B777CB-0A2B-406C-866B-A1ECF68F2DDB}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{C208B5D0-A510-4CB1-AFF2-0C32410BBE96}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E62FB467-D086-4A40-8651-9DC5114C6134}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{EEB230E9-7C6D-4869-8E94-FB689996083B}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{EFCB9218-E943-4440-80D1-86EEDA82445D}\x64_Expand States" Type="string" Value=""/>
@@ -123,8 +124,10 @@
 				<Property Name="RTPC\GameParameterSimValue\{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}" Type="Real64" Value="0"/>
 				<Property Name="RTPC\GameParameterSimValue\{DD8872FB-3A06-43E0-9FE0-79D8B9146C73}" Type="Real64" Value="50"/>
 				<Property Name="RTPC\GameParameterSimValue\{F5A564D8-11FC-481B-915B-12E4E1C6363B}" Type="Real64" Value="50"/>
+				<Property Name="SettingsUserOverride" Type="bool" Value="True"/>
 				<Property Name="SoundBank Manager\x64_Expand States" Type="string" Value=""/>
-				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
+				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
+				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks"/>
 				<Property Name="SoundBankPathUserOverride" Type="bool" Value="True"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
