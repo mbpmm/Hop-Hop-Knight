@@ -230,6 +230,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{027CB01D-1118-4616-8B1F-CF9BF9BD950F}" ShortID="674833071">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="region_46" ID="{D96C5B8D-65A7-4960-912A-FBB041C34C48}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="trap_arrows" ID="{EFCB9218-E943-4440-80D1-86EEDA82445D}">
@@ -265,7 +272,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="trap_tentacles" ID="{1D10AFE7-9940-4FBA-8BB3-00F5D3E2B944}"/>
+				<Event Name="trap_tentacles" ID="{1D10AFE7-9940-4FBA-8BB3-00F5D3E2B944}">
+					<ChildrenList>
+						<Action Name="" ID="{38EF05FA-3A1E-434D-86A8-A87A420286CE}" ShortID="913907429">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="tentacles" ID="{8127A40A-1E84-4A43-BA82-8DCAC2E5DCC8}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="ui_menu_start" ID="{89ED94D6-6F78-4CC7-B769-BCFBC863918C}">
 					<ChildrenList>
 						<Action Name="" ID="{3A153CFF-1D63-4AED-9679-0FE9F53D71C0}" ShortID="962913322">
