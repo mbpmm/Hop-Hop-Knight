@@ -436,21 +436,6 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{471C8B32-8320-4D80-8251-D3F7A916B9B1}" ShortID="798992587">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="credits" ID="{BE9A8535-A131-4F62-9D43-47F374681E4A}" WorkUnitID="{BF88A622-63C2-4B94-8505-42A50FA6F1E8}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="ui_menu_back" ID="{268331E9-5C66-4E01-B0B5-9D4364D8F298}">
@@ -459,21 +444,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="UI_score_sign_out" ID="{DB7DD8A8-F110-436A-B5AB-F9D9684969F0}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{0D08B904-37AA-427A-A31E-5C867CE7322C}" ShortID="475491432">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="config" ID="{21A440EA-EAD4-46D0-AFF8-EAECEB108C99}" WorkUnitID="{BF88A622-63C2-4B94-8505-42A50FA6F1E8}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

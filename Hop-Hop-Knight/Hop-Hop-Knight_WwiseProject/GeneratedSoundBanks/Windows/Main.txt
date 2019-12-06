@@ -1,9 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
-	12137035	ui_home			\Default Work Unit\ui_home	
 	40631397	trap_arrows			\Default Work Unit\trap_arrows	
 	52976355	player_grab_gem			\Default Work Unit\player_grab_gem	
 	104469174	ui_ingame_highscore			\Default Work Unit\ui_ingame_highscore	
-	157712808	ui_ingame_score_off			\Default Work Unit\ui_ingame_score_off	
 	584352822	trap_spikes			\Default Work Unit\trap_spikes	
 	590715968	player_release			\Default Work Unit\player_release	
 	676410594	powerup_start			\Default Work Unit\powerup_start	
@@ -15,6 +13,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1731872944	ui_pause_on			\Default Work Unit\ui_pause_on	
 	1974222287	enemy_ghost			\Default Work Unit\enemy_ghost	
 	2249769530	ui_click			\Default Work Unit\ui_click	
+	2306418743	ui_menu_home			\Default Work Unit\ui_menu_home	
 	2582092671	enemy_blob			\Default Work Unit\enemy_blob	
 	2768764968	enemy_bat1			\Default Work Unit\enemy_bat1	
 	2768764971	enemy_bat2			\Default Work Unit\enemy_bat2	
@@ -102,7 +101,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	183111726	HHK_Main_FullMix_100bpm4-4_L16_P01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\SFX\Music\HHK_Main_FullMix_100bpm4-4_L16_P01_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSystem\Menu\MainTheme\HHK_Main_FullMix_100bpm4-4_L16_P01\HHK_Main_FullMix_100bpm4-4_L16_P01		729217
 	197487855	sfx_player_land_03	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\SFX\Player\Land\sfx_player_land_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_land\sfx_player_land_03		77816
 	250821060	HHK_InGame_A_HarpNBells_125bpm4-4_L08	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\SFX\Music\HHK_InGame_A_HarpNBells_125bpm4-4_L08_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSystem\InGame\InGamePlaylist\Part A\HHK_InGame_A_HarpNBells_125bpm4-4_L08		279027
-	264803878	sfx_ui_score_out_02	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\SFX\UI\Score-credits\Out\sfx_ui_score_out_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI sign\UI_score_sign_out\sfx_ui_score_out_02		533124
 	326366210	sfx_enemy_bat_red_03	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\SFX\Enemies\Bat red\sfx_enemy_bat_red_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Enemy\enemy_bat_red\sfx_enemy_bat_red_03		949364
 	335703604	sfx_player_release_03	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\SFX\Player\Release\sfx_player_release_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_release\sfx_player_release_03		132464
 	377518648	sfx_gem_grab_04	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\SFX\Player\Gem\sfx_gem_grab_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_grab_gem\sfx_gem_grab_04		288064
@@ -127,7 +125,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	546788465	sfx_ui_score_in_02	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\SFX\UI\Score-credits\In\sfx_ui_score_in_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI sign\UI_score_sign_in\sfx_ui_score_in_02		374112
 	579386746	HHK_InGame_B_KnightMotif_125bpm4-4_L08_P01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\SFX\Music\HHK_InGame_B_KnightMotif_125bpm4-4_L08_P01_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSystem\InGame\InGamePlaylist\Part B\HHK_InGame_B_KnightMotif_125bpm4-4_L08_P01		190556
 	580425381	HHK_InGame_Tentacles_B_125bpm4-4_L08	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\SFX\Music\HHK_InGame_Tentacles_B_125bpm4-4_L08_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSystem\InGame\InGamePlaylist\Part B\HHK_InGame_Tentacles_B_125bpm4-4_L08		308511
-	599080260	sfx_ui_score_out_01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\SFX\UI\Score-credits\Out\sfx_ui_score_out_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI sign\UI_score_sign_out\sfx_ui_score_out_01		350860
 	612293659	sfx_trap_platform_close_01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\SFX\Traps\Moving Platform\sfx_trap_platform_close_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Traps\moving_platform\moving_platform_close\sfx_trap_platform_close_01		232468
 	613897724	sfx_enemy_bat_red_01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\SFX\Enemies\Bat red\sfx_enemy_bat_red_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Enemy\enemy_bat_red\sfx_enemy_bat_red_01		902764
 	616298961	sfx_player_land_02	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\SFX\Player\Land\sfx_player_land_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_land\sfx_player_land_02		63136

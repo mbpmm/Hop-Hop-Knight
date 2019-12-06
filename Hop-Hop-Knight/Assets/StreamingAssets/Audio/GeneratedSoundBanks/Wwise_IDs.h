@@ -33,13 +33,12 @@ namespace AK
         static const AkUniqueID TRAP_SPIKES = 584352822U;
         static const AkUniqueID TRAP_TENTACLES = 3064100384U;
         static const AkUniqueID UI_CLICK = 2249769530U;
-        static const AkUniqueID UI_HOME = 12137035U;
         static const AkUniqueID UI_INGAME_HAND = 1170205103U;
         static const AkUniqueID UI_INGAME_HIGHSCORE = 104469174U;
         static const AkUniqueID UI_INGAME_SCORE = 2967661922U;
-        static const AkUniqueID UI_INGAME_SCORE_OFF = 157712808U;
         static const AkUniqueID UI_INGAME_WARNING = 2850178896U;
         static const AkUniqueID UI_MENU_ENTER = 3218841108U;
+        static const AkUniqueID UI_MENU_HOME = 2306418743U;
         static const AkUniqueID UI_MENU_START = 2961968006U;
         static const AkUniqueID UI_PAUSE_OFF = 952138190U;
         static const AkUniqueID UI_PAUSE_ON = 1731872944U;
