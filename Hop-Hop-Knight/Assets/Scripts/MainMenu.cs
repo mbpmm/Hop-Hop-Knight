@@ -40,14 +40,13 @@ public class MainMenu : MonoBehaviour
 
     public void Credits()
     {
-        AkSoundEngine.PostEvent("ui_menu_credits_in", gameObject);
+        AkSoundEngine.PostEvent("ui_menu_enter", gameObject);
         OnCreditsEnter.SetValue();
     }
 
     public void CreditsExit()
     {
         AkSoundEngine.PostEvent("ui_menu_back", gameObject);
-        AkSoundEngine.PostEvent("ui_menu_credits_out", gameObject);
         OnCreditsExit.SetValue();
     }
 

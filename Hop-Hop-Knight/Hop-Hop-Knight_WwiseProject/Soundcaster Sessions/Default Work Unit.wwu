@@ -26,7 +26,7 @@
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="ui_home" ID="{81D507B7-3B19-43D6-9DC0-85599D9BF2D2}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<ObjectRef Name="ui_menu_home" ID="{81D507B7-3B19-43D6-9DC0-85599D9BF2D2}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
@@ -59,7 +59,7 @@
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="dead" ID="{6D8DAF9D-2166-4310-97C9-66F34B631362}"/>
 						<CurrentStateRef Name="score" ID="{B1030D0F-0A75-47F0-9A67-8B44BAC8B3BF}"/>
-						<CurrentStateRef Name="ingame" ID="{3A10E00D-D309-403E-8BDD-ECABD43BE359}"/>
+						<CurrentStateRef Name="menu" ID="{4EEBF0E3-A47E-4C66-99ED-9172D611D718}"/>
 						<CurrentStateRef Name="pause_off" ID="{0F7B1890-6312-4D2B-875B-AFF3CEF74A12}"/>
 						<CurrentStateRef Name="menu" ID="{09EDFD27-A48F-4328-8037-47EFE3B809D9}"/>
 					</CurrentStateList>

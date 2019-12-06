@@ -4,6 +4,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 	1069431850	player			\Default Work Unit\player	
 	2292459139	menu_screen			\Default Work Unit\menu_screen	
 	2895066125	music_pause			\Default Work Unit\music_pause	
+	2974103762	mute			\Default Work Unit\mute	
 
 State	ID	Name	State Group			Notes
 	0	None	screen			
@@ -25,9 +26,15 @@ State	ID	Name	State Group			Notes
 	0	None	music_pause			
 	3537680115	pause_on	music_pause			
 	3967028551	pause_off	music_pause			
+	0	None	mute			
+	1814839050	mute_mx	mute			
+	1932282383	mute_fx	mute			
 
 Custom State	ID	Name	State Group	Owner		Notes
 	9221439	pause_on	music_pause	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
+	175892422	mute_fx	mute	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX		
+	345931834	mute_mx	mute	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
+	811204863	dead	player	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Ingame		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	3673881719	volume_sfx			\Default Work Unit\volume_sfx	
@@ -35,6 +42,8 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	984691642	Ingame			\Default Work Unit\Master Audio Bus\SFX\Ingame	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\SFX\UI	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
 

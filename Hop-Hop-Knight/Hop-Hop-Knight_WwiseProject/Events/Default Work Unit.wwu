@@ -296,7 +296,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="ui_home" ID="{81D507B7-3B19-43D6-9DC0-85599D9BF2D2}">
+				<Event Name="ui_menu_home" ID="{81D507B7-3B19-43D6-9DC0-85599D9BF2D2}">
 					<ChildrenList>
 						<Action Name="" ID="{326089FC-C361-4F70-BC45-27D833C389E2}" ShortID="210877628">
 							<PropertyList>
@@ -403,17 +403,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="ui_ingame_score_off" ID="{A7463DB6-8C55-48E3-904A-81A9E2F1BBC8}">
-					<ChildrenList>
-						<Action Name="" ID="{FD595ECE-47FF-4615-8A31-E91F13F12FF3}" ShortID="790151731">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="UI_score_sign_out" ID="{DB7DD8A8-F110-436A-B5AB-F9D9684969F0}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="ui_ingame_highscore" ID="{5D295C08-607E-4316-BAD1-649074F5C685}">
 					<ChildrenList>
 						<Action Name="" ID="{ACB42A8B-7B49-4814-80F8-342C580F3F58}" ShortID="122132021">
@@ -438,18 +427,8 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="ui_menu_credits" ID="{772A466F-03D4-44ED-9EAA-F1FC6FCB285E}">
+				<Event Name="ui_menu_enter" ID="{772A466F-03D4-44ED-9EAA-F1FC6FCB285E}">
 					<ChildrenList>
-						<Action Name="" ID="{471C8B32-8320-4D80-8251-D3F7A916B9B1}" ShortID="798992587">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="22"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="credits" ID="{BE9A8535-A131-4F62-9D43-47F374681E4A}" WorkUnitID="{BF88A622-63C2-4B94-8505-42A50FA6F1E8}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{A758EB05-1891-461F-B387-38F6DB59B163}" ShortID="23215986">
 							<ReferenceList>
 								<Reference Name="Target">
@@ -457,8 +436,50 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{471C8B32-8320-4D80-8251-D3F7A916B9B1}" ShortID="798992587">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="credits" ID="{BE9A8535-A131-4F62-9D43-47F374681E4A}" WorkUnitID="{BF88A622-63C2-4B94-8505-42A50FA6F1E8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="ui_menu_back" ID="{268331E9-5C66-4E01-B0B5-9D4364D8F298}">
+					<ChildrenList>
+						<Action Name="" ID="{6A7EE2A1-322A-4902-925F-6E278477341B}" ShortID="305508973">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_score_sign_out" ID="{DB7DD8A8-F110-436A-B5AB-F9D9684969F0}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0D08B904-37AA-427A-A31E-5C867CE7322C}" ShortID="475491432">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="config" ID="{21A440EA-EAD4-46D0-AFF8-EAECEB108C99}" WorkUnitID="{BF88A622-63C2-4B94-8505-42A50FA6F1E8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="ui_menu_play_again" ID="{05C706D7-BAF5-4E5D-AA10-7699BD3C7463}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

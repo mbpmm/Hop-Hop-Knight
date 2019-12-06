@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="134">
 	<RootPaths>
-		<ProjectRoot>C:\Users\marian\Desktop\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\marian\Desktop\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\marian\Desktop\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\marian\Desktop\Hop-Hop-Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -47,7 +47,7 @@
 				<Event Id="2967661922" Name="ui_ingame_score" ObjectPath="\Events\Default Work Unit\ui_ingame_score" DurationType="OneShot" DurationMin="1.948167" DurationMax="2.109833"/>
 				<Event Id="157712808" Name="ui_ingame_score_off" ObjectPath="\Events\Default Work Unit\ui_ingame_score_off" DurationType="OneShot" DurationMin="1.827062" DurationMax="2.776354"/>
 				<Event Id="2850178896" Name="ui_ingame_warning" ObjectPath="\Events\Default Work Unit\ui_ingame_warning" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3131684436" Name="ui_menu_credits" ObjectPath="\Events\Default Work Unit\ui_menu_credits" DurationType="OneShot" DurationMin="1.948167" DurationMax="2.109833"/>
+				<Event Id="3218841108" Name="ui_menu_enter" ObjectPath="\Events\Default Work Unit\ui_menu_enter" DurationType="OneShot" DurationMin="1.948167" DurationMax="2.109833"/>
 				<Event Id="2961968006" Name="ui_menu_start" ObjectPath="\Events\Default Work Unit\ui_menu_start" DurationType="OneShot" DurationMin="4.278584" DurationMax="4.278584"/>
 				<Event Id="952138190" Name="ui_pause_off" ObjectPath="\Events\Default Work Unit\ui_pause_off" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1731872944" Name="ui_pause_on" ObjectPath="\Events\Default Work Unit\ui_pause_on" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>

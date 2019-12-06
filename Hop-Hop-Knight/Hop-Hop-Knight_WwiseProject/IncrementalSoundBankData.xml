@@ -78,13 +78,13 @@
 	<Platform GUID="{D03EB1C4-6F2A-4BC7-A1EB-03ED66746446}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="1045192756" Timestamp="1575490095"/>
-				<File Name="Main" Hash="2642385912" Timestamp="1575490095"/>
+				<File Name="Init" Hash="3746973025" Timestamp="1575588465"/>
+				<File Name="Main" Hash="3419987046" Timestamp="1575588707"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3800682907" Timestamp="1575490095"/>
+				<File Name="" Hash="3062886912" Timestamp="1575588707"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

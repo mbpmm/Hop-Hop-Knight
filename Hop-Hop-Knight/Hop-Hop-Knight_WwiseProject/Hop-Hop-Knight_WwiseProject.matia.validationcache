@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="94">
-	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1575475042" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1575581122" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1575424127" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1575424127" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1575424127" DateHigh="0"/>
@@ -9,11 +9,11 @@
 	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1575424127" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1575424127" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Effects\Factory Effects.wwu" DateLow="1575424127" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Events\Default Work Unit.wwu" DateLow="1575475114" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1575424127" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Hop-Hop-Knight_WwiseProject.matia.wsettings" DateLow="1575475951" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Events\Default Work Unit.wwu" DateLow="1575587697" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1575587697" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Hop-Hop-Knight_WwiseProject.matia.wsettings" DateLow="1575587651" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Hop-Hop-Knight_WwiseProject.wproj" DateLow="1575424127" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1575474635" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1575587697" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1575424127" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1575424127" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Modulators\Default Work Unit.wwu" DateLow="1575424127" DateHigh="0"/>
@@ -21,7 +21,7 @@
 	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1575424127" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Queries\Factory Queries.wwu" DateLow="1575424127" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1575424127" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1575424127" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1575587697" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\States\Default Work Unit.wwu" DateLow="1575424127" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1575424127" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1575424127" DateHigh="0"/>

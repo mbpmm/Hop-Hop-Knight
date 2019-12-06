@@ -39,7 +39,7 @@ namespace AK
         static const AkUniqueID UI_INGAME_SCORE = 2967661922U;
         static const AkUniqueID UI_INGAME_SCORE_OFF = 157712808U;
         static const AkUniqueID UI_INGAME_WARNING = 2850178896U;
-        static const AkUniqueID UI_MENU_CREDITS = 3131684436U;
+        static const AkUniqueID UI_MENU_ENTER = 3218841108U;
         static const AkUniqueID UI_MENU_START = 2961968006U;
         static const AkUniqueID UI_PAUSE_OFF = 952138190U;
         static const AkUniqueID UI_PAUSE_ON = 1731872944U;
@@ -84,6 +84,17 @@ namespace AK
             } // namespace STATE
         } // namespace MUSIC_PAUSE
 
+        namespace MUTE
+        {
+            static const AkUniqueID GROUP = 2974103762U;
+
+            namespace STATE
+            {
+                static const AkUniqueID MUTE_FX = 1932282383U;
+                static const AkUniqueID MUTE_MX = 1814839050U;
+            } // namespace STATE
+        } // namespace MUTE
+
         namespace PLAYER
         {
             static const AkUniqueID GROUP = 1069431850U;
@@ -119,6 +130,7 @@ namespace AK
         static const AkUniqueID DISTANCE_TRAP_SPIKES = 2411429840U;
         static const AkUniqueID DISTANCE_TRAP_TENTACLE = 2145236951U;
         static const AkUniqueID FLOOR_NUMBER = 1884276375U;
+        static const AkUniqueID POWERUP_STATE = 709965785U;
         static const AkUniqueID VOLUME_MUSIC = 3891337659U;
         static const AkUniqueID VOLUME_SFX = 3673881719U;
     } // namespace GAME_PARAMETERS
@@ -137,9 +149,11 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID INGAME = 984691642U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID SFX = 393239870U;
+        static const AkUniqueID UI = 1551306167U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

@@ -42,6 +42,13 @@
 						<State Name="pause_off" ID="{0F7B1890-6312-4D2B-875B-AFF3CEF74A12}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="mute" ID="{D148A865-4EA0-4687-A022-0DF3E7230E04}">
+					<ChildrenList>
+						<State Name="None" ID="{C8627E62-3613-4831-8A52-AD1BDD0CD0F2}"/>
+						<State Name="mute_fx" ID="{579524FA-B98E-4DA5-B012-05B20162FF1D}"/>
+						<State Name="mute_mx" ID="{36F571FE-8C27-4AB5-80EE-39AC645818C0}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
