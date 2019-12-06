@@ -14,12 +14,20 @@
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="powerup_start" ID="{E62FB467-D086-4A40-8651-9DC5114C6134}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="ui_menu_start" ID="{89ED94D6-6F78-4CC7-B769-BCFBC863918C}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="ui_pause_off" ID="{4456BDDE-78F0-46EC-BCC4-149E6479DB36}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
 							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="powerup_end" ID="{7DA0414C-EAD2-4C73-B39E-917CB52157FF}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="player_die" ID="{600796D5-2192-4E6C-8816-780FAB51AEA8}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
@@ -58,8 +66,8 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="dead" ID="{6D8DAF9D-2166-4310-97C9-66F34B631362}"/>
-						<CurrentStateRef Name="score" ID="{B1030D0F-0A75-47F0-9A67-8B44BAC8B3BF}"/>
-						<CurrentStateRef Name="menu" ID="{4EEBF0E3-A47E-4C66-99ED-9172D611D718}"/>
+						<CurrentStateRef Name="play" ID="{2495BA82-9647-41EA-931E-DE727C31889E}"/>
+						<CurrentStateRef Name="ingame" ID="{3A10E00D-D309-403E-8BDD-ECABD43BE359}"/>
 						<CurrentStateRef Name="pause_off" ID="{0F7B1890-6312-4D2B-875B-AFF3CEF74A12}"/>
 						<CurrentStateRef Name="menu" ID="{09EDFD27-A48F-4328-8037-47EFE3B809D9}"/>
 					</CurrentStateList>

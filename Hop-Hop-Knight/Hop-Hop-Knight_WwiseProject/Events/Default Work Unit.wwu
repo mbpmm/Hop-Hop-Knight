@@ -42,6 +42,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{79F3D9AC-C542-4ACF-B74A-78A9F0D93E4B}" ShortID="88752523">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="powerup_state" ID="{92313F99-67CB-4A4F-9E72-884B51F24E01}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="player_touch" ID="{2C98039F-9EE8-427D-87F8-A4D33CD58201}">
@@ -140,7 +150,6 @@
 								<Property Name="ActionType" Type="int16" Value="38"/>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
 								<Property Name="GameParameterValue" Type="Real64" Value="100"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -166,7 +175,6 @@
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="38"/>
 								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
-								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -291,6 +299,16 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="play" ID="{2495BA82-9647-41EA-931E-DE727C31889E}" WorkUnitID="{BF88A622-63C2-4B94-8505-42A50FA6F1E8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{767C6BD7-9887-49BD-95C7-7D0E475BBD94}" ShortID="36835333">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="powerup_state" ID="{92313F99-67CB-4A4F-9E72-884B51F24E01}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
