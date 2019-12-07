@@ -139,7 +139,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="player_wings" ID="{E603A4DE-EBD9-415B-98B1-9073D40E1935}"/>
+				<Event Name="player_wings" ID="{E603A4DE-EBD9-415B-98B1-9073D40E1935}">
+					<ChildrenList>
+						<Action Name="" ID="{7450F4EC-0FF9-4D90-81CB-2D22D8A8CC1B}" ShortID="812765639">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="player_powerup" ID="{463D3E54-EB3D-45D0-A207-01D584595082}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="powerup_start" ID="{E62FB467-D086-4A40-8651-9DC5114C6134}">
 					<ChildrenList>
 						<Action Name="" ID="{A9F897A2-35D0-4723-9C16-55152D04791E}" ShortID="853764735">
@@ -237,10 +247,10 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{027CB01D-1118-4616-8B1F-CF9BF9BD950F}" ShortID="674833071">
+						<Action Name="" ID="{7CA05AC9-82FA-4837-9E0E-8F4B4C036491}" ShortID="934913099">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="region_46" ID="{D96C5B8D-65A7-4960-912A-FBB041C34C48}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+									<ObjectRef Name="ghost" ID="{4E9F6407-B2EB-46FF-B3D3-5ACE16A53493}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -5,6 +5,11 @@
 			<ChildrenList>
 				<MusicSwitchContainer Name="MusicSystem" ID="{6A5FE2F1-18AA-4B49-9722-0218F4AB9BF9}" ShortID="139840866">
 					<PropertyList>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-5</Value>

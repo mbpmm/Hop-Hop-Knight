@@ -69,7 +69,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_trap_tentacle" ID="{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}"/>
-							<Value>0</Value>
+							<Value>90</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="powerup_state" ID="{92313F99-67CB-4A4F-9E72-884B51F24E01}"/>

@@ -16,10 +16,10 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX">
+		<SoundBank Id="3161908922" Language="English(US)">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
-			<Path>Main.bnk</Path>
+			<Path>English(US)\Main.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2768764968" Name="enemy_bat1" ObjectPath="\Events\Default Work Unit\enemy_bat1"/>
 				<Event Id="2768764971" Name="enemy_bat2" ObjectPath="\Events\Default Work Unit\enemy_bat2"/>
@@ -56,33 +56,17 @@
 					<ShortName>UI\Score-credits\In\sfx_ui_score_in_01.wav</ShortName>
 					<Path>SFX\UI\Score-credits\In\sfx_ui_score_in_01_10C4C929.wem</Path>
 				</File>
-				<File Id="20415555" Language="SFX">
-					<ShortName>Music\HHK_InGame_A_SpaceGuitar_125bpm4-4_L08.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_A_SpaceGuitar_125bpm4-4_L08_9B96ECC7.wem</Path>
-				</File>
 				<File Id="21166069" Language="SFX">
 					<ShortName>region_46.wav</ShortName>
 					<Path>SFX\region_46_D79FB2B7.wem</Path>
 				</File>
 				<File Id="38531242" Language="SFX">
 					<ShortName>Tentaculos 2 prueba.wav</ShortName>
-					<Path>SFX\Tentaculos 2 prueba_10C4C929.wem</Path>
-				</File>
-				<File Id="42107965" Language="SFX">
-					<ShortName>Music\HHK_InGame_HighScore_125bpm4-4_L04_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_HighScore_125bpm4-4_L04_P01_9B96ECC7.wem</Path>
-				</File>
-				<File Id="44685779" Language="SFX">
-					<ShortName>Music\HHK_InGame_C_DrumNBass_125bpm4-4_L08_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_C_DrumNBass_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
+					<Path>SFX\Tentaculos 2 prueba_156B3FE2.wem</Path>
 				</File>
 				<File Id="50945258" Language="SFX">
 					<ShortName>Player\Touch\sfx_player_touch_03.wav</ShortName>
 					<Path>SFX\Player\Touch\sfx_player_touch_03_0B716922.wem</Path>
-				</File>
-				<File Id="55638435" Language="SFX">
-					<ShortName>Music\HHK_InGame_C_PadsNBells_125bpm4-4_L08_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_C_PadsNBells_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
 				</File>
 				<File Id="70327657" Language="SFX">
 					<ShortName>Die Prueba.wav</ShortName>
@@ -96,53 +80,21 @@
 					<ShortName>Traps\Moving Platform\sfx_trap_platform_close_02.wav</ShortName>
 					<Path>SFX\Traps\Moving Platform\sfx_trap_platform_close_02_10C4C929.wem</Path>
 				</File>
-				<File Id="103908315" Language="SFX">
-					<ShortName>Music\HHK_InGame_C_Ostinatto_125bpm4-4_L08_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_C_Ostinatto_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
-				</File>
-				<File Id="118963139" Language="SFX">
-					<ShortName>Music\HHK_InGame_B_Harpsichord_125bpm4-4_L08_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_B_Harpsichord_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
-				</File>
 				<File Id="127149931" Language="SFX">
 					<ShortName>Player\Release\sfx_player_release_01.wav</ShortName>
 					<Path>SFX\Player\Release\sfx_player_release_01_10C4C929.wem</Path>
-				</File>
-				<File Id="129705576" Language="SFX">
-					<ShortName>HHK_InGame_Ghost_125bpm4-4_L08_P01.wav</ShortName>
-					<Path>SFX\HHK_InGame_Ghost_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
-				</File>
-				<File Id="129905550" Language="SFX">
-					<ShortName>Music\HHK_InGame_A_DrumNBass_125bpm4-4_L08.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_A_DrumNBass_125bpm4-4_L08_9B96ECC7.wem</Path>
 				</File>
 				<File Id="132936641" Language="SFX">
 					<ShortName>Enemies\Plant\sfx_enemy_plant_attack_02.wav</ShortName>
 					<Path>SFX\Enemies\Plant\sfx_enemy_plant_attack_02_10C4C929.wem</Path>
 				</File>
-				<File Id="136575938" Language="SFX">
-					<ShortName>Music\HHK_InGame_B_DrumNBass_125bpm4-4_L08_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_B_DrumNBass_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
-				</File>
-				<File Id="164732613" Language="SFX">
-					<ShortName>Music\HHK_Credits_FullMix_100bpm4-4_L16_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_Credits_FullMix_100bpm4-4_L16_P01_9B96ECC7.wem</Path>
-				</File>
-				<File Id="180378388" Language="SFX">
-					<ShortName>Music\HHK_InGame_B_FullMix_125bpm4-4_L08_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_B_FullMix_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
-				</File>
-				<File Id="183111726" Language="SFX">
-					<ShortName>Music\HHK_Main_FullMix_100bpm4-4_L16_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_Main_FullMix_100bpm4-4_L16_P01_9B96ECC7.wem</Path>
+				<File Id="179945682" Language="English(US)">
+					<ShortName>test fly.wav</ShortName>
+					<Path>Voices\English(US)\test fly_10C4C929.wem</Path>
 				</File>
 				<File Id="197487855" Language="SFX">
 					<ShortName>Player\Land\sfx_player_land_03.wav</ShortName>
 					<Path>SFX\Player\Land\sfx_player_land_03_10C4C929.wem</Path>
-				</File>
-				<File Id="250821060" Language="SFX">
-					<ShortName>Music\HHK_InGame_A_HarpNBells_125bpm4-4_L08.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_A_HarpNBells_125bpm4-4_L08_9B96ECC7.wem</Path>
 				</File>
 				<File Id="264803878" Language="SFX">
 					<ShortName>UI\Score-credits\Out\sfx_ui_score_out_02.wav</ShortName>
@@ -159,30 +111,6 @@
 				<File Id="377518648" Language="SFX">
 					<ShortName>Player\Gem\sfx_gem_grab_04.wav</ShortName>
 					<Path>SFX\Player\Gem\sfx_gem_grab_04_10C4C929.wem</Path>
-				</File>
-				<File Id="378412274" Language="SFX">
-					<ShortName>Music\HHK_InGame_Tentacles_C_125bpm4-4_L08.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_Tentacles_C_125bpm4-4_L08_9B96ECC7.wem</Path>
-				</File>
-				<File Id="392152971" Language="SFX">
-					<ShortName>Music\HHK_InGame_A_SynthMelody_125bpm4-4_L08.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_A_SynthMelody_125bpm4-4_L08_9B96ECC7.wem</Path>
-				</File>
-				<File Id="397206738" Language="SFX">
-					<ShortName>Music\HHK_InGame_C_Orchestral_125bpm4-4_L08_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_C_Orchestral_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
-				</File>
-				<File Id="404007180" Language="SFX">
-					<ShortName>Music\HHK_InGame_C_FullMix_125bpm4-4_L08_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_C_FullMix_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
-				</File>
-				<File Id="411729254" Language="SFX">
-					<ShortName>Music\HHK_Main_Synths_100bpm4-4_L16_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_Main_Synths_100bpm4-4_L16_P01_9B96ECC7.wem</Path>
-				</File>
-				<File Id="414575383" Language="SFX">
-					<ShortName>Music\HHK_InGame_Trans_125bpm4-4_L02_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_Trans_125bpm4-4_L02_P01_9B96ECC7.wem</Path>
 				</File>
 				<File Id="419762208" Language="SFX">
 					<ShortName>Enemies\Bat green\sfx_enemy_bat_green_04.wav</ShortName>
@@ -204,10 +132,6 @@
 					<ShortName>Traps\Moving Platform\sfx_trap_platform_open_01.wav</ShortName>
 					<Path>SFX\Traps\Moving Platform\sfx_trap_platform_open_01_10C4C929.wem</Path>
 				</File>
-				<File Id="472413976" Language="SFX">
-					<ShortName>Music\HHK_InGame_C_SurfGuitar_125bpm4-4_L08_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_C_SurfGuitar_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
-				</File>
 				<File Id="482116921" Language="SFX">
 					<ShortName>Enemies\Bat red\sfx_enemy_bat_red_04.wav</ShortName>
 					<Path>SFX\Enemies\Bat red\sfx_enemy_bat_red_04_10C4C929.wem</Path>
@@ -220,10 +144,6 @@
 					<ShortName>Enemies\Bat green\sfx_enemy_bat_green_03.wav</ShortName>
 					<Path>SFX\Enemies\Bat green\sfx_enemy_bat_green_03_10C4C929.wem</Path>
 				</File>
-				<File Id="532605471" Language="SFX">
-					<ShortName>Music\HHK_InGame_C_Melody_125bpm4-4_L08_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_C_Melody_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
-				</File>
 				<File Id="545333957" Language="SFX">
 					<ShortName>Player\Gem\sfx_gem_grab_02.wav</ShortName>
 					<Path>SFX\Player\Gem\sfx_gem_grab_02_10C4C929.wem</Path>
@@ -235,14 +155,6 @@
 				<File Id="546788465" Language="SFX">
 					<ShortName>UI\Score-credits\In\sfx_ui_score_in_02.wav</ShortName>
 					<Path>SFX\UI\Score-credits\In\sfx_ui_score_in_02_10C4C929.wem</Path>
-				</File>
-				<File Id="579386746" Language="SFX">
-					<ShortName>Music\HHK_InGame_B_KnightMotif_125bpm4-4_L08_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_B_KnightMotif_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
-				</File>
-				<File Id="580425381" Language="SFX">
-					<ShortName>Music\HHK_InGame_Tentacles_B_125bpm4-4_L08.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_Tentacles_B_125bpm4-4_L08_9B96ECC7.wem</Path>
 				</File>
 				<File Id="599080260" Language="SFX">
 					<ShortName>UI\Score-credits\Out\sfx_ui_score_out_01.wav</ShortName>
@@ -260,21 +172,9 @@
 					<ShortName>Player\Land\sfx_player_land_02.wav</ShortName>
 					<Path>SFX\Player\Land\sfx_player_land_02_10C4C929.wem</Path>
 				</File>
-				<File Id="618008961" Language="SFX">
-					<ShortName>Music\HHK_Main_MainMotif_100bpm4-4_L16_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_Main_MainMotif_100bpm4-4_L16_P01_9B96ECC7.wem</Path>
-				</File>
-				<File Id="625212588" Language="SFX">
-					<ShortName>Music\HHK_InGame_Tentacles_A_125bpm4-4_L08.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_Tentacles_A_125bpm4-4_L08_9B96ECC7.wem</Path>
-				</File>
 				<File Id="626543828" Language="SFX">
 					<ShortName>Traps\Arrows\sfx_trap_arrows_03.wav</ShortName>
 					<Path>SFX\Traps\Arrows\sfx_trap_arrows_03_10C4C929.wem</Path>
-				</File>
-				<File Id="642115803" Language="SFX">
-					<ShortName>Music\HHK_InGame_C_Shaker_125bpm4-4_L08_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_C_Shaker_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
 				</File>
 				<File Id="657465406" Language="SFX">
 					<ShortName>Enemies\Plant\sfx_enemy_plant_attack_01.wav</ShortName>
@@ -284,22 +184,6 @@
 					<ShortName>Player\Gem\sfx_gem_grab_01.wav</ShortName>
 					<Path>SFX\Player\Gem\sfx_gem_grab_01_10C4C929.wem</Path>
 				</File>
-				<File Id="791954498" Language="SFX">
-					<ShortName>Music\HHK_InGame_B_Orchestral_125bpm4-4_L08_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_B_Orchestral_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
-				</File>
-				<File Id="799291975" Language="SFX">
-					<ShortName>Music\HHK_Main_Back_100bpm4-4_L16_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_Main_Back_100bpm4-4_L16_P01_9B96ECC7.wem</Path>
-				</File>
-				<File Id="804746590" Language="SFX">
-					<ShortName>Music\HHK_Main_Trans_100bpm4-4_L02_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_Main_Trans_100bpm4-4_L02_P01_9B96ECC7.wem</Path>
-				</File>
-				<File Id="815275819" Language="SFX">
-					<ShortName>Music\HHK_InGame_Die_125bpm4-4_L04_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_Die_125bpm4-4_L04_P01_9B96ECC7.wem</Path>
-				</File>
 				<File Id="817700820" Language="SFX">
 					<ShortName>Traps\Arrows\sfx_trap_arrows_02.wav</ShortName>
 					<Path>SFX\Traps\Arrows\sfx_trap_arrows_02_10C4C929.wem</Path>
@@ -307,10 +191,6 @@
 				<File Id="822708883" Language="SFX">
 					<ShortName>Enemies\Bat green\sfx_enemy_bat_green_02.wav</ShortName>
 					<Path>SFX\Enemies\Bat green\sfx_enemy_bat_green_02_10C4C929.wem</Path>
-				</File>
-				<File Id="828028252" Language="SFX">
-					<ShortName>Music\HHK_InGame_B_Ostinatto_125bpm4-4_L08_P01.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_B_Ostinatto_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
 				</File>
 				<File Id="868464799" Language="SFX">
 					<ShortName>Traps\Spikes\sfx_trap_spikes_02.wav</ShortName>
@@ -351,10 +231,6 @@
 				<File Id="1047113144" Language="SFX">
 					<ShortName>Player\Gem\sfx_gem_grab_03.wav</ShortName>
 					<Path>SFX\Player\Gem\sfx_gem_grab_03_10C4C929.wem</Path>
-				</File>
-				<File Id="1049405448" Language="SFX">
-					<ShortName>Music\HHK_InGame_A_FullMix_125bpm4-4_L08.wav</ShortName>
-					<Path>SFX\Music\HHK_InGame_A_FullMix_125bpm4-4_L08_9B96ECC7.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

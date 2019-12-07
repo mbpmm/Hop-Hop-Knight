@@ -25,26 +25,6 @@
 										</Reference>
 									</ReferenceList>
 								</Sound>
-								<Sound Name="UI_pause_off" ID="{C2192492-9AD0-419B-8714-AA5029430DA7}" ShortID="755476457">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-										</Reference>
-									</ReferenceList>
-								</Sound>
-								<Sound Name="UI_click" ID="{DD6E7913-6EC1-46E8-A950-352F584B2E8C}" ShortID="197678408">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-										</Reference>
-									</ReferenceList>
-								</Sound>
 								<Sound Name="UI_menu_start" ID="{F4655782-85CA-44A7-A6E2-6B4D4788E144}" ShortID="698696796">
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -63,16 +43,6 @@
 									<ActiveSourceList>
 										<ActiveSource Name="ui_menu_play" ID="{FAFADE73-EDCF-4DF2-B566-EB42F3F277DE}" Platform="Linked"/>
 									</ActiveSourceList>
-								</Sound>
-								<Sound Name="UI_pause_on" ID="{4C4AE2FA-737C-4AA0-AA32-9FF1E1AD2F5F}" ShortID="692010850">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-										</Reference>
-									</ReferenceList>
 								</Sound>
 							</ChildrenList>
 						</Folder>
@@ -644,39 +614,7 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<Sound Name="region_46" ID="{D96C5B8D-65A7-4960-912A-FBB041C34C48}" ShortID="1435526">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
-										<Property Name="Volume" Type="Real64">
-											<RTPCList>
-												<RTPC Name="" ID="{851A4231-570A-4494-82DD-6573789D47ED}" ShortID="420032250">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="distance_enemy_ghost" ID="{27D853C4-69D2-4FF0-BDF4-B3C9C3055221}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{9686194B-902D-477A-952F-4720ED85C753}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-200</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>0</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-									</PropertyList>
+								<BlendContainer Name="ghost" ID="{4E9F6407-B2EB-46FF-B3D3-5ACE16A53493}" ShortID="129968271">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
@@ -686,15 +624,290 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="region_46" ID="{1EECE39D-9973-408C-82BB-3B84B0E8AB0C}" ShortID="21166069">
-											<Language>SFX</Language>
-											<AudioFile>region_46.wav</AudioFile>
-										</AudioFileSource>
+										<Sound Name="region_46" ID="{D96C5B8D-65A7-4960-912A-FBB041C34C48}" ShortID="1435526">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{851A4231-570A-4494-82DD-6573789D47ED}" ShortID="420032250">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="distance_enemy_ghost" ID="{27D853C4-69D2-4FF0-BDF4-B3C9C3055221}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{9686194B-902D-477A-952F-4720ED85C753}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="region_46" ID="{1EECE39D-9973-408C-82BB-3B84B0E8AB0C}" ShortID="21166069">
+													<Language>SFX</Language>
+													<AudioFile>region_46.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="region_46" ID="{1EECE39D-9973-408C-82BB-3B84B0E8AB0C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="region_01" ID="{30E4923D-A781-4291-AE85-1D96F06448C2}" ShortID="452213471">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{4765312B-D57B-4489-BEEE-9ACF5CA6D748}" ShortID="1049780374">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="distance_enemy_ghost" ID="{27D853C4-69D2-4FF0-BDF4-B3C9C3055221}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{A82A74B8-4A77-46F1-9591-CDCDE728807A}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="region_46" ID="{B3AEC3B3-1D0D-4A84-9E72-3AD660B314DD}" ShortID="946195338">
+													<Language>SFX</Language>
+													<AudioFile>region_46.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="21166069"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="region_46" ID="{B3AEC3B3-1D0D-4A84-9E72-3AD660B314DD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="region_02" ID="{59770B4A-BC32-49EB-B1C0-47D9E57765C2}" ShortID="408929400">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{72D801CC-88BB-4E62-8609-95ECE7B48E3C}" ShortID="536378996">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="distance_enemy_ghost" ID="{27D853C4-69D2-4FF0-BDF4-B3C9C3055221}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{C695198C-0679-4112-B6AE-EE6BFE4667A6}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="region_46" ID="{1773FA90-92AB-4045-92D6-1B41CDA160E6}" ShortID="97357734">
+													<Language>SFX</Language>
+													<AudioFile>region_46.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="21166069"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="region_46" ID="{1773FA90-92AB-4045-92D6-1B41CDA160E6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="region_03" ID="{515BABAF-860C-4036-B79D-FE69128A99EB}" ShortID="507388892">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{086B45FF-7A9B-4EC7-9C16-8C464218FC91}" ShortID="97143274">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="distance_enemy_ghost" ID="{27D853C4-69D2-4FF0-BDF4-B3C9C3055221}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{9766D1ED-1E73-4778-A4A6-FD35D73DF9EB}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="region_46" ID="{C3853E09-0D70-40ED-9D4E-E602D267E84F}" ShortID="533704902">
+													<Language>SFX</Language>
+													<AudioFile>region_46.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="21166069"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="region_46" ID="{C3853E09-0D70-40ED-9D4E-E602D267E84F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="region_04" ID="{6BBE9637-9986-49E4-9AEC-889BC09B6FF4}" ShortID="654605431">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="IsLoopingInfinite" Type="bool" Value="False"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{FAAAD434-D223-4B33-907A-4A09F80B25C7}" ShortID="865625473">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="distance_enemy_ghost" ID="{27D853C4-69D2-4FF0-BDF4-B3C9C3055221}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{26DE51D8-B056-4B93-A761-03D3A05948E1}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="region_46" ID="{5E67DA90-3A99-4084-A928-95BC92312490}" ShortID="25314002">
+													<Language>SFX</Language>
+													<AudioFile>region_46.wav</AudioFile>
+													<ConvertedFileIDList>
+														<File ID="21166069"/>
+													</ConvertedFileIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="region_46" ID="{5E67DA90-3A99-4084-A928-95BC92312490}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="region_46" ID="{1EECE39D-9973-408C-82BB-3B84B0E8AB0C}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</BlendContainer>
 							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
@@ -784,7 +997,7 @@
 										<ActiveSource Name="Die Prueba" ID="{39D4779B-C35A-487D-8EBF-FD18B78BB948}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="player_wings" ID="{463D3E54-EB3D-45D0-A207-01D584595082}" ShortID="132352307">
+								<Sound Name="player_powerup" ID="{463D3E54-EB3D-45D0-A207-01D584595082}" ShortID="132352307">
 									<PropertyList>
 										<Property Name="IsVoice" Type="bool" Value="True"/>
 									</PropertyList>
@@ -796,6 +1009,15 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="test fly" ID="{24376218-B77B-4734-98FF-653E8F4AC9C6}" ShortID="179945682">
+											<Language>English(US)</Language>
+											<AudioFile>test fly.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="test fly" ID="{24376218-B77B-4734-98FF-653E8F4AC9C6}" Platform="Linked"/>
+									</ActiveSourceList>
 								</Sound>
 								<RandomSequenceContainer Name="player_touch" ID="{64B65311-32E4-4A44-9731-C302F7E9BF74}" ShortID="314345786">
 									<PropertyList>
@@ -1736,6 +1958,9 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Tentaculos 2 prueba" ID="{E4DA23E6-089E-4FBA-B1F5-EAED6D8D330A}" ShortID="831268800">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
@@ -1746,6 +1971,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Tentaculos 2 prueba" ID="{F91D8EA1-257F-4D9B-9B81-19A9DC2D7F9B}" ShortID="38531242">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.30278950416912"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="3.00847260894557E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.05976326459192"/>
+														<Property Name="TrimEnd" Type="Real64" Value="42.0411397688356"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Tentaculos 2 prueba.wav</AudioFile>
 												</AudioFileSource>
