@@ -73,6 +73,8 @@ public class Player : MonoBehaviour
     public AK.Wwise.State PlayerPowerUpExit;
     public AK.Wwise.State Score;
 
+    public bool onPause;
+
     void Start()
     {
         playerStarted.Invoke(this);
@@ -143,9 +145,13 @@ public class Player : MonoBehaviour
             launched = false;
         }
 
-        if (Input.GetMouseButtonDown(0) && isGrounded && !isDead && !powerUpActivated)
+        if (Input.GetMouseButtonDown(0) && isGrounded && !isDead && !powerUpActivated )
         {
-            AkSoundEngine.PostEvent("player_touch", gameObject);
+            if (Time.timeScale != 0 || !onPause)
+            {
+                AkSoundEngine.PostEvent("player_touch", gameObject);
+            }
+            
             hideMira = false;
             Invoke("ActivateMira", 0.1f);
             animator.SetTrigger("PreJ");
@@ -158,9 +164,13 @@ public class Player : MonoBehaviour
             endpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         }
 
-        if (Input.GetMouseButtonUp(0) && !launched && !isDead)
+        if (Input.GetMouseButtonUp(0) && !launched && !isDead )
         {
-            AkSoundEngine.PostEvent("player_release", gameObject);
+            if (Time.timeScale!=0 || !onPause)
+            {
+                AkSoundEngine.PostEvent("player_release", gameObject);
+            }
+            
             hideMira = true;
             miraVisual.gameObject.SetActive(false);
             launched = true;
@@ -208,6 +218,8 @@ public class Player : MonoBehaviour
         {
             PlayerPowerUpEnter.SetValue();
             powerUpActivated = true;
+            AkSoundEngine.PostEvent("player_wings", gameObject);
+            AkSoundEngine.PostEvent("powerup_start", gameObject);
             animator.SetTrigger("PowerUp");
         }
 
@@ -218,8 +230,7 @@ public class Player : MonoBehaviour
 
         if (powerUpActivated)
         {
-            AkSoundEngine.PostEvent("player_wings", gameObject);
-            AkSoundEngine.PostEvent("powerup_start", gameObject);
+            
             timerPU += Time.deltaTime;
             transform.Translate(0, 15f*Time.deltaTime, 0);
             rbody.velocity = Vector2.zero;

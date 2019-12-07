@@ -48,6 +48,7 @@ public class UIPauseMenu : MonoBehaviour
 
     public void Pause()
     {
+        playerScript.onPause = true;
         PauseEnter.SetValue();
         AkSoundEngine.PostEvent("ui_pause_on", gameObject);
         Time.timeScale = 0;
@@ -60,6 +61,7 @@ public class UIPauseMenu : MonoBehaviour
         AkSoundEngine.PostEvent("ui_pause_off", gameObject);
         Time.timeScale = 1;
         pauseMenu.gameObject.SetActive(false);
+        playerScript.onPause = false;
     }
 
     public void Menu()
