@@ -130,6 +130,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{00CF17D9-73F8-4CC2-9829-C04F59D65CE5}" ShortID="1060596125">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="player_die" ID="{48D5FE2E-DFB9-40C9-A991-D960D0881C5F}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="player_wings" ID="{E603A4DE-EBD9-415B-98B1-9073D40E1935}"/>

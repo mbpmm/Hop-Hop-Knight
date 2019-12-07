@@ -3,17 +3,61 @@
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}" PersistMode="Standalone">
 			<ChildrenList>
-				<GameParameter Name="volume_music" ID="{AA45939A-CEE8-4F36-ADDD-CEC6E02EB90D}"/>
-				<GameParameter Name="volume_sfx" ID="{BD05C201-F762-470A-B477-40E9B0D6FB9E}"/>
-				<GameParameter Name="distance_trap_tentacle" ID="{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}"/>
-				<GameParameter Name="floor_number" ID="{09461037-B19D-4369-906E-CB4F5A99AA7D}"/>
-				<GameParameter Name="distance_enemy_ghost" ID="{27D853C4-69D2-4FF0-BDF4-B3C9C3055221}"/>
-				<GameParameter Name="distance_enemy_bat1" ID="{F5A564D8-11FC-481B-915B-12E4E1C6363B}"/>
-				<GameParameter Name="distance_enemy_bat2" ID="{3E51CACC-5C62-422E-AB53-C434906738B1}"/>
-				<GameParameter Name="distance_enemy_plant" ID="{42E0A334-BB59-4306-9CAF-86D018E94D8E}"/>
-				<GameParameter Name="distance_enemy_blob" ID="{DD8872FB-3A06-43E0-9FE0-79D8B9146C73}"/>
-				<GameParameter Name="distance_trap_moving_platform" ID="{231105EE-67B1-4F53-A8C3-4D22EBE6A67C}"/>
-				<GameParameter Name="distance_trap_spikes" ID="{3B15008C-744A-4F9E-AAEC-D19A626D0C0C}"/>
+				<GameParameter Name="volume_music" ID="{AA45939A-CEE8-4F36-ADDD-CEC6E02EB90D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="volume_sfx" ID="{BD05C201-F762-470A-B477-40E9B0D6FB9E}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="distance_trap_tentacle" ID="{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="floor_number" ID="{09461037-B19D-4369-906E-CB4F5A99AA7D}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="distance_enemy_ghost" ID="{27D853C4-69D2-4FF0-BDF4-B3C9C3055221}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="distance_enemy_bat1" ID="{F5A564D8-11FC-481B-915B-12E4E1C6363B}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="distance_enemy_bat2" ID="{3E51CACC-5C62-422E-AB53-C434906738B1}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="distance_enemy_plant" ID="{42E0A334-BB59-4306-9CAF-86D018E94D8E}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="distance_enemy_blob" ID="{DD8872FB-3A06-43E0-9FE0-79D8B9146C73}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="distance_trap_moving_platform" ID="{231105EE-67B1-4F53-A8C3-4D22EBE6A67C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="distance_trap_spikes" ID="{3B15008C-744A-4F9E-AAEC-D19A626D0C0C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
 				<GameParameter Name="powerup_state" ID="{92313F99-67CB-4A4F-9E72-884B51F24E01}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
