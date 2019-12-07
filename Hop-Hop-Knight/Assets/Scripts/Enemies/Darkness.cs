@@ -28,6 +28,15 @@ public class Darkness : MonoBehaviour
             aux2 = Mathf.Abs(aux1 + distance);
             percentage = (aux2 * 100f) / maxValue;
             transform.position += transform.up * Time.deltaTime * speed;
+            if (distance>aux1*-1f)
+            {
+                percentage = 0;
+            }
+            AkSoundEngine.SetRTPCValue("distance_trap_tentacle", percentage);
+        }
+        else
+        {
+            percentage = 0;
             AkSoundEngine.SetRTPCValue("distance_trap_tentacle", percentage);
         }
 

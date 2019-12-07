@@ -11,11 +11,21 @@ public class MovingPlatform : MonoBehaviour
     public bool finishMovement;
     public GameObject score;
     private StopPlatformMovement scoreScript;
+
+    public GameObject player;
+
+    public float distancePlayer;
+    public float aux1;
+    public float aux2;
+    private float maxValue = 16f;
+    public float percentage;
     // Start is called before the first frame update
     void Start()
     {
         scoreScript = score.GetComponent<StopPlatformMovement>();
         scoreScript.movingPlatformTouch += StopMovement;
+        aux1 = -15f;
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -44,6 +54,21 @@ public class MovingPlatform : MonoBehaviour
             moving = true;
             stop = false;
         }
+
+        distancePlayer = Vector2.Distance(player.transform.position, transform.position);
+
+        if (distancePlayer < 15f)
+        {
+            aux2 = Mathf.Abs(aux1 + distancePlayer);
+            percentage = (aux2 * 100f) / maxValue;
+            Mathf.Clamp(percentage, 0, 100);
+            AkSoundEngine.SetRTPCValue("distance_enemy_plant", percentage);
+
+        }
+        else
+        {
+            percentage = 0;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -52,6 +77,7 @@ public class MovingPlatform : MonoBehaviour
         {
             if (stop)
             {
+                AkSoundEngine.PostEvent("trap_platform_close", gameObject);
                 finishMovement = true;
             }
             else

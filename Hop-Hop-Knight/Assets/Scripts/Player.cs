@@ -350,6 +350,7 @@ public class Player : MonoBehaviour
         {
             if (!powerUpActivated)
             {
+                AkSoundEngine.PostEvent("player_die", gameObject);
                 rbody.mass = 0.01f;
                 isDead = true;
                 PlayerDead.SetValue();

@@ -15,9 +15,16 @@ public class Fantasma : MonoBehaviour
     private Animator anim;
     public Transform initPos;
 
+    public float distancePlayer;
+    public float aux1;
+    public float aux2;
+    private float maxValue = 16f;
+    public float percentage;
+
     // Start is called before the first frame update
     void Start()
     {
+        aux1 = -15f;
         anim = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -58,6 +65,21 @@ public class Fantasma : MonoBehaviour
                     movingRight = true;
                 }
             }
+        }
+
+        distancePlayer = Vector2.Distance(player.transform.position, transform.position);
+
+        if (distancePlayer < 15f)
+        {
+            aux2 = Mathf.Abs(aux1 + distancePlayer);
+            percentage = (aux2 * 100f) / maxValue;
+            Mathf.Clamp(percentage, 0, 100);
+            AkSoundEngine.SetRTPCValue("distance_enemy_ghost", percentage);
+
+        }
+        else
+        {
+            percentage = 0;
         }
     }
 
