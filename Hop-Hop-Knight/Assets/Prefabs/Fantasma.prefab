@@ -243,6 +243,24 @@ MonoBehaviour:
   movingRight: 1
   groundDetection: {fileID: 866814596186791063}
   initPos: {fileID: 0}
+  distancePlayer: 0
+  aux1: 0
+  aux2: 0
+  percentage: 0
+  StartFollow:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 43d85c04cc337f14f879cf220016a549,
+      type: 2}
+  EndFollow:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f039bcdfd46356443a5acf08b1bdd5d1,
+      type: 2}
 --- !u!114 &-6272743469520244733
 MonoBehaviour:
   m_ObjectHideFlags: 0

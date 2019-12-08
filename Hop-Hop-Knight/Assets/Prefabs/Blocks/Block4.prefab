@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8528308346445700270}
   m_Layer: 0
   m_Name: Block4
-  m_TagString: 11
+  m_TagString: 12
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -152,11 +152,6 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 2687973151449989003, guid: 0ff8c6d06742f2f439c5f56f53e8bd82,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 8706426417634755137, guid: 0ff8c6d06742f2f439c5f56f53e8bd82,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -211,6 +206,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2687973151449989003, guid: 0ff8c6d06742f2f439c5f56f53e8bd82,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ff8c6d06742f2f439c5f56f53e8bd82, type: 3}

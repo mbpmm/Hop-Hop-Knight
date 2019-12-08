@@ -21,12 +21,16 @@ public class Fantasma : MonoBehaviour
     private float maxValue = 16f;
     public float percentage;
 
+    public AK.Wwise.State StartFollow;
+    public AK.Wwise.State EndFollow;
+
     // Start is called before the first frame update
     void Start()
     {
         aux1 = -15f;
         anim = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
+        AkSoundEngine.PostEvent("enemy_ghost", gameObject);
     }
 
     // Update is called once per frame
@@ -67,6 +71,12 @@ public class Fantasma : MonoBehaviour
             }
         }
 
+        if (timer>timeFollowing)
+        {
+            EndFollow.SetValue();
+            timer = 0;
+        }
+
         distancePlayer = Vector2.Distance(player.transform.position, transform.position);
 
         if (distancePlayer < 15f)
@@ -87,6 +97,7 @@ public class Fantasma : MonoBehaviour
     {
         if (collision.tag=="Player")
         {
+            StartFollow.SetValue();
             follow = true;
         }
         

@@ -62,7 +62,7 @@ public class MovingPlatform : MonoBehaviour
             aux2 = Mathf.Abs(aux1 + distancePlayer);
             percentage = (aux2 * 100f) / maxValue;
             Mathf.Clamp(percentage, 0, 100);
-            AkSoundEngine.SetRTPCValue("distance_enemy_plant", percentage);
+            AkSoundEngine.SetRTPCValue("distance_trap_moving_platform", percentage);
 
         }
         else

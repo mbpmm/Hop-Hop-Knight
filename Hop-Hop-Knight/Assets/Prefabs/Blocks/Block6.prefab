@@ -289,6 +289,11 @@ MonoBehaviour:
   stop: 0
   finishMovement: 0
   score: {fileID: 2881031806414675442}
+  player: {fileID: 0}
+  distancePlayer: 0
+  aux1: 0
+  aux2: 0
+  percentage: 0
 --- !u!61 &2881031805410680302
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -563,6 +568,11 @@ MonoBehaviour:
   stop: 0
   finishMovement: 0
   score: {fileID: 2881031806414675442}
+  player: {fileID: 0}
+  distancePlayer: 0
+  aux1: 0
+  aux2: 0
+  percentage: 0
 --- !u!61 &2881031806088002705
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -754,7 +764,7 @@ GameObject:
   - component: {fileID: 1204096955363001408}
   m_Layer: 0
   m_Name: Block6
-  m_TagString: 8
+  m_TagString: 9
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -800,6 +810,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2881031805234480094}
     m_Modifications:
+    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
+        type: 3}
+      propertyPath: m_Name
+      value: Vela_0 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1312685765036992111, guid: 6e32da781d3aca34982ace7faa509fad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -855,16 +875,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
-        type: 3}
-      propertyPath: m_Name
-      value: Vela_0 (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 1312685765036992110, guid: 6e32da781d3aca34982ace7faa509fad,
         type: 3}
       propertyPath: m_FlipX
@@ -890,6 +900,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2881031805234480094}
     m_Modifications:
+    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
+        type: 3}
+      propertyPath: m_Name
+      value: Vela_0 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1312685765036992111, guid: 6e32da781d3aca34982ace7faa509fad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -944,16 +964,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
-        type: 3}
-      propertyPath: m_Name
-      value: Vela_0 (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6061181544872250653, guid: 6e32da781d3aca34982ace7faa509fad,
         type: 3}

@@ -224,6 +224,22 @@ MonoBehaviour:
   movingRight: 1
   groundDetection: {fileID: 8434937181621313722}
   initPos: {fileID: 2134870000402081743}
+  distancePlayer: 0
+  aux1: 0
+  aux2: 0
+  percentage: 0
+  StartFollow:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  EndFollow:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &8434937182123088822
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,7 +299,7 @@ GameObject:
   - component: {fileID: 215773042668964397}
   m_Layer: 0
   m_Name: Block7
-  m_TagString: 13
+  m_TagString: 14
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

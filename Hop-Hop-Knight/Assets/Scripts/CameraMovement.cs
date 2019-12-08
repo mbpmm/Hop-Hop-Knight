@@ -15,7 +15,7 @@ public class CameraMovement : MonoBehaviour
     public float currentAspect;
     public float initPosY;
 
-    private float deltaMin = 1f;
+    private float deltaMin = 1.5f;
     private float deltaCorrection = 8f;
     void Start()
     {
