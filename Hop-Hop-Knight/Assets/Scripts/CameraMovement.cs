@@ -14,6 +14,9 @@ public class CameraMovement : MonoBehaviour
     public float totalTime;
     public float currentAspect;
     public float initPosY;
+
+    private float deltaMin = 1f;
+    private float deltaCorrection = 8f;
     void Start()
     {
         player = target.gameObject.GetComponent<Player>();
@@ -68,9 +71,9 @@ public class CameraMovement : MonoBehaviour
         float t = 0;
         initPosY = transform.position.y;
         delta = (desiredPos.y - initPosY);
-        if (delta<1f)
+        if (delta < deltaMin && !player.landAfterPU)
         {
-            delta = 8f;
+            delta = deltaCorrection;
         }
         while (t<time)
         {

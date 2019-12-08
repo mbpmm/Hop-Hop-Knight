@@ -17,9 +17,15 @@ public class UIPauseMenu : MonoBehaviour
     public Text gravity;
     public Text drag;
     public Text power;
+    public Toggle music;
+    public Toggle fx;
 
     public AK.Wwise.State PauseEnter;
     public AK.Wwise.State PauseExit;
+    public AK.Wwise.State MuteFx;
+    public AK.Wwise.State UnmuteFx;
+    public AK.Wwise.State MuteMusic;
+    public AK.Wwise.State UnmuteMusic;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +34,8 @@ public class UIPauseMenu : MonoBehaviour
         dragSlider.value = playerRB.drag;
         powerSlider.value = playerScript.power;
         gravitySlider.value = playerRB.gravityScale;
+        music.isOn = GameManager.Get().music;
+        fx.isOn = GameManager.Get().fx;
     }
 
     // Update is called once per frame
@@ -71,4 +79,13 @@ public class UIPauseMenu : MonoBehaviour
         GameManager.Get().score = 0;
     }
     
+    public void MusicToggle(bool newValue)
+    {
+        GameManager.Get().music = newValue;
+    }
+
+    public void FxToggle(bool newValue)
+    {
+        GameManager.Get().fx = newValue;
+    }
 }

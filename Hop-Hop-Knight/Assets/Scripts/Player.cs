@@ -74,6 +74,7 @@ public class Player : MonoBehaviour
     public AK.Wwise.State Score;
 
     public bool onPause;
+    public bool landAfterPU;
 
     void Start()
     {
@@ -218,6 +219,7 @@ public class Player : MonoBehaviour
         {
             PlayerPowerUpEnter.SetValue();
             powerUpActivated = true;
+            landAfterPU = true;
             AkSoundEngine.PostEvent("player_wings", gameObject);
             AkSoundEngine.PostEvent("powerup_start", gameObject);
             animator.SetTrigger("PowerUp");
@@ -238,6 +240,7 @@ public class Player : MonoBehaviour
             if (timerPU > totalTimePU)
             {
                 Invoke("DeactivatePU", 2f);
+                Invoke("ActivateLanding", 2.5f);
                 rbody.simulated = true;
                 timerPU = 0;
                 cantGemas = 0;
@@ -268,13 +271,18 @@ public class Player : MonoBehaviour
         timerPU = 0;
     }
 
+    public void ActivateLanding()
+    {
+        landAfterPU = false;
+    }
+
     void LaunchPlayer()
     {
         direction = startpos - endpos;
 
         LimitMira();
 
-        rbody.velocity = power * direction; // swap subtraction to switch direction of launch
+        rbody.velocity = power * direction; 
         //rbody.AddForce(direction *  power);
     }
 

@@ -9,6 +9,9 @@ public class GameManager : MonobehaviourSingleton<GameManager>
     public int score;
     public Player player;
     public GameObject playerGO;
+
+    public bool music;
+    public bool fx;
     // Start is called before the first frame update
     void OnEnable()
     {
@@ -51,6 +54,16 @@ public class GameManager : MonobehaviourSingleton<GameManager>
     {
         yield return new WaitForSeconds(time);
         SceneManager.LoadScene("GameScene");
+    }
+
+    public void MusicToggle(bool newValue)
+    {
+        GameManager.Get().music = newValue;
+    }
+
+    public void FxToggle(bool newValue)
+    {
+        GameManager.Get().fx = newValue;
     }
 
     private void OnDisable()
