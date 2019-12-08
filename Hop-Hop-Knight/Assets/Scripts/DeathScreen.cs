@@ -24,6 +24,7 @@ public class DeathScreen : MonoBehaviour
 
     public void PlayAgain()
     {
+        AdsManager.Get().UIWatchAd();
         AkSoundEngine.PostEvent("ui_menu_play_again", gameObject);
         SceneManager.LoadScene("GameScene");
         
@@ -31,6 +32,7 @@ public class DeathScreen : MonoBehaviour
 
     public void GoToMenu()
     {
+        AdsManager.Get().UIWatchAd();
         SceneManager.LoadScene("IntroScene");
         GameManager.Get().score = 0;
     }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Analytics;
 
 
 public class GameManager : MonobehaviourSingleton<GameManager>
@@ -43,8 +44,10 @@ public class GameManager : MonobehaviourSingleton<GameManager>
 
     void PlayerDied()
     {
+        ScorePerSession(score);
         if (score>PlayerPrefs.GetInt("Highscore",0))
         {
+            Highscore(score);
             AkSoundEngine.PostEvent("ui_ingame_highscore", gameObject);
             PlayerPrefs.SetInt("Highscore", score);
         }
@@ -72,5 +75,21 @@ public class GameManager : MonobehaviourSingleton<GameManager>
         Player.playerDeath -= PlayerDied;
         Player.playerStarted -= PlayerSetter;
         Player.powerUpScore -= AddScorePowerUp;
+    }
+
+    public void ScorePerSession(int score)
+    {
+        Analytics.CustomEvent("session_finished", new Dictionary<string, object>
+        {
+            {"Score",score}
+        });
+    }
+
+    public void Highscore(int score)
+    {
+        Analytics.CustomEvent("highscore_achieved", new Dictionary<string, object>
+        {
+            {"Highscore",score}
+        });
     }
 }
