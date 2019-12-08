@@ -24,7 +24,7 @@ public class LevelGenerator : MonoBehaviour
         if (GameManager.Get().score >= 0 && !GameManager.Get().player.powerUpActivated)
         {
             timerPULG = 0;
-            randomBlock = 8;
+            randomBlock = 3;
             
             if (GameManager.Get().score > 0)
             {
