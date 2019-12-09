@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID DEVELOPER_LOGO = 2262673565U;
         static const AkUniqueID ENEMY_BAT1 = 2768764968U;
         static const AkUniqueID ENEMY_BAT2 = 2768764971U;
         static const AkUniqueID ENEMY_BLOB = 2582092671U;
@@ -91,6 +92,8 @@ namespace AK
             {
                 static const AkUniqueID MUTE_FX = 1932282383U;
                 static const AkUniqueID MUTE_MX = 1814839050U;
+                static const AkUniqueID UNMUTE_FX = 3779271524U;
+                static const AkUniqueID UNMUTE_MX = 3963825173U;
             } // namespace STATE
         } // namespace MUTE
 

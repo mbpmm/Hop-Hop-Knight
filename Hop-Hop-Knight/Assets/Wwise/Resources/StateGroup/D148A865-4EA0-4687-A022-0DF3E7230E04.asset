@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b2e28bc73d72943b19755fee5aec27, type: 3}
+  m_Name: D148A865-4EA0-4687-A022-0DF3E7230E04
+  m_EditorClassIdentifier: 
+  objectName: mute
+  id: 2974103762
+  guid: D148A865-4EA0-4687-A022-0DF3E7230E04

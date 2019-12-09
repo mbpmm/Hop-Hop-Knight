@@ -5,14 +5,9 @@
 			<ChildrenList>
 				<MusicSwitchContainer Name="MusicSystem" ID="{6A5FE2F1-18AA-4B49-9722-0218F4AB9BF9}" ShortID="139840866">
 					<PropertyList>
-						<Property Name="Inclusion" Type="bool">
-							<ValueList>
-								<Value>False</Value>
-							</ValueList>
-						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-5</Value>
+								<Value>-12</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -2281,7 +2276,7 @@
 													<ChildrenList>
 														<AudioFileSource Name="HHK_InGame_Ghost_125bpm4-4_L08_P01" ID="{215EC3FC-A6FD-4FB7-BD0A-862A9AC7E6B3}" ShortID="679941813">
 															<Language>SFX</Language>
-															<AudioFile>HHK_InGame_Ghost_125bpm4-4_L08_P01.wav</AudioFile>
+															<AudioFile>Music\HHK_InGame_Ghost_125bpm4-4_L08_P01.wav</AudioFile>
 															<ConvertedFileIDList>
 																<File ID="129705576"/>
 															</ConvertedFileIDList>
@@ -2375,7 +2370,7 @@
 													<ChildrenList>
 														<AudioFileSource Name="HHK_InGame_Ghost_125bpm4-4_L08_P01" ID="{93AC291C-7B00-42A6-8557-41422B234E10}" ShortID="129705576">
 															<Language>SFX</Language>
-															<AudioFile>HHK_InGame_Ghost_125bpm4-4_L08_P01.wav</AudioFile>
+															<AudioFile>Music\HHK_InGame_Ghost_125bpm4-4_L08_P01.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>

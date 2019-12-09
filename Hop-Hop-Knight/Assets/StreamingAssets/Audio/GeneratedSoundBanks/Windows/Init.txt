@@ -29,16 +29,14 @@ State	ID	Name	State Group			Notes
 	0	None	mute			
 	1814839050	mute_mx	mute			
 	1932282383	mute_fx	mute			
+	3779271524	unmute_fx	mute			
+	3963825173	unmute_mx	mute			
 
 Custom State	ID	Name	State Group	Owner		Notes
 	9221439	pause_on	music_pause	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
 	175892422	mute_fx	mute	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX		
 	345931834	mute_mx	mute	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
 	811204863	dead	player	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Ingame		
-
-Game Parameter	ID	Name			Wwise Object Path	Notes
-	3673881719	volume_sfx			\Default Work Unit\volume_sfx	
-	3891337659	volume_music			\Default Work Unit\volume_music	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	

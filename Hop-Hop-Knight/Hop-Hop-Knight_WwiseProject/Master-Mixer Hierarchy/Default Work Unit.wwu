@@ -11,36 +11,6 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Music" ID="{68205EEF-6C17-489D-9A35-F56823EAAF50}">
-							<PropertyList>
-								<Property Name="BusVolume" Type="Real64">
-									<RTPCList>
-										<RTPC Name="" ID="{31C5E4AB-22C1-462A-84CB-3BC69C704521}" ShortID="392659863">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="volume_music" ID="{AA45939A-CEE8-4F36-ADDD-CEC6E02EB90D}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{995206BE-BCAD-44B3-8A19-ECEEA318546B}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-200</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>100</XPos>
-														<YPos>0</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
-							</PropertyList>
 							<StateInfo>
 								<StateGroupList>
 									<StateGroupInfo>
@@ -51,6 +21,14 @@
 									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
+									<CustomState>
+										<StateRef Name="unmute_mx" ID="{922BA8CA-51C1-42ED-B2AF-31CB30EF78AA}"/>
+										<CustomState Name="" ID="{2CF245E9-3C77-48CB-86F6-0045D2065A2E}" ShortID="87221687"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="unmute_fx" ID="{D46506F3-71FC-4898-9EF5-8D00012EF528}"/>
+										<CustomState Name="" ID="{F3F79ECE-F471-41D4-8150-DAEB8015569F}" ShortID="972058731"/>
+									</CustomState>
 									<CustomState>
 										<StateRef Name="mute_mx" ID="{36F571FE-8C27-4AB5-80EE-39AC645818C0}"/>
 										<CustomState Name="" ID="{3086AF0C-8721-414B-B834-CBBE269EEAE8}" ShortID="345931834">
@@ -81,32 +59,9 @@
 						<Bus Name="SFX" ID="{A8607570-6F69-44DE-B54F-9576AC6DBF88}">
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
-									<RTPCList>
-										<RTPC Name="" ID="{F3E75EF1-D280-494F-9248-8FB3D1F913E4}" ShortID="656482043">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="volume_sfx" ID="{BD05C201-F762-470A-B477-40E9B0D6FB9E}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{2AB0E96A-8378-46A2-9604-2EA34F3BF0B0}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-200</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>100</XPos>
-														<YPos>0</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
 								</Property>
 							</PropertyList>
 							<ChildrenList>
@@ -142,6 +97,14 @@
 									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
+									<CustomState>
+										<StateRef Name="unmute_mx" ID="{922BA8CA-51C1-42ED-B2AF-31CB30EF78AA}"/>
+										<CustomState Name="" ID="{6A126856-1EAD-45C6-990E-D56C5F12F0FA}" ShortID="482567543"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="unmute_fx" ID="{D46506F3-71FC-4898-9EF5-8D00012EF528}"/>
+										<CustomState Name="" ID="{6270DEBC-4E13-40DE-8E96-CB4659730EB6}" ShortID="762983009"/>
+									</CustomState>
 									<CustomState>
 										<StateRef Name="mute_mx" ID="{36F571FE-8C27-4AB5-80EE-39AC645818C0}"/>
 										<CustomState Name="" ID="{FBDC2E35-A55A-4314-8282-B9D4CBD43EF2}" ShortID="546412667"/>

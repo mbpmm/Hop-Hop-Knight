@@ -6498,25 +6498,29 @@ MonoBehaviour:
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 1b805c347517000479ea542c0646fd9b,
+      type: 2}
   UnmuteFx:
     idInternal: 0
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 32b10af80bc30c341a3e832ea52c7a45,
+      type: 2}
   MuteMusic:
     idInternal: 0
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 902bebe6ef3ba0448aa9cd70dbaacf96,
+      type: 2}
   UnmuteMusic:
     idInternal: 0
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 9a6486247d5b22e4483991eafb2323f0,
+      type: 2}
 --- !u!114 &1485421820
 MonoBehaviour:
   m_ObjectHideFlags: 0
