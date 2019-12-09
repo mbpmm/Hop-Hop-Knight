@@ -75,7 +75,7 @@ public class Player : MonoBehaviour
 
     public bool onPause;
     public bool landAfterPU;
-
+    public float speed;
     void Start()
     {
         playerStarted.Invoke(this);
@@ -232,7 +232,18 @@ public class Player : MonoBehaviour
 
         if (powerUpActivated)
         {
-            
+            if (Input.touchCount > 0) 
+            {
+
+                Touch touchDeltaPosition = Input.GetTouch(0);
+                Vector3 touchpos = Camera.main.ScreenToWorldPoint(touchDeltaPosition.position);
+                touchpos.z = transform.position.z;
+
+                Vector3 direction = (touchpos - transform.position);
+
+                transform.Translate(direction.x * speed,0, 0);
+            }
+            Mathf.Clamp(transform.position.x, -5.7f, 5.7f);
             timerPU += Time.deltaTime;
             transform.Translate(0, 15f*Time.deltaTime, 0);
             rbody.velocity = Vector2.zero;

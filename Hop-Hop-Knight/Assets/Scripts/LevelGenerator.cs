@@ -54,12 +54,14 @@ public class LevelGenerator : MonoBehaviour
                 if (timerPULG < GameManager.Get().player.totalTimePU-0.5f)
                 {
                     randomBlock = Random.Range(1, 17);
+                    HasGem();
                 }
                 else
                 {
                     randomBlock = 3;
                 }
                 GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
+                
                 go.transform.position = transform.position;
             }
         }
@@ -67,7 +69,15 @@ public class LevelGenerator : MonoBehaviour
 
     public void HasGem()
     {
-        hasGem = (Random.Range(0f, 1f)) <= gemRate;
+        if (GameManager.Get().player.powerUpActivated)
+        {
+            hasGem = (Random.Range(0f, 1f)) <= 1f;
+        }
+        else
+        {
+            hasGem = (Random.Range(0f, 1f)) <= gemRate;
+        }
+        
 
         if (hasGem)
         {

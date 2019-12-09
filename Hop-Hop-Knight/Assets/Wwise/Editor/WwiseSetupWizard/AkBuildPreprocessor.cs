@@ -82,49 +82,71 @@ public partial class AkBuildPreprocessor : UnityEditor.Build.IPreprocessBuild, U
 
 	private string destinationSoundBankFolder = string.Empty;
 
-	private static bool SetDestinationPath(string platformName, ref string destinationFolder)
+    static bool AreSourceAndDestinationEqualAndValid(string platformName)
+    {
+        string sourceFolder = AkBasePathGetter.GetPlatformBasePathEditor(platformName);
+        string destinationFolder = string.Empty;
+
+        SetDestinationPath(platformName, ref destinationFolder);
+
+        if (!string.IsNullOrEmpty(sourceFolder) && !string.IsNullOrEmpty(destinationFolder))
+        {
+            var sourcePathInfo = new System.IO.DirectoryInfo(sourceFolder);
+            var destinationPathInfo = new System.IO.DirectoryInfo(destinationFolder);
+
+            if (sourcePathInfo.Parent.FullName == destinationPathInfo.Parent.FullName && sourcePathInfo.Name == destinationPathInfo.Name)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static bool SetDestinationPath(string platformName, ref string destinationFolder)
 	{
 		destinationFolder = System.IO.Path.Combine(AkBasePathGetter.GetFullSoundBankPath(), platformName);
 		return !string.IsNullOrEmpty(destinationFolder);
 	}
 
-	public static bool CopySoundbanks(bool generate, string platformName, ref string destinationFolder)
-	{
-		if (string.IsNullOrEmpty(platformName))
-			UnityEngine.Debug.LogError("WwiseUnity: Could not determine platform name for <" + platformName + "> platform");
-		else
-		{
-			if (generate)
-			{
-				var platforms = new System.Collections.Generic.List<string> { platformName };
-				AkUtilities.GenerateSoundbanks(platforms);
-			}
+    public static bool CopySoundbanks(bool generate, string platformName, ref string destinationFolder)
+    {
+        if (string.IsNullOrEmpty(platformName))
+            UnityEngine.Debug.LogError("WwiseUnity: Could not determine platform name for <" + platformName + "> platform");
+        else
+        {
+            if (generate)
+            {
+                var platforms = new System.Collections.Generic.List<string> { platformName };
+                AkUtilities.GenerateSoundbanks(platforms);
+            }
 
-			var sourceFolder = AkBasePathGetter.GetPlatformBasePathEditor(platformName);
-			if (string.IsNullOrEmpty(sourceFolder))
-			{
-				UnityEngine.Debug.LogError("WwiseUnity: Could not find source folder for <" + platformName +
-				                           "> platform. Did you remember to generate your banks?");
-			}
-			else if (!SetDestinationPath(platformName, ref destinationFolder))
-				UnityEngine.Debug.LogError("WwiseUnity: Could not find destination folder for <" + platformName + "> platform");
-			else if (!AkUtilities.DirectoryCopy(sourceFolder, destinationFolder, true))
-			{
-				destinationFolder = null;
-				UnityEngine.Debug.LogError("WwiseUnity: Could not copy soundbank folder for <" + platformName + "> platform");
-			}
-			else
-			{
-				UnityEngine.Debug.Log("WwiseUnity: Copied soundbank folder to streaming assets folder <" + destinationFolder +
-				                      "> for <" + platformName + "> platform build");
-				return true;
-			}
-		}
+            string sourceFolder = AkBasePathGetter.GetPlatformBasePathEditor(platformName);
+            if (string.IsNullOrEmpty(sourceFolder))
+            {
+                UnityEngine.Debug.LogError("WwiseUnity: Could not find source folder for <" + platformName +
+                                           "> platform. Did you remember to generate your banks?");
+            }
+            else if (!SetDestinationPath(platformName, ref destinationFolder))
+            {
+                UnityEngine.Debug.LogError("WwiseUnity: Could not find destination folder for <" + platformName + "> platform");
+            }
+            else if ((generate && AreSourceAndDestinationEqualAndValid(platformName)) || AkUtilities.DirectoryCopy(sourceFolder, destinationFolder, true))
+            {
+                UnityEngine.Debug.Log("WwiseUnity: Copied soundbank folder to streaming assets folder <" + destinationFolder +
+                                      "> for <" + platformName + "> platform build");
+                return true;
+            }
+            else
+            {
+                destinationFolder = null;
+                UnityEngine.Debug.LogError("WwiseUnity: Could not copy soundbank folder for <" + platformName + "> platform");
+            }
+        }
 
-		return false;
-	}
+        return false;
+    }
 
-	public static void DeleteSoundbanks(string destinationFolder)
+    public static void DeleteSoundbanks(string destinationFolder)
 	{
 		if (string.IsNullOrEmpty(destinationFolder))
 			return;

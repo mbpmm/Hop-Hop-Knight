@@ -41,7 +41,6 @@ public class GemController : MonoBehaviour
                 timer = 0;
                 transform.localScale = new Vector3(0.11f, 0.11f, 0.11f);
             }
-            
         }
     }
 
