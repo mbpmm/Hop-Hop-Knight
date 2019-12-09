@@ -4856,7 +4856,9 @@ MonoBehaviour:
   blockDestructionPoint: {fileID: 0}
   positionUI: {fileID: 0}
   collected: 0
+  collectedPU: 0
   speed: 0.5
+  speedPU: 2
   timer: 0
   totalTime: 1
   animCurve:

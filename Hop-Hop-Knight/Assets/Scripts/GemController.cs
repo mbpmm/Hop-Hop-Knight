@@ -7,7 +7,9 @@ public class GemController : MonoBehaviour
     public GameObject blockDestructionPoint;
     public GameObject positionUI;
     public bool collected;
+    public bool collectedPU;
     public float speed;
+    public float speedPU;
     public float timer;
     public float totalTime=1f;
     public AnimationCurve animCurve;
@@ -43,6 +45,20 @@ public class GemController : MonoBehaviour
             }
         }
 
+        if (collectedPU)
+        {
+            timer += Time.deltaTime * speedPU;
+            transform.localScale = Vector3.Lerp(transform.localScale, new Vector3(0, 0, 0), animCurve.Evaluate(timer / totalTime));
+
+            if (animCurve.Evaluate(timer / totalTime) == 1f)
+            {
+                gameObject.SetActive(false);
+                collectedPU = false;
+                timer = 0;
+                transform.localScale = new Vector3(0.11f, 0.11f, 0.11f);
+            }
+        }
+
         
     }
 
@@ -50,8 +66,16 @@ public class GemController : MonoBehaviour
     {
         if (collision.gameObject.tag=="Player")
         {
-            Debug.Log("colision con gema trigger");
-            collected = true;
+            if (!GameManager.Get().player.powerUpActivated)
+            {
+                Debug.Log("colision con gema trigger");
+                collected = true;
+            }
+            else
+            {
+                collectedPU = true;
+            }
+            
         }
     }
     public void OnCollisionEnter2D(Collision2D collision)
