@@ -74,6 +74,7 @@ public class UIPauseMenu : MonoBehaviour
 
     public void Menu()
     {
+        AkSoundEngine.PostEvent("ui_menu_home", gameObject);
         AdsManager.Get().UIWatchAd();
         Player.platformTouch -= FindObjectOfType<CameraMovement>().Advance;
         SceneManager.LoadScene("IntroScene");

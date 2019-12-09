@@ -213,7 +213,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1612290121}
-        m_MethodName: CreditsExit
+        m_MethodName: SettingsExit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -276,7 +276,7 @@ GameObject:
   - component: {fileID: 271729980}
   - component: {fileID: 271729979}
   m_Layer: 5
-  m_Name: Config
+  m_Name: Settings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -356,7 +356,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1612290121}
-        m_MethodName: Credits
+        m_MethodName: Settings
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1957,6 +1957,20 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 11400000, guid: e981638012d46e04ab39324b3c9f6b66,
       type: 2}
   OnCreditsExit:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9542123d2ae81fa45bac3e4cef5f0a1c,
+      type: 2}
+  OnSettingsEnter:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 816fe54588a0ba9498701f42487298f9,
+      type: 2}
+  OnSettingsExit:
     idInternal: 0
     valueGuidInternal: 
     groupIdInternal: 0
