@@ -59,16 +59,6 @@ public class GameManager : MonobehaviourSingleton<GameManager>
         SceneManager.LoadScene("GameScene");
     }
 
-    public void MusicToggle(bool newValue)
-    {
-        GameManager.Get().music = newValue;
-    }
-
-    public void FxToggle(bool newValue)
-    {
-        GameManager.Get().fx = newValue;
-    }
-
     private void OnDisable()
     {
         Player.platformTouch -= AddScore;

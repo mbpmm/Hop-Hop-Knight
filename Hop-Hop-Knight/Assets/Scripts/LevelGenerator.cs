@@ -12,6 +12,11 @@ public class LevelGenerator : MonoBehaviour
     public float timerPULG;
     public int[] difficulties;
     public int aux;
+    private float timeCorrection=0.5f;
+    private float distanceBetweenFloors=8f;
+    private float distGemToFloor=3f;
+    private float gemX = 5f;
+    private int difficultyDivider= 15;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,14 +33,14 @@ public class LevelGenerator : MonoBehaviour
             
             if (GameManager.Get().score > 0)
             {
-                aux = GameManager.Get().score / 15;
+                aux = GameManager.Get().score / difficultyDivider;
                 aux = Mathf.Clamp(aux, 0, 2);
                 randomBlock = Random.Range(1, difficulties[aux]);
             }
 
-            if (transform.position.y < generationPoint.position.y - 8f)
+            if (transform.position.y < generationPoint.position.y - distanceBetweenFloors)
             {
-                transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
+                transform.position = new Vector3(transform.position.x, transform.position.y + distanceBetweenFloors, transform.position.z);
                 GameObject go = ObjectPool.instance.GetPooledObject(randomBlock.ToString());
                 if (GameManager.Get().score > 0)
                 {
@@ -50,8 +55,8 @@ public class LevelGenerator : MonoBehaviour
             timerPULG += Time.deltaTime;
             if (transform.position.y < generationPoint.position.y)
             {
-                transform.position = new Vector3(transform.position.x, transform.position.y + 8f, transform.position.z);
-                if (timerPULG < GameManager.Get().player.totalTimePU-0.5f)
+                transform.position = new Vector3(transform.position.x, transform.position.y + distanceBetweenFloors, transform.position.z);
+                if (timerPULG < GameManager.Get().player.totalTimePU- timeCorrection)
                 {
                     randomBlock = Random.Range(1, 17);
                     HasGem();
@@ -83,7 +88,7 @@ public class LevelGenerator : MonoBehaviour
         {
             GameObject go = ObjectPool.instance.GetPooledObject("Gem");
 
-            go.transform.position = new Vector3(transform.position.x + Random.Range(-5f, 5f), transform.position.y + 3f, transform.position.z);
+            go.transform.position = new Vector3(transform.position.x + Random.Range(-gemX, gemX), transform.position.y + distGemToFloor, transform.position.z);
         }
     }
 }

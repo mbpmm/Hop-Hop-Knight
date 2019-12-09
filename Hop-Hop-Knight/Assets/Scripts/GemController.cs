@@ -14,11 +14,13 @@ public class GemController : MonoBehaviour
     public float totalTime=1f;
     public AnimationCurve animCurve;
     public AnimationCurve animCurveScale;
+    private CircleCollider2D gemCol;
 
     void Start()
     {
         blockDestructionPoint = GameObject.Find("BlockDestructionPoint");
         positionUI = GameObject.Find("PowerBar");
+        gemCol = GetComponent<CircleCollider2D>();
     }
 
     void Update()
@@ -39,6 +41,7 @@ public class GemController : MonoBehaviour
             if (animCurve.Evaluate(timer / totalTime)==1f)
             {
                 gameObject.SetActive(false);
+                gemCol.enabled = true;
                 collected = false;
                 timer = 0;
                 transform.localScale = new Vector3(0.11f, 0.11f, 0.11f);
@@ -53,6 +56,7 @@ public class GemController : MonoBehaviour
             if (animCurve.Evaluate(timer / totalTime) == 1f)
             {
                 gameObject.SetActive(false);
+                gemCol.enabled = true;
                 collectedPU = false;
                 timer = 0;
                 transform.localScale = new Vector3(0.11f, 0.11f, 0.11f);
@@ -70,19 +74,13 @@ public class GemController : MonoBehaviour
             {
                 Debug.Log("colision con gema trigger");
                 collected = true;
+                gemCol.enabled = false;
             }
             else
             {
                 collectedPU = true;
             }
             
-        }
-    }
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Player")
-        {
-            Debug.Log("colision con gema colision");
         }
     }
 }

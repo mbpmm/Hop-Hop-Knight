@@ -74,6 +74,7 @@ public class UIPauseMenu : MonoBehaviour
 
     public void Menu()
     {
+        AdsManager.Get().UIWatchAd();
         Player.platformTouch -= FindObjectOfType<CameraMovement>().Advance;
         SceneManager.LoadScene("IntroScene");
         GameManager.Get().score = 0;

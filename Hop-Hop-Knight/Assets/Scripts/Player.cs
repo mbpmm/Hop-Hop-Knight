@@ -75,7 +75,13 @@ public class Player : MonoBehaviour
 
     public bool onPause;
     public bool landAfterPU;
-    public float speed;
+    public float speedOnX;
+    public float speedPU;
+    public float maxValueWall;
+    public float minValueWall;
+
+    public float totalTimeIdle;
+    public float startBlinkIdle;
     void Start()
     {
         playerStarted.Invoke(this);
@@ -198,12 +204,12 @@ public class Player : MonoBehaviour
             animator.SetBool("IsJumping", false);
             animator.SetFloat("TimeIdle", timeIdle);
             animator.SetBool("IdleBlink", idleBlink);
-            if (timeIdle > 5.8f)
+            if (timeIdle > totalTimeIdle)
             {
                 idleBlink = true;
 
             }
-            if (timeIdle > 9f)
+            if (timeIdle > startBlinkIdle)
             {
                 idleBlink = false;
                 timeIdle = 0;
@@ -241,30 +247,25 @@ public class Player : MonoBehaviour
 
                 Vector3 direction = (touchpos - transform.position);
 
-                transform.Translate(direction.x * speed,0, 0);
+                transform.Translate(direction.x * speedOnX,0, 0);
             }
-            Mathf.Clamp(transform.position.x, -5.7f, 5.7f);
+            Mathf.Clamp(transform.position.x, minValueWall, maxValueWall);
             timerPU += Time.deltaTime;
-            transform.Translate(0, 15f*Time.deltaTime, 0);
+            transform.Translate(0, speedPU*Time.deltaTime, 0);
             rbody.velocity = Vector2.zero;
-            //rbody.simulated = false;
             boxCol.isTrigger = true;
             if (timerPU > totalTimePU)
             {
                 Invoke("DeactivatePU", 2f);
                 Invoke("ActivateLanding", 2.5f);
-                rbody.simulated = true;
-                //boxCol.isTrigger = false;
                 timerPU = 0;
                 cantGemas = 0;
-                //powerUpScore();
                 goToIdle = true;
             }
         }
         else if (goToIdle)
         {
             animator.SetTrigger("GoToIdle");
-            rbody.simulated = true;
             boxCol.isTrigger = false;
             goToIdle = false;
         }

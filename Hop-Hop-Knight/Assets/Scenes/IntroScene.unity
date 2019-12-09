@@ -489,7 +489,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 621533067}
+      - m_Target: {fileID: 1612290121}
         m_MethodName: MusicToggle
         m_Mode: 0
         m_Arguments:
@@ -866,18 +866,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d068c78150e0eb40a9078a16d5ac787, type: 3}
---- !u!114 &621533067 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3697081712437553106, guid: 6d068c78150e0eb40a9078a16d5ac787,
-    type: 3}
-  m_PrefabInstance: {fileID: 587942148}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf3f99ba5b42880439adab3bb45432a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &630767835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1332,7 +1320,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 621533067}
+      - m_Target: {fileID: 1612290121}
         m_MethodName: FxToggle
         m_Mode: 0
         m_Arguments:
@@ -1959,6 +1947,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1612290122}
   version: {fileID: 1252096863}
+  music: {fileID: 355360841}
+  fx: {fileID: 1200393514}
   OnCreditsEnter:
     idInternal: 0
     valueGuidInternal: 

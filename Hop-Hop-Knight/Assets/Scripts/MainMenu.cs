@@ -9,12 +9,17 @@ public class MainMenu : MonoBehaviour
 
     private int levelToLoad;
 
+    public Toggle music;
+    public Toggle fx;
+
     public AK.Wwise.State OnCreditsEnter;
     public AK.Wwise.State OnCreditsExit;
     private void Start()
     {
         Time.timeScale = 1;
         version.text = "v" + Application.version;
+        music.isOn = GameManager.Get().music;
+        fx.isOn = GameManager.Get().fx;
     }
     void Update()
     {
@@ -53,6 +58,16 @@ public class MainMenu : MonoBehaviour
     public void QuitApp()
     {
         Application.Quit();
+    }
+
+    public void MusicToggle(bool newValue)
+    {
+        GameManager.Get().music = newValue;
+    }
+
+    public void FxToggle(bool newValue)
+    {
+        GameManager.Get().fx = newValue;
     }
 
 }
