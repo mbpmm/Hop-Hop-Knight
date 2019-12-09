@@ -33,7 +33,7 @@ public class GameManager : MonobehaviourSingleton<GameManager>
 
     void AddScorePowerUp()
     {
-        score+=10;
+        score+=2;
     }
 
     void PlayerSetter(Player go)

@@ -42,13 +42,23 @@ public class GemController : MonoBehaviour
                 transform.localScale = new Vector3(0.11f, 0.11f, 0.11f);
             }
         }
+
+        
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag=="Player")
         {
+            Debug.Log("colision con gema trigger");
             collected = true;
+        }
+    }
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("colision con gema colision");
         }
     }
 }

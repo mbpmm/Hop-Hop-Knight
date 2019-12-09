@@ -40,7 +40,7 @@ public class CameraMovement : MonoBehaviour
 
         Player.platformTouch += Advance;
     }
-    void Update()
+    void FixedUpdate()
     {
         if (player.isGrounded)
         {
@@ -51,7 +51,7 @@ public class CameraMovement : MonoBehaviour
         if (player.powerUpActivated)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, target.position.z) + new Vector3(0,0,offset.z);
-            transform.Translate(0, 15f * Time.deltaTime, 0);
+            transform.Translate(0, 14.8f * Time.deltaTime, 0);
         }
 
         if (player.isDead)
@@ -63,7 +63,7 @@ public class CameraMovement : MonoBehaviour
     public void Advance()
     {
         StartCoroutine(Animate(totalTime));
-        Debug.Log("advance");
+        Debug.Log("Advance");
     }
     public float delta;
     //x = x0 + (x1-x0) * eval;

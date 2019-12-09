@@ -247,15 +247,17 @@ public class Player : MonoBehaviour
             timerPU += Time.deltaTime;
             transform.Translate(0, 15f*Time.deltaTime, 0);
             rbody.velocity = Vector2.zero;
-            rbody.simulated = false;
+            //rbody.simulated = false;
+            boxCol.isTrigger = true;
             if (timerPU > totalTimePU)
             {
                 Invoke("DeactivatePU", 2f);
                 Invoke("ActivateLanding", 2.5f);
                 rbody.simulated = true;
+                //boxCol.isTrigger = false;
                 timerPU = 0;
                 cantGemas = 0;
-                powerUpScore();
+                //powerUpScore();
                 goToIdle = true;
             }
         }
@@ -263,6 +265,7 @@ public class Player : MonoBehaviour
         {
             animator.SetTrigger("GoToIdle");
             rbody.simulated = true;
+            boxCol.isTrigger = false;
             goToIdle = false;
         }
 
@@ -371,9 +374,13 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.tag == "Score")
         {
-            if (platformTouch != null)
-                platformTouch();
-            collision.gameObject.SetActive(false);
+            if (!powerUpActivated)
+            {
+                if (platformTouch != null)
+                    platformTouch();
+                collision.gameObject.SetActive(false);
+            }
+            
 
         }
         if (collision.gameObject.tag == "Enemies" || collision.gameObject.tag == "Blobert" || collision.gameObject.tag == "Murcy" || collision.gameObject.tag == "Murcy2" || collision.gameObject.tag == "Bullet")
@@ -394,9 +401,15 @@ public class Player : MonoBehaviour
 
         if (collision.gameObject.tag == "Gem")
         {
-            AkSoundEngine.PostEvent("player_grab_gem", gameObject);
-            cantGemas++;
-            //collision.gameObject.SetActive(false);
+            if (!powerUpActivated)
+            {
+                AkSoundEngine.PostEvent("player_grab_gem", gameObject);
+                cantGemas++;
+            }
+            else
+            {
+                powerUpScore();
+            }
         }
     }
 
