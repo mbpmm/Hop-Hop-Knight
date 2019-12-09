@@ -4858,7 +4858,7 @@ MonoBehaviour:
   collected: 0
   collectedPU: 0
   speed: 0.5
-  speedPU: 2
+  speedPU: 2.81
   timer: 0
   totalTime: 1
   animCurve:

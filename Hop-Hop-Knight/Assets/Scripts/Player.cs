@@ -408,6 +408,7 @@ public class Player : MonoBehaviour
             }
             else
             {
+                AkSoundEngine.PostEvent("player_grab_gem", gameObject);
                 powerUpScore();
             }
         }
