@@ -16,6 +16,7 @@ public class MainMenu : MonoBehaviour
     public AK.Wwise.State OnCreditsExit;
     public AK.Wwise.State OnSettingsEnter;
     public AK.Wwise.State OnSettingsExit;
+
     private void Start()
     {
         AkSoundEngine.PostEvent("game_start", gameObject);
@@ -26,7 +27,7 @@ public class MainMenu : MonoBehaviour
     }
     void Update()
     {
-
+        
     }
 
     public void FadeToLevel(int levelIndex)

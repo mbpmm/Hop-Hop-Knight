@@ -13,6 +13,11 @@ public class GameManager : MonobehaviourSingleton<GameManager>
 
     public bool music;
     public bool fx;
+
+    public AK.Wwise.State MuteMusic;
+    public AK.Wwise.State UnmuteMusic;
+    public AK.Wwise.State MuteFx;
+    public AK.Wwise.State UnmuteFx;
     // Start is called before the first frame update
     void OnEnable()
     {
@@ -24,6 +29,24 @@ public class GameManager : MonobehaviourSingleton<GameManager>
     private void Update()
     {
         AkSoundEngine.SetRTPCValue("floor_number", score);
+
+        if (music)
+        {
+            MuteMusic.SetValue();
+        }
+        else
+        {
+            UnmuteMusic.SetValue();
+        }
+
+        if (fx)
+        {
+            MuteFx.SetValue();
+        }
+        else
+        {
+            UnmuteFx.SetValue();
+        }
     }
 
     void AddScore()

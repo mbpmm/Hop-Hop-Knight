@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -864,6 +864,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3697081712437553106, guid: 6d068c78150e0eb40a9078a16d5ac787,
+        type: 3}
+      propertyPath: MuteMusic.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 902bebe6ef3ba0448aa9cd70dbaacf96,
+        type: 2}
+    - target: {fileID: 3697081712437553106, guid: 6d068c78150e0eb40a9078a16d5ac787,
+        type: 3}
+      propertyPath: UnmuteMusic.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 9a6486247d5b22e4483991eafb2323f0,
+        type: 2}
+    - target: {fileID: 3697081712437553106, guid: 6d068c78150e0eb40a9078a16d5ac787,
+        type: 3}
+      propertyPath: MuteFx.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 1b805c347517000479ea542c0646fd9b,
+        type: 2}
+    - target: {fileID: 3697081712437553106, guid: 6d068c78150e0eb40a9078a16d5ac787,
+        type: 3}
+      propertyPath: UnmuteFx.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 32b10af80bc30c341a3e832ea52c7a45,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d068c78150e0eb40a9078a16d5ac787, type: 3}
 --- !u!1 &630767835
@@ -2255,7 +2279,8 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 3276e5ec12c424944b2545a193d4a0db,
+      type: 2}
   decodeBank: 0
   loadAsynchronous: 0
   saveDecodedBank: 0
