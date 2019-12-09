@@ -6,9 +6,6 @@ public class MovingPlatform : MonoBehaviour
 {
     public float speedClose;
     public float speedOpen;
-    public float maxPosition;
-    public float minPosition;
-    public float distanceMax;
     public bool moving=true;
     public bool stop;
     public bool finishMovement;
@@ -27,14 +24,14 @@ public class MovingPlatform : MonoBehaviour
     {
         scoreScript = score.GetComponent<StopPlatformMovement>();
         scoreScript.movingPlatformTouch += StopMovement;
-        aux1 = -distanceMax;
+        aux1 = -15f;
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x < minPosition || transform.position.x > maxPosition)
+        if (transform.position.x<-7f || transform.position.x > 7f)
         {
             AkSoundEngine.PostEvent("trap_platform_close", gameObject);
             moving = false;
@@ -60,7 +57,7 @@ public class MovingPlatform : MonoBehaviour
 
         distancePlayer = Vector2.Distance(player.transform.position, transform.position);
 
-        if (distancePlayer < distanceMax)
+        if (distancePlayer < 15f)
         {
             aux2 = Mathf.Abs(aux1 + distancePlayer);
             percentage = (aux2 * 100f) / maxValue;
@@ -92,14 +89,6 @@ public class MovingPlatform : MonoBehaviour
         }
 
     }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag=="Player")
-        {
-        }
-    }
-
     public void StopMovement()
     {
         moving = false;
