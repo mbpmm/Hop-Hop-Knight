@@ -226,7 +226,6 @@ public class Player : MonoBehaviour
             PlayerPowerUpEnter.SetValue();
             powerUpActivated = true;
             landAfterPU = true;
-            AkSoundEngine.PostEvent("player_wings", gameObject);
             AkSoundEngine.PostEvent("powerup_start", gameObject);
             animator.SetTrigger("PowerUp");
         }
@@ -415,6 +414,10 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void WingsSound()
+    {
+        AkSoundEngine.PostEvent("player_wings", gameObject);
+    }
     public void PlayDeathScreen()
     {
         Score.SetValue();
