@@ -17,20 +17,16 @@
 										<StateGroupRef Name="music_pause" ID="{41A94DF0-41E1-462A-9AC2-A6BAD0E8E15B}"/>
 									</StateGroupInfo>
 									<StateGroupInfo>
-										<StateGroupRef Name="mute" ID="{D148A865-4EA0-4687-A022-0DF3E7230E04}"/>
+										<StateGroupRef Name="mute_mx" ID="{D148A865-4EA0-4687-A022-0DF3E7230E04}"/>
 									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
-										<StateRef Name="unmute_mx" ID="{922BA8CA-51C1-42ED-B2AF-31CB30EF78AA}"/>
+										<StateRef Name="mute_mx_off" ID="{922BA8CA-51C1-42ED-B2AF-31CB30EF78AA}"/>
 										<CustomState Name="" ID="{2CF245E9-3C77-48CB-86F6-0045D2065A2E}" ShortID="87221687"/>
 									</CustomState>
 									<CustomState>
-										<StateRef Name="unmute_fx" ID="{D46506F3-71FC-4898-9EF5-8D00012EF528}"/>
-										<CustomState Name="" ID="{F3F79ECE-F471-41D4-8150-DAEB8015569F}" ShortID="972058731"/>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="mute_mx" ID="{36F571FE-8C27-4AB5-80EE-39AC645818C0}"/>
+										<StateRef Name="mute_mx_on" ID="{36F571FE-8C27-4AB5-80EE-39AC645818C0}"/>
 										<CustomState Name="" ID="{3086AF0C-8721-414B-B834-CBBE269EEAE8}" ShortID="345931834">
 											<PropertyList>
 												<Property Name="BusVolume" Type="Real64" Value="-108"/>
@@ -40,10 +36,6 @@
 									<CustomState>
 										<StateRef Name="pause_off" ID="{0F7B1890-6312-4D2B-875B-AFF3CEF74A12}"/>
 										<CustomState Name="" ID="{E7E93F66-51A6-4D3F-8C69-90D3D3902D78}" ShortID="649193183"/>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="mute_fx" ID="{579524FA-B98E-4DA5-B012-05B20162FF1D}"/>
-										<CustomState Name="" ID="{1CA831AE-F517-4070-B899-85D9A1547D0B}" ShortID="940476125"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="pause_on" ID="{307A800D-0E80-4FCF-8BC8-A3AF8677C424}"/>
@@ -93,25 +85,17 @@
 							<StateInfo>
 								<StateGroupList>
 									<StateGroupInfo>
-										<StateGroupRef Name="mute" ID="{D148A865-4EA0-4687-A022-0DF3E7230E04}"/>
+										<StateGroupRef Name="mute_fx" ID="{0E6E02F8-41B3-49FD-A883-C573A997F19A}"/>
 									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
-										<StateRef Name="unmute_mx" ID="{922BA8CA-51C1-42ED-B2AF-31CB30EF78AA}"/>
-										<CustomState Name="" ID="{6A126856-1EAD-45C6-990E-D56C5F12F0FA}" ShortID="482567543"/>
+										<StateRef Name="mute_fx_off" ID="{CD5FDECC-0E7C-4178-B904-1D6A003F74A0}"/>
+										<CustomState Name="" ID="{95AA059D-676D-4C97-AAFA-4CC820CA4181}" ShortID="156027880"/>
 									</CustomState>
 									<CustomState>
-										<StateRef Name="unmute_fx" ID="{D46506F3-71FC-4898-9EF5-8D00012EF528}"/>
-										<CustomState Name="" ID="{6270DEBC-4E13-40DE-8E96-CB4659730EB6}" ShortID="762983009"/>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="mute_mx" ID="{36F571FE-8C27-4AB5-80EE-39AC645818C0}"/>
-										<CustomState Name="" ID="{FBDC2E35-A55A-4314-8282-B9D4CBD43EF2}" ShortID="546412667"/>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="mute_fx" ID="{579524FA-B98E-4DA5-B012-05B20162FF1D}"/>
-										<CustomState Name="" ID="{2F91D710-40DE-469E-BDE4-A0894C7189DC}" ShortID="175892422">
+										<StateRef Name="mute_fx_on" ID="{357E7F40-2836-43F0-A4E1-DED3AF6352D0}"/>
+										<CustomState Name="" ID="{11D844BE-754C-4638-B778-0538DBA3992F}" ShortID="1031208548">
 											<PropertyList>
 												<Property Name="BusVolume" Type="Real64" Value="-108"/>
 											</PropertyList>

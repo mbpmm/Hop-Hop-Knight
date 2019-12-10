@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a1c7377246944b4689d3b9997e79ead, type: 3}
   m_Name: 36F571FE-8C27-4AB5-80EE-39AC645818C0
   m_EditorClassIdentifier: 
-  objectName: mute_mx
-  id: 1814839050
+  objectName: mute_mx_on
+  id: 190673594
   guid: 36F571FE-8C27-4AB5-80EE-39AC645818C0
   WwiseStateGroupReference: {fileID: 11400000, guid: b5977859e48047147bf94cdd982b7a46,
     type: 2}

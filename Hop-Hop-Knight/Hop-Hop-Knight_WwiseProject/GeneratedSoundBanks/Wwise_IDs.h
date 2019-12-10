@@ -96,18 +96,27 @@ namespace AK
             } // namespace STATE
         } // namespace MUSIC_SCREEN
 
-        namespace MUTE
+        namespace MUTE_FX
         {
-            static const AkUniqueID GROUP = 2974103762U;
+            static const AkUniqueID GROUP = 1932282383U;
 
             namespace STATE
             {
-                static const AkUniqueID MUTE_FX = 1932282383U;
-                static const AkUniqueID MUTE_MX = 1814839050U;
-                static const AkUniqueID UNMUTE_FX = 3779271524U;
-                static const AkUniqueID UNMUTE_MX = 3963825173U;
+                static const AkUniqueID MUTE_FX_OFF = 1630552913U;
+                static const AkUniqueID MUTE_FX_ON = 43470405U;
             } // namespace STATE
-        } // namespace MUTE
+        } // namespace MUTE_FX
+
+        namespace MUTE_MX
+        {
+            static const AkUniqueID GROUP = 1814839050U;
+
+            namespace STATE
+            {
+                static const AkUniqueID MUTE_MX_OFF = 2518388304U;
+                static const AkUniqueID MUTE_MX_ON = 190673594U;
+            } // namespace STATE
+        } // namespace MUTE_MX
 
         namespace PLAYER
         {

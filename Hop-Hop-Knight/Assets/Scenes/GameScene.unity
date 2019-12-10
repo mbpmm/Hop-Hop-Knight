@@ -6498,14 +6498,14 @@ MonoBehaviour:
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 1b805c347517000479ea542c0646fd9b,
+    WwiseObjectReference: {fileID: 11400000, guid: 07ea0a9b2afef8b4e9a13e40d06be841,
       type: 2}
   UnmuteFx:
     idInternal: 0
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 32b10af80bc30c341a3e832ea52c7a45,
+    WwiseObjectReference: {fileID: 11400000, guid: 19ecdc9cbfdda4043bcc27047bf45e76,
       type: 2}
   MuteMusic:
     idInternal: 0

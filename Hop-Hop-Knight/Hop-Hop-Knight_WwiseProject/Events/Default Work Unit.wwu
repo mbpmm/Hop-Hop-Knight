@@ -58,7 +58,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="unmute_fx" ID="{D46506F3-71FC-4898-9EF5-8D00012EF528}" WorkUnitID="{BF88A622-63C2-4B94-8505-42A50FA6F1E8}"/>
+									<ObjectRef Name="mute_fx_off" ID="{CD5FDECC-0E7C-4178-B904-1D6A003F74A0}" WorkUnitID="{BF88A622-63C2-4B94-8505-42A50FA6F1E8}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -68,7 +68,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="unmute_mx" ID="{922BA8CA-51C1-42ED-B2AF-31CB30EF78AA}" WorkUnitID="{BF88A622-63C2-4B94-8505-42A50FA6F1E8}"/>
+									<ObjectRef Name="mute_mx_off" ID="{922BA8CA-51C1-42ED-B2AF-31CB30EF78AA}" WorkUnitID="{BF88A622-63C2-4B94-8505-42A50FA6F1E8}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
