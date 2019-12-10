@@ -127,7 +127,7 @@
 								</Sound>
 							</ChildrenList>
 						</Folder>
-						<Folder Name="UI sign" ID="{67604C34-17AA-4418-9C40-2764C2296E2A}" ShortID="847213333">
+						<Folder Name="Sign UI-Score" ID="{67604C34-17AA-4418-9C40-2764C2296E2A}" ShortID="847213333">
 							<ChildrenList>
 								<RandomSequenceContainer Name="UI_score_sign_in" ID="{C806A13E-EDB9-4F8B-9DE7-99EDF75113A8}" ShortID="526890701">
 									<PropertyList>
