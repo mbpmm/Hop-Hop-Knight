@@ -7,7 +7,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-12</Value>
+								<Value>-9</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -26,7 +26,7 @@
 								<Property Name="Tempo" Type="Real64" Value="125"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -93,9 +93,6 @@
 											</ReferenceList>
 											<ChildrenList>
 												<MusicTrack Name="HHK_InGame_A_DrumNBass_125bpm4-4_L08" ID="{3F2427BC-AE79-40CE-BA00-5C4FE557E764}" ShortID="763303172">
-													<PropertyList>
-														<Property Name="MusicTrackType" Type="int16" Value="1"/>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -128,7 +125,6 @@
 																</MusicClip>
 															</ClipList>
 														</MusicTrackSequence>
-														<MusicTrackSequence Name="" ID="{E8904778-EAC4-4DB6-9E6A-C7D11013B79D}"/>
 													</SequenceList>
 												</MusicTrack>
 												<MusicTrack Name="HHK_InGame_A_HarpNBells_125bpm4-4_L08" ID="{C2C12928-588B-42D7-9E23-D8DA21CBED8A}" ShortID="1031775931">
@@ -339,9 +335,6 @@
 											</ReferenceList>
 											<ChildrenList>
 												<MusicTrack Name="HHK_InGame_B_DrumNBass_125bpm4-4_L08_P01" ID="{656D7BBC-E6FF-4989-BC8B-C01A07AAF145}" ShortID="480234889">
-													<PropertyList>
-														<Property Name="MusicTrackType" Type="int16" Value="1"/>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -374,7 +367,6 @@
 																</MusicClip>
 															</ClipList>
 														</MusicTrackSequence>
-														<MusicTrackSequence Name="" ID="{B63A3088-947A-4019-A886-C4667E5606D8}"/>
 													</SequenceList>
 												</MusicTrack>
 												<MusicTrack Name="HHK_InGame_B_Harpsichord_125bpm4-4_L08_P01" ID="{041900E2-0BF0-461B-ADF8-CE08E67E4790}" ShortID="569235717">
@@ -629,9 +621,6 @@
 											</ReferenceList>
 											<ChildrenList>
 												<MusicTrack Name="HHK_InGame_C_DrumNBass_125bpm4-4_L08_P01" ID="{F2182B8B-92E7-4BB8-A24D-5771CA78D02D}" ShortID="14110213">
-													<PropertyList>
-														<Property Name="MusicTrackType" Type="int16" Value="1"/>
-													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -664,7 +653,6 @@
 																</MusicClip>
 															</ClipList>
 														</MusicTrackSequence>
-														<MusicTrackSequence Name="" ID="{7057B19B-F715-4B3B-B30A-383C70C6ECFF}"/>
 													</SequenceList>
 												</MusicTrack>
 												<MusicTrack Name="HHK_InGame_C_Melody_125bpm4-4_L08_P01" ID="{339D9D52-1E51-42AF-B8B0-019D7F88E823}" ShortID="662442958">
@@ -2334,6 +2322,16 @@
 											<TransitionInfo/>
 										</MusicTransition>
 									</TransitionList>
+									<StingerList>
+										<MusicStinger Name="" ID="{9AEAE80F-0441-4B02-A2A2-0FD3C0D41C84}">
+											<TriggerRef Name="Die" ID="{125DEA90-F6F8-4082-B037-67D72E66AAC6}" WorkUnitID="{4CE23351-D4D9-4DC8-8B32-E2D9C005EEB8}"/>
+											<SegmentRef Name="HHK_InGame_Die_125bpm4-4_L04_P01" ID="{2D4FDB6B-72FF-4E39-A914-17D97E81D7A8}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+										</MusicStinger>
+										<MusicStinger Name="" ID="{49444E29-9F7D-488A-A5E5-B0F12FD0B040}">
+											<TriggerRef Name="HighScore" ID="{03E61E3E-2534-4CB9-94D4-21B40457AF0C}" WorkUnitID="{4CE23351-D4D9-4DC8-8B32-E2D9C005EEB8}"/>
+											<SegmentRef Name="HHK_InGame_HighScore_125bpm4-4_L04_P01" ID="{69D380A1-F835-4E05-B53B-5A4A6AC144B9}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+										</MusicStinger>
+									</StingerList>
 									<Playlist>
 										<MusicPlaylistItem Name="" ID="{C0F1EAE0-C61F-4915-8531-3B10C83241E8}" ShortID="567493692"/>
 									</Playlist>
@@ -2698,6 +2696,11 @@
 							<PropertyList>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 								<Property Name="Tempo" Type="Real64" Value="100"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">

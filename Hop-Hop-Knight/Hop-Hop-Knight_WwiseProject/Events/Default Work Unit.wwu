@@ -5,13 +5,6 @@
 			<ChildrenList>
 				<Event Name="game_start" ID="{A7545A09-46E6-4561-8008-07D224946F78}">
 					<ChildrenList>
-						<Action Name="" ID="{D4392E45-8AE0-4861-8394-6C2DB76D4409}" ShortID="242470001">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="MusicSystem" ID="{6A5FE2F1-18AA-4B49-9722-0218F4AB9BF9}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{F7995F30-DE48-4E76-99A0-69B9B786723F}" ShortID="546759312">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>
@@ -137,9 +130,24 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{2046CE0F-7A06-46B8-87E3-E09E9AFB20C3}" ShortID="999901689">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="HHK_InGame_Die_125bpm4-4_L04_P01_Long" ID="{897FEBAF-F790-431D-850E-B7CE1014545F}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{5F78F46B-820A-426C-A592-9DDE6C4655A2}" ShortID="858068671">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="35"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -580,10 +588,25 @@
 						<Action Name="" ID="{ACB42A8B-7B49-4814-80F8-342C580F3F58}" ShortID="122132021">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="35"/>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="HighScore" ID="{03E61E3E-2534-4CB9-94D4-21B40457AF0C}" WorkUnitID="{4CE23351-D4D9-4DC8-8B32-E2D9C005EEB8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{5B867668-21D8-4AC5-9344-06223317B426}" ShortID="1015670518">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="HHK_InGame_HighScore_125bpm4-4_L04_P01_Long" ID="{E8116F50-9DFB-4092-81E2-148CBBE703B9}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -659,6 +682,13 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Developer Logo" ID="{9199922E-C72F-4C7E-85BA-813FACF192C9}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{30881177-D33A-4BDC-8660-9705F9CD1E88}" ShortID="864550823">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicSystem" ID="{6A5FE2F1-18AA-4B49-9722-0218F4AB9BF9}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
