@@ -41,7 +41,6 @@ State	ID	Name	State Group			Notes
 	0	None	ingame			
 	1256202815	play	ingame			
 	2398231425	score	ingame			
-	3092587493	pause	ingame			
 	3950429679	powerup	ingame			
 	4023194814	ghost	ingame			
 	0	None	player			
@@ -58,12 +57,9 @@ State	ID	Name	State Group			Notes
 Custom State	ID	Name	State Group	Owner		Notes
 	62461102	powerup	ingame	\Interactive Music Hierarchy\Default Work Unit\MusicSystem\InGame		
 	128991133	dead	player	\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player		
-	144178455	pause	ingame	\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player		
 	193023128	powerup	ingame	\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Traps		
 	234402946	dead	player	\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Enemy		
 	368734863	score	ingame	\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Enemy		
-	493895634	pause	ingame	\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Enemy		
-	495524159	pause	ingame	\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Traps		
 	673411145	powerup	ingame	\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player		
 	753547888	score	ingame	\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player		
 	837648979	ghost	ingame	\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Traps		

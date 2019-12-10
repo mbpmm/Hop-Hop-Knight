@@ -20,8 +20,8 @@ State	ID	Name	State Group			Notes
 	0	None	mute_mx			
 	190673594	mute_mx_on	mute_mx			
 	2518388304	mute_mx_off	mute_mx			
+	0	None	mute_fx			
 	43470405	mute_fx_on	mute_fx			
-	748895195	None	mute_fx			
 	1630552913	mute_fx_off	mute_fx			
 	0	None	menu_screen			
 	2201105581	credits	menu_screen			
@@ -36,6 +36,7 @@ State	ID	Name	State Group			Notes
 
 Custom State	ID	Name	State Group	Owner		Notes
 	9221439	pause_on	music_pause	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
+	334734812	pause_on	music_pause	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Ingame		
 	345931834	mute_mx_on	mute_mx	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
 	811204863	dead	player	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Ingame		
 	1031208548	mute_fx_on	mute_fx	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX		

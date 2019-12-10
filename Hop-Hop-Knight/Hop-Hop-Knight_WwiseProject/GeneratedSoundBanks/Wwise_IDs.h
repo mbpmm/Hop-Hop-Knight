@@ -55,7 +55,6 @@ namespace AK
             namespace STATE
             {
                 static const AkUniqueID GHOST = 4023194814U;
-                static const AkUniqueID PAUSE = 3092587493U;
                 static const AkUniqueID PLAY = 1256202815U;
                 static const AkUniqueID POWERUP = 3950429679U;
                 static const AkUniqueID SCORE = 2398231425U;

@@ -1407,15 +1407,6 @@
 										</CustomState>
 									</CustomState>
 									<CustomState>
-										<StateRef Name="pause" ID="{606DA000-F6DE-4DE1-B854-58E7E5DED81E}"/>
-										<CustomState Name="" ID="{F38452AE-B489-424A-9D2D-F80686C498BC}" ShortID="493895634">
-											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="61"/>
-												<Property Name="Volume" Type="Real64" Value="-11"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
 										<StateRef Name="ghost" ID="{AFDBBF27-BB57-4EA8-938A-AC702A03A6A1}"/>
 										<CustomState Name="" ID="{8154874D-8DC4-4046-AEE0-21C713779553}" ShortID="52224532"/>
 									</CustomState>
@@ -2407,14 +2398,6 @@
 										</CustomState>
 									</CustomState>
 									<CustomState>
-										<StateRef Name="pause" ID="{606DA000-F6DE-4DE1-B854-58E7E5DED81E}"/>
-										<CustomState Name="" ID="{C62A8253-65D3-4176-BB6F-A3A5337D3C11}" ShortID="144178455">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
 										<StateRef Name="ghost" ID="{AFDBBF27-BB57-4EA8-938A-AC702A03A6A1}"/>
 										<CustomState Name="" ID="{33F0214F-B719-4825-A461-0C668578EC27}" ShortID="1030568196"/>
 									</CustomState>
@@ -2986,14 +2969,6 @@
 											<PropertyList>
 												<Property Name="Lowpass" Type="int16" Value="75"/>
 												<Property Name="Volume" Type="Real64" Value="-24"/>
-											</PropertyList>
-										</CustomState>
-									</CustomState>
-									<CustomState>
-										<StateRef Name="pause" ID="{606DA000-F6DE-4DE1-B854-58E7E5DED81E}"/>
-										<CustomState Name="" ID="{84F92290-3EF7-4C8A-BD27-54C38DBE425D}" ShortID="495524159">
-											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="54"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>

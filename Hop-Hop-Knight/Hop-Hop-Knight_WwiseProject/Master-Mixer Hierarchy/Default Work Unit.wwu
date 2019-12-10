@@ -64,6 +64,9 @@
 											<StateGroupInfo>
 												<StateGroupRef Name="player" ID="{E68E1284-45D8-423D-963A-255A39C8534E}"/>
 											</StateGroupInfo>
+											<StateGroupInfo>
+												<StateGroupRef Name="music_pause" ID="{41A94DF0-41E1-462A-9AC2-A6BAD0E8E15B}"/>
+											</StateGroupInfo>
 										</StateGroupList>
 										<CustomStateList>
 											<CustomState>
@@ -77,6 +80,18 @@
 											<CustomState>
 												<StateRef Name="alive" ID="{32DE1AA7-312B-43BF-973E-22F9BAAC529F}"/>
 												<CustomState Name="" ID="{37AF2C4A-D5A1-4891-B46E-50508FA2A8E1}" ShortID="471534734"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="pause_off" ID="{0F7B1890-6312-4D2B-875B-AFF3CEF74A12}"/>
+												<CustomState Name="" ID="{AD08F188-69F1-45F4-A980-6D724702452F}" ShortID="41725277"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="pause_on" ID="{307A800D-0E80-4FCF-8BC8-A3AF8677C424}"/>
+												<CustomState Name="" ID="{4E227242-D508-471E-917D-E144C56D7284}" ShortID="334734812">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
 											</CustomState>
 										</CustomStateList>
 									</StateInfo>

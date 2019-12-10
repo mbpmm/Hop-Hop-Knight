@@ -22,7 +22,6 @@
 					<ChildrenList>
 						<State Name="None" ID="{5D6C69C7-E5E2-460A-A034-2ACDB6AF3C56}"/>
 						<State Name="play" ID="{2495BA82-9647-41EA-931E-DE727C31889E}"/>
-						<State Name="pause" ID="{606DA000-F6DE-4DE1-B854-58E7E5DED81E}"/>
 						<State Name="ghost" ID="{AFDBBF27-BB57-4EA8-938A-AC702A03A6A1}"/>
 						<State Name="score" ID="{B1030D0F-0A75-47F0-9A67-8B44BAC8B3BF}"/>
 						<State Name="powerup" ID="{689820FE-30B4-4A24-B6E6-1DC82957CF23}"/>

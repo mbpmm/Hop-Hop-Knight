@@ -2581,10 +2581,6 @@
 										</CustomState>
 									</CustomState>
 									<CustomState>
-										<StateRef Name="pause" ID="{606DA000-F6DE-4DE1-B854-58E7E5DED81E}"/>
-										<CustomState Name="" ID="{308CA3BB-F737-4B8A-ADD8-90C7D02381B5}" ShortID="1019653219"/>
-									</CustomState>
-									<CustomState>
 										<StateRef Name="ghost" ID="{AFDBBF27-BB57-4EA8-938A-AC702A03A6A1}"/>
 										<CustomState Name="" ID="{B5151700-F4A4-4896-8114-9800A66E256C}" ShortID="386009075"/>
 									</CustomState>
