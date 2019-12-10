@@ -13,6 +13,10 @@ public class GameManager : MonobehaviourSingleton<GameManager>
 
     public bool music;
     public bool fx;
+    public bool aux1;
+    public bool aux2;
+    public bool aux3;
+    public bool aux4;
 
     public AK.Wwise.State MuteMusic;
     public AK.Wwise.State UnmuteMusic;
@@ -32,20 +36,48 @@ public class GameManager : MonobehaviourSingleton<GameManager>
 
         if (music)
         {
-            MuteMusic.SetValue();
+            if (!aux1)
+            {
+                MuteMusic.SetValue();
+                Debug.Log("Pase por mutemusic");
+                aux1 = true;
+                aux2 = false;
+            }
+            
         }
         else
         {
-            UnmuteMusic.SetValue();
+            if (!aux2)
+            {
+                UnmuteMusic.SetValue();
+                Debug.Log("Pase por unmutemusic");
+                aux2 = true;
+                aux1 = false;
+            }
+            
         }
 
         if (fx)
         {
-            MuteFx.SetValue();
+            if (!aux3)
+            {
+                MuteFx.SetValue();
+                Debug.Log("Pase por mutefx");
+                aux3 = true;
+                aux4 = false;
+            }
+            
         }
         else
         {
-            UnmuteFx.SetValue();
+            if (!aux4)
+            {
+                UnmuteFx.SetValue();
+                Debug.Log("Pase por unmutefx");
+                aux4 = true;
+                aux3 = false;
+            }
+            
         }
     }
 

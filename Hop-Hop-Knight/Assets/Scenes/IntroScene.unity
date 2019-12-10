@@ -880,13 +880,13 @@ PrefabInstance:
         type: 3}
       propertyPath: MuteFx.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 1b805c347517000479ea542c0646fd9b,
+      objectReference: {fileID: 11400000, guid: 07ea0a9b2afef8b4e9a13e40d06be841,
         type: 2}
     - target: {fileID: 3697081712437553106, guid: 6d068c78150e0eb40a9078a16d5ac787,
         type: 3}
       propertyPath: UnmuteFx.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 32b10af80bc30c341a3e832ea52c7a45,
+      objectReference: {fileID: 11400000, guid: 19ecdc9cbfdda4043bcc27047bf45e76,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d068c78150e0eb40a9078a16d5ac787, type: 3}
@@ -1992,7 +1992,7 @@ MonoBehaviour:
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 816fe54588a0ba9498701f42487298f9,
+    WwiseObjectReference: {fileID: 11400000, guid: e981638012d46e04ab39324b3c9f6b66,
       type: 2}
   OnSettingsExit:
     idInternal: 0
