@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d6c5013154280d4fa61169de7446e36, type: 3}
   m_Name: C208B5D0-A510-4CB1-AFF2-0C32410BBE96
   m_EditorClassIdentifier: 
-  objectName: ui_ingame_hand
-  id: 1170205103
+  objectName: hud_hand
+  id: 1286028972
   guid: C208B5D0-A510-4CB1-AFF2-0C32410BBE96

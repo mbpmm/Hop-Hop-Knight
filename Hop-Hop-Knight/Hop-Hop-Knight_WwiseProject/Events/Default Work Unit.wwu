@@ -542,8 +542,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="ui_ingame_warning" ID="{73258A54-B373-4037-BC10-46551403091B}"/>
-				<Event Name="ui_ingame_hand" ID="{C208B5D0-A510-4CB1-AFF2-0C32410BBE96}"/>
+				<Event Name="hud_warning" ID="{73258A54-B373-4037-BC10-46551403091B}">
+					<ChildrenList>
+						<Action Name="" ID="{FA1C5483-5767-45DD-8430-CD8C99E69EA9}" ShortID="486647961">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_hud_warning" ID="{B237E656-86A5-444A-AD73-BC18927459DA}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="hud_hand" ID="{C208B5D0-A510-4CB1-AFF2-0C32410BBE96}">
+					<ChildrenList>
+						<Action Name="" ID="{35B9129D-51B5-45A5-B337-BEECD54B402C}" ShortID="589456753">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_hud_hand" ID="{85E4CA02-6E1D-40E9-BA4F-C712FA5DB9A7}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="trap_platform_close" ID="{21F999B7-33A5-48AE-89C4-6D29B6FCEC43}">
 					<ChildrenList>
 						<Action Name="" ID="{E4641419-142B-4AE3-9A93-2CAA7CEB9454}" ShortID="1000454647">

@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{78E02100-5A19-4702-8429-A3F1BECFB59B}">
 					<ObjectInclusionList>
-						<ObjectRef Name="ui_ingame_warning" ID="{73258A54-B373-4037-BC10-46551403091B}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="hud_warning" ID="{73258A54-B373-4037-BC10-46551403091B}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="player_release" ID="{A9B777CB-0A2B-406C-866B-A1ECF68F2DDB}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="player_land" ID="{039C5A30-6233-40E8-A4B6-3C3084408E8A}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="player_wings" ID="{E603A4DE-EBD9-415B-98B1-9073D40E1935}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
@@ -30,7 +30,7 @@
 						<ObjectRef Name="ui_ingame_score" ID="{5601E053-2EEB-4A62-BDD7-91B15BAAB770}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="enemy_bat1" ID="{34C9B9C8-0CA5-4B0A-89AF-736CFA2938A9}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="powerup_end" ID="{7DA0414C-EAD2-4C73-B39E-917CB52157FF}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="ui_ingame_hand" ID="{C208B5D0-A510-4CB1-AFF2-0C32410BBE96}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="hud_hand" ID="{C208B5D0-A510-4CB1-AFF2-0C32410BBE96}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ui_menu_start" ID="{89ED94D6-6F78-4CC7-B769-BCFBC863918C}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ui_menu_back" ID="{268331E9-5C66-4E01-B0B5-9D4364D8F298}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ui_menu_play_again" ID="{05C706D7-BAF5-4E5D-AA10-7699BD3C7463}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>

@@ -28,6 +28,8 @@
 				<Event Id="1974222287" Name="enemy_ghost" ObjectPath="\Events\Default Work Unit\enemy_ghost"/>
 				<Event Id="1098871033" Name="enemy_plant" ObjectPath="\Events\Default Work Unit\enemy_plant"/>
 				<Event Id="733168346" Name="game_start" ObjectPath="\Events\Default Work Unit\game_start"/>
+				<Event Id="1286028972" Name="hud_hand" ObjectPath="\Events\Default Work Unit\hud_hand"/>
+				<Event Id="3642866649" Name="hud_warning" ObjectPath="\Events\Default Work Unit\hud_warning"/>
 				<Event Id="1542330065" Name="player_die" ObjectPath="\Events\Default Work Unit\player_die"/>
 				<Event Id="52976355" Name="player_grab_gem" ObjectPath="\Events\Default Work Unit\player_grab_gem"/>
 				<Event Id="3629196698" Name="player_land" ObjectPath="\Events\Default Work Unit\player_land"/>
@@ -41,10 +43,8 @@
 				<Event Id="4293073065" Name="trap_platform_open" ObjectPath="\Events\Default Work Unit\trap_platform_open"/>
 				<Event Id="584352822" Name="trap_spikes" ObjectPath="\Events\Default Work Unit\trap_spikes"/>
 				<Event Id="3064100384" Name="trap_tentacles" ObjectPath="\Events\Default Work Unit\trap_tentacles"/>
-				<Event Id="1170205103" Name="ui_ingame_hand" ObjectPath="\Events\Default Work Unit\ui_ingame_hand"/>
 				<Event Id="104469174" Name="ui_ingame_highscore" ObjectPath="\Events\Default Work Unit\ui_ingame_highscore"/>
 				<Event Id="2967661922" Name="ui_ingame_score" ObjectPath="\Events\Default Work Unit\ui_ingame_score"/>
-				<Event Id="2850178896" Name="ui_ingame_warning" ObjectPath="\Events\Default Work Unit\ui_ingame_warning"/>
 				<Event Id="922786755" Name="ui_menu_back" ObjectPath="\Events\Default Work Unit\ui_menu_back"/>
 				<Event Id="3218841108" Name="ui_menu_enter" ObjectPath="\Events\Default Work Unit\ui_menu_enter"/>
 				<Event Id="2306418743" Name="ui_menu_home" ObjectPath="\Events\Default Work Unit\ui_menu_home"/>
@@ -306,6 +306,10 @@
 					<ShortName>Player\sfx_player_touch_01.wav</ShortName>
 					<Path>SFX\Player\sfx_player_touch_01_6296B0F9.wem</Path>
 				</File>
+				<File Id="513495803" Language="SFX">
+					<ShortName>UI\sfx_hud_warning.wav</ShortName>
+					<Path>SFX\UI\sfx_hud_warning_1F6CE6D5.wem</Path>
+				</File>
 				<File Id="532605471" Language="SFX">
 					<ShortName>Music\HHK_InGame_C_Melody_125bpm4-4_L08_P01.wav</ShortName>
 					<Path>SFX\Music\HHK_InGame_C_Melody_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
@@ -513,6 +517,10 @@
 				<File Id="1057165614" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_bat_green_01.wav</ShortName>
 					<Path>SFX\Enemies\sfx_enemy_bat_green_01_6296B0F9.wem</Path>
+				</File>
+				<File Id="1059220891" Language="SFX">
+					<ShortName>UI\sfx_hud_hand.wav</ShortName>
+					<Path>SFX\UI\sfx_hud_hand_0BC74149.wem</Path>
 				</File>
 				<File Id="1060678634" Language="SFX">
 					<ShortName>Player\sfx_player_land_01.wav</ShortName>

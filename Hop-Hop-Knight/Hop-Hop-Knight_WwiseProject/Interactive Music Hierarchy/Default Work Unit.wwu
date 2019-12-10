@@ -2559,6 +2559,39 @@
 									</Playlist>
 								</MusicPlaylistContainer>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="ingame" ID="{7C48FE1A-1ADE-42A3-8E26-0EC5E5E69D86}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="play" ID="{2495BA82-9647-41EA-931E-DE727C31889E}"/>
+										<CustomState Name="" ID="{F635C85E-CCD1-4282-A97F-E41B6CD43D5B}" ShortID="324900711"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="score" ID="{B1030D0F-0A75-47F0-9A67-8B44BAC8B3BF}"/>
+										<CustomState Name="" ID="{52A27EBA-6AE7-40FE-9F92-9E949D9E4090}" ShortID="1015205245"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="powerup" ID="{689820FE-30B4-4A24-B6E6-1DC82957CF23}"/>
+										<CustomState Name="" ID="{4DCE499F-4654-467B-95BF-F3A829FC611B}" ShortID="62461102">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="3"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="pause" ID="{606DA000-F6DE-4DE1-B854-58E7E5DED81E}"/>
+										<CustomState Name="" ID="{308CA3BB-F737-4B8A-ADD8-90C7D02381B5}" ShortID="1019653219"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ghost" ID="{AFDBBF27-BB57-4EA8-938A-AC702A03A6A1}"/>
+										<CustomState Name="" ID="{B5151700-F4A4-4896-8114-9800A66E256C}" ShortID="386009075"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<TransitionList>
 								<MusicTransition Name="Root" ID="{41C7234D-6CF6-4FB3-AAC1-179921AF9912}">
 									<PropertyList>

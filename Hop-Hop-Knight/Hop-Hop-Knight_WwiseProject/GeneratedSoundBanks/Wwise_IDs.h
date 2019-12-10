@@ -20,6 +20,8 @@ namespace AK
         static const AkUniqueID ENEMY_GHOST = 1974222287U;
         static const AkUniqueID ENEMY_PLANT = 1098871033U;
         static const AkUniqueID GAME_START = 733168346U;
+        static const AkUniqueID HUD_HAND = 1286028972U;
+        static const AkUniqueID HUD_WARNING = 3642866649U;
         static const AkUniqueID PLAYER_DIE = 1542330065U;
         static const AkUniqueID PLAYER_GRAB_GEM = 52976355U;
         static const AkUniqueID PLAYER_LAND = 3629196698U;
@@ -33,10 +35,8 @@ namespace AK
         static const AkUniqueID TRAP_PLATFORM_OPEN = 4293073065U;
         static const AkUniqueID TRAP_SPIKES = 584352822U;
         static const AkUniqueID TRAP_TENTACLES = 3064100384U;
-        static const AkUniqueID UI_INGAME_HAND = 1170205103U;
         static const AkUniqueID UI_INGAME_HIGHSCORE = 104469174U;
         static const AkUniqueID UI_INGAME_SCORE = 2967661922U;
-        static const AkUniqueID UI_INGAME_WARNING = 2850178896U;
         static const AkUniqueID UI_MENU_BACK = 922786755U;
         static const AkUniqueID UI_MENU_ENTER = 3218841108U;
         static const AkUniqueID UI_MENU_HOME = 2306418743U;
