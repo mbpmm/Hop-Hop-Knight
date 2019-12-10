@@ -47,7 +47,6 @@ public class Arrows : MonoBehaviour
     {
         warningAux = Instantiate(warningSign, warningPositions[rnd].transform.position, Quaternion.identity);
         warningAux.transform.SetParent(positions[rnd].transform);
-        AkSoundEngine.PostEvent("ui_ingame_warning", gameObject);
 
         Destroy(warningAux, warningTime);
     }
