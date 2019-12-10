@@ -308,7 +308,7 @@
 				</File>
 				<File Id="513495803" Language="SFX">
 					<ShortName>UI\sfx_hud_warning.wav</ShortName>
-					<Path>SFX\UI\sfx_hud_warning_1F6CE6D5.wem</Path>
+					<Path>SFX\UI\sfx_hud_warning_2FDF8C32.wem</Path>
 				</File>
 				<File Id="532605471" Language="SFX">
 					<ShortName>Music\HHK_InGame_C_Melody_125bpm4-4_L08_P01.wav</ShortName>
@@ -440,7 +440,7 @@
 				</File>
 				<File Id="854753518" Language="SFX">
 					<ShortName>Player\sfx_powerup_end.wav</ShortName>
-					<Path>SFX\Player\sfx_powerup_end_A971E2BE.wem</Path>
+					<Path>SFX\Player\sfx_powerup_end_81C0C6C4.wem</Path>
 				</File>
 				<File Id="885614300" Language="SFX">
 					<ShortName>Player\sfx_wings_03.wav</ShortName>
@@ -520,7 +520,7 @@
 				</File>
 				<File Id="1059220891" Language="SFX">
 					<ShortName>UI\sfx_hud_hand.wav</ShortName>
-					<Path>SFX\UI\sfx_hud_hand_0BC74149.wem</Path>
+					<Path>SFX\UI\sfx_hud_hand_BB7598E4.wem</Path>
 				</File>
 				<File Id="1060678634" Language="SFX">
 					<ShortName>Player\sfx_player_land_01.wav</ShortName>
