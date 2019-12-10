@@ -6332,14 +6332,14 @@ MonoBehaviour:
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a4d814add1f93ff4d9d3580617fc5fdd,
+    WwiseObjectReference: {fileID: 11400000, guid: 01abb7dc31e8bb04b926f3d2659d1cc4,
       type: 2}
   PauseExit:
     idInternal: 0
     valueGuidInternal: 
     groupIdInternal: 0
     groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: a454b575c135c0442bb342820cf58899,
+    WwiseObjectReference: {fileID: 11400000, guid: 0973f78ce81c69e4fbbfb61f300a3c89,
       type: 2}
   MuteFx:
     idInternal: 0
