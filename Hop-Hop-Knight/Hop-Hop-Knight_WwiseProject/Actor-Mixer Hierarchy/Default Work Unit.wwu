@@ -90,7 +90,7 @@
 											<PropertyList>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.131645976027397"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="3.51055936073059E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0351055936073059"/>
 												<Property Name="TrimEnd" Type="Real64" Value="0.965403824200915"/>
 											</PropertyList>
 											<Language>SFX</Language>
@@ -113,9 +113,9 @@
 									<ChildrenList>
 										<AudioFileSource Name="sfx_hud_warning" ID="{7AFBF368-181F-4DD2-A7D4-B5CB49E47976}" ShortID="513495803">
 											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="3.27104737442922E-02"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0327104737442922"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="3.27104737442922E-02"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0327104737442922"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>UI\sfx_hud_warning.wav</AudioFile>
@@ -2539,9 +2539,9 @@
 											<ChildrenList>
 												<AudioFileSource Name="sfx_trap_arrows_05" ID="{9A3F2B26-78C8-49D6-9D16-C960D606F66A}" ShortID="592546947">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="8.78986515410959E-02"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0878986515410959"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="8.78986515410959E-02"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0878986515410959"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Traps\sfx_trap_arrows_05.wav</AudioFile>

@@ -1515,6 +1515,9 @@
 														<AudioFileSource Name="HHK_InGame_Trans_125bpm4-4_L02_P01" ID="{C0BEFDF7-44DE-47BF-B0A6-1C08960F629A}" ShortID="414575383">
 															<Language>SFX</Language>
 															<AudioFile>Music\HHK_InGame_Trans_125bpm4-4_L02_P01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File Platform="Mac" ID="286966185"/>
+															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -1742,6 +1745,9 @@
 														<AudioFileSource Name="HHK_InGame_Die_125bpm4-4_L04_P01" ID="{573DE9D0-A500-45B7-91F7-A327E40BD8D1}" ShortID="815275819">
 															<Language>SFX</Language>
 															<AudioFile>Music\HHK_InGame_Die_125bpm4-4_L04_P01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File Platform="Mac" ID="1021956049"/>
+															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -1866,6 +1872,9 @@
 														<AudioFileSource Name="HHK_InGame_HighScore_125bpm4-4_L04_P01" ID="{F031E85C-EBE0-4304-A5DE-170FF87BC4A1}" ShortID="42107965">
 															<Language>SFX</Language>
 															<AudioFile>Music\HHK_InGame_HighScore_125bpm4-4_L04_P01.wav</AudioFile>
+															<ConvertedFileIDList>
+																<File Platform="Mac" ID="462550337"/>
+															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<TransitionList>
@@ -1992,7 +2001,8 @@
 															<Language>SFX</Language>
 															<AudioFile>Music\HHK_InGame_Die_125bpm4-4_L04_P01.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="815275819"/>
+																<File Platform="Android" ID="815275819"/>
+																<File Platform="Windows" ID="815275819"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2119,7 +2129,8 @@
 															<Language>SFX</Language>
 															<AudioFile>Music\HHK_InGame_HighScore_125bpm4-4_L04_P01.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="42107965"/>
+																<File Platform="Android" ID="42107965"/>
+																<File Platform="Windows" ID="42107965"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2415,7 +2426,8 @@
 															<Language>SFX</Language>
 															<AudioFile>Music\HHK_InGame_Trans_125bpm4-4_L02_P01.wav</AudioFile>
 															<ConvertedFileIDList>
-																<File ID="414575383"/>
+																<File Platform="Android" ID="414575383"/>
+																<File Platform="Windows" ID="414575383"/>
 															</ConvertedFileIDList>
 														</AudioFileSource>
 													</ChildrenList>
