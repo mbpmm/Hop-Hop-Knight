@@ -141,16 +141,11 @@ namespace AK
         static const AkUniqueID DISTANCE_TRAP_SPIKES = 2411429840U;
         static const AkUniqueID DISTANCE_TRAP_TENTACLE = 2145236951U;
         static const AkUniqueID FLOOR_NUMBER = 1884276375U;
+        static const AkUniqueID ISHIGHSCORE = 506282705U;
         static const AkUniqueID POWERUP_STATE = 709965785U;
         static const AkUniqueID VOLUME_MUSIC = 3891337659U;
         static const AkUniqueID VOLUME_SFX = 3673881719U;
     } // namespace GAME_PARAMETERS
-
-    namespace TRIGGERS
-    {
-        static const AkUniqueID DIE = 445985469U;
-        static const AkUniqueID HIGHSCORE = 2808377621U;
-    } // namespace TRIGGERS
 
     namespace BANKS
     {

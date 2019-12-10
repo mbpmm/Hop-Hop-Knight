@@ -68,10 +68,22 @@
 						<Action Name="" ID="{79F3D9AC-C542-4ACF-B74A-78A9F0D93E4B}" ShortID="88752523">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="powerup_state" ID="{92313F99-67CB-4A4F-9E72-884B51F24E01}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3A985966-75B5-4BE2-9446-7157AD3C1FCB}" ShortID="711749528">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ishighscore" ID="{41BCDC6B-DB1D-4781-A034-933B2E966AE1}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -137,21 +149,6 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="HHK_InGame_Die_125bpm4-4_L04_P01_Long" ID="{897FEBAF-F790-431D-850E-B7CE1014545F}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{5F78F46B-820A-426C-A592-9DDE6C4655A2}" ShortID="858068671">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="35"/>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Die" ID="{125DEA90-F6F8-4082-B037-67D72E66AAC6}" WorkUnitID="{4CE23351-D4D9-4DC8-8B32-E2D9C005EEB8}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -442,10 +439,22 @@
 						<Action Name="" ID="{767C6BD7-9887-49BD-95C7-7D0E475BBD94}" ShortID="36835333">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="powerup_state" ID="{92313F99-67CB-4A4F-9E72-884B51F24E01}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{76642A82-1CAE-4543-9BF6-7FC86CEF061B}" ShortID="1001416405">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ishighscore" ID="{41BCDC6B-DB1D-4781-A034-933B2E966AE1}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -587,18 +596,14 @@
 				</Event>
 				<Event Name="ui_ingame_highscore" ID="{5D295C08-607E-4316-BAD1-649074F5C685}">
 					<ChildrenList>
-						<Action Name="" ID="{ACB42A8B-7B49-4814-80F8-342C580F3F58}" ShortID="122132021">
+						<Action Name="" ID="{80426A0A-5BA3-405C-858B-25599FA26A79}" ShortID="892375187">
 							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="35"/>
-								<Property Name="Inclusion" Type="bool">
-									<ValueList>
-										<Value>False</Value>
-									</ValueList>
-								</Property>
+								<Property Name="ActionType" Type="int16" Value="38"/>
+								<Property Name="GameParameterValue" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="HighScore" ID="{03E61E3E-2534-4CB9-94D4-21B40457AF0C}" WorkUnitID="{4CE23351-D4D9-4DC8-8B32-E2D9C005EEB8}"/>
+									<ObjectRef Name="ishighscore" ID="{41BCDC6B-DB1D-4781-A034-933B2E966AE1}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{4CE23351-D4D9-4DC8-8B32-E2D9C005EEB8}" SchemaVersion="94">
 	<Triggers>
-		<WorkUnit Name="Default Work Unit" ID="{4CE23351-D4D9-4DC8-8B32-E2D9C005EEB8}" PersistMode="Standalone">
-			<ChildrenList>
-				<Trigger Name="HighScore" ID="{03E61E3E-2534-4CB9-94D4-21B40457AF0C}"/>
-				<Trigger Name="Die" ID="{125DEA90-F6F8-4082-B037-67D72E66AAC6}"/>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{4CE23351-D4D9-4DC8-8B32-E2D9C005EEB8}" PersistMode="Standalone"/>
 	</Triggers>
 </WwiseDocument>

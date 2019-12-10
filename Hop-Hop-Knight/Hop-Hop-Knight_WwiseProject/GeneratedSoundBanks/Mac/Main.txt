@@ -71,16 +71,13 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	262799029	distance_enemy_blob			\Default Work Unit\distance_enemy_blob	
 	381081085	distance_enemy_bat2			\Default Work Unit\distance_enemy_bat2	
 	381081086	distance_enemy_bat1			\Default Work Unit\distance_enemy_bat1	
+	506282705	ishighscore			\Default Work Unit\ishighscore	
 	709965785	powerup_state			\Default Work Unit\powerup_state	
 	1034163099	distance_enemy_plant			\Default Work Unit\distance_enemy_plant	
 	2145236951	distance_trap_tentacle			\Default Work Unit\distance_trap_tentacle	
 	2411429840	distance_trap_spikes			\Default Work Unit\distance_trap_spikes	
 	2622755353	distance_enemy_ghost			\Default Work Unit\distance_enemy_ghost	
 	3732534371	distance_trap_moving_platform			\Default Work Unit\distance_trap_moving_platform	
-
-Trigger	ID	Name			Wwise Object Path	Notes
-	445985469	Die			\Default Work Unit\Die	
-	2808377621	HighScore			\Default Work Unit\HighScore	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	20415555	HHK_InGame_A_SpaceGuitar_125bpm4-4_L08	Z:\Volumes\LaCie\Proyectos Diego\Game Audio\Implementacion\HopHopKnight\Repo\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Mac\SFX\Music\HHK_InGame_A_SpaceGuitar_125bpm4-4_L08_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSystem\InGame\InGamePlaylist\Part A\HHK_InGame_A_SpaceGuitar_125bpm4-4_L08		236482

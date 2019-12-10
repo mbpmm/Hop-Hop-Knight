@@ -16,6 +16,13 @@
 						<Folder Name="Menu" ID="{C9A44C13-24D3-4493-B7F3-07AE1CFCA25D}" ShortID="389652614">
 							<ChildrenList>
 								<Sound Name="sfx_ui_home" ID="{BD5EB27E-FDDD-49C4-931E-624C7F1A7C8F}" ShortID="264174992">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
@@ -35,6 +42,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="sfx_ui_play" ID="{7BAF2FA5-AB9D-49F1-AE17-3D14660CD367}" ShortID="670079548">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
@@ -102,6 +116,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="sfx_hud_warning" ID="{B237E656-86A5-444A-AD73-BC18927459DA}" ShortID="828293683">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
@@ -133,7 +154,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>2</Value>
+												<Value>-5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -187,6 +208,13 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="UI_score_sign_out" ID="{DB7DD8A8-F110-436A-B5AB-F9D9684969F0}" ShortID="832596616">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
@@ -242,7 +270,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-1</Value>
+										<Value>-3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -286,6 +314,11 @@
 										<Property Name="InitialDelay" Type="Real64">
 											<ValueList>
 												<Value>2</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -364,6 +397,9 @@
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{83424AD3-6AA2-48DB-9EDA-00EBFB3BAEF0}" ShortID="994690184">
 													<ReferenceList>
@@ -505,6 +541,11 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="blob" ID="{1284CF06-E3FA-41B5-8744-D0180DFDDD33}" ShortID="798927138">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>30</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -524,7 +565,7 @@
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-2</Value>
+												<Value>-5</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{6E85EE8D-6B57-4C96-9A5A-CE3F93D31F37}" ShortID="356850840">
@@ -806,6 +847,9 @@
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{BA4DEE71-84A4-4EBF-91AC-E15723407835}" ShortID="434064982">
 													<ReferenceList>
@@ -991,6 +1035,9 @@
 											</RTPCList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{AC650004-8162-4AAA-9FB3-1657700B94D6}" ShortID="259798574">
 													<ReferenceList>
@@ -1533,7 +1580,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>3</Value>
+												<Value>-4</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1832,7 +1879,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>8</Value>
+												<Value>4</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1906,6 +1953,11 @@
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="player_wings" ID="{AC8ABD9F-2B67-414E-993D-928E76E05885}" ShortID="276419184">
 									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>19</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -1918,6 +1970,11 @@
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -2109,7 +2166,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-2</Value>
+														<Value>-4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -2147,7 +2204,7 @@
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-10</Value>
+														<Value>-11</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -2654,7 +2711,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>4</Value>
+												<Value>2</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{7B0A6E30-7E7D-4A7A-9080-DFC276835887}" ShortID="70471153">
@@ -2699,6 +2756,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<RandomSequenceContainer Name="moving_platform_open" ID="{C4DFF8F6-E299-4F08-9F78-BB4670D34ADC}" ShortID="902682066">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
@@ -2749,6 +2813,13 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="moving_platform_close" ID="{05B0E76C-A1D9-4F11-B35D-7EE94E818ADD}" ShortID="127122524">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
@@ -2881,6 +2952,9 @@
 										</Property>
 										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{7C002D55-BC84-45DD-9C60-1D9B14A9A4CB}" ShortID="679825890">
 													<ReferenceList>

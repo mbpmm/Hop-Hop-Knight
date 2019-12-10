@@ -101,6 +101,10 @@
 							<ObjectRef Name="ui_ingame_score" ID="{5601E053-2EEB-4A62-BDD7-91B15BAAB770}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
 							<Position X="5" Y="2"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="ui_ingame_highscore" ID="{5D295C08-607E-4316-BAD1-649074F5C685}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<Position X="5" Y="3"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -124,8 +128,12 @@
 							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="distance_enemy_bat1" ID="{F5A564D8-11FC-481B-915B-12E4E1C6363B}"/>
+							<GameParameterRef Name="ishighscore" ID="{41BCDC6B-DB1D-4781-A034-933B2E966AE1}"/>
 							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="distance_enemy_bat1" ID="{F5A564D8-11FC-481B-915B-12E4E1C6363B}"/>
+							<Value>11</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_trap_tentacle" ID="{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}"/>
@@ -153,13 +161,13 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{9F5E1ACD-9C69-4196-9B81-C7CB8D737B75}"/>
+						<CurrentStateRef Name="alive" ID="{32DE1AA7-312B-43BF-973E-22F9BAAC529F}"/>
 						<CurrentStateRef Name="play" ID="{2495BA82-9647-41EA-931E-DE727C31889E}"/>
 						<CurrentStateRef Name="ingame" ID="{3A10E00D-D309-403E-8BDD-ECABD43BE359}"/>
 						<CurrentStateRef Name="pause_off" ID="{0F7B1890-6312-4D2B-875B-AFF3CEF74A12}"/>
-						<CurrentStateRef Name="None" ID="{C8627E62-3613-4831-8A52-AD1BDD0CD0F2}"/>
-						<CurrentStateRef Name="None" ID="{34D113B2-E3AB-45F9-95FD-A65DEE88184A}"/>
-						<CurrentStateRef Name="None" ID="{9B39799A-BA28-4531-A04E-F2BDE9BB6421}"/>
+						<CurrentStateRef Name="mute_mx_off" ID="{922BA8CA-51C1-42ED-B2AF-31CB30EF78AA}"/>
+						<CurrentStateRef Name="mute_fx_off" ID="{CD5FDECC-0E7C-4178-B904-1D6A003F74A0}"/>
+						<CurrentStateRef Name="menu" ID="{09EDFD27-A48F-4328-8037-47EFE3B809D9}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

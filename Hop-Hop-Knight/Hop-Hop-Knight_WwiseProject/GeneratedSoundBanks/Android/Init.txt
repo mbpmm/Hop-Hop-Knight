@@ -11,7 +11,6 @@ State	ID	Name	State Group			Notes
 	0	None	ingame			
 	1256202815	play	ingame			
 	2398231425	score	ingame			
-	3092587493	pause	ingame			
 	3950429679	powerup	ingame			
 	4023194814	ghost	ingame			
 	0	None	player			
