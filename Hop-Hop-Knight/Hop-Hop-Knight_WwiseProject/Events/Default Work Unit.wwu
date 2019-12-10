@@ -22,6 +22,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{E10E1E49-2AC5-48B8-8F5E-A1ACD9EAE235}" ShortID="227516478">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="menu" ID="{4EEBF0E3-A47E-4C66-99ED-9172D611D718}" WorkUnitID="{BF88A622-63C2-4B94-8505-42A50FA6F1E8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{AD36A33B-FA04-4681-8C63-0CDF80B9F1EB}" ShortID="659661672">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>
@@ -159,7 +169,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="player_wings" ID="{E603A4DE-EBD9-415B-98B1-9073D40E1935}"/>
+				<Event Name="player_wings" ID="{E603A4DE-EBD9-415B-98B1-9073D40E1935}">
+					<ChildrenList>
+						<Action Name="" ID="{508F091D-98B7-4D2B-9C37-FA791F623A37}" ShortID="58967881">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="player_wings" ID="{AC8ABD9F-2B67-414E-993D-928E76E05885}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="powerup_start" ID="{E62FB467-D086-4A40-8651-9DC5114C6134}">
 					<ChildrenList>
 						<Action Name="" ID="{A9F897A2-35D0-4723-9C16-55152D04791E}" ShortID="853764735">
@@ -181,6 +201,13 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="powerup_state" ID="{92313F99-67CB-4A4F-9E72-884B51F24E01}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{DBC75C1C-6146-48F6-853E-7CCEA7D26AC2}" ShortID="1066614032">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_powerup_start" ID="{1E9F2776-4C5D-4EDB-95E0-EE6375F1CD73}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -206,6 +233,23 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="powerup_state" ID="{92313F99-67CB-4A4F-9E72-884B51F24E01}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2BAD7290-05DB-49A8-8232-BF4D311A5608}" ShortID="60985880">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_powerup_end" ID="{ADB1F81A-BE58-41B5-B895-84AD027B480A}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{4857C6A7-9513-45B0-A2F5-A6A78D7A538C}" ShortID="813153955">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sfx_wind" ID="{E26B6398-1F3E-489A-BFA2-F84844E39CB7}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -268,6 +312,35 @@
 							</ReferenceList>
 						</Action>
 						<Action Name="" ID="{7CA05AC9-82FA-4837-9E0E-8F4B4C036491}" ShortID="934913099">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ghost" ID="{4E9F6407-B2EB-46FF-B3D3-5ACE16A53493}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1FA785C3-751F-4B39-A3F4-B910A3121FEE}" ShortID="597174510">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+								<Property Name="Delay" Type="Real64" Value="15">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{CA2F449D-E3CC-47D3-89F4-6B0CE583DFA4}"/>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="play" ID="{2495BA82-9647-41EA-931E-DE727C31889E}" WorkUnitID="{BF88A622-63C2-4B94-8505-42A50FA6F1E8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{CCE78E69-295B-4DB4-8985-25A93523AAB8}" ShortID="226551955">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="16"/>
+								<Property Name="FadeTime" Type="Real64" Value="8.5"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="ghost" ID="{4E9F6407-B2EB-46FF-B3D3-5ACE16A53493}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
@@ -540,6 +613,7 @@
 						<Action Name="" ID="{58B1100D-6F22-45DE-809B-622B84014A2C}" ShortID="942379427">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>
+								<Property Name="Delay" Type="Real64" Value="1"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">

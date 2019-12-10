@@ -33,6 +33,7 @@
 						<ObjectRef Name="ui_ingame_hand" ID="{C208B5D0-A510-4CB1-AFF2-0C32410BBE96}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ui_menu_start" ID="{89ED94D6-6F78-4CC7-B769-BCFBC863918C}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ui_menu_back" ID="{268331E9-5C66-4E01-B0B5-9D4364D8F298}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ui_menu_play_again" ID="{05C706D7-BAF5-4E5D-AA10-7699BD3C7463}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="player_die" ID="{600796D5-2192-4E6C-8816-780FAB51AEA8}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="trap_tentacles" ID="{1D10AFE7-9940-4FBA-8BB3-00F5D3E2B944}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>

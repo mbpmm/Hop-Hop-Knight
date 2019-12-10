@@ -28,7 +28,7 @@
 						<State Name="powerup" ID="{689820FE-30B4-4A24-B6E6-1DC82957CF23}"/>
 					</ChildrenList>
 				</StateGroup>
-				<StateGroup Name="screen" ID="{3ABAB8E0-C99C-440C-967F-E3C2DF5C8BF0}">
+				<StateGroup Name="music_screen" ID="{3ABAB8E0-C99C-440C-967F-E3C2DF5C8BF0}">
 					<ChildrenList>
 						<State Name="None" ID="{907A2092-7AF6-4484-906F-9807123045AE}"/>
 						<State Name="menu" ID="{4EEBF0E3-A47E-4C66-99ED-9172D611D718}"/>

@@ -22,6 +22,10 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="enemy_ghost" ID="{07C3B47F-7769-4A48-9A76-0099C6EFC295}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="powerup_start" ID="{E62FB467-D086-4A40-8651-9DC5114C6134}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
 							<Position X="1" Y="3"/>
 						</Module>
@@ -47,41 +51,65 @@
 						</Module>
 						<Module>
 							<ObjectRef Name="player_grab_gem" ID="{A250C783-E995-44B1-8E26-F07B4AF5950E}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
-							<Position X="3" Y="0"/>
+							<Position X="2" Y="4"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="player_wings" ID="{E603A4DE-EBD9-415B-98B1-9073D40E1935}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
-							<Position X="3" Y="1"/>
+							<Position X="2" Y="5"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="trap_arrows" ID="{EFCB9218-E943-4440-80D1-86EEDA82445D}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
-							<Position X="3" Y="2"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="trap_platform_close" ID="{21F999B7-33A5-48AE-89C4-6D29B6FCEC43}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
-							<Position X="3" Y="3"/>
+							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="trap_platform_open" ID="{3E301F7C-75C6-4744-B3CF-51F223BD8742}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
-							<Position X="3" Y="4"/>
+							<Position X="3" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="ui_menu_play_again" ID="{05C706D7-BAF5-4E5D-AA10-7699BD3C7463}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<ObjectRef Name="trap_platform_close" ID="{21F999B7-33A5-48AE-89C4-6D29B6FCEC43}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="trap_tentacles" ID="{1D10AFE7-9940-4FBA-8BB3-00F5D3E2B944}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<Position X="3" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="enemy_bat1" ID="{34C9B9C8-0CA5-4B0A-89AF-736CFA2938A9}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="enemy_bat2" ID="{EEB230E9-7C6D-4869-8E94-FB689996083B}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="enemy_blob" ID="{E4D1E1FA-BAE7-42CC-8D6D-40BE3465D260}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
 							<Position X="4" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="ui_menu_home" ID="{81D507B7-3B19-43D6-9DC0-85599D9BF2D2}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<ObjectRef Name="enemy_ghost" ID="{07C3B47F-7769-4A48-9A76-0099C6EFC295}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
 							<Position X="4" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="ui_ingame_highscore" ID="{5D295C08-607E-4316-BAD1-649074F5C685}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<ObjectRef Name="enemy_plant" ID="{5CECFE0F-98FE-4969-9728-2FF5E15154B0}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
 							<Position X="4" Y="4"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ui_menu_play_again" ID="{05C706D7-BAF5-4E5D-AA10-7699BD3C7463}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<Position X="5" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ui_menu_home" ID="{81D507B7-3B19-43D6-9DC0-85599D9BF2D2}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<Position X="5" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ui_ingame_score" ID="{5601E053-2EEB-4A62-BDD7-91B15BAAB770}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<Position X="5" Y="2"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="distance_enemy_bat2" ID="{3E51CACC-5C62-422E-AB53-C434906738B1}"/>
-							<Value>100</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_enemy_plant" ID="{42E0A334-BB59-4306-9CAF-86D018E94D8E}"/>
@@ -93,7 +121,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_enemy_blob" ID="{DD8872FB-3A06-43E0-9FE0-79D8B9146C73}"/>
-							<Value>0</Value>
+							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="volume_sfx" ID="{BD05C201-F762-470A-B477-40E9B0D6FB9E}"/>
@@ -101,11 +129,11 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_enemy_bat1" ID="{F5A564D8-11FC-481B-915B-12E4E1C6363B}"/>
-							<Value>85</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_trap_tentacle" ID="{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}"/>
-							<Value>2</Value>
+							<Value>38.1799163179916</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="powerup_state" ID="{92313F99-67CB-4A4F-9E72-884B51F24E01}"/>
@@ -133,7 +161,7 @@
 						<CurrentStateRef Name="play" ID="{2495BA82-9647-41EA-931E-DE727C31889E}"/>
 						<CurrentStateRef Name="ingame" ID="{3A10E00D-D309-403E-8BDD-ECABD43BE359}"/>
 						<CurrentStateRef Name="pause_off" ID="{0F7B1890-6312-4D2B-875B-AFF3CEF74A12}"/>
-						<CurrentStateRef Name="unmute_fx" ID="{D46506F3-71FC-4898-9EF5-8D00012EF528}"/>
+						<CurrentStateRef Name="unmute_mx" ID="{922BA8CA-51C1-42ED-B2AF-31CB30EF78AA}"/>
 						<CurrentStateRef Name="menu" ID="{09EDFD27-A48F-4328-8037-47EFE3B809D9}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>

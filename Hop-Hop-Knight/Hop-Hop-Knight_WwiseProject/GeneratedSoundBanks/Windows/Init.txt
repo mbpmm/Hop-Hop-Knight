@@ -1,15 +1,12 @@
 State Group	ID	Name			Wwise Object Path	Notes
-	804877345	screen			\Default Work Unit\screen	
 	984691642	ingame			\Default Work Unit\ingame	
 	1069431850	player			\Default Work Unit\player	
 	2292459139	menu_screen			\Default Work Unit\menu_screen	
 	2895066125	music_pause			\Default Work Unit\music_pause	
 	2974103762	mute			\Default Work Unit\mute	
+	3851085129	music_screen			\Default Work Unit\music_screen	
 
 State	ID	Name	State Group			Notes
-	0	None	screen			
-	984691642	ingame	screen			
-	2607556080	menu	screen			
 	0	None	ingame			
 	1256202815	play	ingame			
 	2398231425	score	ingame			
@@ -31,6 +28,9 @@ State	ID	Name	State Group			Notes
 	1932282383	mute_fx	mute			
 	3779271524	unmute_fx	mute			
 	3963825173	unmute_mx	mute			
+	0	None	music_screen			
+	984691642	ingame	music_screen			
+	2607556080	menu	music_screen			
 
 Custom State	ID	Name	State Group	Owner		Notes
 	9221439	pause_on	music_pause	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		

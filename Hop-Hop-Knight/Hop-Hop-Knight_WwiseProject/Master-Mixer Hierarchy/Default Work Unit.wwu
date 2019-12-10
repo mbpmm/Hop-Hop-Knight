@@ -49,7 +49,7 @@
 										<StateRef Name="pause_on" ID="{307A800D-0E80-4FCF-8BC8-A3AF8677C424}"/>
 										<CustomState Name="" ID="{566A9707-FD26-4198-8801-C8697AAD0224}" ShortID="9221439">
 											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="80"/>
+												<Property Name="Lowpass" Type="int16" Value="61"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>

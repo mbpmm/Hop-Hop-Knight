@@ -40,6 +40,7 @@ namespace AK
         static const AkUniqueID UI_MENU_BACK = 922786755U;
         static const AkUniqueID UI_MENU_ENTER = 3218841108U;
         static const AkUniqueID UI_MENU_HOME = 2306418743U;
+        static const AkUniqueID UI_MENU_PLAY_AGAIN = 245809409U;
         static const AkUniqueID UI_MENU_START = 2961968006U;
         static const AkUniqueID UI_PAUSE_OFF = 952138190U;
         static const AkUniqueID UI_PAUSE_ON = 1731872944U;
@@ -84,6 +85,17 @@ namespace AK
             } // namespace STATE
         } // namespace MUSIC_PAUSE
 
+        namespace MUSIC_SCREEN
+        {
+            static const AkUniqueID GROUP = 3851085129U;
+
+            namespace STATE
+            {
+                static const AkUniqueID INGAME = 984691642U;
+                static const AkUniqueID MENU = 2607556080U;
+            } // namespace STATE
+        } // namespace MUSIC_SCREEN
+
         namespace MUTE
         {
             static const AkUniqueID GROUP = 2974103762U;
@@ -107,17 +119,6 @@ namespace AK
                 static const AkUniqueID DEAD = 2044049779U;
             } // namespace STATE
         } // namespace PLAYER
-
-        namespace SCREEN
-        {
-            static const AkUniqueID GROUP = 804877345U;
-
-            namespace STATE
-            {
-                static const AkUniqueID INGAME = 984691642U;
-                static const AkUniqueID MENU = 2607556080U;
-            } // namespace STATE
-        } // namespace SCREEN
 
     } // namespace STATES
 
