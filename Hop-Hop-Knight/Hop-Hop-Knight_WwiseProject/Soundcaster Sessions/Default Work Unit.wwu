@@ -22,6 +22,10 @@
 							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="game_start" ID="{A7545A09-46E6-4561-8008-07D224946F78}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<Position X="0" Y="4"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="ui_menu_start" ID="{89ED94D6-6F78-4CC7-B769-BCFBC863918C}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
 							<Position X="1" Y="0"/>
 						</Module>
@@ -153,7 +157,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_trap_moving_platform" ID="{231105EE-67B1-4F53-A8C3-4D22EBE6A67C}"/>
-							<Value>20</Value>
+							<Value>80</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_trap_spikes" ID="{3B15008C-744A-4F9E-AAEC-D19A626D0C0C}"/>
@@ -165,9 +169,9 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="alive" ID="{32DE1AA7-312B-43BF-973E-22F9BAAC529F}"/>
+						<CurrentStateRef Name="dead" ID="{6D8DAF9D-2166-4310-97C9-66F34B631362}"/>
 						<CurrentStateRef Name="score" ID="{B1030D0F-0A75-47F0-9A67-8B44BAC8B3BF}"/>
-						<CurrentStateRef Name="menu" ID="{4EEBF0E3-A47E-4C66-99ED-9172D611D718}"/>
+						<CurrentStateRef Name="ingame" ID="{3A10E00D-D309-403E-8BDD-ECABD43BE359}"/>
 						<CurrentStateRef Name="pause_off" ID="{0F7B1890-6312-4D2B-875B-AFF3CEF74A12}"/>
 						<CurrentStateRef Name="mute_mx_off" ID="{922BA8CA-51C1-42ED-B2AF-31CB30EF78AA}"/>
 						<CurrentStateRef Name="mute_fx_off" ID="{CD5FDECC-0E7C-4178-B904-1D6A003F74A0}"/>

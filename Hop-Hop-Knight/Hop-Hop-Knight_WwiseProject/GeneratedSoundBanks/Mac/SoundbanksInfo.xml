@@ -22,9 +22,9 @@
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2262673565" Name="developer_logo" ObjectPath="\Events\Default Work Unit\developer_logo" DurationType="Infinite"/>
-				<Event Id="2768764968" Name="enemy_bat1" ObjectPath="\Events\Default Work Unit\enemy_bat1" DurationType="Infinite"/>
-				<Event Id="2768764971" Name="enemy_bat2" ObjectPath="\Events\Default Work Unit\enemy_bat2" DurationType="OneShot" DurationMin="16.608437" DurationMax="16.608437"/>
-				<Event Id="2582092671" Name="enemy_blob" ObjectPath="\Events\Default Work Unit\enemy_blob" DurationType="OneShot" DurationMin="37.422844" DurationMax="45.907959"/>
+				<Event Id="2768764968" Name="enemy_bat1" ObjectPath="\Events\Default Work Unit\enemy_bat1" DurationType="OneShot" DurationMin="47.677917" DurationMax="47.677917"/>
+				<Event Id="2768764971" Name="enemy_bat2" ObjectPath="\Events\Default Work Unit\enemy_bat2" DurationType="OneShot" DurationMin="63.433746" DurationMax="63.433746"/>
+				<Event Id="2582092671" Name="enemy_blob" ObjectPath="\Events\Default Work Unit\enemy_blob" DurationType="OneShot" DurationMin="85.384270" DurationMax="98.111938"/>
 				<Event Id="1974222287" Name="enemy_ghost" ObjectPath="\Events\Default Work Unit\enemy_ghost" DurationType="Infinite"/>
 				<Event Id="1098871033" Name="enemy_plant" ObjectPath="\Events\Default Work Unit\enemy_plant" DurationType="OneShot" DurationMin="2.019488" DurationMax="3.770236"/>
 				<Event Id="733168346" Name="game_start" ObjectPath="\Events\Default Work Unit\game_start" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
