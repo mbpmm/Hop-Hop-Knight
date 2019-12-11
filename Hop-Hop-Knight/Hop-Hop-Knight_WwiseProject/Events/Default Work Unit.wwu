@@ -271,6 +271,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{28C6E533-024B-4DBF-881E-5C226A90CD48}" ShortID="92773453">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="30"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="blob" ID="{1284CF06-E3FA-41B5-8744-D0180DFDDD33}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="enemy_bat1" ID="{34C9B9C8-0CA5-4B0A-89AF-736CFA2938A9}">
@@ -282,11 +292,35 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{022DD757-9902-4AE2-A11C-E03AE0DB65CE}" ShortID="210059686">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="30"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="bat_green" ID="{7092E42C-38D6-4681-BF9A-B082FCF2A857}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="enemy_bat2" ID="{EEB230E9-7C6D-4869-8E94-FB689996083B}">
 					<ChildrenList>
 						<Action Name="" ID="{4F5FDAFF-4844-4BD4-9603-4A6BDC88573B}" ShortID="377409064">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="bat_red" ID="{BECDD1B7-2205-4096-B00E-5F5FA6602D5D}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{98BB7FC4-4994-4136-B558-CA313CA158EF}" ShortID="744746874">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="30"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="bat_red" ID="{BECDD1B7-2205-4096-B00E-5F5FA6602D5D}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
@@ -423,6 +457,16 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="ingame" ID="{3A10E00D-D309-403E-8BDD-ECABD43BE359}" WorkUnitID="{BF88A622-63C2-4B94-8505-42A50FA6F1E8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{BB90F2BE-1933-454E-8BA8-D8656320E14E}" ShortID="496794337">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="alive" ID="{32DE1AA7-312B-43BF-973E-22F9BAAC529F}" WorkUnitID="{BF88A622-63C2-4B94-8505-42A50FA6F1E8}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

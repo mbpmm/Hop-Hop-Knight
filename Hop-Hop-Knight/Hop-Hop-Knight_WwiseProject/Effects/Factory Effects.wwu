@@ -209,6 +209,7 @@
 								<Property Name="Threshold" Type="Real32" Value="-25"/>
 							</PropertyList>
 						</Effect>
+						<Effect Name="New_Wwise_Meter" ID="{FB415AAB-9545-47B4-95C1-1842082478A4}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3"/>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Wwise Parametric EQ" ID="{DFCF119F-F31B-4A92-BDD4-B049BB5070CF}" ShortID="679384051">

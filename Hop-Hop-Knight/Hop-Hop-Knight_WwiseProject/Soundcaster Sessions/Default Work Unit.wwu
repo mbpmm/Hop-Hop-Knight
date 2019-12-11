@@ -6,7 +6,7 @@
 				<SoundcasterSession Name="HHK Music System Test Diego" ID="{051A0C15-B77C-4289-A0B8-7BAF06FA902A}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="developer_logo" ID="{3B37DC72-7691-4435-BB27-322881C47A72}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<ObjectRef Name="MusicSystem" ID="{6A5FE2F1-18AA-4B49-9722-0218F4AB9BF9}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
@@ -16,6 +16,10 @@
 						<Module>
 							<ObjectRef Name="ui_pause_off" ID="{4456BDDE-78F0-46EC-BCC4-149E6479DB36}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
 							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="developer_logo" ID="{3B37DC72-7691-4435-BB27-322881C47A72}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="ui_menu_start" ID="{89ED94D6-6F78-4CC7-B769-BCFBC863918C}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
@@ -109,7 +113,7 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="distance_enemy_bat2" ID="{3E51CACC-5C62-422E-AB53-C434906738B1}"/>
-							<Value>0</Value>
+							<Value>73</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_enemy_plant" ID="{42E0A334-BB59-4306-9CAF-86D018E94D8E}"/>
@@ -121,7 +125,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_enemy_blob" ID="{DD8872FB-3A06-43E0-9FE0-79D8B9146C73}"/>
-							<Value>0</Value>
+							<Value>63</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="volume_sfx" ID="{BD05C201-F762-470A-B477-40E9B0D6FB9E}"/>
@@ -133,7 +137,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_enemy_bat1" ID="{F5A564D8-11FC-481B-915B-12E4E1C6363B}"/>
-							<Value>11</Value>
+							<Value>93</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_trap_tentacle" ID="{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}"/>
@@ -162,8 +166,8 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="alive" ID="{32DE1AA7-312B-43BF-973E-22F9BAAC529F}"/>
-						<CurrentStateRef Name="play" ID="{2495BA82-9647-41EA-931E-DE727C31889E}"/>
-						<CurrentStateRef Name="ingame" ID="{3A10E00D-D309-403E-8BDD-ECABD43BE359}"/>
+						<CurrentStateRef Name="score" ID="{B1030D0F-0A75-47F0-9A67-8B44BAC8B3BF}"/>
+						<CurrentStateRef Name="menu" ID="{4EEBF0E3-A47E-4C66-99ED-9172D611D718}"/>
 						<CurrentStateRef Name="pause_off" ID="{0F7B1890-6312-4D2B-875B-AFF3CEF74A12}"/>
 						<CurrentStateRef Name="mute_mx_off" ID="{922BA8CA-51C1-42ED-B2AF-31CB30EF78AA}"/>
 						<CurrentStateRef Name="mute_fx_off" ID="{CD5FDECC-0E7C-4178-B904-1D6A003F74A0}"/>
