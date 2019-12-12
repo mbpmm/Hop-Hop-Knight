@@ -60,15 +60,15 @@
 				</File>
 				<File Id="26261845" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_plant_03.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_plant_03_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_plant_03_EDEAA181.wem</Path>
 				</File>
 				<File Id="40772278" Language="SFX">
 					<ShortName>Traps\sfx_trap_arrows_01.wav</ShortName>
-					<Path>SFX\Traps\sfx_trap_arrows_01_6296B0F9.wem</Path>
+					<Path>SFX\Traps\sfx_trap_arrows_01_EDEAA181.wem</Path>
 				</File>
 				<File Id="41313329" Language="SFX">
 					<ShortName>Traps\sfx_trap_arrows_03.wav</ShortName>
-					<Path>SFX\Traps\sfx_trap_arrows_03_6296B0F9.wem</Path>
+					<Path>SFX\Traps\sfx_trap_arrows_03_EDEAA181.wem</Path>
 				</File>
 				<File Id="42107965" Language="SFX">
 					<ShortName>Music\HHK_InGame_HighScore_125bpm4-4_L04_P01.wav</ShortName>
@@ -80,11 +80,11 @@
 				</File>
 				<File Id="44969604" Language="SFX">
 					<ShortName>Player\sfx_player_release_03.wav</ShortName>
-					<Path>SFX\Player\sfx_player_release_03_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_release_03_EDEAA181.wem</Path>
 				</File>
 				<File Id="45838954" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_bat_red_03.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_bat_red_03_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_bat_red_03_EDEAA181.wem</Path>
 				</File>
 				<File Id="55638435" Language="SFX">
 					<ShortName>Music\HHK_InGame_C_PadsNBells_125bpm4-4_L08_P01.wav</ShortName>
@@ -92,15 +92,15 @@
 				</File>
 				<File Id="63890106" Language="SFX">
 					<ShortName>Traps\sfx_trap_arrows_02.wav</ShortName>
-					<Path>SFX\Traps\sfx_trap_arrows_02_6296B0F9.wem</Path>
+					<Path>SFX\Traps\sfx_trap_arrows_02_EDEAA181.wem</Path>
 				</File>
 				<File Id="92722250" Language="SFX">
 					<ShortName>Player\sfx_player_grab_gem_03.wav</ShortName>
-					<Path>SFX\Player\sfx_player_grab_gem_03_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_grab_gem_03_8944B36B.wem</Path>
 				</File>
 				<File Id="102990913" Language="SFX">
 					<ShortName>Player\sfx_wind_02.wav</ShortName>
-					<Path>SFX\Player\sfx_wind_02_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_wind_02_EDEAA181.wem</Path>
 				</File>
 				<File Id="103908315" Language="SFX">
 					<ShortName>Music\HHK_InGame_C_Ostinatto_125bpm4-4_L08_P01.wav</ShortName>
@@ -108,15 +108,15 @@
 				</File>
 				<File Id="108794971" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_ghost_03.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_ghost_03_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_ghost_03_EDEAA181.wem</Path>
 				</File>
 				<File Id="111451627" Language="SFX">
 					<ShortName>Logo\sfx_logo.wav</ShortName>
-					<Path>SFX\Logo\sfx_logo_55ED7196.wem</Path>
+					<Path>SFX\Logo\sfx_logo_9967F64E.wem</Path>
 				</File>
 				<File Id="115704468" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_ghost_05.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_ghost_05_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_ghost_05_EDEAA181.wem</Path>
 				</File>
 				<File Id="118963139" Language="SFX">
 					<ShortName>Music\HHK_InGame_B_Harpsichord_125bpm4-4_L08_P01.wav</ShortName>
@@ -124,7 +124,7 @@
 				</File>
 				<File Id="124018108" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_ghost_far_01.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_ghost_far_01_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_ghost_far_01_EDEAA181.wem</Path>
 				</File>
 				<File Id="129705576" Language="SFX">
 					<ShortName>Music\HHK_InGame_Ghost_125bpm4-4_L08_P01.wav</ShortName>
@@ -140,7 +140,7 @@
 				</File>
 				<File Id="140171611" Language="SFX">
 					<ShortName>Logo\HHK_LogoBumBoxer.wav</ShortName>
-					<Path>SFX\Logo\HHK_LogoBumBoxer_6296B0F9.wem</Path>
+					<Path>SFX\Logo\HHK_LogoBumBoxer_EDEAA181.wem</Path>
 				</File>
 				<File Id="164732613" Language="SFX">
 					<ShortName>Music\HHK_Credits_FullMix_100bpm4-4_L16_P01.wav</ShortName>
@@ -148,15 +148,15 @@
 				</File>
 				<File Id="167899705" Language="SFX">
 					<ShortName>Player\sfx_wind_08.wav</ShortName>
-					<Path>SFX\Player\sfx_wind_08_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_wind_08_EDEAA181.wem</Path>
 				</File>
 				<File Id="168969175" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_bat_green_05.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_bat_green_05_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_bat_green_05_EDEAA181.wem</Path>
 				</File>
 				<File Id="173963611" Language="SFX">
 					<ShortName>Player\sfx_player_release_01.wav</ShortName>
-					<Path>SFX\Player\sfx_player_release_01_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_release_01_EDEAA181.wem</Path>
 				</File>
 				<File Id="180378388" Language="SFX">
 					<ShortName>Music\HHK_InGame_B_FullMix_125bpm4-4_L08_P01.wav</ShortName>
@@ -164,7 +164,7 @@
 				</File>
 				<File Id="180704670" Language="SFX">
 					<ShortName>Traps\sfx_trap_tentacles_01.wav</ShortName>
-					<Path>SFX\Traps\sfx_trap_tentacles_01_9B96ECC7.wem</Path>
+					<Path>SFX\Traps\sfx_trap_tentacles_01_D55D4D8F.wem</Path>
 				</File>
 				<File Id="183111726" Language="SFX">
 					<ShortName>Music\HHK_Main_FullMix_100bpm4-4_L16_P01.wav</ShortName>
@@ -172,27 +172,27 @@
 				</File>
 				<File Id="187172458" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_blob_03.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_blob_03_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_blob_03_EDEAA181.wem</Path>
 				</File>
 				<File Id="224864886" Language="SFX">
 					<ShortName>UI\sfx_ui_sign_up_02.wav</ShortName>
-					<Path>SFX\UI\sfx_ui_sign_up_02_6296B0F9.wem</Path>
+					<Path>SFX\UI\sfx_ui_sign_up_02_EDEAA181.wem</Path>
 				</File>
 				<File Id="228602949" Language="SFX">
 					<ShortName>Player\sfx_wind_04.wav</ShortName>
-					<Path>SFX\Player\sfx_wind_04_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_wind_04_EDEAA181.wem</Path>
 				</File>
 				<File Id="234268965" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_plant_01.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_plant_01_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_plant_01_EDEAA181.wem</Path>
 				</File>
 				<File Id="235711965" Language="SFX">
 					<ShortName>UI\sfx_ui_sign_up_01.wav</ShortName>
-					<Path>SFX\UI\sfx_ui_sign_up_01_6296B0F9.wem</Path>
+					<Path>SFX\UI\sfx_ui_sign_up_01_EDEAA181.wem</Path>
 				</File>
 				<File Id="242866529" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_ghost_01.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_ghost_01_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_ghost_01_EDEAA181.wem</Path>
 				</File>
 				<File Id="250821060" Language="SFX">
 					<ShortName>Music\HHK_InGame_A_HarpNBells_125bpm4-4_L08.wav</ShortName>
@@ -200,47 +200,47 @@
 				</File>
 				<File Id="273176359" Language="SFX">
 					<ShortName>Player\sfx_wind_10.wav</ShortName>
-					<Path>SFX\Player\sfx_wind_10_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_wind_10_EDEAA181.wem</Path>
 				</File>
 				<File Id="277031800" Language="SFX">
 					<ShortName>Player\sfx_wind_03.wav</ShortName>
-					<Path>SFX\Player\sfx_wind_03_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_wind_03_EDEAA181.wem</Path>
 				</File>
 				<File Id="307976024" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_bat_green_02.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_bat_green_02_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_bat_green_02_EDEAA181.wem</Path>
 				</File>
 				<File Id="310112579" Language="SFX">
 					<ShortName>Player\sfx_wings_02.wav</ShortName>
-					<Path>SFX\Player\sfx_wings_02_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_wings_02_EDEAA181.wem</Path>
 				</File>
 				<File Id="333414764" Language="SFX">
 					<ShortName>Traps\sfx_trap_moving_platform_open_02.wav</ShortName>
-					<Path>SFX\Traps\sfx_trap_moving_platform_open_02_6296B0F9.wem</Path>
+					<Path>SFX\Traps\sfx_trap_moving_platform_open_02_EDEAA181.wem</Path>
 				</File>
 				<File Id="340773597" Language="SFX">
 					<ShortName>Player\sfx_player_die_02.wav</ShortName>
-					<Path>SFX\Player\sfx_player_die_02_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_die_02_EDEAA181.wem</Path>
 				</File>
 				<File Id="343070334" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_ghost_08.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_ghost_08_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_ghost_08_EDEAA181.wem</Path>
 				</File>
 				<File Id="363487319" Language="SFX">
 					<ShortName>Player\sfx_wings_01.wav</ShortName>
-					<Path>SFX\Player\sfx_wings_01_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_wings_01_EDEAA181.wem</Path>
 				</File>
 				<File Id="364289548" Language="SFX">
 					<ShortName>Player\sfx_player_grab_gem_02.wav</ShortName>
-					<Path>SFX\Player\sfx_player_grab_gem_02_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_grab_gem_02_DB25D523.wem</Path>
 				</File>
 				<File Id="373829387" Language="SFX">
 					<ShortName>Traps\sfx_trap_spikes_01.wav</ShortName>
-					<Path>SFX\Traps\sfx_trap_spikes_01_6296B0F9.wem</Path>
+					<Path>SFX\Traps\sfx_trap_spikes_01_EDEAA181.wem</Path>
 				</File>
 				<File Id="375673277" Language="SFX">
 					<ShortName>Player\sfx_wind_09.wav</ShortName>
-					<Path>SFX\Player\sfx_wind_09_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_wind_09_EDEAA181.wem</Path>
 				</File>
 				<File Id="378412274" Language="SFX">
 					<ShortName>Music\HHK_InGame_Tentacles_C_125bpm4-4_L08.wav</ShortName>
@@ -248,7 +248,7 @@
 				</File>
 				<File Id="380022127" Language="SFX">
 					<ShortName>Player\sfx_wings_05.wav</ShortName>
-					<Path>SFX\Player\sfx_wings_05_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_wings_05_EDEAA181.wem</Path>
 				</File>
 				<File Id="392152971" Language="SFX">
 					<ShortName>Music\HHK_InGame_A_SynthMelody_125bpm4-4_L08.wav</ShortName>
@@ -260,7 +260,7 @@
 				</File>
 				<File Id="397213678" Language="SFX">
 					<ShortName>Player\sfx_wind_07.wav</ShortName>
-					<Path>SFX\Player\sfx_wind_07_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_wind_07_EDEAA181.wem</Path>
 				</File>
 				<File Id="404007180" Language="SFX">
 					<ShortName>Music\HHK_InGame_C_FullMix_125bpm4-4_L08_P01.wav</ShortName>
@@ -276,23 +276,23 @@
 				</File>
 				<File Id="432716395" Language="SFX">
 					<ShortName>Player\sfx_player_land_03.wav</ShortName>
-					<Path>SFX\Player\sfx_player_land_03_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_land_03_EDEAA181.wem</Path>
 				</File>
 				<File Id="449337522" Language="SFX">
 					<ShortName>Player\sfx_player_die_01.wav</ShortName>
-					<Path>SFX\Player\sfx_player_die_01_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_die_01_EDEAA181.wem</Path>
 				</File>
 				<File Id="460478040" Language="SFX">
 					<ShortName>UI\sfx_ui_play_again.wav</ShortName>
-					<Path>SFX\UI\sfx_ui_play_again_6296B0F9.wem</Path>
+					<Path>SFX\UI\sfx_ui_play_again_EDEAA181.wem</Path>
 				</File>
 				<File Id="460801234" Language="SFX">
 					<ShortName>Traps\sfx_trap_moving_platform_close_03.wav</ShortName>
-					<Path>SFX\Traps\sfx_trap_moving_platform_close_03_6296B0F9.wem</Path>
+					<Path>SFX\Traps\sfx_trap_moving_platform_close_03_EDEAA181.wem</Path>
 				</File>
 				<File Id="466680195" Language="SFX">
 					<ShortName>Player\sfx_wings_06.wav</ShortName>
-					<Path>SFX\Player\sfx_wings_06_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_wings_06_EDEAA181.wem</Path>
 				</File>
 				<File Id="472413976" Language="SFX">
 					<ShortName>Music\HHK_InGame_C_SurfGuitar_125bpm4-4_L08_P01.wav</ShortName>
@@ -300,15 +300,15 @@
 				</File>
 				<File Id="473824247" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_blob_02.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_blob_02_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_blob_02_EDEAA181.wem</Path>
 				</File>
 				<File Id="504729271" Language="SFX">
 					<ShortName>Player\sfx_player_touch_01.wav</ShortName>
-					<Path>SFX\Player\sfx_player_touch_01_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_touch_01_EDEAA181.wem</Path>
 				</File>
 				<File Id="513495803" Language="SFX">
 					<ShortName>UI\sfx_hud_warning.wav</ShortName>
-					<Path>SFX\UI\sfx_hud_warning_2FDF8C32.wem</Path>
+					<Path>SFX\UI\sfx_hud_warning_51436E1A.wem</Path>
 				</File>
 				<File Id="532605471" Language="SFX">
 					<ShortName>Music\HHK_InGame_C_Melody_125bpm4-4_L08_P01.wav</ShortName>
@@ -316,11 +316,11 @@
 				</File>
 				<File Id="536297109" Language="SFX">
 					<ShortName>Player\sfx_player_touch_02.wav</ShortName>
-					<Path>SFX\Player\sfx_player_touch_02_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_touch_02_EDEAA181.wem</Path>
 				</File>
 				<File Id="562599502" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_plant_02.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_plant_02_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_plant_02_EDEAA181.wem</Path>
 				</File>
 				<File Id="579386746" Language="SFX">
 					<ShortName>Music\HHK_InGame_B_KnightMotif_125bpm4-4_L08_P01.wav</ShortName>
@@ -332,11 +332,11 @@
 				</File>
 				<File Id="592546947" Language="SFX">
 					<ShortName>Traps\sfx_trap_arrows_05.wav</ShortName>
-					<Path>SFX\Traps\sfx_trap_arrows_05_FEE291CB.wem</Path>
+					<Path>SFX\Traps\sfx_trap_arrows_05_07360D73.wem</Path>
 				</File>
 				<File Id="603275815" Language="SFX">
 					<ShortName>Player\sfx_player_die_03.wav</ShortName>
-					<Path>SFX\Player\sfx_player_die_03_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_die_03_EDEAA181.wem</Path>
 				</File>
 				<File Id="618008961" Language="SFX">
 					<ShortName>Music\HHK_Main_MainMotif_100bpm4-4_L16_P01.wav</ShortName>
@@ -348,15 +348,15 @@
 				</File>
 				<File Id="626448199" Language="SFX">
 					<ShortName>Traps\sfx_trap_moving_platform_close_01.wav</ShortName>
-					<Path>SFX\Traps\sfx_trap_moving_platform_close_01_6296B0F9.wem</Path>
+					<Path>SFX\Traps\sfx_trap_moving_platform_close_01_EDEAA181.wem</Path>
 				</File>
 				<File Id="634009704" Language="SFX">
 					<ShortName>Player\sfx_player_release_02.wav</ShortName>
-					<Path>SFX\Player\sfx_player_release_02_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_release_02_EDEAA181.wem</Path>
 				</File>
 				<File Id="638447184" Language="SFX">
 					<ShortName>Traps\sfx_trap_spikes_02.wav</ShortName>
-					<Path>SFX\Traps\sfx_trap_spikes_02_6296B0F9.wem</Path>
+					<Path>SFX\Traps\sfx_trap_spikes_02_EDEAA181.wem</Path>
 				</File>
 				<File Id="642115803" Language="SFX">
 					<ShortName>Music\HHK_InGame_C_Shaker_125bpm4-4_L08_P01.wav</ShortName>
@@ -364,47 +364,47 @@
 				</File>
 				<File Id="674531762" Language="SFX">
 					<ShortName>Player\sfx_player_touch_03.wav</ShortName>
-					<Path>SFX\Player\sfx_player_touch_03_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_touch_03_EDEAA181.wem</Path>
 				</File>
 				<File Id="688425498" Language="SFX">
 					<ShortName>Player\sfx_powerup_start.wav</ShortName>
-					<Path>SFX\Player\sfx_powerup_start_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_powerup_start_EDEAA181.wem</Path>
 				</File>
 				<File Id="690571196" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_blob_05.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_blob_05_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_blob_05_EDEAA181.wem</Path>
 				</File>
 				<File Id="693265844" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_blob_04.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_blob_04_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_blob_04_EDEAA181.wem</Path>
 				</File>
 				<File Id="700346076" Language="SFX">
 					<ShortName>UI\sfx_ui_home.wav</ShortName>
-					<Path>SFX\UI\sfx_ui_home_6296B0F9.wem</Path>
+					<Path>SFX\UI\sfx_ui_home_EDEAA181.wem</Path>
 				</File>
 				<File Id="745154131" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_bat_red_01.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_bat_red_01_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_bat_red_01_EDEAA181.wem</Path>
 				</File>
 				<File Id="746528920" Language="SFX">
 					<ShortName>UI\sfx_ui_sign_down_01.wav</ShortName>
-					<Path>SFX\UI\sfx_ui_sign_down_01_6296B0F9.wem</Path>
+					<Path>SFX\UI\sfx_ui_sign_down_01_EDEAA181.wem</Path>
 				</File>
 				<File Id="752995960" Language="SFX">
 					<ShortName>Player\sfx_player_grab_gem_01.wav</ShortName>
-					<Path>SFX\Player\sfx_player_grab_gem_01_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_grab_gem_01_654C35A1.wem</Path>
 				</File>
 				<File Id="774121344" Language="SFX">
 					<ShortName>Player\sfx_player_land_02.wav</ShortName>
-					<Path>SFX\Player\sfx_player_land_02_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_land_02_EDEAA181.wem</Path>
 				</File>
 				<File Id="789167838" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_bat_red_04.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_bat_red_04_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_bat_red_04_EDEAA181.wem</Path>
 				</File>
 				<File Id="789650167" Language="SFX">
 					<ShortName>Player\sfx_player_grab_gem_04.wav</ShortName>
-					<Path>SFX\Player\sfx_player_grab_gem_04_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_grab_gem_04_379662ED.wem</Path>
 				</File>
 				<File Id="791954498" Language="SFX">
 					<ShortName>Music\HHK_InGame_B_Orchestral_125bpm4-4_L08_P01.wav</ShortName>
@@ -428,83 +428,83 @@
 				</File>
 				<File Id="832122729" Language="SFX">
 					<ShortName>UI\sfx_ui_sign_down_02.wav</ShortName>
-					<Path>SFX\UI\sfx_ui_sign_down_02_6296B0F9.wem</Path>
+					<Path>SFX\UI\sfx_ui_sign_down_02_EDEAA181.wem</Path>
 				</File>
 				<File Id="838713124" Language="SFX">
 					<ShortName>Player\sfx_wind_01.wav</ShortName>
-					<Path>SFX\Player\sfx_wind_01_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_wind_01_EDEAA181.wem</Path>
 				</File>
 				<File Id="850528275" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_blob_01.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_blob_01_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_blob_01_EDEAA181.wem</Path>
 				</File>
 				<File Id="854753518" Language="SFX">
 					<ShortName>Player\sfx_powerup_end.wav</ShortName>
-					<Path>SFX\Player\sfx_powerup_end_81C0C6C4.wem</Path>
+					<Path>SFX\Player\sfx_powerup_end_BF9E136C.wem</Path>
 				</File>
 				<File Id="885614300" Language="SFX">
 					<ShortName>Player\sfx_wings_03.wav</ShortName>
-					<Path>SFX\Player\sfx_wings_03_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_wings_03_EDEAA181.wem</Path>
 				</File>
 				<File Id="898391659" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_ghost_02.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_ghost_02_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_ghost_02_EDEAA181.wem</Path>
 				</File>
 				<File Id="922664241" Language="SFX">
 					<ShortName>Player\sfx_player_grab_gem_05.wav</ShortName>
-					<Path>SFX\Player\sfx_player_grab_gem_05_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_grab_gem_05_EDEAA181.wem</Path>
 				</File>
 				<File Id="930381976" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_ghost_far_02.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_ghost_far_02_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_ghost_far_02_EDEAA181.wem</Path>
 				</File>
 				<File Id="932532068" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_bat_red_02.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_bat_red_02_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_bat_red_02_EDEAA181.wem</Path>
 				</File>
 				<File Id="935048754" Language="SFX">
 					<ShortName>Player\sfx_wind_05.wav</ShortName>
-					<Path>SFX\Player\sfx_wind_05_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_wind_05_EDEAA181.wem</Path>
 				</File>
 				<File Id="944676325" Language="SFX">
 					<ShortName>Player\sfx_wings_04.wav</ShortName>
-					<Path>SFX\Player\sfx_wings_04_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_wings_04_EDEAA181.wem</Path>
 				</File>
 				<File Id="955083597" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_ghost_09.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_ghost_09_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_ghost_09_EDEAA181.wem</Path>
 				</File>
 				<File Id="968285471" Language="SFX">
 					<ShortName>Traps\sfx_trap_arrows_04.wav</ShortName>
-					<Path>SFX\Traps\sfx_trap_arrows_04_6296B0F9.wem</Path>
+					<Path>SFX\Traps\sfx_trap_arrows_04_EDEAA181.wem</Path>
 				</File>
 				<File Id="973257879" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_blob_06.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_blob_06_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_blob_06_EDEAA181.wem</Path>
 				</File>
 				<File Id="974748313" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_ghost_10.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_ghost_10_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_ghost_10_EDEAA181.wem</Path>
 				</File>
 				<File Id="978303238" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_bat_green_03.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_bat_green_03_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_bat_green_03_EDEAA181.wem</Path>
 				</File>
 				<File Id="997652089" Language="SFX">
 					<ShortName>Traps\sfx_trap_moving_platform_open_01.wav</ShortName>
-					<Path>SFX\Traps\sfx_trap_moving_platform_open_01_6296B0F9.wem</Path>
+					<Path>SFX\Traps\sfx_trap_moving_platform_open_01_EDEAA181.wem</Path>
 				</File>
 				<File Id="1022236470" Language="SFX">
 					<ShortName>Player\sfx_wind_06.wav</ShortName>
-					<Path>SFX\Player\sfx_wind_06_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_wind_06_EDEAA181.wem</Path>
 				</File>
 				<File Id="1034088732" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_bat_green_04.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_bat_green_04_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_bat_green_04_EDEAA181.wem</Path>
 				</File>
 				<File Id="1045918105" Language="SFX">
 					<ShortName>UI\sfx_ui_play.wav</ShortName>
-					<Path>SFX\UI\sfx_ui_play_6296B0F9.wem</Path>
+					<Path>SFX\UI\sfx_ui_play_EDEAA181.wem</Path>
 				</File>
 				<File Id="1049405448" Language="SFX">
 					<ShortName>Music\HHK_InGame_A_FullMix_125bpm4-4_L08.wav</ShortName>
@@ -512,19 +512,19 @@
 				</File>
 				<File Id="1056064824" Language="SFX">
 					<ShortName>Traps\sfx_trap_moving_platform_close_02.wav</ShortName>
-					<Path>SFX\Traps\sfx_trap_moving_platform_close_02_6296B0F9.wem</Path>
+					<Path>SFX\Traps\sfx_trap_moving_platform_close_02_EDEAA181.wem</Path>
 				</File>
 				<File Id="1057165614" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_bat_green_01.wav</ShortName>
-					<Path>SFX\Enemies\sfx_enemy_bat_green_01_6296B0F9.wem</Path>
+					<Path>SFX\Enemies\sfx_enemy_bat_green_01_EDEAA181.wem</Path>
 				</File>
 				<File Id="1059220891" Language="SFX">
 					<ShortName>UI\sfx_hud_hand.wav</ShortName>
-					<Path>SFX\UI\sfx_hud_hand_BB7598E4.wem</Path>
+					<Path>SFX\UI\sfx_hud_hand_8992F4FC.wem</Path>
 				</File>
 				<File Id="1060678634" Language="SFX">
 					<ShortName>Player\sfx_player_land_01.wav</ShortName>
-					<Path>SFX\Player\sfx_player_land_01_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_land_01_EDEAA181.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

@@ -96,7 +96,7 @@
 				</File>
 				<File Id="92722250" Language="SFX">
 					<ShortName>Player\sfx_player_grab_gem_03.wav</ShortName>
-					<Path>SFX\Player\sfx_player_grab_gem_03_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_grab_gem_03_C2308853.wem</Path>
 				</File>
 				<File Id="102990913" Language="SFX">
 					<ShortName>Player\sfx_wind_02.wav</ShortName>
@@ -232,7 +232,7 @@
 				</File>
 				<File Id="364289548" Language="SFX">
 					<ShortName>Player\sfx_player_grab_gem_02.wav</ShortName>
-					<Path>SFX\Player\sfx_player_grab_gem_02_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_grab_gem_02_3EC310FB.wem</Path>
 				</File>
 				<File Id="373829387" Language="SFX">
 					<ShortName>Traps\sfx_trap_spikes_01.wav</ShortName>
@@ -392,7 +392,7 @@
 				</File>
 				<File Id="752995960" Language="SFX">
 					<ShortName>Player\sfx_player_grab_gem_01.wav</ShortName>
-					<Path>SFX\Player\sfx_player_grab_gem_01_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_grab_gem_01_F98FB259.wem</Path>
 				</File>
 				<File Id="774121344" Language="SFX">
 					<ShortName>Player\sfx_player_land_02.wav</ShortName>
@@ -404,7 +404,7 @@
 				</File>
 				<File Id="789650167" Language="SFX">
 					<ShortName>Player\sfx_player_grab_gem_04.wav</ShortName>
-					<Path>SFX\Player\sfx_player_grab_gem_04_6296B0F9.wem</Path>
+					<Path>SFX\Player\sfx_player_grab_gem_04_97370135.wem</Path>
 				</File>
 				<File Id="791954498" Language="SFX">
 					<ShortName>Music\HHK_InGame_B_Orchestral_125bpm4-4_L08_P01.wav</ShortName>

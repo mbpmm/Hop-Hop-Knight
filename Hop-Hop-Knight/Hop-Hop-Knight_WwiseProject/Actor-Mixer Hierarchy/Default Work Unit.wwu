@@ -6,7 +6,7 @@
 				<ActorMixer Name="UI" ID="{19749B07-FB5B-4296-8363-3E7DF5DA50FF}" ShortID="948326233">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Music Conversion Settings" ID="{3F593E94-6665-4FEE-8428-876DD3D7AF7B}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+							<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="UI" ID="{B96A05AE-0F93-4382-8755-ABE19A2EF3AE}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -104,7 +104,7 @@
 											<PropertyList>
 												<Property Name="FadeOutDuration" Type="Real64" Value="0.131645976027397"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.0351055936073059"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.51055936073059E-02"/>
 												<Property Name="TrimEnd" Type="Real64" Value="0.965403824200915"/>
 											</PropertyList>
 											<Language>SFX</Language>
@@ -134,9 +134,9 @@
 									<ChildrenList>
 										<AudioFileSource Name="sfx_hud_warning" ID="{7AFBF368-181F-4DD2-A7D4-B5CB49E47976}" ShortID="513495803">
 											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="0.0327104737442922"/>
+												<Property Name="LoopBegin" Type="Real64" Value="3.27104737442922E-02"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.0327104737442922"/>
+												<Property Name="TrimBegin" Type="Real64" Value="3.27104737442922E-02"/>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>UI\sfx_hud_warning.wav</AudioFile>
@@ -354,7 +354,7 @@
 				<ActorMixer Name="Ingame" ID="{1DB9ABA7-44F6-410F-AD19-6529EBE87814}" ShortID="737229185">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Music Conversion Settings" ID="{3F593E94-6665-4FEE-8428-876DD3D7AF7B}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+							<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -401,7 +401,7 @@
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-2</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{83424AD3-6AA2-48DB-9EDA-00EBFB3BAEF0}" ShortID="994690184">
@@ -419,10 +419,11 @@
 																<XPos>0</XPos>
 																<YPos>-200</YPos>
 																<Flags>5</Flags>
+																<SegmentShape>Log2</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>31.48536</XPos>
-																<YPos>-5.02842</YPos>
+																<XPos>35.66946</XPos>
+																<YPos>-3.53355</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
@@ -569,7 +570,7 @@
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-4</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{6E85EE8D-6B57-4C96-9A5A-CE3F93D31F37}" ShortID="356850840">
@@ -587,11 +588,13 @@
 																<XPos>0</XPos>
 																<YPos>-200</YPos>
 																<Flags>5</Flags>
+																<SegmentShape>Log2</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>34.93724</XPos>
-																<YPos>-4.51575</YPos>
+																<XPos>37.76151</XPos>
+																<YPos>-3.26481</YPos>
 																<Flags>0</Flags>
+																<SegmentShape>Log2</SegmentShape>
 															</Point>
 															<Point>
 																<XPos>100</XPos>
@@ -745,6 +748,9 @@
 											</ModifierList>
 										</Property>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{8839FCB6-DFF5-4E1A-84A9-87E33A7D7E8C}" ShortID="446739151">
 													<ReferenceList>
@@ -855,7 +861,7 @@
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-3</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{BA4DEE71-84A4-4EBF-91AC-E15723407835}" ShortID="434064982">
@@ -873,10 +879,11 @@
 																<XPos>0</XPos>
 																<YPos>-200</YPos>
 																<Flags>5</Flags>
+																<SegmentShape>Log2</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>30.85774</XPos>
-																<YPos>-4.64295</YPos>
+																<XPos>36.92469</XPos>
+																<YPos>-2.41818</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
@@ -1043,7 +1050,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>2</Value>
+												<Value>3</Value>
 											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{AC650004-8162-4AAA-9FB3-1657700B94D6}" ShortID="259798574">
@@ -1492,6 +1499,11 @@
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1584,11 +1596,6 @@
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-4</Value>
-											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1759,7 +1766,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-7</Value>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1783,6 +1790,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="sfx_player_grab_gem_01" ID="{22B78A42-2549-4521-9B92-F7BD4F1F6F01}" ShortID="752995960">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="2.01529680365297E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="5.7579908675799E-03"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Player\sfx_player_grab_gem_01.wav</AudioFile>
 												</AudioFileSource>
@@ -1802,6 +1814,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="sfx_player_grab_gem_02" ID="{F7BD331D-738C-4912-BAB7-E61C23A67BC4}" ShortID="364289548">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="2.84214469178082E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.42107234589041E-02"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Player\sfx_player_grab_gem_02.wav</AudioFile>
 												</AudioFileSource>
@@ -1821,6 +1838,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="sfx_player_grab_gem_03" ID="{BBB052EF-3743-4E47-87F9-81AF7EA5EF3F}" ShortID="92722250">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="2.05070633561644E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="3.07605950342466E-02"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Player\sfx_player_grab_gem_03.wav</AudioFile>
 												</AudioFileSource>
@@ -1840,6 +1862,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="sfx_player_grab_gem_04" ID="{59DF5D17-86B7-4DB9-8B69-3214953FE38C}" ShortID="789650167">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.73533818493151E-02"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.38827054794521E-02"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Player\sfx_player_grab_gem_04.wav</AudioFile>
 												</AudioFileSource>
@@ -1886,7 +1913,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>4</Value>
+												<Value>5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1977,11 +2004,6 @@
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-5</Value>
-											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -2604,9 +2626,9 @@
 											<ChildrenList>
 												<AudioFileSource Name="sfx_trap_arrows_05" ID="{9A3F2B26-78C8-49D6-9D16-C960D606F66A}" ShortID="592546947">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0.0878986515410959"/>
+														<Property Name="LoopBegin" Type="Real64" Value="8.78986515410959E-02"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0878986515410959"/>
+														<Property Name="TrimBegin" Type="Real64" Value="8.78986515410959E-02"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Traps\sfx_trap_arrows_05.wav</AudioFile>
@@ -2737,10 +2759,17 @@
 																<XPos>0</XPos>
 																<YPos>-200</YPos>
 																<Flags>5</Flags>
+																<SegmentShape>Log1</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>33.159</XPos>
-																<YPos>-2.88201</YPos>
+																<XPos>14.95816</XPos>
+																<YPos>-4.64992</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>47.17574</XPos>
+																<YPos>-1.69315</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
@@ -2980,6 +3009,18 @@
 																<YPos>-200</YPos>
 																<Flags>5</Flags>
 																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>16.7364</XPos>
+																<YPos>-5.51459</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Exp2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>59.83264</XPos>
+																<YPos>-0.93356</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log3</SegmentShape>
 															</Point>
 															<Point>
 																<XPos>100</XPos>

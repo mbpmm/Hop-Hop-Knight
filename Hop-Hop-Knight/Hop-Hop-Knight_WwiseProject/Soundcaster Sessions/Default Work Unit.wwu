@@ -165,13 +165,13 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_enemy_ghost" ID="{27D853C4-69D2-4FF0-BDF4-B3C9C3055221}"/>
-							<Value>0</Value>
+							<Value>100</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="dead" ID="{6D8DAF9D-2166-4310-97C9-66F34B631362}"/>
-						<CurrentStateRef Name="score" ID="{B1030D0F-0A75-47F0-9A67-8B44BAC8B3BF}"/>
-						<CurrentStateRef Name="ingame" ID="{3A10E00D-D309-403E-8BDD-ECABD43BE359}"/>
+						<CurrentStateRef Name="alive" ID="{32DE1AA7-312B-43BF-973E-22F9BAAC529F}"/>
+						<CurrentStateRef Name="play" ID="{2495BA82-9647-41EA-931E-DE727C31889E}"/>
+						<CurrentStateRef Name="menu" ID="{4EEBF0E3-A47E-4C66-99ED-9172D611D718}"/>
 						<CurrentStateRef Name="pause_off" ID="{0F7B1890-6312-4D2B-875B-AFF3CEF74A12}"/>
 						<CurrentStateRef Name="mute_mx_off" ID="{922BA8CA-51C1-42ED-B2AF-31CB30EF78AA}"/>
 						<CurrentStateRef Name="mute_fx_off" ID="{CD5FDECC-0E7C-4178-B904-1D6A003F74A0}"/>
