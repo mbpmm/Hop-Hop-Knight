@@ -30,7 +30,7 @@ public class Fantasma : MonoBehaviour
         aux1 = -15f;
         anim = GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
-        AkSoundEngine.PostEvent("enemy_ghost", gameObject);
+        
     }
 
     // Update is called once per frame
@@ -97,8 +97,12 @@ public class Fantasma : MonoBehaviour
     {
         if (collision.tag=="Player")
         {
-            StartFollow.SetValue();
-            follow = true;
+            if (!GameManager.Get().player.powerUpActivated)
+            {
+                AkSoundEngine.PostEvent("enemy_ghost", gameObject);
+                StartFollow.SetValue();
+                follow = true;
+            }
         }
         
     }
