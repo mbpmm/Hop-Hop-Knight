@@ -15,9 +15,19 @@ public class PlatformBroken : MonoBehaviour
     {
         if (collision.gameObject.tag=="Player")
         {
-            AkSoundEngine.PostEvent("trap_breakable_floor", gameObject);
+            GameManager.Get().player.landOnWood = true;
             anim.SetTrigger("PlayerEnter");
         }
+    }
+
+    public void ExitWood()
+    {
+        GameManager.Get().player.landOnWood = false;
+    }
+
+    public void PlaySound()
+    {
+        AkSoundEngine.PostEvent("trap_wood_floor_break", gameObject);
     }
 
     private void OnDisable()

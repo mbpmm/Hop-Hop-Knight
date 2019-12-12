@@ -82,6 +82,8 @@ public class Player : MonoBehaviour
 
     public float totalTimeIdle;
     public float startBlinkIdle;
+
+    public bool landOnWood;
     void Start()
     {
         playerStarted.Invoke(this);
@@ -194,7 +196,14 @@ public class Player : MonoBehaviour
 
         if (velocityFrameAnt!=Vector2.zero && rbody.velocity==Vector2.zero)
         {
-            AkSoundEngine.PostEvent("player_land", gameObject);
+            if (landOnWood)
+            {
+                AkSoundEngine.PostEvent("trap_wood_floor_land", gameObject);
+            }
+            else
+            {
+                AkSoundEngine.PostEvent("player_land", gameObject);
+            }
             poofPS.Play();
         }
 
