@@ -77,7 +77,7 @@ public class MovingPlatform : MonoBehaviour
         {
             if (stop)
             {
-                AkSoundEngine.PostEvent("trap_platform_close", gameObject);
+                AkSoundEngine.PostEvent("trap_platform_trigger", gameObject);
                 finishMovement = true;
             }
             else

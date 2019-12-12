@@ -15,6 +15,7 @@ public class PlatformBroken : MonoBehaviour
     {
         if (collision.gameObject.tag=="Player")
         {
+            AkSoundEngine.PostEvent("trap_breakable_floor", gameObject);
             anim.SetTrigger("PlayerEnter");
         }
     }

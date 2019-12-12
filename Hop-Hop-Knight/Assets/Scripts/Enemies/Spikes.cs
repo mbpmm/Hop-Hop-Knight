@@ -34,8 +34,13 @@ public class Spikes : MonoBehaviour
             percentage = 0;
         }
     }
-    public void PlaySound()
+    public void PlaySoundOut()
     {
-        AkSoundEngine.PostEvent("trap_spikes", gameObject);
+        AkSoundEngine.PostEvent("trap_spikes_out", gameObject);
+    }
+
+    public void PlaySoundIn()
+    {
+        AkSoundEngine.PostEvent("trap_spikes_in", gameObject);
     }
 }
