@@ -25,6 +25,7 @@ namespace AK
         static const AkUniqueID PLAYER_DIE = 1542330065U;
         static const AkUniqueID PLAYER_GRAB_GEM = 52976355U;
         static const AkUniqueID PLAYER_LAND = 3629196698U;
+        static const AkUniqueID PLAYER_LAND_WOOD = 1636422102U;
         static const AkUniqueID PLAYER_RELEASE = 590715968U;
         static const AkUniqueID PLAYER_TOUCH = 2993297310U;
         static const AkUniqueID PLAYER_WINGS = 3239602367U;
@@ -33,8 +34,11 @@ namespace AK
         static const AkUniqueID TRAP_ARROWS = 40631397U;
         static const AkUniqueID TRAP_PLATFORM_CLOSE = 3550371055U;
         static const AkUniqueID TRAP_PLATFORM_OPEN = 4293073065U;
-        static const AkUniqueID TRAP_SPIKES = 584352822U;
+        static const AkUniqueID TRAP_PLATFORM_TRIGGER = 1382462259U;
+        static const AkUniqueID TRAP_SPIKES_IN = 3541661028U;
+        static const AkUniqueID TRAP_SPIKES_OUT = 3422873187U;
         static const AkUniqueID TRAP_TENTACLES = 3064100384U;
+        static const AkUniqueID TRAP_WOOD_FLOOR_BREAK = 484157711U;
         static const AkUniqueID UI_INGAME_HIGHSCORE = 104469174U;
         static const AkUniqueID UI_INGAME_SCORE = 2967661922U;
         static const AkUniqueID UI_MENU_BACK = 922786755U;
@@ -129,6 +133,21 @@ namespace AK
         } // namespace PLAYER
 
     } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace FLOOR_MATERIAL
+        {
+            static const AkUniqueID GROUP = 3964766495U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID ROCK = 2144363834U;
+                static const AkUniqueID WOOD = 2058049674U;
+            } // namespace SWITCH
+        } // namespace FLOOR_MATERIAL
+
+    } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {

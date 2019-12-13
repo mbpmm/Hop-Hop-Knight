@@ -198,10 +198,12 @@ public class Player : MonoBehaviour
         {
             if (landOnWood)
             {
-                AkSoundEngine.PostEvent("trap_wood_floor_land", gameObject);
+                AkSoundEngine.SetSwitch("floor_material", "wood", gameObject);
+                AkSoundEngine.PostEvent("player_land", gameObject);
             }
             else
             {
+                AkSoundEngine.SetSwitch("floor_material", "rock", gameObject);
                 AkSoundEngine.PostEvent("player_land", gameObject);
             }
             poofPS.Play();

@@ -116,7 +116,7 @@
 						<Action Name="" ID="{BE447CB4-E390-4056-BDAD-FD1206F8B19E}" ShortID="884712997">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="player_land" ID="{6658A82A-7C0A-4034-B79F-AAF450CD8ACD}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+									<ObjectRef Name="player_land" ID="{C0AF7117-7FD2-44D4-ACE9-E520DC897065}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -165,10 +165,31 @@
 						<Action Name="" ID="{8A5F2163-5FF0-4FE1-AE4E-0A52853DDAFB}" ShortID="47354514">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>
+								<Property Name="Delay" Type="Real64" Value="10"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="dead" ID="{6D8DAF9D-2166-4310-97C9-66F34B631362}" WorkUnitID="{BF88A622-63C2-4B94-8505-42A50FA6F1E8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{036FAD11-314B-4FD3-875C-AB835DFBC164}" ShortID="588396347">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Traps" ID="{AA21F4F1-91DF-4565-A577-FA8D83FAA9FE}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6C549185-50D2-436C-907E-2EC287412DE4}" ShortID="642083649">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enemy" ID="{487A1779-C29F-44E4-8753-8C9A7E8D07D0}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -402,12 +423,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="trap_spikes" ID="{19BC56A3-101C-475D-ABD1-BE2CD91A33D7}">
+				<Event Name="trap_spikes_out" ID="{19BC56A3-101C-475D-ABD1-BE2CD91A33D7}">
 					<ChildrenList>
 						<Action Name="" ID="{16EE8835-BD96-40AF-832A-3B8E01F972D0}" ShortID="496536244">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="spikes" ID="{87ED1C78-AD8D-4B3A-9554-9D397E0B65C0}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+									<ObjectRef Name="spikes_out" ID="{87ED1C78-AD8D-4B3A-9554-9D397E0B65C0}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -549,6 +570,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{083E0CFD-4F3E-436D-8936-00227711B7CF}" ShortID="736095507">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ingame" ID="{1DB9ABA7-44F6-410F-AD19-6529EBE87814}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="ui_pause_off" ID="{4456BDDE-78F0-46EC-BCC4-149E6479DB36}">
@@ -560,6 +591,16 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="pause_off" ID="{0F7B1890-6312-4D2B-875B-AFF3CEF74A12}" WorkUnitID="{BF88A622-63C2-4B94-8505-42A50FA6F1E8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{359B880E-65EE-45AE-B6B4-2AB1956953B7}" ShortID="91556354">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ingame" ID="{1DB9ABA7-44F6-410F-AD19-6529EBE87814}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -741,6 +782,57 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="MusicSystem" ID="{6A5FE2F1-18AA-4B49-9722-0218F4AB9BF9}" WorkUnitID="{A8ADD8A1-4E06-4BFE-9335-49ECC2391395}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="trap_platform_trigger" ID="{D2C62F81-B473-44D7-ADA1-94B483693B85}">
+					<ChildrenList>
+						<Action Name="" ID="{D9C6EB79-01E6-4897-8AF8-5737D0AAA2E5}" ShortID="426758169">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="moving_platform_trigger" ID="{7543CAE2-4AD4-4A75-9B37-6543A9E9A17C}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="trap_wood_floor_break" ID="{42B49E69-AECB-47A5-B893-338C1DDEEF15}">
+					<ChildrenList>
+						<Action Name="" ID="{E4546F71-E4CE-4A12-B864-1A01066FE371}" ShortID="322489567">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="player_wings" ID="{AC8ABD9F-2B67-414E-993D-928E76E05885}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="player_land_wood" ID="{80498A79-1BD3-435C-BD9F-8AFFC12DB90D}">
+					<ChildrenList>
+						<Action Name="" ID="{25209766-D345-4AF8-B88B-2DC2955B6992}" ShortID="160264793">
+							<PropertyList>
+								<Property Name="Inclusion" Type="bool">
+									<ValueList>
+										<Value>False</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="player_land_wood" ID="{ACA2DAAE-D9C5-46E6-8F49-B5A2B53CEB80}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="trap_spikes_in" ID="{1677C8E7-2653-4840-B332-04DB2040F298}">
+					<ChildrenList>
+						<Action Name="" ID="{F16D958F-5B4B-489E-A8E0-BDF3488E27A4}" ShortID="982657413">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="spikes_in" ID="{EF2652C2-0C98-42E2-9C73-DBE076191379}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

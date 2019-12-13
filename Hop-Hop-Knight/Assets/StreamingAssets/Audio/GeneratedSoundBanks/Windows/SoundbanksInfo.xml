@@ -33,6 +33,7 @@
 				<Event Id="1542330065" Name="player_die" ObjectPath="\Events\Default Work Unit\player_die"/>
 				<Event Id="52976355" Name="player_grab_gem" ObjectPath="\Events\Default Work Unit\player_grab_gem"/>
 				<Event Id="3629196698" Name="player_land" ObjectPath="\Events\Default Work Unit\player_land"/>
+				<Event Id="1636422102" Name="player_land_wood" ObjectPath="\Events\Default Work Unit\player_land_wood"/>
 				<Event Id="590715968" Name="player_release" ObjectPath="\Events\Default Work Unit\player_release"/>
 				<Event Id="2993297310" Name="player_touch" ObjectPath="\Events\Default Work Unit\player_touch"/>
 				<Event Id="3239602367" Name="player_wings" ObjectPath="\Events\Default Work Unit\player_wings"/>
@@ -41,8 +42,11 @@
 				<Event Id="40631397" Name="trap_arrows" ObjectPath="\Events\Default Work Unit\trap_arrows"/>
 				<Event Id="3550371055" Name="trap_platform_close" ObjectPath="\Events\Default Work Unit\trap_platform_close"/>
 				<Event Id="4293073065" Name="trap_platform_open" ObjectPath="\Events\Default Work Unit\trap_platform_open"/>
-				<Event Id="584352822" Name="trap_spikes" ObjectPath="\Events\Default Work Unit\trap_spikes"/>
+				<Event Id="1382462259" Name="trap_platform_trigger" ObjectPath="\Events\Default Work Unit\trap_platform_trigger"/>
+				<Event Id="3541661028" Name="trap_spikes_in" ObjectPath="\Events\Default Work Unit\trap_spikes_in"/>
+				<Event Id="3422873187" Name="trap_spikes_out" ObjectPath="\Events\Default Work Unit\trap_spikes_out"/>
 				<Event Id="3064100384" Name="trap_tentacles" ObjectPath="\Events\Default Work Unit\trap_tentacles"/>
+				<Event Id="484157711" Name="trap_wood_floor_break" ObjectPath="\Events\Default Work Unit\trap_wood_floor_break"/>
 				<Event Id="104469174" Name="ui_ingame_highscore" ObjectPath="\Events\Default Work Unit\ui_ingame_highscore"/>
 				<Event Id="2967661922" Name="ui_ingame_score" ObjectPath="\Events\Default Work Unit\ui_ingame_score"/>
 				<Event Id="922786755" Name="ui_menu_back" ObjectPath="\Events\Default Work Unit\ui_menu_back"/>
@@ -96,7 +100,7 @@
 				</File>
 				<File Id="92722250" Language="SFX">
 					<ShortName>Player\sfx_player_grab_gem_03.wav</ShortName>
-					<Path>SFX\Player\sfx_player_grab_gem_03_C2308853.wem</Path>
+					<Path>SFX\Player\sfx_player_grab_gem_03_5291DFAA.wem</Path>
 				</File>
 				<File Id="102990913" Language="SFX">
 					<ShortName>Player\sfx_wind_02.wav</ShortName>
@@ -206,6 +210,10 @@
 					<ShortName>Player\sfx_wind_03.wav</ShortName>
 					<Path>SFX\Player\sfx_wind_03_6296B0F9.wem</Path>
 				</File>
+				<File Id="306918942" Language="SFX">
+					<ShortName>Traps\sfx_trap_moving_platform_close_01.wav</ShortName>
+					<Path>SFX\Traps\sfx_trap_moving_platform_close_01_693A3A62.wem</Path>
+				</File>
 				<File Id="307976024" Language="SFX">
 					<ShortName>Enemies\sfx_enemy_bat_green_02.wav</ShortName>
 					<Path>SFX\Enemies\sfx_enemy_bat_green_02_6296B0F9.wem</Path>
@@ -213,6 +221,10 @@
 				<File Id="310112579" Language="SFX">
 					<ShortName>Player\sfx_wings_02.wav</ShortName>
 					<Path>SFX\Player\sfx_wings_02_6296B0F9.wem</Path>
+				</File>
+				<File Id="332062205" Language="SFX">
+					<ShortName>Traps\sfx_trap_spikes_02.wav</ShortName>
+					<Path>SFX\Traps\sfx_trap_spikes_02_3DCC44AB.wem</Path>
 				</File>
 				<File Id="333414764" Language="SFX">
 					<ShortName>Traps\sfx_trap_moving_platform_open_02.wav</ShortName>
@@ -232,9 +244,9 @@
 				</File>
 				<File Id="364289548" Language="SFX">
 					<ShortName>Player\sfx_player_grab_gem_02.wav</ShortName>
-					<Path>SFX\Player\sfx_player_grab_gem_02_3EC310FB.wem</Path>
+					<Path>SFX\Player\sfx_player_grab_gem_02_7553C1C3.wem</Path>
 				</File>
-				<File Id="373829387" Language="SFX">
+				<File Id="367348841" Language="SFX">
 					<ShortName>Traps\sfx_trap_spikes_01.wav</ShortName>
 					<Path>SFX\Traps\sfx_trap_spikes_01_6296B0F9.wem</Path>
 				</File>
@@ -354,10 +366,6 @@
 					<ShortName>Player\sfx_player_release_02.wav</ShortName>
 					<Path>SFX\Player\sfx_player_release_02_6296B0F9.wem</Path>
 				</File>
-				<File Id="638447184" Language="SFX">
-					<ShortName>Traps\sfx_trap_spikes_02.wav</ShortName>
-					<Path>SFX\Traps\sfx_trap_spikes_02_6296B0F9.wem</Path>
-				</File>
 				<File Id="642115803" Language="SFX">
 					<ShortName>Music\HHK_InGame_C_Shaker_125bpm4-4_L08_P01.wav</ShortName>
 					<Path>SFX\Music\HHK_InGame_C_Shaker_125bpm4-4_L08_P01_9B96ECC7.wem</Path>
@@ -392,7 +400,7 @@
 				</File>
 				<File Id="752995960" Language="SFX">
 					<ShortName>Player\sfx_player_grab_gem_01.wav</ShortName>
-					<Path>SFX\Player\sfx_player_grab_gem_01_F98FB259.wem</Path>
+					<Path>SFX\Player\sfx_player_grab_gem_01_67EC162E.wem</Path>
 				</File>
 				<File Id="774121344" Language="SFX">
 					<ShortName>Player\sfx_player_land_02.wav</ShortName>
@@ -404,7 +412,7 @@
 				</File>
 				<File Id="789650167" Language="SFX">
 					<ShortName>Player\sfx_player_grab_gem_04.wav</ShortName>
-					<Path>SFX\Player\sfx_player_grab_gem_04_97370135.wem</Path>
+					<Path>SFX\Player\sfx_player_grab_gem_04_CE76DD08.wem</Path>
 				</File>
 				<File Id="791954498" Language="SFX">
 					<ShortName>Music\HHK_InGame_B_Orchestral_125bpm4-4_L08_P01.wav</ShortName>

@@ -3,7 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	52976355	player_grab_gem			\Default Work Unit\player_grab_gem	
 	104469174	ui_ingame_highscore			\Default Work Unit\ui_ingame_highscore	
 	245809409	ui_menu_play_again			\Default Work Unit\ui_menu_play_again	
-	584352822	trap_spikes			\Default Work Unit\trap_spikes	
+	484157711	trap_wood_floor_break			\Default Work Unit\trap_wood_floor_break	
 	590715968	player_release			\Default Work Unit\player_release	
 	676410594	powerup_start			\Default Work Unit\powerup_start	
 	733168346	game_start			\Default Work Unit\game_start	
@@ -11,7 +11,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	952138190	ui_pause_off			\Default Work Unit\ui_pause_off	
 	1098871033	enemy_plant			\Default Work Unit\enemy_plant	
 	1286028972	hud_hand			\Default Work Unit\hud_hand	
+	1382462259	trap_platform_trigger			\Default Work Unit\trap_platform_trigger	
 	1542330065	player_die			\Default Work Unit\player_die	
+	1636422102	player_land_wood			\Default Work Unit\player_land_wood	
 	1731872944	ui_pause_on			\Default Work Unit\ui_pause_on	
 	1974222287	enemy_ghost			\Default Work Unit\enemy_ghost	
 	2262673565	developer_logo			\Default Work Unit\developer_logo	
@@ -25,11 +27,20 @@ Event	ID	Name			Wwise Object Path	Notes
 	3064100384	trap_tentacles			\Default Work Unit\trap_tentacles	
 	3218841108	ui_menu_enter			\Default Work Unit\ui_menu_enter	
 	3239602367	player_wings			\Default Work Unit\player_wings	
+	3422873187	trap_spikes_out			\Default Work Unit\trap_spikes_out	
+	3541661028	trap_spikes_in			\Default Work Unit\trap_spikes_in	
 	3550371055	trap_platform_close			\Default Work Unit\trap_platform_close	
 	3584997169	powerup_end			\Default Work Unit\powerup_end	
 	3629196698	player_land			\Default Work Unit\player_land	
 	3642866649	hud_warning			\Default Work Unit\hud_warning	
 	4293073065	trap_platform_open			\Default Work Unit\trap_platform_open	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3964766495	floor_material			\Default Work Unit\floor_material	
+
+Switch	ID	Name	Switch Group			Notes
+	2058049674	wood	floor_material			
+	2144363834	rock	floor_material			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	984691642	ingame			\Default Work Unit\ingame	
@@ -77,7 +88,6 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	2145236951	distance_trap_tentacle			\Default Work Unit\distance_trap_tentacle	
 	2411429840	distance_trap_spikes			\Default Work Unit\distance_trap_spikes	
 	2622755353	distance_enemy_ghost			\Default Work Unit\distance_enemy_ghost	
-	3732534371	distance_trap_moving_platform			\Default Work Unit\distance_trap_moving_platform	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	20415555	HHK_InGame_A_SpaceGuitar_125bpm4-4_L08	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Music\HHK_InGame_A_SpaceGuitar_125bpm4-4_L08_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSystem\InGame\InGamePlaylist\Part A\HHK_InGame_A_SpaceGuitar_125bpm4-4_L08		236482
@@ -90,7 +100,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	45838954	sfx_enemy_bat_red_03	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Enemies\sfx_enemy_bat_red_03_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Enemy\bat_red\sfx_enemy_bat_red_03		65941
 	55638435	HHK_InGame_C_PadsNBells_125bpm4-4_L08_P01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Music\HHK_InGame_C_PadsNBells_125bpm4-4_L08_P01_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSystem\InGame\InGamePlaylist\Part C\HHK_InGame_C_PadsNBells_125bpm4-4_L08_P01		266794
 	63890106	sfx_trap_arrows_02	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Traps\sfx_trap_arrows_02_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Traps\arrows\sfx_trap_arrows_02		27390
-	92722250	sfx_player_grab_gem_03	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_player_grab_gem_03_8944B36B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_grab_gem\sfx_player_grab_gem_03		16902
+	92722250	sfx_player_grab_gem_03	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_player_grab_gem_03_AA823622.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_grab_gem\sfx_player_grab_gem_03		16902
 	102990913	sfx_wind_02	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_wind_02_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\sfx_powerup_start\sfx_wind\sfx_wind_02		7619
 	103908315	HHK_InGame_C_Ostinatto_125bpm4-4_L08_P01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Music\HHK_InGame_C_Ostinatto_125bpm4-4_L08_P01_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSystem\InGame\InGamePlaylist\Part C\HHK_InGame_C_Ostinatto_125bpm4-4_L08_P01		297027
 	108794971	sfx_enemy_ghost_03	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Enemies\sfx_enemy_ghost_03_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Enemy\ghost\ghost_close\sfx_enemy_ghost_03		32583
@@ -112,20 +122,22 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	187172458	sfx_enemy_blob_03	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Enemies\sfx_enemy_blob_03_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Enemy\blob\sfx_enemy_blob_03		36852
 	224864886	sfx_ui_sign_up_02	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\UI\sfx_ui_sign_up_02_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Sign UI-Score\UI_score_sign_out\sfx_ui_sign_up_02		79864
 	228602949	sfx_wind_04	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_wind_04_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\sfx_powerup_start\sfx_wind\sfx_wind_04		8237
-	234268965	sfx_enemy_plant_01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Enemies\sfx_enemy_plant_01_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Enemy\plant\sfx_enemy_plant_01		18673
+	234268965	sfx_enemy_plant_01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Enemies\sfx_enemy_plant_01_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_land\player_land_wood\sfx_enemy_plant_01		18673
 	235711965	sfx_ui_sign_up_01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\UI\sfx_ui_sign_up_01_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Sign UI-Score\UI_score_sign_out\sfx_ui_sign_up_01		63117
 	242866529	sfx_enemy_ghost_01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Enemies\sfx_enemy_ghost_01_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Enemy\ghost\ghost_close\sfx_enemy_ghost_01		31236
 	250821060	HHK_InGame_A_HarpNBells_125bpm4-4_L08	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Music\HHK_InGame_A_HarpNBells_125bpm4-4_L08_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSystem\InGame\InGamePlaylist\Part A\HHK_InGame_A_HarpNBells_125bpm4-4_L08		279027
 	273176359	sfx_wind_10	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_wind_10_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\sfx_powerup_start\sfx_wind\sfx_wind_10		6374
 	277031800	sfx_wind_03	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_wind_03_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\sfx_powerup_start\sfx_wind\sfx_wind_03		9103
+	306918942	sfx_trap_moving_platform_close_01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Traps\sfx_trap_moving_platform_close_01_6A95886A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Traps\moving_platform\moving_platform_trigger\sfx_trap_moving_platform_close_01		14459
 	307976024	sfx_enemy_bat_green_02	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Enemies\sfx_enemy_bat_green_02_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Enemy\bat_green\sfx_enemy_bat_green_02		25991
 	310112579	sfx_wings_02	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_wings_02_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_wings\sfx_wings_02		10073
+	332062205	sfx_trap_spikes_02	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Traps\sfx_trap_spikes_02_E3530013.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Traps\spikes\spikes_out\sfx_trap_spikes_02		18556
 	333414764	sfx_trap_moving_platform_open_02	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Traps\sfx_trap_moving_platform_open_02_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Traps\moving_platform\moving_platform_open\sfx_trap_moving_platform_open_02		28429
 	340773597	sfx_player_die_02	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_player_die_02_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_die\sfx_player_die_02		18623
 	343070334	sfx_enemy_ghost_08	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Enemies\sfx_enemy_ghost_08_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Enemy\ghost\ghost_close_02\sfx_enemy_ghost_08		41473
 	363487319	sfx_wings_01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_wings_01_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_wings\sfx_wings_01		9083
-	364289548	sfx_player_grab_gem_02	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_player_grab_gem_02_DB25D523.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_grab_gem\sfx_player_grab_gem_02		15249
-	373829387	sfx_trap_spikes_01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Traps\sfx_trap_spikes_01_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Traps\spikes\sfx_trap_spikes_01		21572
+	364289548	sfx_player_grab_gem_02	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_player_grab_gem_02_969A7E0B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_grab_gem\sfx_player_grab_gem_02		15249
+	367348841	sfx_trap_spikes_01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Traps\sfx_trap_spikes_01_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Traps\spikes\spikes_in\sfx_trap_spikes_01		21572
 	375673277	sfx_wind_09	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_wind_09_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\sfx_powerup_start\sfx_wind\sfx_wind_09		5880
 	378412274	HHK_InGame_Tentacles_C_125bpm4-4_L08	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Music\HHK_InGame_Tentacles_C_125bpm4-4_L08_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSystem\InGame\InGamePlaylist\Part C\HHK_InGame_Tentacles_C_125bpm4-4_L08		304466
 	380022127	sfx_wings_05	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_wings_05_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_wings\sfx_wings_05		10821
@@ -135,7 +147,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	404007180	HHK_InGame_C_FullMix_125bpm4-4_L08_P01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Music\HHK_InGame_C_FullMix_125bpm4-4_L08_P01_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSystem\InGame\InGamePlaylist\HHK_InGame_C_FullMix_125bpm4-4_L08_P01\HHK_InGame_C_FullMix_125bpm4-4_L08_P01		308722
 	411729254	HHK_Main_Synths_100bpm4-4_L16_P01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Music\HHK_Main_Synths_100bpm4-4_L16_P01_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSystem\Menu\MainTheme\HHK_Main_Stems\HHK_Main_Synths_100bpm4-4_L16_P01		721028
 	414575383	HHK_InGame_Trans_125bpm4-4_L02_P01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Music\HHK_InGame_Trans_125bpm4-4_L02_P01_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSystem\InGame\InGamePlaylist\HHK_InGame_Trans_125bpm4-4_L02_P01\HHK_InGame_Trans_125bpm4-4_L02_P01		93965
-	432716395	sfx_player_land_03	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_player_land_03_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_land\sfx_player_land_03		5237
+	432716395	sfx_player_land_03	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_player_land_03_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_land\player_land_rock\sfx_player_land_03		5237
 	449337522	sfx_player_die_01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_player_die_01_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_die\sfx_player_die_01		16061
 	460478040	sfx_ui_play_again	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\UI\sfx_ui_play_again_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Menu\sfx_ui_play_again		51591
 	460801234	sfx_trap_moving_platform_close_03	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Traps\sfx_trap_moving_platform_close_03_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Traps\moving_platform\moving_platform_close\sfx_trap_moving_platform_close_03		23061
@@ -155,7 +167,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	625212588	HHK_InGame_Tentacles_A_125bpm4-4_L08	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Music\HHK_InGame_Tentacles_A_125bpm4-4_L08_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSystem\InGame\InGamePlaylist\Part A\HHK_InGame_Tentacles_A_125bpm4-4_L08		281635
 	626448199	sfx_trap_moving_platform_close_01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Traps\sfx_trap_moving_platform_close_01_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Traps\moving_platform\moving_platform_close\sfx_trap_moving_platform_close_01		22153
 	634009704	sfx_player_release_02	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_player_release_02_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_release\sfx_player_release_02		9508
-	638447184	sfx_trap_spikes_02	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Traps\sfx_trap_spikes_02_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Traps\spikes\sfx_trap_spikes_02		19115
 	642115803	HHK_InGame_C_Shaker_125bpm4-4_L08_P01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Music\HHK_InGame_C_Shaker_125bpm4-4_L08_P01_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSystem\InGame\InGamePlaylist\Part C\HHK_InGame_C_Shaker_125bpm4-4_L08_P01		191675
 	674531762	sfx_player_touch_03	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_player_touch_03_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_touch\sfx_player_touch_03		8903
 	688425498	sfx_powerup_start	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_powerup_start_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\sfx_powerup_start\sfx_powerup_start		61909
@@ -164,10 +175,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	700346076	sfx_ui_home	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\UI\sfx_ui_home_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Menu\sfx_ui_home		64354
 	745154131	sfx_enemy_bat_red_01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Enemies\sfx_enemy_bat_red_01_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Enemy\bat_red\sfx_enemy_bat_red_01		69492
 	746528920	sfx_ui_sign_down_01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\UI\sfx_ui_sign_down_01_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\Sign UI-Score\UI_score_sign_in\sfx_ui_sign_down_01		64810
-	752995960	sfx_player_grab_gem_01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_player_grab_gem_01_654C35A1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_grab_gem\sfx_player_grab_gem_01		15779
-	774121344	sfx_player_land_02	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_player_land_02_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_land\sfx_player_land_02		5163
+	752995960	sfx_player_grab_gem_01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_player_grab_gem_01_958B4776.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_grab_gem\sfx_player_grab_gem_01		15779
+	774121344	sfx_player_land_02	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_player_land_02_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_land\player_land_rock\sfx_player_land_02		5163
 	789167838	sfx_enemy_bat_red_04	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Enemies\sfx_enemy_bat_red_04_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Enemy\bat_red\sfx_enemy_bat_red_04		63835
-	789650167	sfx_player_grab_gem_04	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_player_grab_gem_04_379662ED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_grab_gem\sfx_player_grab_gem_04		17998
+	789650167	sfx_player_grab_gem_04	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_player_grab_gem_04_915E6D20.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_grab_gem\sfx_player_grab_gem_04		17998
 	791954498	HHK_InGame_B_Orchestral_125bpm4-4_L08_P01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Music\HHK_InGame_B_Orchestral_125bpm4-4_L08_P01_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSystem\InGame\InGamePlaylist\Part B\HHK_InGame_B_Orchestral_125bpm4-4_L08_P01		271190
 	799291975	HHK_Main_Back_100bpm4-4_L16_P01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Music\HHK_Main_Back_100bpm4-4_L16_P01_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSystem\Menu\MainTheme\HHK_Main_Stems\HHK_Main_Back_100bpm4-4_L16_P01		734029
 	804746590	HHK_Main_Trans_100bpm4-4_L02_P01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Music\HHK_Main_Trans_100bpm4-4_L02_P01_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MusicSystem\Menu\MainTheme\HHK_Main_Trans_100bpm4-4_L02_P01\HHK_Main_Trans_100bpm4-4_L02_P01		128833
@@ -197,5 +208,5 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1056064824	sfx_trap_moving_platform_close_02	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Traps\sfx_trap_moving_platform_close_02_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Traps\moving_platform\moving_platform_close\sfx_trap_moving_platform_close_02		18813
 	1057165614	sfx_enemy_bat_green_01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Enemies\sfx_enemy_bat_green_01_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Enemy\bat_green\sfx_enemy_bat_green_01		38831
 	1059220891	sfx_hud_hand	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\UI\sfx_hud_hand_8992F4FC.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\HUD\sfx_hud_hand		13107
-	1060678634	sfx_player_land_01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_player_land_01_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_land\sfx_player_land_01		4182
+	1060678634	sfx_player_land_01	D:\Wwise\Hop-Hop Knight\Hop-Hop-Knight\Hop-Hop-Knight_WwiseProject\.cache\Android\SFX\Player\sfx_player_land_01_EDEAA181.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player\player_land\player_land_rock\sfx_player_land_01		4182
 

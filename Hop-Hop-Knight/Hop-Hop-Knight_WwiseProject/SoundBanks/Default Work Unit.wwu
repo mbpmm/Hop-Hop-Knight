@@ -12,15 +12,19 @@
 						<ObjectRef Name="player_touch" ID="{2C98039F-9EE8-427D-87F8-A4D33CD58201}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="enemy_blob" ID="{E4D1E1FA-BAE7-42CC-8D6D-40BE3465D260}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ui_ingame_highscore" ID="{5D295C08-607E-4316-BAD1-649074F5C685}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="player_land_wood" ID="{80498A79-1BD3-435C-BD9F-8AFFC12DB90D}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ui_menu_home" ID="{81D507B7-3B19-43D6-9DC0-85599D9BF2D2}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="developer_logo" ID="{3B37DC72-7691-4435-BB27-322881C47A72}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="trap_arrows" ID="{EFCB9218-E943-4440-80D1-86EEDA82445D}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="player_grab_gem" ID="{A250C783-E995-44B1-8E26-F07B4AF5950E}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="trap_platform_trigger" ID="{D2C62F81-B473-44D7-ADA1-94B483693B85}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ui_menu_enter" ID="{772A466F-03D4-44ED-9EAA-F1FC6FCB285E}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="game_start" ID="{A7545A09-46E6-4561-8008-07D224946F78}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ui_pause_off" ID="{4456BDDE-78F0-46EC-BCC4-149E6479DB36}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="trap_platform_open" ID="{3E301F7C-75C6-4744-B3CF-51F223BD8742}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="trap_spikes" ID="{19BC56A3-101C-475D-ABD1-BE2CD91A33D7}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="trap_spikes_out" ID="{19BC56A3-101C-475D-ABD1-BE2CD91A33D7}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="trap_wood_floor_break" ID="{42B49E69-AECB-47A5-B893-338C1DDEEF15}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="trap_spikes_in" ID="{1677C8E7-2653-4840-B332-04DB2040F298}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="enemy_bat2" ID="{EEB230E9-7C6D-4869-8E94-FB689996083B}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="trap_platform_close" ID="{21F999B7-33A5-48AE-89C4-6D29B6FCEC43}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ui_pause_on" ID="{10A147B5-584C-4930-99B3-59CE53F81E2F}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>

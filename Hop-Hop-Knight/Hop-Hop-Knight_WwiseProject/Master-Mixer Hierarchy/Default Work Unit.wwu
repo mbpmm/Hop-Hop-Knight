@@ -74,16 +74,16 @@
 									<StateInfo>
 										<StateGroupList>
 											<StateGroupInfo>
-												<StateGroupRef Name="player" ID="{E68E1284-45D8-423D-963A-255A39C8534E}"/>
+												<StateGroupRef Name="music_pause" ID="{41A94DF0-41E1-462A-9AC2-A6BAD0E8E15B}"/>
 											</StateGroupInfo>
 											<StateGroupInfo>
-												<StateGroupRef Name="music_pause" ID="{41A94DF0-41E1-462A-9AC2-A6BAD0E8E15B}"/>
+												<StateGroupRef Name="player" ID="{E68E1284-45D8-423D-963A-255A39C8534E}"/>
 											</StateGroupInfo>
 										</StateGroupList>
 										<CustomStateList>
 											<CustomState>
 												<StateRef Name="dead" ID="{6D8DAF9D-2166-4310-97C9-66F34B631362}"/>
-												<CustomState Name="" ID="{9E9BF2F4-83AF-4ACD-AD06-BD7B11AD0754}" ShortID="811204863">
+												<CustomState Name="" ID="{C985A219-F37D-45B7-BB68-0613272BD0F0}" ShortID="498213032">
 													<PropertyList>
 														<Property Name="BusVolume" Type="Real64" Value="-108"/>
 													</PropertyList>
@@ -91,7 +91,7 @@
 											</CustomState>
 											<CustomState>
 												<StateRef Name="alive" ID="{32DE1AA7-312B-43BF-973E-22F9BAAC529F}"/>
-												<CustomState Name="" ID="{37AF2C4A-D5A1-4891-B46E-50508FA2A8E1}" ShortID="471534734"/>
+												<CustomState Name="" ID="{489C3B71-AF00-4625-A1AD-B4F6C896FD43}" ShortID="490147663"/>
 											</CustomState>
 											<CustomState>
 												<StateRef Name="pause_off" ID="{0F7B1890-6312-4D2B-875B-AFF3CEF74A12}"/>

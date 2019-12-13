@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d6c5013154280d4fa61169de7446e36, type: 3}
   m_Name: 19BC56A3-101C-475D-ABD1-BE2CD91A33D7
   m_EditorClassIdentifier: 
-  objectName: trap_spikes
-  id: 584352822
+  objectName: trap_spikes_out
+  id: 3422873187
   guid: 19BC56A3-101C-475D-ABD1-BE2CD91A33D7
