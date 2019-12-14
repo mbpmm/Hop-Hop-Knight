@@ -50,16 +50,20 @@
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="player_die" ID="{600796D5-2192-4E6C-8816-780FAB51AEA8}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<ObjectRef Name="trap_wood_floor_break" ID="{42B49E69-AECB-47A5-B893-338C1DDEEF15}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
 							<Position X="2" Y="3"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="player_grab_gem" ID="{A250C783-E995-44B1-8E26-F07B4AF5950E}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<ObjectRef Name="player_die" ID="{600796D5-2192-4E6C-8816-780FAB51AEA8}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
 							<Position X="2" Y="4"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="player_wings" ID="{E603A4DE-EBD9-415B-98B1-9073D40E1935}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<ObjectRef Name="player_grab_gem" ID="{A250C783-E995-44B1-8E26-F07B4AF5950E}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
 							<Position X="2" Y="5"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="player_wings" ID="{E603A4DE-EBD9-415B-98B1-9073D40E1935}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
+							<Position X="2" Y="6"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="trap_arrows" ID="{EFCB9218-E943-4440-80D1-86EEDA82445D}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}"/>
@@ -153,7 +157,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_trap_tentacle" ID="{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}"/>
-							<Value>91</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="powerup_state" ID="{92313F99-67CB-4A4F-9E72-884B51F24E01}"/>
@@ -169,7 +173,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_trap_spikes" ID="{3B15008C-744A-4F9E-AAEC-D19A626D0C0C}"/>
-							<Value>67</Value>
+							<Value>10</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_enemy_ghost" ID="{27D853C4-69D2-4FF0-BDF4-B3C9C3055221}"/>
@@ -177,16 +181,16 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="dead" ID="{6D8DAF9D-2166-4310-97C9-66F34B631362}"/>
-						<CurrentStateRef Name="score" ID="{B1030D0F-0A75-47F0-9A67-8B44BAC8B3BF}"/>
-						<CurrentStateRef Name="ingame" ID="{3A10E00D-D309-403E-8BDD-ECABD43BE359}"/>
-						<CurrentStateRef Name="pause_off" ID="{0F7B1890-6312-4D2B-875B-AFF3CEF74A12}"/>
-						<CurrentStateRef Name="mute_mx_off" ID="{922BA8CA-51C1-42ED-B2AF-31CB30EF78AA}"/>
-						<CurrentStateRef Name="mute_fx_off" ID="{CD5FDECC-0E7C-4178-B904-1D6A003F74A0}"/>
-						<CurrentStateRef Name="menu" ID="{09EDFD27-A48F-4328-8037-47EFE3B809D9}"/>
+						<CurrentStateRef Name="alive" ID="{32DE1AA7-312B-43BF-973E-22F9BAAC529F}"/>
+						<CurrentStateRef Name="None" ID="{5D6C69C7-E5E2-460A-A034-2ACDB6AF3C56}"/>
+						<CurrentStateRef Name="None" ID="{907A2092-7AF6-4484-906F-9807123045AE}"/>
+						<CurrentStateRef Name="None" ID="{51FC8F70-6A38-49C3-86BF-ABC06FAD19EB}"/>
+						<CurrentStateRef Name="None" ID="{C8627E62-3613-4831-8A52-AD1BDD0CD0F2}"/>
+						<CurrentStateRef Name="None" ID="{34D113B2-E3AB-45F9-95FD-A65DEE88184A}"/>
+						<CurrentStateRef Name="None" ID="{9B39799A-BA28-4531-A04E-F2BDE9BB6421}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="rock" ID="{2DE9B8F2-2163-41D7-B31C-7A6766027091}"/>
+						<CurrentSwitchRef Name="wood" ID="{D8F04342-0E0E-42DD-8C4E-4B082B981B0D}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

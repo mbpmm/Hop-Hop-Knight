@@ -25,7 +25,6 @@ namespace AK
         static const AkUniqueID PLAYER_DIE = 1542330065U;
         static const AkUniqueID PLAYER_GRAB_GEM = 52976355U;
         static const AkUniqueID PLAYER_LAND = 3629196698U;
-        static const AkUniqueID PLAYER_LAND_WOOD = 1636422102U;
         static const AkUniqueID PLAYER_RELEASE = 590715968U;
         static const AkUniqueID PLAYER_TOUCH = 2993297310U;
         static const AkUniqueID PLAYER_WINGS = 3239602367U;

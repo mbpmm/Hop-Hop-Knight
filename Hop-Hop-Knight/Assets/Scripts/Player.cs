@@ -199,13 +199,14 @@ public class Player : MonoBehaviour
             if (landOnWood)
             {
                 AkSoundEngine.SetSwitch("floor_material", "wood", gameObject);
-                AkSoundEngine.PostEvent("player_land", gameObject);
             }
             else
             {
                 AkSoundEngine.SetSwitch("floor_material", "rock", gameObject);
-                AkSoundEngine.PostEvent("player_land", gameObject);
             }
+
+            AkSoundEngine.PostEvent("player_land", gameObject);
+
             poofPS.Play();
         }
 
