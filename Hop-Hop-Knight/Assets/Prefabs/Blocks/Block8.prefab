@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockDestructionPoint: {fileID: 0}
-  scoreZone: {fileID: 0}
+  scoreZone: {fileID: 4713711624030191886}
 --- !u!1 &8987175027904057971
 GameObject:
   m_ObjectHideFlags: 0
@@ -643,6 +643,12 @@ PrefabInstance:
 --- !u!4 &2086466641800461508 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8706426417634755137, guid: 0ff8c6d06742f2f439c5f56f53e8bd82,
+    type: 3}
+  m_PrefabInstance: {fileID: 7216999614829149829}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4713711624030191886 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2687973151449989003, guid: 0ff8c6d06742f2f439c5f56f53e8bd82,
     type: 3}
   m_PrefabInstance: {fileID: 7216999614829149829}
   m_PrefabAsset: {fileID: 0}

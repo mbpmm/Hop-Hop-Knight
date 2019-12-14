@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3728710554966171802}
   - component: {fileID: 3728710554966171801}
-  - component: {fileID: 3728710554966171807}
+  - component: {fileID: 2923417597073685453}
   - component: {fileID: 3728710554966171800}
   - component: {fileID: 3728710554966171803}
   - component: {fileID: 9133034217717935600}
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3728710554966171807
+--- !u!114 &2923417597073685453
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,14 +93,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3728710554966171806}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9be1a106adf486b49bd1715276611af2, type: 3}
+  m_Script: {fileID: 11500000, guid: 34c8127e7cb373646b9a1643776a9cb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speedClose: 11.1
   speedOpen: 1.7
-  maxPosition: 7
-  minPosition: -7
-  distanceMax: 15
   moving: 1
   stop: 0
   finishMovement: 0
@@ -325,9 +322,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speedClose: 11.1
   speedOpen: 1.7
-  maxPosition: 7
-  minPosition: -7
-  distanceMax: 15
   moving: 1
   stop: 0
   finishMovement: 0

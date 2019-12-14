@@ -39,7 +39,6 @@ public class GameManager : MonobehaviourSingleton<GameManager>
             if (!aux1)
             {
                 MuteMusic.SetValue();
-                Debug.Log("Pase por mutemusic");
                 aux1 = true;
                 aux2 = false;
             }
@@ -50,7 +49,6 @@ public class GameManager : MonobehaviourSingleton<GameManager>
             if (!aux2)
             {
                 UnmuteMusic.SetValue();
-                Debug.Log("Pase por unmutemusic");
                 aux2 = true;
                 aux1 = false;
             }
@@ -62,7 +60,6 @@ public class GameManager : MonobehaviourSingleton<GameManager>
             if (!aux3)
             {
                 MuteFx.SetValue();
-                Debug.Log("Pase por mutefx");
                 aux3 = true;
                 aux4 = false;
             }
@@ -73,7 +70,6 @@ public class GameManager : MonobehaviourSingleton<GameManager>
             if (!aux4)
             {
                 UnmuteFx.SetValue();
-                Debug.Log("Pase por unmutefx");
                 aux4 = true;
                 aux3 = false;
             }

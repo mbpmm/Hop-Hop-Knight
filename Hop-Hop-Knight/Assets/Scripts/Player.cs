@@ -150,7 +150,6 @@ public class Player : MonoBehaviour
 
         if (isGrounded)
         {
-            
             launched = false;
         }
 
@@ -199,10 +198,12 @@ public class Player : MonoBehaviour
             if (landOnWood)
             {
                 AkSoundEngine.SetSwitch("floor_material", "wood", gameObject);
+                Debug.Log("Pasa por suich madera");
             }
             else
             {
                 AkSoundEngine.SetSwitch("floor_material", "rock", gameObject);
+                Debug.Log("Pasa por suich ROCA");
             }
 
             AkSoundEngine.PostEvent("player_land", gameObject);

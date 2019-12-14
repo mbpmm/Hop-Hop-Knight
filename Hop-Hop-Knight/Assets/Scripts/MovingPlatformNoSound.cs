@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovingPlatform : MonoBehaviour
+public class MovingPlatformNoSound : MonoBehaviour
 {
     public float speedClose;
     public float speedOpen;
-    public bool moving=true;
+    public bool moving = true;
     public bool stop;
     public bool finishMovement;
     public GameObject score;
@@ -31,44 +31,29 @@ public class MovingPlatform : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x<-7f || transform.position.x > 7f)
+        if (transform.position.x < -7f || transform.position.x > 7f)
         {
-            AkSoundEngine.PostEvent("trap_platform_close", gameObject);
             moving = false;
         }
 
 
-        if (moving&&!finishMovement)
+        if (moving && !finishMovement)
         {
-            
-            transform.position += transform.right*-1f * Time.deltaTime * speedOpen;
+
+            transform.position += transform.right * -1f * Time.deltaTime * speedOpen;
         }
-        else if(!finishMovement)
+        else if (!finishMovement)
         {
-            
-            transform.position += transform.right* Time.deltaTime * speedClose;
+
+            transform.position += transform.right * Time.deltaTime * speedClose;
         }
 
-        if (gameObject.activeInHierarchy==false)
+        if (gameObject.activeInHierarchy == false)
         {
             moving = true;
             stop = false;
         }
 
-        distancePlayer = Vector2.Distance(player.transform.position, transform.position);
-
-        if (distancePlayer < 15f)
-        {
-            aux2 = Mathf.Abs(aux1 + distancePlayer);
-            percentage = (aux2 * 100f) / maxValue;
-            Mathf.Clamp(percentage, 0, 100);
-            AkSoundEngine.SetRTPCValue("distance_trap_moving_platform", percentage);
-
-        }
-        else
-        {
-            percentage = 0;
-        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -77,17 +62,13 @@ public class MovingPlatform : MonoBehaviour
         {
             if (stop)
             {
-                AkSoundEngine.PostEvent("trap_platform_trigger", gameObject);
-                Debug.Log("suena2");
                 finishMovement = true;
             }
             else
             {
-                AkSoundEngine.PostEvent("trap_platform_open", gameObject);
-                Debug.Log("suena1");
                 moving = true;
             }
-            
+
         }
 
     }

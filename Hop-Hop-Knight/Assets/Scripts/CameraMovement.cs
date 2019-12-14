@@ -63,7 +63,6 @@ public class CameraMovement : MonoBehaviour
     public void Advance()
     {
         StartCoroutine(Animate(totalTime));
-        Debug.Log("Advance");
     }
     public float delta;
     //x = x0 + (x1-x0) * eval;
