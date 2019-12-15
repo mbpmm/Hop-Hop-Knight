@@ -40,7 +40,7 @@
 				</GameParameter>
 				<GameParameter Name="distance_enemy_plant" ID="{42E0A334-BB59-4306-9CAF-86D018E94D8E}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="20"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="distance_enemy_blob" ID="{DD8872FB-3A06-43E0-9FE0-79D8B9146C73}">
@@ -50,12 +50,12 @@
 				</GameParameter>
 				<GameParameter Name="distance_trap_moving_platform" ID="{231105EE-67B1-4F53-A8C3-4D22EBE6A67C}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="20"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="distance_trap_spikes" ID="{3B15008C-744A-4F9E-AAEC-D19A626D0C0C}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="10"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="powerup_state" ID="{92313F99-67CB-4A4F-9E72-884B51F24E01}">

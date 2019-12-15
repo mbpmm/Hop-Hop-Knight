@@ -165,7 +165,6 @@
 						<Action Name="" ID="{8A5F2163-5FF0-4FE1-AE4E-0A52853DDAFB}" ShortID="47354514">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>
-								<Property Name="Delay" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -173,14 +172,23 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{094C0934-9A56-4A4B-9E23-7242BE416EC2}" ShortID="516473998">
+						<Action Name="" ID="{9C764BCD-2D8F-4288-94A8-EF6B64BC5D93}" ShortID="632254061">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="10"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Ingame" ID="{1DB9ABA7-44F6-410F-AD19-6529EBE87814}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+									<ObjectRef Name="Enemy" ID="{487A1779-C29F-44E4-8753-8C9A7E8D07D0}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C21299F1-212F-44AE-81E4-72299E254DC8}" ShortID="113196837">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Traps" ID="{AA21F4F1-91DF-4565-A577-FA8D83FAA9FE}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -279,18 +287,7 @@
 						<Action Name="" ID="{3B1887ED-2C55-4A15-BA1D-A0258D1535E1}" ShortID="31977665">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="blob" ID="{1284CF06-E3FA-41B5-8744-D0180DFDDD33}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{28C6E533-024B-4DBF-881E-5C226A90CD48}" ShortID="92773453">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="Delay" Type="Real64" Value="30"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="blob" ID="{1284CF06-E3FA-41B5-8744-D0180DFDDD33}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+									<ObjectRef Name="blob" ID="{6BAF84B6-018E-4106-A3C5-A576B1EF3278}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -305,35 +302,11 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
-						<Action Name="" ID="{022DD757-9902-4AE2-A11C-E03AE0DB65CE}" ShortID="210059686">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="Delay" Type="Real64" Value="30"/>
-								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="bat-green" ID="{966680D5-5A86-489D-96D2-709BE9CC5258}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="enemy_bat2" ID="{EEB230E9-7C6D-4869-8E94-FB689996083B}">
 					<ChildrenList>
 						<Action Name="" ID="{4F5FDAFF-4844-4BD4-9603-4A6BDC88573B}" ShortID="377409064">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="bat_red" ID="{5B4AF834-1864-4326-836F-DF1840F628E7}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{98BB7FC4-4994-4136-B558-CA313CA158EF}" ShortID="744746874">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="Delay" Type="Real64" Value="30"/>
-								<Property Name="FadeOutCurve" Type="int16" Value="6"/>
-							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="bat_red" ID="{5B4AF834-1864-4326-836F-DF1840F628E7}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
@@ -740,7 +713,7 @@
 						<Action Name="" ID="{58B1100D-6F22-45DE-809B-622B84014A2C}" ShortID="942379427">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>
-								<Property Name="Delay" Type="Real64" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -762,6 +735,7 @@
 						<Action Name="" ID="{8E61F6E9-EEBD-4196-80CB-0C58833A553B}" ShortID="318876756">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>
+								<Property Name="Delay" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -795,6 +769,16 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="moving_platform_trigger" ID="{7543CAE2-4AD4-4A75-9B37-6543A9E9A17C}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{C5B80AA9-3902-4DB0-8882-4DF4571256B0}" ShortID="472447896">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="moving_platform_close" ID="{05B0E76C-A1D9-4F11-B35D-7EE94E818ADD}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

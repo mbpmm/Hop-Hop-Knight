@@ -16,13 +16,13 @@
 	<Platform GUID="{E4443159-08C1-40FD-A204-4F3BFE436BEE}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="1494857865" Timestamp="1576297083"/>
-				<File Name="Main" Hash="712740673" Timestamp="1576301387"/>
+				<File Name="Init" Hash="819107879" Timestamp="1576450832"/>
+				<File Name="Main" Hash="1424861742" Timestamp="1576452874"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3809484733" Timestamp="1576301387"/>
+				<File Name="" Hash="2532204616" Timestamp="1576452874"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
@@ -91,8 +91,8 @@
 	<Platform GUID="{D03EB1C4-6F2A-4BC7-A1EB-03ED66746446}">
 		<Banks>
 			<Language ID="393239870">
-				<File Name="Init" Hash="2981289889" Timestamp="1576297086"/>
-				<File Name="Main" Hash="2914692236" Timestamp="1576301388"/>
+				<File Name="Init" Hash="294428119" Timestamp="1576450833"/>
+				<File Name="Main" Hash="1424861742" Timestamp="1576452876"/>
 			</Language>
 			<Language ID="684519430">
 				<File Name="Main" Hash="3251517749" Timestamp="1575756772"/>
@@ -100,7 +100,7 @@
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="735301134" Timestamp="1576301388"/>
+				<File Name="" Hash="3904062098" Timestamp="1576452876"/>
 			</Language>
 		</XMLInfo>
 	</Platform>

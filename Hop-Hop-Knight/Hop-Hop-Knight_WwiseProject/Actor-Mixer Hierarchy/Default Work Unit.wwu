@@ -6,7 +6,7 @@
 				<ActorMixer Name="UI" ID="{19749B07-FB5B-4296-8363-3E7DF5DA50FF}" ShortID="948326233">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+							<ObjectRef Name="Music Conversion Settings" ID="{3F593E94-6665-4FEE-8428-876DD3D7AF7B}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="UI" ID="{B96A05AE-0F93-4382-8755-ABE19A2EF3AE}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -350,11 +350,41 @@
 							</ChildrenList>
 						</BlendContainer>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="ingame" ID="{7C48FE1A-1ADE-42A3-8E26-0EC5E5E69D86}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="play" ID="{2495BA82-9647-41EA-931E-DE727C31889E}"/>
+								<CustomState Name="" ID="{954EE87E-CD5C-4363-A623-16979A588A04}" ShortID="292863373"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="score" ID="{B1030D0F-0A75-47F0-9A67-8B44BAC8B3BF}"/>
+								<CustomState Name="" ID="{25B89CEC-7137-4124-A7C2-36996E01A10D}" ShortID="947974619"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="powerup" ID="{689820FE-30B4-4A24-B6E6-1DC82957CF23}"/>
+								<CustomState Name="" ID="{6894FE07-CDFF-4648-B8F9-C0A2135FB9D4}" ShortID="686042931">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16" Value="54"/>
+										<Property Name="Volume" Type="Real64" Value="-14"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="ghost" ID="{AFDBBF27-BB57-4EA8-938A-AC702A03A6A1}"/>
+								<CustomState Name="" ID="{EEC8044F-2B5A-4C58-A75A-3206674B7296}" ShortID="436146303"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 				</ActorMixer>
 				<ActorMixer Name="Ingame" ID="{1DB9ABA7-44F6-410F-AD19-6529EBE87814}" ShortID="737229185">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+							<ObjectRef Name="Music Conversion Settings" ID="{3F593E94-6665-4FEE-8428-876DD3D7AF7B}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -363,11 +393,12 @@
 					<ChildrenList>
 						<ActorMixer Name="Enemy" ID="{487A1779-C29F-44E4-8753-8C9A7E8D07D0}" ShortID="827732720">
 							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
 								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>5</Value>
+										<Value>15</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Pitch" Type="int32">
@@ -392,62 +423,29 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="blob" ID="{1284CF06-E3FA-41B5-8744-D0180DFDDD33}" ShortID="798927138">
+								<RandomSequenceContainer Name="plant" ID="{F0CF2DB2-EF2B-45A4-8CDF-E9096BCD6B87}" ShortID="678586049">
 									<PropertyList>
-										<Property Name="Highpass" Type="int16">
-											<ValueList>
-												<Value>30</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{C9818E0A-070E-4CE9-BF3F-FBB819FBDFC1}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="253"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismLoopCount" Type="int32" Value="3"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.5"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-3</Value>
-											</ValueList>
+										<Property Name="Lowpass" Type="int16">
 											<RTPCList>
-												<RTPC Name="" ID="{6E85EE8D-6B57-4C96-9A5A-CE3F93D31F37}" ShortID="356850840">
+												<RTPC Name="" ID="{FF457B5C-86EA-403A-ACCD-6B71295A23C2}" ShortID="12667468">
 													<ReferenceList>
 														<Reference Name="ControlInput">
-															<ObjectRef Name="distance_enemy_blob" ID="{DD8872FB-3A06-43E0-9FE0-79D8B9146C73}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+															<ObjectRef Name="distance_enemy_plant" ID="{42E0A334-BB59-4306-9CAF-86D018E94D8E}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
 														</Reference>
 													</ReferenceList>
-													<Curve Name="" ID="{585C8102-E4E6-4BA7-AD6C-6785BC1E874D}">
+													<Curve Name="" ID="{9C27088E-16B2-4452-A3D7-CE6A807192B8}">
 														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
+															<Property Name="Flags" Type="int32" Value="65537"/>
 														</PropertyList>
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>-200</YPos>
+																<YPos>61</YPos>
 																<Flags>5</Flags>
-																<SegmentShape>Log2</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>35.98327</XPos>
-																<YPos>-0.69098</YPos>
-																<Flags>0</Flags>
-																<SegmentShape>Log2</SegmentShape>
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>0</YPos>
+																<YPos>2</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -455,134 +453,6 @@
 												</RTPC>
 											</RTPCList>
 										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="SFX" ID="{A8607570-6F69-44DE-B54F-9576AC6DBF88}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="sfx_enemy_blob_01" ID="{4149B190-D1DC-4CF8-8C70-DA030D1B801C}" ShortID="568224775">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_enemy_blob_01" ID="{AFAA3DAF-2B55-493B-AA06-DF21795C6D43}" ShortID="850528275">
-													<Language>SFX</Language>
-													<AudioFile>Enemies\sfx_enemy_blob_01.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_enemy_blob_01" ID="{AFAA3DAF-2B55-493B-AA06-DF21795C6D43}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_enemy_blob_02" ID="{21D69143-FA21-47F6-B719-4B27536A2C31}" ShortID="304213930">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_enemy_blob_02" ID="{511C34F6-C058-499C-AC30-15A5B4F58528}" ShortID="473824247">
-													<Language>SFX</Language>
-													<AudioFile>Enemies\sfx_enemy_blob_02.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_enemy_blob_02" ID="{511C34F6-C058-499C-AC30-15A5B4F58528}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_enemy_blob_03" ID="{464C49FB-4003-400A-BF4A-6F77BCE9CAAA}" ShortID="755950222">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_enemy_blob_03" ID="{78D756FC-899A-421B-AD5E-D6D933000ED6}" ShortID="187172458">
-													<Language>SFX</Language>
-													<AudioFile>Enemies\sfx_enemy_blob_03.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_enemy_blob_03" ID="{78D756FC-899A-421B-AD5E-D6D933000ED6}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_enemy_blob_04" ID="{502ADCFA-BCA2-48AF-8FDE-2D86A4FC9D49}" ShortID="920521272">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_enemy_blob_04" ID="{5D73E5E5-586D-4A8B-9D73-DAE26F356565}" ShortID="693265844">
-													<Language>SFX</Language>
-													<AudioFile>Enemies\sfx_enemy_blob_04.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_enemy_blob_04" ID="{5D73E5E5-586D-4A8B-9D73-DAE26F356565}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_enemy_blob_05" ID="{271CA2E3-761A-44D9-8BB7-0D18BF90E8FD}" ShortID="411545929">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_enemy_blob_05" ID="{71A7A0CB-2D49-4A0B-9C5A-C4AE7BF777CE}" ShortID="690571196">
-													<Language>SFX</Language>
-													<AudioFile>Enemies\sfx_enemy_blob_05.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_enemy_blob_05" ID="{71A7A0CB-2D49-4A0B-9C5A-C4AE7BF777CE}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_enemy_blob_06" ID="{543C78CB-D324-4F60-931A-8485A889FAD1}" ShortID="487238852">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_enemy_blob_06" ID="{F0DAEA17-1D96-40E4-8C0F-7A4D3417F14A}" ShortID="973257879">
-													<Language>SFX</Language>
-													<AudioFile>Enemies\sfx_enemy_blob_06.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_enemy_blob_06" ID="{F0DAEA17-1D96-40E4-8C0F-7A4D3417F14A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="plant" ID="{F0CF2DB2-EF2B-45A4-8CDF-E9096BCD6B87}" ShortID="678586049">
-									<PropertyList>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>
@@ -1144,6 +1014,34 @@
 								</BlendContainer>
 								<BlendContainer Name="bat-green" ID="{966680D5-5A86-489D-96D2-709BE9CC5258}" ShortID="799295438">
 									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{E95CADBD-0AE7-409C-9DF8-16F5C8D37C47}" ShortID="142365420">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="distance_enemy_bat1" ID="{F5A564D8-11FC-481B-915B-12E4E1C6363B}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{03DFB27F-5E85-4E59-A9BA-D4F3F318FFA2}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>29</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<RTPCList>
 												<RTPC Name="" ID="{BD767C13-CD9E-44DA-A3DE-82F3BA5D21FC}" ShortID="663323082">
@@ -1181,7 +1079,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
-											<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -1190,11 +1088,13 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="bat_green" ID="{7092E42C-38D6-4681-BF9A-B082FCF2A857}" ShortID="329877759">
 											<PropertyList>
-												<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
+												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismLoopCount" Type="int32" Value="4"/>
+												<Property Name="PlayMechanismLoopCount" Type="int32" Value="10"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-2</Value>
@@ -1203,14 +1103,14 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="sfx_enemy_bat_green_01" ID="{E9D9482B-AA03-4B91-93DC-79CE87C1B174}" ShortID="1034972688">
+												<Sound Name="sfx_enemy_bat_green_01" ID="{AAC4C78F-D94F-4135-9857-F7B93D3E4F8B}" ShortID="340076403">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
@@ -1220,16 +1120,16 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="sfx_enemy_bat_green_01" ID="{F1333FAC-4E7D-4FC3-AF5A-125B6C4DBB7D}" ShortID="1057165614">
+														<AudioFileSource Name="sfx_enemy_bat_green_01" ID="{0570702F-D304-4498-92E4-33B858A9F716}" ShortID="860785367">
 															<Language>SFX</Language>
 															<AudioFile>Enemies\sfx_enemy_bat_green_01.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="sfx_enemy_bat_green_01" ID="{F1333FAC-4E7D-4FC3-AF5A-125B6C4DBB7D}" Platform="Linked"/>
+														<ActiveSource Name="sfx_enemy_bat_green_01" ID="{0570702F-D304-4498-92E4-33B858A9F716}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="sfx_enemy_bat_green_02" ID="{2932A955-C750-4B79-A1F9-E902F09CCE25}" ShortID="533151678">
+												<Sound Name="sfx_enemy_bat_green_02" ID="{3D59495A-E9A1-42B8-A348-2434CA44865A}" ShortID="747204629">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
@@ -1239,16 +1139,16 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="sfx_enemy_bat_green_02" ID="{48A8C0FA-B1ED-44E8-AA95-1D88F4CA0A17}" ShortID="307976024">
+														<AudioFileSource Name="sfx_enemy_bat_green_02" ID="{75EDCAB5-910F-4737-AD0C-BA1D67755B5C}" ShortID="495731961">
 															<Language>SFX</Language>
 															<AudioFile>Enemies\sfx_enemy_bat_green_02.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="sfx_enemy_bat_green_02" ID="{48A8C0FA-B1ED-44E8-AA95-1D88F4CA0A17}" Platform="Linked"/>
+														<ActiveSource Name="sfx_enemy_bat_green_02" ID="{75EDCAB5-910F-4737-AD0C-BA1D67755B5C}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="sfx_enemy_bat_green_03" ID="{8E27DC10-E737-4793-A07A-02D0B83301B1}" ShortID="710499475">
+												<Sound Name="sfx_enemy_bat_green_03" ID="{33CBF225-44D4-41F4-99A1-5139F05BE8F7}" ShortID="488222137">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
@@ -1258,16 +1158,16 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="sfx_enemy_bat_green_03" ID="{9DEC85C3-149E-44A4-B0AC-FF0DF682B792}" ShortID="978303238">
+														<AudioFileSource Name="sfx_enemy_bat_green_03" ID="{C98A3885-BAB0-4B43-874D-2E55BE991F2A}" ShortID="968494978">
 															<Language>SFX</Language>
 															<AudioFile>Enemies\sfx_enemy_bat_green_03.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="sfx_enemy_bat_green_03" ID="{9DEC85C3-149E-44A4-B0AC-FF0DF682B792}" Platform="Linked"/>
+														<ActiveSource Name="sfx_enemy_bat_green_03" ID="{C98A3885-BAB0-4B43-874D-2E55BE991F2A}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="sfx_enemy_bat_green_04" ID="{8CF6617E-82CC-422C-819E-E5CDE4AA5824}" ShortID="706330332">
+												<Sound Name="sfx_enemy_bat_green_04" ID="{C77C7BC3-BE63-41E0-B66F-233FA4BB4B5B}" ShortID="663396461">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
@@ -1277,16 +1177,16 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="sfx_enemy_bat_green_04" ID="{5E70AE14-498A-4C91-A827-6DB66589D145}" ShortID="1034088732">
+														<AudioFileSource Name="sfx_enemy_bat_green_04" ID="{553AA37A-F81B-471B-8317-FA111DAAB00D}" ShortID="1050818021">
 															<Language>SFX</Language>
 															<AudioFile>Enemies\sfx_enemy_bat_green_04.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="sfx_enemy_bat_green_04" ID="{5E70AE14-498A-4C91-A827-6DB66589D145}" Platform="Linked"/>
+														<ActiveSource Name="sfx_enemy_bat_green_04" ID="{553AA37A-F81B-471B-8317-FA111DAAB00D}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="sfx_enemy_bat_green_05" ID="{51B339E7-EABF-4644-AB3F-FD42DFCD208F}" ShortID="720291355">
+												<Sound Name="sfx_enemy_bat_green_05" ID="{D76A71EA-7829-4662-BE77-A23C9B1D53EE}" ShortID="127846902">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
@@ -1296,13 +1196,241 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="sfx_enemy_bat_green_05" ID="{CADB6A53-BBF3-4937-9E8F-96E57FE3B6A3}" ShortID="168969175">
+														<AudioFileSource Name="sfx_enemy_bat_green_05" ID="{67406BF7-688A-45EE-9AC5-64BCE94321F1}" ShortID="989493562">
 															<Language>SFX</Language>
 															<AudioFile>Enemies\sfx_enemy_bat_green_05.wav</AudioFile>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="sfx_enemy_bat_green_05" ID="{CADB6A53-BBF3-4937-9E8F-96E57FE3B6A3}" Platform="Linked"/>
+														<ActiveSource Name="sfx_enemy_bat_green_05" ID="{67406BF7-688A-45EE-9AC5-64BCE94321F1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_green_06" ID="{FEE3D0C3-9478-4035-AA28-81B50FE6EA3E}" ShortID="228302722">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_green_06" ID="{6CB8D876-1267-495E-A010-298865ED09A8}" ShortID="351612553">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_green_06.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_green_06" ID="{6CB8D876-1267-495E-A010-298865ED09A8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_green_07" ID="{49A94F8B-AB0F-4159-B3DA-32803CD8FAC8}" ShortID="57031416">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_green_07" ID="{C1B17828-B117-42CF-882F-79F6941A9B72}" ShortID="207243061">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_green_07.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_green_07" ID="{C1B17828-B117-42CF-882F-79F6941A9B72}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_green_08" ID="{876C39DB-1B73-4E8A-9293-3C8B0808B577}" ShortID="925611468">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_green_08" ID="{A1EE6467-8BC3-4819-BF1C-A834B64943D5}" ShortID="233995542">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_green_08.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_green_08" ID="{A1EE6467-8BC3-4819-BF1C-A834B64943D5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_green_09" ID="{76488A04-0254-4146-BF28-D3FB1A769958}" ShortID="301963421">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_green_09" ID="{B71D172D-9905-4BE2-8CA8-63AAD0851F50}" ShortID="24787093">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_green_09.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_green_09" ID="{B71D172D-9905-4BE2-8CA8-63AAD0851F50}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_green_10" ID="{4DE2F9A3-1DEB-4B48-B79E-6D2F172C3489}" ShortID="788399822">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_green_10" ID="{E1B7A800-6078-450E-A003-E7C43FF160CF}" ShortID="808862243">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_green_10.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_green_10" ID="{E1B7A800-6078-450E-A003-E7C43FF160CF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_green_11" ID="{760F23F7-419B-48F4-BE5A-ECFBB4A62761}" ShortID="87673512">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_green_11" ID="{83E0C9C0-D24F-4043-8B9A-D3DF5B968C95}" ShortID="52289538">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_green_11.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_green_11" ID="{83E0C9C0-D24F-4043-8B9A-D3DF5B968C95}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_green_12" ID="{719AB337-558F-4BF1-BADA-CA0E9DF156D7}" ShortID="655532815">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_green_12" ID="{5A290854-2770-4302-AEAF-558E13F2B880}" ShortID="545429568">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_green_12.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_green_12" ID="{5A290854-2770-4302-AEAF-558E13F2B880}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_green_13" ID="{E2A93A31-73F2-40BF-8BC3-33DB88FA57C9}" ShortID="198107579">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_green_13" ID="{2627D46C-E128-40A8-ADCA-82BBAB1624A9}" ShortID="152515505">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_green_13.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_green_13" ID="{2627D46C-E128-40A8-ADCA-82BBAB1624A9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_green_14" ID="{4B6694EF-F2EB-4E00-AC61-541F97CBD5EE}" ShortID="552972814">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_green_14" ID="{ACF51CF0-6946-465B-92AB-B21CA36CD3E2}" ShortID="1072947708">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_green_14.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_green_14" ID="{ACF51CF0-6946-465B-92AB-B21CA36CD3E2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_green_15" ID="{1D0933AE-870D-465E-8A56-C664AA48FCDF}" ShortID="471990390">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_green_15" ID="{AFB62AE3-8C92-4766-8A7B-ABC3989065A0}" ShortID="1000034108">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_green_15.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_green_15" ID="{AFB62AE3-8C92-4766-8A7B-ABC3989065A0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_green_16" ID="{ED8C7A61-D6A7-41CE-9D9C-842CFA720370}" ShortID="520253223">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_green_16" ID="{3E4ADA0E-35D0-4733-BF8F-AE256E95B322}" ShortID="952967719">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_green_16.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_green_16" ID="{3E4ADA0E-35D0-4733-BF8F-AE256E95B322}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_green_17" ID="{4C3F2946-2CD1-40DA-AE8D-905D204AAD13}" ShortID="621581383">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_green_17" ID="{5710EC40-5A4F-47EF-B736-4011E10F554F}" ShortID="616769959">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_green_17.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_green_17" ID="{5710EC40-5A4F-47EF-B736-4011E10F554F}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
@@ -1314,7 +1442,6 @@
 														<ModifierInfo>
 															<Modifier Name="" ID="{18B96CDB-06C5-4029-8651-5ECC8C83FB78}">
 																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
 																	<Property Name="Max" Type="Real64" Value="480"/>
 																</PropertyList>
 															</Modifier>
@@ -1322,11 +1449,12 @@
 													</ModifierList>
 												</Property>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismLoopCount" Type="int32" Value="85"/>
+												<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-2</Value>
+														<Value>-3</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1342,7 +1470,7 @@
 												<Sound Name="silence" ID="{1B483C0F-4C86-45FB-B67D-EFF91B7CBDAE}" ShortID="614711993">
 													<ReferenceList>
 														<Reference Name="Conversion">
-															<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -1351,7 +1479,7 @@
 													<ChildrenList>
 														<SourcePlugin Name="Wwise Silence" ID="{278B2A9D-E4E1-4E27-BA31-E88BE3823EB7}" ShortID="329100385" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
 															<PropertyList>
-																<Property Name="Length" Type="Real32" Value="0.2"/>
+																<Property Name="Length" Type="Real32" Value="0.3"/>
 															</PropertyList>
 															<Language>SFX</Language>
 														</SourcePlugin>
@@ -1363,21 +1491,25 @@
 												<RandomSequenceContainer Name="bat_wings" ID="{79D15822-0D6F-48A1-8D1C-BCC971CBA1A4}" ShortID="57387445">
 													<PropertyList>
 														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>280</Value>
+															</ValueList>
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{FBB8FFF8-82FC-4E58-B565-16EB9F8D9F43}">
 																		<PropertyList>
-																			<Property Name="Enabled" Type="bool" Value="True"/>
 																			<Property Name="Max" Type="Real64" Value="253"/>
 																		</PropertyList>
 																	</Modifier>
 																</ModifierInfo>
 															</ModifierList>
 														</Property>
+														<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
+														<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
-															<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -1387,7 +1519,7 @@
 														<Sound Name="sfx_enemy_bat_wings_01" ID="{85D29FF0-A3A5-43F1-8313-752732433676}" ShortID="205850321">
 															<ReferenceList>
 																<Reference Name="Conversion">
-																	<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -1414,7 +1546,7 @@
 														<Sound Name="sfx_enemy_bat_wings_02" ID="{DB363DBB-8554-4E74-B5C9-8186FE1843A2}" ShortID="166403366">
 															<ReferenceList>
 																<Reference Name="Conversion">
-																	<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -1440,7 +1572,7 @@
 														<Sound Name="sfx_enemy_bat_wings_03" ID="{54411421-FE61-4308-9C21-82E72CA347F0}" ShortID="650678192">
 															<ReferenceList>
 																<Reference Name="Conversion">
-																	<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -1467,7 +1599,7 @@
 														<Sound Name="sfx_enemy_bat_wings_04" ID="{39EF8CD0-78F2-4FA1-8C0D-6B6029038BF8}" ShortID="659067345">
 															<ReferenceList>
 																<Reference Name="Conversion">
-																	<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -1493,7 +1625,7 @@
 														<Sound Name="sfx_enemy_bat_wings_05" ID="{18D1CF1C-8544-4E82-A73D-46DA45559134}" ShortID="195375683">
 															<ReferenceList>
 																<Reference Name="Conversion">
-																	<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -1516,7 +1648,7 @@
 														<Sound Name="sfx_enemy_bat_wings_06" ID="{3290B418-6A47-4112-BF00-A4BC6AD018E5}" ShortID="457542540">
 															<ReferenceList>
 																<Reference Name="Conversion">
-																	<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -1553,7 +1685,38 @@
 								<BlendContainer Name="bat_red" ID="{5B4AF834-1864-4326-836F-DF1840F628E7}" ShortID="805671307">
 									<PropertyList>
 										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+										<Property Name="Lowpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{2BB98A89-FA78-4BB1-AF8D-03E841E4B2A7}" ShortID="790613779">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="distance_enemy_bat2" ID="{3E51CACC-5C62-422E-AB53-C434906738B1}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{8A4C86EC-AF52-4EDD-9C90-A08EA553AEEA}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>29</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{CA93C074-6F2E-4D97-9F35-79C993A4F60C}" ShortID="865018404">
 													<ReferenceList>
@@ -1599,20 +1762,19 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="bat_red" ID="{BECDD1B7-2205-4096-B00E-5F5FA6602D5D}" ShortID="667199107">
 											<PropertyList>
-												<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismLoopCount" Type="int32" Value="4"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-3</Value>
+														<Value>-1</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -1695,34 +1857,317 @@
 														<ActiveSource Name="sfx_enemy_bat_red_04" ID="{ACE6EFEE-A152-41FE-A983-27CE0FF7C688}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
+												<Sound Name="sfx_enemy_bat_red_05" ID="{0F21ED7E-7F02-4847-9B67-FB209D19B9C6}" ShortID="346889768">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_red_05" ID="{400D4495-5D19-4372-8056-0092A21D2F35}" ShortID="736890549">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_red_05.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_red_05" ID="{400D4495-5D19-4372-8056-0092A21D2F35}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_red_06" ID="{72ED2F57-5B51-4D85-BC12-18CE5E2EDED0}" ShortID="1027751694">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_red_06" ID="{71A33FC7-56D0-42E3-81C0-4F1E39387188}" ShortID="993538441">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_red_06.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_red_06" ID="{71A33FC7-56D0-42E3-81C0-4F1E39387188}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_red_07" ID="{85C38294-3F1E-4E5D-8F3F-A2A5F2F4E588}" ShortID="874691352">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_red_07" ID="{59A003A8-2F3C-4386-9086-23106362C302}" ShortID="27589440">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_red_07.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_red_07" ID="{59A003A8-2F3C-4386-9086-23106362C302}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_red_08" ID="{DBD415BD-04FC-4755-8723-361DE4A0E262}" ShortID="65200840">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_red_08" ID="{98DB57EF-767A-4E4E-AB8E-EC88690D0E83}" ShortID="329475221">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_red_08.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_red_08" ID="{98DB57EF-767A-4E4E-AB8E-EC88690D0E83}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_red_09" ID="{EB400E24-880A-489A-BAFA-797D00E65D4E}" ShortID="421976619">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_red_09" ID="{043CF320-7242-4B3D-9BBF-B0076459CB68}" ShortID="503112932">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_red_09.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_red_09" ID="{043CF320-7242-4B3D-9BBF-B0076459CB68}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_red_10" ID="{2F1B6095-9587-43C4-A7CA-779074FBB913}" ShortID="73949077">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_red_10" ID="{ACBCF24B-95B5-43F5-A199-B076509E935F}" ShortID="490055517">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_red_10.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_red_10" ID="{ACBCF24B-95B5-43F5-A199-B076509E935F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_red_11" ID="{07676185-EDA6-48A4-AE7D-0A41AFF82C68}" ShortID="2239508">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_red_11" ID="{00FE291F-0E86-43D4-81E0-3E57462C6B87}" ShortID="588566385">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_red_11.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_red_11" ID="{00FE291F-0E86-43D4-81E0-3E57462C6B87}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_red_12" ID="{3440A86D-9193-48B7-9EF1-313027BE9239}" ShortID="631630816">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_red_12" ID="{BD2E46D1-DA9A-4325-8431-6B36F520F3FF}" ShortID="818216754">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_red_12.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_red_12" ID="{BD2E46D1-DA9A-4325-8431-6B36F520F3FF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_red_13" ID="{9A142F02-65F1-4AED-9D07-886B448DE327}" ShortID="385265349">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_red_13" ID="{2325A01F-D4CC-4A21-B22D-6C09AAE0073B}" ShortID="852547072">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_red_13.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_red_13" ID="{2325A01F-D4CC-4A21-B22D-6C09AAE0073B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_red_14" ID="{08F68E9F-37CD-4C31-AEFC-AF225209537A}" ShortID="13502875">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_red_14" ID="{3D74B773-EBF5-490B-B438-828CCE5E26D2}" ShortID="141319063">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_red_14.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_red_14" ID="{3D74B773-EBF5-490B-B438-828CCE5E26D2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_red_15" ID="{EE6DB035-1157-4610-9549-7A2C48C81DFB}" ShortID="189061376">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_red_15" ID="{82853E21-C95C-48E1-8388-900D97C5895E}" ShortID="492270223">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_red_15.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_red_15" ID="{82853E21-C95C-48E1-8388-900D97C5895E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_red_16" ID="{9D43EA76-FBA7-4B43-8658-1DD265B1B26B}" ShortID="180817282">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_red_16" ID="{C06C4E64-3597-4007-9AEA-3EEF3DCE2FB2}" ShortID="1046450540">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_red_16.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_red_16" ID="{C06C4E64-3597-4007-9AEA-3EEF3DCE2FB2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_red_17" ID="{6A02A932-036D-4674-8FCF-A81E9A23DA26}" ShortID="17907437">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_red_17" ID="{6EDD19A1-2975-4E55-94E8-97BFAF4E20BE}" ShortID="391509876">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_red_17.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_red_17" ID="{6EDD19A1-2975-4E55-94E8-97BFAF4E20BE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_red_18" ID="{40A5AAB0-04A2-40D5-B2CD-FFB7BC2478D6}" ShortID="31601038">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_red_18" ID="{077DCD67-CCB6-4621-8F43-D01645EF9BB2}" ShortID="1019741329">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_red_18.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_red_18" ID="{077DCD67-CCB6-4621-8F43-D01645EF9BB2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_bat_red_19" ID="{0DB9159B-DF13-409C-A482-D6416EFE4239}" ShortID="161090444">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_bat_red_19" ID="{9EC72FD9-6C8C-4B8B-8EEA-234F14C8839D}" ShortID="508019235">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_bat_red_19.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_bat_red_19" ID="{9EC72FD9-6C8C-4B8B-8EEA-234F14C8839D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="bat_wings" ID="{B0FA1F0F-DFB9-443F-9F48-67D1810411BC}" ShortID="505297823">
 											<PropertyList>
 												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>350</Value>
+													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
 															<Modifier Name="" ID="{89352F48-63FB-430A-80D2-2700112B2C80}">
 																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="328"/>
+																	<Property Name="Max" Type="Real64" Value="404"/>
 																</PropertyList>
 															</Modifier>
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismLoopCount" Type="int32" Value="153"/>
+												<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-2</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -1736,7 +2181,6 @@
 																<ModifierInfo>
 																	<Modifier Name="" ID="{7169DDDD-F661-481F-AA8B-A445C9B35ECC}">
 																		<PropertyList>
-																			<Property Name="Enabled" Type="bool" Value="True"/>
 																			<Property Name="Max" Type="Real64" Value="253"/>
 																		</PropertyList>
 																	</Modifier>
@@ -1746,7 +2190,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
-															<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -1756,7 +2200,7 @@
 														<Sound Name="sfx_enemy_bat_wings_01" ID="{63D8082D-812E-47FA-8231-E4F66338A125}" ShortID="1073153584">
 															<ReferenceList>
 																<Reference Name="Conversion">
-																	<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -1780,7 +2224,7 @@
 														<Sound Name="sfx_enemy_bat_wings_02" ID="{3CDD1F61-4A60-4144-A402-E7CB7F111BA3}" ShortID="642091622">
 															<ReferenceList>
 																<Reference Name="Conversion">
-																	<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -1801,9 +2245,16 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="sfx_enemy_bat_wings_03" ID="{6A30954A-49D5-4707-B990-1932CD8E61D2}" ShortID="182209783">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32">
+																	<ValueList>
+																		<Value>280</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
-																	<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -1825,9 +2276,16 @@
 															</ActiveSourceList>
 														</Sound>
 														<Sound Name="sfx_enemy_bat_wings_04" ID="{3BB73FD8-8C3B-42DB-BF3B-993C3D74AFE0}" ShortID="160357148">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32">
+																	<ValueList>
+																		<Value>180</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
 															<ReferenceList>
 																<Reference Name="Conversion">
-																	<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -1853,7 +2311,7 @@
 														<Sound Name="sfx_enemy_bat_wings_05" ID="{26499B66-C8DC-4E76-ABA0-CBFCB25694A9}" ShortID="558429270">
 															<ReferenceList>
 																<Reference Name="Conversion">
-																	<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -1877,7 +2335,7 @@
 														<Sound Name="sfx_enemy_bat_wings_06" ID="{0C644E35-25D3-4541-A494-B48E960B3480}" ShortID="211625837">
 															<ReferenceList>
 																<Reference Name="Conversion">
-																	<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 																</Reference>
 																<Reference Name="OutputBus">
 																	<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -1903,7 +2361,7 @@
 												<Sound Name="silence" ID="{D424DF7D-AC37-4E8E-A9A4-92BDE21CE9C6}" ShortID="347894670">
 													<ReferenceList>
 														<Reference Name="Conversion">
-															<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -1928,6 +2386,298 @@
 											</Playlist>
 										</RandomSequenceContainer>
 									</ChildrenList>
+								</BlendContainer>
+								<BlendContainer Name="blob" ID="{6BAF84B6-018E-4106-A3C5-A576B1EF3278}" ShortID="1036002026">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<RTPCList>
+												<RTPC Name="" ID="{5F3DD621-59F9-430E-8274-9D67BC8F5BE2}" ShortID="469012128">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="distance_enemy_blob" ID="{DD8872FB-3A06-43E0-9FE0-79D8B9146C73}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{D7FA917C-B2AC-4173-B37B-6BF76A266D5D}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>57</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>36.08787</XPos>
+																<YPos>47</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{3FE07333-AAFF-48FA-B46D-4AD273881CE6}" ShortID="317726673">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="distance_enemy_blob" ID="{DD8872FB-3A06-43E0-9FE0-79D8B9146C73}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{B5A4B932-7005-41F0-8A17-94F9C795FA0C}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>36.71549</XPos>
+																<YPos>-0.20956</YPos>
+																<Flags>0</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="mid" ID="{D5C5133F-3C37-46A9-9784-480B75AF151C}" ShortID="589800727">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_enemy_blob_03" ID="{464C49FB-4003-400A-BF4A-6F77BCE9CAAA}" ShortID="755950222">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-180</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_blob_03" ID="{78D756FC-899A-421B-AD5E-D6D933000ED6}" ShortID="187172458">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_blob_03.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_blob_03" ID="{78D756FC-899A-421B-AD5E-D6D933000ED6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_blob_04" ID="{502ADCFA-BCA2-48AF-8FDE-2D86A4FC9D49}" ShortID="920521272">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-150</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_blob_04" ID="{5D73E5E5-586D-4A8B-9D73-DAE26F356565}" ShortID="693265844">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_blob_04.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_blob_04" ID="{5D73E5E5-586D-4A8B-9D73-DAE26F356565}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_blob_05" ID="{271CA2E3-761A-44D9-8BB7-0D18BF90E8FD}" ShortID="411545929">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-80</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_blob_05" ID="{71A7A0CB-2D49-4A0B-9C5A-C4AE7BF777CE}" ShortID="690571196">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_blob_05.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_blob_05" ID="{71A7A0CB-2D49-4A0B-9C5A-C4AE7BF777CE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="low" ID="{AEAAC4EC-486D-4B0E-B778-461D99C8B844}" ShortID="125664599">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="sfx_enemy_blob_01" ID="{4149B190-D1DC-4CF8-8C70-DA030D1B801C}" ShortID="568224775">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_blob_01" ID="{AFAA3DAF-2B55-493B-AA06-DF21795C6D43}" ShortID="850528275">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_blob_01.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_blob_01" ID="{AFAA3DAF-2B55-493B-AA06-DF21795C6D43}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_blob_02" ID="{21D69143-FA21-47F6-B719-4B27536A2C31}" ShortID="304213930">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_blob_02" ID="{511C34F6-C058-499C-AC30-15A5B4F58528}" ShortID="473824247">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_blob_02.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_blob_02" ID="{511C34F6-C058-499C-AC30-15A5B4F58528}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="sfx_enemy_blob_06" ID="{543C78CB-D324-4F60-931A-8485A889FAD1}" ShortID="487238852">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="sfx_enemy_blob_06" ID="{F0DAEA17-1D96-40E4-8C0F-7A4D3417F14A}" ShortID="973257879">
+															<Language>SFX</Language>
+															<AudioFile>Enemies\sfx_enemy_blob_06.wav</AudioFile>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="sfx_enemy_blob_06" ID="{F0DAEA17-1D96-40E4-8C0F-7A4D3417F14A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="New Blend Track" ID="{DB39FAA5-DDE9-45E4-804B-60C8B47DEDA6}" ShortID="267556661">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="distance_enemy_blob" ID="{DD8872FB-3A06-43E0-9FE0-79D8B9146C73}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+												</Reference>
+											</ReferenceList>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="mid" ID="{D5C5133F-3C37-46A9-9784-480B75AF151C}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>73.6910994764398</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+														<RightFadingSegmentShape>Exp2</RightFadingSegmentShape>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="low" ID="{AEAAC4EC-486D-4B0E-B778-461D99C8B844}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>25.130890052356</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<LeftFadingSegmentShape>Log3</LeftFadingSegmentShape>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
 								</BlendContainer>
 							</ChildrenList>
 							<StateInfo>
@@ -1968,8 +2718,8 @@
 										<StateRef Name="powerup" ID="{689820FE-30B4-4A24-B6E6-1DC82957CF23}"/>
 										<CustomState Name="" ID="{7535B125-7083-4F9B-89A2-B3056BF01454}" ShortID="959254705">
 											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="44"/>
-												<Property Name="Volume" Type="Real64" Value="-16"/>
+												<Property Name="Lowpass" Type="int16" Value="51"/>
+												<Property Name="Volume" Type="Real64" Value="-15"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
@@ -2896,7 +3646,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -3014,7 +3764,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
-															<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -3103,7 +3853,7 @@
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
-															<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -3262,7 +4012,7 @@
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>4</Value>
+										<Value>5</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Pitch" Type="int32">
@@ -3538,7 +4288,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -3645,7 +4395,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -3702,7 +4452,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -3788,6 +4538,9 @@
 												</Property>
 												<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
 													<RTPCList>
 														<RTPC Name="" ID="{57D72DA8-B845-4830-A5A8-D5A5F2398990}" ShortID="725362601">
 															<ReferenceList>
@@ -3823,7 +4576,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -3886,6 +4639,9 @@
 												</Property>
 												<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
 												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
 													<RTPCList>
 														<RTPC Name="" ID="{461C4B28-780B-4A68-A5DD-108771F94F81}" ShortID="911672643">
 															<ReferenceList>
@@ -3921,7 +4677,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
-													<ObjectRef Name="SFX Conversion Settings" ID="{EFFA3FCE-4DE3-422F-80AB-42CAE9A81CB6}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -3988,7 +4744,7 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>-48</YPos>
+																<YPos>-100</YPos>
 																<Flags>5</Flags>
 															</Point>
 															<Point>
@@ -4021,7 +4777,7 @@
 															</Point>
 															<Point>
 																<XPos>100</XPos>
-																<YPos>-34</YPos>
+																<YPos>4</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -4058,8 +4814,8 @@
 																<SegmentShape>Log2</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>17.88703</XPos>
-																<YPos>-2.01288</YPos>
+																<XPos>18.09624</XPos>
+																<YPos>-1.18869</YPos>
 																<Flags>0</Flags>
 																<SegmentShape>Exp2</SegmentShape>
 															</Point>
@@ -4396,8 +5152,8 @@
 										<StateRef Name="powerup" ID="{689820FE-30B4-4A24-B6E6-1DC82957CF23}"/>
 										<CustomState Name="" ID="{8A1E60A8-721D-4C07-B65D-67F5B6EE15DB}" ShortID="193023128">
 											<PropertyList>
-												<Property Name="Lowpass" Type="int16" Value="75"/>
-												<Property Name="Volume" Type="Real64" Value="-24"/>
+												<Property Name="Lowpass" Type="int16" Value="66"/>
+												<Property Name="Volume" Type="Real64" Value="-10"/>
 											</PropertyList>
 										</CustomState>
 									</CustomState>
