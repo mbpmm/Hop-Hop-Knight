@@ -19,6 +19,7 @@ public class MovingPlatform : MonoBehaviour
     public float aux2;
     private float maxValue = 16f;
     public float percentage;
+    public Transform parent;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,7 @@ public class MovingPlatform : MonoBehaviour
         scoreScript.movingPlatformTouch += StopMovement;
         aux1 = -15f;
         player = GameObject.FindGameObjectWithTag("Player");
+        parent = GetComponentInParent<Transform>();
     }
 
     // Update is called once per frame
@@ -55,7 +57,7 @@ public class MovingPlatform : MonoBehaviour
             stop = false;
         }
 
-        distancePlayer = Vector2.Distance(player.transform.position, transform.position);
+        distancePlayer = Vector2.Distance(player.transform.position, parent.transform.position);
 
         if (distancePlayer < 15f)
         {
