@@ -141,7 +141,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_enemy_blob" ID="{DD8872FB-3A06-43E0-9FE0-79D8B9146C73}"/>
-							<Value>100</Value>
+							<Value>48</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="volume_sfx" ID="{BD05C201-F762-470A-B477-40E9B0D6FB9E}"/>
