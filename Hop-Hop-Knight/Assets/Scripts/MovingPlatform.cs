@@ -78,13 +78,11 @@ public class MovingPlatform : MonoBehaviour
             if (stop)
             {
                 AkSoundEngine.PostEvent("trap_platform_trigger", gameObject);
-                Debug.Log("suena2");
                 finishMovement = true;
             }
             else
             {
                 AkSoundEngine.PostEvent("trap_platform_open", gameObject);
-                Debug.Log("suena1");
                 moving = true;
             }
             
