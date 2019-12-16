@@ -37,7 +37,6 @@ Custom State	ID	Name	State Group	Owner		Notes
 	9221439	pause_on	music_pause	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
 	334734812	pause_on	music_pause	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Ingame		
 	345931834	mute_mx_on	mute_mx	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Music		
-	498213032	dead	player	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX\Ingame		
 	1031208548	mute_fx_on	mute_fx	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\SFX		
 
 Audio Bus	ID	Name			Wwise Object Path	Notes

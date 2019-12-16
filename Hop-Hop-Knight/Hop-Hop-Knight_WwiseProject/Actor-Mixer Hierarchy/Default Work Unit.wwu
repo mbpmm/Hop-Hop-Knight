@@ -1686,7 +1686,6 @@
 								</BlendContainer>
 								<BlendContainer Name="bat_red" ID="{5B4AF834-1864-4326-836F-DF1840F628E7}" ShortID="805671307">
 									<PropertyList>
-										<Property Name="BlendBehavior" Type="int16" Value="1"/>
 										<Property Name="Lowpass" Type="int16">
 											<RTPCList>
 												<RTPC Name="" ID="{2BB98A89-FA78-4BB1-AF8D-03E841E4B2A7}" ShortID="790613779">
@@ -2165,7 +2164,7 @@
 												</Property>
 												<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismLoopCount" Type="int32" Value="153"/>
+												<Property Name="PlayMechanismLoopCount" Type="int32" Value="154"/>
 												<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 											</PropertyList>
@@ -3986,11 +3985,7 @@
 									</CustomState>
 									<CustomState>
 										<StateRef Name="dead" ID="{6D8DAF9D-2166-4310-97C9-66F34B631362}"/>
-										<CustomState Name="" ID="{BAE65BD9-1900-4B64-BDDC-9387B5406D8A}" ShortID="128991133">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
+										<CustomState Name="" ID="{BAE65BD9-1900-4B64-BDDC-9387B5406D8A}" ShortID="128991133"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="alive" ID="{32DE1AA7-312B-43BF-973E-22F9BAAC529F}"/>
@@ -3998,11 +3993,7 @@
 									</CustomState>
 									<CustomState>
 										<StateRef Name="score" ID="{B1030D0F-0A75-47F0-9A67-8B44BAC8B3BF}"/>
-										<CustomState Name="" ID="{FE0D491D-1F1B-4514-AF15-BEA8F1645219}" ShortID="753547888">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64" Value="-108"/>
-											</PropertyList>
-										</CustomState>
+										<CustomState Name="" ID="{FE0D491D-1F1B-4514-AF15-BEA8F1645219}" ShortID="753547888"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="powerup" ID="{689820FE-30B4-4A24-B6E6-1DC82957CF23}"/>
@@ -4014,7 +4005,11 @@
 									</CustomState>
 									<CustomState>
 										<StateRef Name="ghost" ID="{AFDBBF27-BB57-4EA8-938A-AC702A03A6A1}"/>
-										<CustomState Name="" ID="{33F0214F-B719-4825-A461-0C668578EC27}" ShortID="1030568196"/>
+										<CustomState Name="" ID="{33F0214F-B719-4825-A461-0C668578EC27}" ShortID="1030568196">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="25"/>
+											</PropertyList>
+										</CustomState>
 									</CustomState>
 								</CustomStateList>
 							</StateInfo>
@@ -4025,7 +4020,7 @@
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>5</Value>
+										<Value>7</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Pitch" Type="int32">
@@ -4739,393 +4734,6 @@
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</Folder>
-								<RandomSequenceContainer Name="tentacles" ID="{8D5CD7EE-E551-4FE8-990C-05DCB220950F}" ShortID="156530703">
-									<PropertyList>
-										<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
-										<Property Name="Highpass" Type="int16">
-											<RTPCList>
-												<RTPC Name="" ID="{FC163086-A41E-4292-BF5E-7F98832C0BC8}" ShortID="11894726">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="distance_enemy_blob" ID="{DD8872FB-3A06-43E0-9FE0-79D8B9146C73}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{7DA7C76D-D7A5-4F1B-AAEF-0C74946A5585}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-100</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>30</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="Lowpass" Type="int16">
-											<RTPCList>
-												<RTPC Name="" ID="{8B41E657-9EBE-4E14-809F-8FBEDCE81B14}" ShortID="747891215">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="distance_trap_tentacle" ID="{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{EF160F9A-D269-4725-BC61-76EC1AEA3895}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="65537"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>62</YPos>
-																<Flags>5</Flags>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>4</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-										<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.5"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>3</Value>
-											</ValueList>
-											<RTPCList>
-												<RTPC Name="" ID="{26CD02D1-B0B5-4997-AD18-E59D58C44B3E}" ShortID="789880089">
-													<ReferenceList>
-														<Reference Name="ControlInput">
-															<ObjectRef Name="distance_trap_tentacle" ID="{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
-														</Reference>
-													</ReferenceList>
-													<Curve Name="" ID="{681EB174-E030-4F6E-ABA1-0450C27A973E}">
-														<PropertyList>
-															<Property Name="Flags" Type="int32" Value="3"/>
-														</PropertyList>
-														<PointList>
-															<Point>
-																<XPos>0</XPos>
-																<YPos>-200</YPos>
-																<Flags>5</Flags>
-																<SegmentShape>Log2</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>18.09624</XPos>
-																<YPos>-1.18869</YPos>
-																<Flags>0</Flags>
-																<SegmentShape>Exp2</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>59.83264</XPos>
-																<YPos>0.14465</YPos>
-																<Flags>0</Flags>
-																<SegmentShape>Log3</SegmentShape>
-															</Point>
-															<Point>
-																<XPos>100</XPos>
-																<YPos>0.23164</YPos>
-																<Flags>37</Flags>
-															</Point>
-														</PointList>
-													</Curve>
-												</RTPC>
-											</RTPCList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="sfx_trap_tentacles_01" ID="{7BDC6F7A-EAF1-4D8C-A986-7AC1004EC9F2}" ShortID="297029402">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_trap_tentacles_01" ID="{7D25DD84-FCF7-4A8F-8947-335D647439A7}" ShortID="171810190">
-													<Language>SFX</Language>
-													<AudioFile>Traps\sfx_trap_tentacles_01.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_trap_tentacles_01" ID="{7D25DD84-FCF7-4A8F-8947-335D647439A7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_trap_tentacles_02" ID="{93A0F466-42C3-48DF-B363-734FD29C349F}" ShortID="257712356">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_trap_tentacles_02" ID="{E100EF44-8670-4C3F-8168-34BC9C183923}" ShortID="659242271">
-													<Language>SFX</Language>
-													<AudioFile>Traps\sfx_trap_tentacles_02.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_trap_tentacles_02" ID="{E100EF44-8670-4C3F-8168-34BC9C183923}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_trap_tentacles_03" ID="{A302C349-38A5-4EBD-8BB8-F7EF1261EDA1}" ShortID="352451581">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_trap_tentacles_03" ID="{48CB57FF-BAB6-4AD7-B72E-4883F1DCD4C9}" ShortID="1053620990">
-													<Language>SFX</Language>
-													<AudioFile>Traps\sfx_trap_tentacles_03.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_trap_tentacles_03" ID="{48CB57FF-BAB6-4AD7-B72E-4883F1DCD4C9}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_trap_tentacles_04" ID="{21E82D49-2943-470E-8B6C-6E0BFAE42019}" ShortID="83770265">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_trap_tentacles_04" ID="{351922F9-50AB-4ACF-B758-017914E929D0}" ShortID="1039106539">
-													<Language>SFX</Language>
-													<AudioFile>Traps\sfx_trap_tentacles_04.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_trap_tentacles_04" ID="{351922F9-50AB-4ACF-B758-017914E929D0}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_trap_tentacles_05" ID="{A070CE60-3F98-4878-9417-28D54DF3AFFB}" ShortID="421554697">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_trap_tentacles_05" ID="{2464A739-FCB4-40A9-8BB9-B49A01C4F8A7}" ShortID="776963193">
-													<Language>SFX</Language>
-													<AudioFile>Traps\sfx_trap_tentacles_05.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_trap_tentacles_05" ID="{2464A739-FCB4-40A9-8BB9-B49A01C4F8A7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_trap_tentacles_06" ID="{EF3738EE-1F02-4805-B7A0-518B0574A41D}" ShortID="386214710">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_trap_tentacles_06" ID="{449D9288-4CAF-4AAD-ACB6-B4BD30F8A03B}" ShortID="954105820">
-													<Language>SFX</Language>
-													<AudioFile>Traps\sfx_trap_tentacles_06.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_trap_tentacles_06" ID="{449D9288-4CAF-4AAD-ACB6-B4BD30F8A03B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_trap_tentacles_07" ID="{C6F298C4-F7B8-4170-AC9C-0060B337BD67}" ShortID="29156598">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_trap_tentacles_07" ID="{B3E0467E-BCAA-4213-BEF8-80681E4B1973}" ShortID="158532316">
-													<Language>SFX</Language>
-													<AudioFile>Traps\sfx_trap_tentacles_07.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_trap_tentacles_07" ID="{B3E0467E-BCAA-4213-BEF8-80681E4B1973}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_trap_tentacles_08" ID="{EFEF201B-B0EA-4218-8202-FFEF76788225}" ShortID="599239225">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_trap_tentacles_08" ID="{E310326C-67EA-468D-A521-348C86E38C3F}" ShortID="658686785">
-													<Language>SFX</Language>
-													<AudioFile>Traps\sfx_trap_tentacles_08.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_trap_tentacles_08" ID="{E310326C-67EA-468D-A521-348C86E38C3F}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_trap_tentacles_09" ID="{2ACC6FF6-CB28-4C42-B6A9-52B64CA4CD8A}" ShortID="78021086">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_trap_tentacles_09" ID="{997D1AF7-EFCB-427C-A231-C489EE4C013C}" ShortID="229064713">
-													<Language>SFX</Language>
-													<AudioFile>Traps\sfx_trap_tentacles_09.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_trap_tentacles_09" ID="{997D1AF7-EFCB-427C-A231-C489EE4C013C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_trap_tentacles_10" ID="{5E5454FE-8517-4A14-8858-E215EF223053}" ShortID="992790785">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_trap_tentacles_10" ID="{E0AA1EF1-9A69-492D-9A9C-9754A95D38B3}" ShortID="638345944">
-													<Language>SFX</Language>
-													<AudioFile>Traps\sfx_trap_tentacles_10.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_trap_tentacles_10" ID="{E0AA1EF1-9A69-492D-9A9C-9754A95D38B3}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_trap_tentacles_11" ID="{B48BD582-F382-4DE2-8D60-8FB1FDB9C1DB}" ShortID="616167088">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_trap_tentacles_11" ID="{F8F29492-4CDC-4C94-9E73-F8C628EB83E5}" ShortID="403528220">
-													<Language>SFX</Language>
-													<AudioFile>Traps\sfx_trap_tentacles_11.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_trap_tentacles_11" ID="{F8F29492-4CDC-4C94-9E73-F8C628EB83E5}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_trap_tentacles_12" ID="{83A1C3EE-1341-4980-A492-A27A372E388E}" ShortID="159839261">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_trap_tentacles_12" ID="{BA50167D-566C-43F9-A2FD-7C6284AB1540}" ShortID="600690088">
-													<Language>SFX</Language>
-													<AudioFile>Traps\sfx_trap_tentacles_12.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_trap_tentacles_12" ID="{BA50167D-566C-43F9-A2FD-7C6284AB1540}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_trap_tentacles_13" ID="{50A39703-A3E6-4A69-8112-A4F33E12C5C5}" ShortID="843990956">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_trap_tentacles_13" ID="{6579BDE2-2F3E-4F1F-90A6-EF2406F28495}" ShortID="11191803">
-													<Language>SFX</Language>
-													<AudioFile>Traps\sfx_trap_tentacles_13.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_trap_tentacles_13" ID="{6579BDE2-2F3E-4F1F-90A6-EF2406F28495}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="sfx_trap_tentacles_14" ID="{634876C8-FA02-49DD-B6A9-8A3611805BC2}" ShortID="852358159">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="sfx_trap_tentacles_14" ID="{A7F98BB7-B20E-4FC5-9FD6-098D2EDD492A}" ShortID="333460177">
-													<Language>SFX</Language>
-													<AudioFile>Traps\sfx_trap_tentacles_14.wav</AudioFile>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="sfx_trap_tentacles_14" ID="{A7F98BB7-B20E-4FC5-9FD6-098D2EDD492A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
 							</ChildrenList>
 							<StateInfo>
 								<StateGroupList>
@@ -5181,6 +4789,393 @@
 								</CustomStateList>
 							</StateInfo>
 						</ActorMixer>
+						<RandomSequenceContainer Name="tentacles" ID="{8D5CD7EE-E551-4FE8-990C-05DCB220950F}" ShortID="156530703">
+							<PropertyList>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="Highpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{FC163086-A41E-4292-BF5E-7F98832C0BC8}" ShortID="11894726">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="distance_enemy_blob" ID="{DD8872FB-3A06-43E0-9FE0-79D8B9146C73}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{7DA7C76D-D7A5-4F1B-AAEF-0C74946A5585}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-100</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>30</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{8B41E657-9EBE-4E14-809F-8FBEDCE81B14}" ShortID="747891215">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="distance_trap_tentacle" ID="{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{EF160F9A-D269-4725-BC61-76EC1AEA3895}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>62</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>4</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.5"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{26CD02D1-B0B5-4997-AD18-E59D58C44B3E}" ShortID="789880089">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="distance_trap_tentacle" ID="{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{681EB174-E030-4F6E-ABA1-0450C27A973E}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>18.09624</XPos>
+														<YPos>-1.18869</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>59.83264</XPos>
+														<YPos>0.14465</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log3</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0.23164</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Music Conversion Settings" ID="{3F593E94-6665-4FEE-8428-876DD3D7AF7B}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="sfx_trap_tentacles_01" ID="{7BDC6F7A-EAF1-4D8C-A986-7AC1004EC9F2}" ShortID="297029402">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_trap_tentacles_01" ID="{7D25DD84-FCF7-4A8F-8947-335D647439A7}" ShortID="171810190">
+											<Language>SFX</Language>
+											<AudioFile>Traps\sfx_trap_tentacles_01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_trap_tentacles_01" ID="{7D25DD84-FCF7-4A8F-8947-335D647439A7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_trap_tentacles_02" ID="{93A0F466-42C3-48DF-B363-734FD29C349F}" ShortID="257712356">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_trap_tentacles_02" ID="{E100EF44-8670-4C3F-8168-34BC9C183923}" ShortID="659242271">
+											<Language>SFX</Language>
+											<AudioFile>Traps\sfx_trap_tentacles_02.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_trap_tentacles_02" ID="{E100EF44-8670-4C3F-8168-34BC9C183923}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_trap_tentacles_03" ID="{A302C349-38A5-4EBD-8BB8-F7EF1261EDA1}" ShortID="352451581">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_trap_tentacles_03" ID="{48CB57FF-BAB6-4AD7-B72E-4883F1DCD4C9}" ShortID="1053620990">
+											<Language>SFX</Language>
+											<AudioFile>Traps\sfx_trap_tentacles_03.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_trap_tentacles_03" ID="{48CB57FF-BAB6-4AD7-B72E-4883F1DCD4C9}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_trap_tentacles_04" ID="{21E82D49-2943-470E-8B6C-6E0BFAE42019}" ShortID="83770265">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_trap_tentacles_04" ID="{351922F9-50AB-4ACF-B758-017914E929D0}" ShortID="1039106539">
+											<Language>SFX</Language>
+											<AudioFile>Traps\sfx_trap_tentacles_04.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_trap_tentacles_04" ID="{351922F9-50AB-4ACF-B758-017914E929D0}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_trap_tentacles_05" ID="{A070CE60-3F98-4878-9417-28D54DF3AFFB}" ShortID="421554697">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_trap_tentacles_05" ID="{2464A739-FCB4-40A9-8BB9-B49A01C4F8A7}" ShortID="776963193">
+											<Language>SFX</Language>
+											<AudioFile>Traps\sfx_trap_tentacles_05.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_trap_tentacles_05" ID="{2464A739-FCB4-40A9-8BB9-B49A01C4F8A7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_trap_tentacles_06" ID="{EF3738EE-1F02-4805-B7A0-518B0574A41D}" ShortID="386214710">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_trap_tentacles_06" ID="{449D9288-4CAF-4AAD-ACB6-B4BD30F8A03B}" ShortID="954105820">
+											<Language>SFX</Language>
+											<AudioFile>Traps\sfx_trap_tentacles_06.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_trap_tentacles_06" ID="{449D9288-4CAF-4AAD-ACB6-B4BD30F8A03B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_trap_tentacles_07" ID="{C6F298C4-F7B8-4170-AC9C-0060B337BD67}" ShortID="29156598">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_trap_tentacles_07" ID="{B3E0467E-BCAA-4213-BEF8-80681E4B1973}" ShortID="158532316">
+											<Language>SFX</Language>
+											<AudioFile>Traps\sfx_trap_tentacles_07.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_trap_tentacles_07" ID="{B3E0467E-BCAA-4213-BEF8-80681E4B1973}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_trap_tentacles_08" ID="{EFEF201B-B0EA-4218-8202-FFEF76788225}" ShortID="599239225">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_trap_tentacles_08" ID="{E310326C-67EA-468D-A521-348C86E38C3F}" ShortID="658686785">
+											<Language>SFX</Language>
+											<AudioFile>Traps\sfx_trap_tentacles_08.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_trap_tentacles_08" ID="{E310326C-67EA-468D-A521-348C86E38C3F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_trap_tentacles_09" ID="{2ACC6FF6-CB28-4C42-B6A9-52B64CA4CD8A}" ShortID="78021086">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_trap_tentacles_09" ID="{997D1AF7-EFCB-427C-A231-C489EE4C013C}" ShortID="229064713">
+											<Language>SFX</Language>
+											<AudioFile>Traps\sfx_trap_tentacles_09.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_trap_tentacles_09" ID="{997D1AF7-EFCB-427C-A231-C489EE4C013C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_trap_tentacles_10" ID="{5E5454FE-8517-4A14-8858-E215EF223053}" ShortID="992790785">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_trap_tentacles_10" ID="{E0AA1EF1-9A69-492D-9A9C-9754A95D38B3}" ShortID="638345944">
+											<Language>SFX</Language>
+											<AudioFile>Traps\sfx_trap_tentacles_10.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_trap_tentacles_10" ID="{E0AA1EF1-9A69-492D-9A9C-9754A95D38B3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_trap_tentacles_11" ID="{B48BD582-F382-4DE2-8D60-8FB1FDB9C1DB}" ShortID="616167088">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_trap_tentacles_11" ID="{F8F29492-4CDC-4C94-9E73-F8C628EB83E5}" ShortID="403528220">
+											<Language>SFX</Language>
+											<AudioFile>Traps\sfx_trap_tentacles_11.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_trap_tentacles_11" ID="{F8F29492-4CDC-4C94-9E73-F8C628EB83E5}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_trap_tentacles_12" ID="{83A1C3EE-1341-4980-A492-A27A372E388E}" ShortID="159839261">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_trap_tentacles_12" ID="{BA50167D-566C-43F9-A2FD-7C6284AB1540}" ShortID="600690088">
+											<Language>SFX</Language>
+											<AudioFile>Traps\sfx_trap_tentacles_12.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_trap_tentacles_12" ID="{BA50167D-566C-43F9-A2FD-7C6284AB1540}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_trap_tentacles_13" ID="{50A39703-A3E6-4A69-8112-A4F33E12C5C5}" ShortID="843990956">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_trap_tentacles_13" ID="{6579BDE2-2F3E-4F1F-90A6-EF2406F28495}" ShortID="11191803">
+											<Language>SFX</Language>
+											<AudioFile>Traps\sfx_trap_tentacles_13.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_trap_tentacles_13" ID="{6579BDE2-2F3E-4F1F-90A6-EF2406F28495}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="sfx_trap_tentacles_14" ID="{634876C8-FA02-49DD-B6A9-8A3611805BC2}" ShortID="852358159">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_trap_tentacles_14" ID="{A7F98BB7-B20E-4FC5-9FD6-098D2EDD492A}" ShortID="333460177">
+											<Language>SFX</Language>
+											<AudioFile>Traps\sfx_trap_tentacles_14.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_trap_tentacles_14" ID="{A7F98BB7-B20E-4FC5-9FD6-098D2EDD492A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

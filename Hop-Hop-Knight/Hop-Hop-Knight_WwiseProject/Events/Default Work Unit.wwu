@@ -155,6 +155,7 @@
 						<Action Name="" ID="{CB57F915-2046-45FB-B10C-84B526DB4624}" ShortID="354490700">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="22"/>
+								<Property Name="Delay" Type="Real64" Value="0.5"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -189,6 +190,16 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Traps" ID="{AA21F4F1-91DF-4565-A577-FA8D83FAA9FE}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2455D9B7-38B8-4528-86F5-0B2F8872234F}" ShortID="968032163">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="tentacles" ID="{8D5CD7EE-E551-4FE8-990C-05DCB220950F}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -234,6 +245,28 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="sfx_powerup_start" ID="{1E9F2776-4C5D-4EDB-95E0-EE6375F1CD73}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{95D8452C-8F53-4BFD-89E6-148F2F2900B1}" ShortID="220375810">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Enemy" ID="{487A1779-C29F-44E4-8753-8C9A7E8D07D0}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B9C87F72-1530-468C-B428-E56D5ECF36D9}" ShortID="310509991">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Delay" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Traps" ID="{AA21F4F1-91DF-4565-A577-FA8D83FAA9FE}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -520,6 +553,16 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{1B252CFE-2915-4DC6-A635-D68D80B1B257}" ShortID="1019994791">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="tentacles" ID="{8D5CD7EE-E551-4FE8-990C-05DCB220950F}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="ui_pause_on" ID="{10A147B5-584C-4930-99B3-59CE53F81E2F}">
@@ -740,6 +783,16 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="alive" ID="{32DE1AA7-312B-43BF-973E-22F9BAAC529F}" WorkUnitID="{BF88A622-63C2-4B94-8505-42A50FA6F1E8}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{0726A178-A4F5-482E-9FFE-AD5D9E314D50}" ShortID="741219472">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="9"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="tentacles" ID="{8D5CD7EE-E551-4FE8-990C-05DCB220950F}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
