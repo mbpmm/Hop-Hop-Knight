@@ -1089,7 +1089,6 @@
 										<RandomSequenceContainer Name="bat_green" ID="{7092E42C-38D6-4681-BF9A-B082FCF2A857}" ShortID="329877759">
 											<PropertyList>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-												<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismLoopCount" Type="int32" Value="6"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
@@ -1449,7 +1448,6 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
-												<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismLoopCount" Type="int32" Value="41"/>
 												<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
@@ -1764,7 +1762,6 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="bat_red" ID="{BECDD1B7-2205-4096-B00E-5F5FA6602D5D}" ShortID="667199107">
 											<PropertyList>
-												<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
@@ -2163,7 +2160,6 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
-												<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismLoopCount" Type="int32" Value="153"/>
 												<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
@@ -2476,7 +2472,6 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="mid" ID="{D5C5133F-3C37-46A9-9784-480B75AF151C}" ShortID="589800727">
 											<PropertyList>
-												<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
@@ -2574,7 +2569,6 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="low" ID="{AEAAC4EC-486D-4B0E-B778-461D99C8B844}" ShortID="125664599">
 											<PropertyList>
-												<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismLoopCount" Type="int32">
 													<ModifierList>
