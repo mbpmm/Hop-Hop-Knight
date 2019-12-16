@@ -344,7 +344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blockDestructionPoint: {fileID: 0}
-  scoreZone: {fileID: 0}
+  scoreZone: {fileID: 287394932654103384}
 --- !u!1001 &6536370911392211142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -352,16 +352,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2881031805234480094}
     m_Modifications:
-    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
-        type: 3}
-      propertyPath: m_Name
-      value: Vela_0 (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 1312685765036992111, guid: 6e32da781d3aca34982ace7faa509fad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -417,6 +407,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
+        type: 3}
+      propertyPath: m_Name
+      value: Vela_0 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1312685765036992110, guid: 6e32da781d3aca34982ace7faa509fad,
         type: 3}
       propertyPath: m_FlipX
@@ -442,16 +442,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2881031805234480094}
     m_Modifications:
-    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
-        type: 3}
-      propertyPath: m_Name
-      value: Vela_0 (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 1312685765036992111, guid: 6e32da781d3aca34982ace7faa509fad,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -507,6 +497,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
+        type: 3}
+      propertyPath: m_Name
+      value: Vela_0 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312685765036992112, guid: 6e32da781d3aca34982ace7faa509fad,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6061181544872250653, guid: 6e32da781d3aca34982ace7faa509fad,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -527,11 +527,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2881031805234480094}
     m_Modifications:
-    - target: {fileID: 3728710556576882059, guid: 1472300aeb93ffa40afcf0103d09bb03,
-        type: 3}
-      propertyPath: m_Name
-      value: MovingFloor
-      objectReference: {fileID: 0}
     - target: {fileID: 3728710556576882052, guid: 1472300aeb93ffa40afcf0103d09bb03,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -587,11 +582,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3728710556576882059, guid: 1472300aeb93ffa40afcf0103d09bb03,
+        type: 3}
+      propertyPath: m_Name
+      value: MovingFloor
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1472300aeb93ffa40afcf0103d09bb03, type: 3}
 --- !u!4 &6786685109773099934 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3728710556576882052, guid: 1472300aeb93ffa40afcf0103d09bb03,
+    type: 3}
+  m_PrefabInstance: {fileID: 7894858905421282842}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &287394932654103384 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7957056195765642562, guid: 1472300aeb93ffa40afcf0103d09bb03,
     type: 3}
   m_PrefabInstance: {fileID: 7894858905421282842}
   m_PrefabAsset: {fileID: 0}
