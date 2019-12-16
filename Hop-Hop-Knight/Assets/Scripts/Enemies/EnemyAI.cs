@@ -80,6 +80,18 @@ public class EnemyAI : MonoBehaviour
     private void OnDisable()
     {
         percentage = 0;
+        if (gameObject.tag == "Murcy")
+        {
+            AkSoundEngine.PostEvent("enemy_bat1_stop", this.gameObject);
+        }
+        if (gameObject.tag == "Murcy2")
+        {
+            AkSoundEngine.PostEvent("enemy_bat2_stop", this.gameObject);
+        }
+        if (gameObject.tag == "Blobert")
+        {
+            AkSoundEngine.PostEvent("enemy_blob_stop", this.gameObject);
+        }
     }
 
 }
