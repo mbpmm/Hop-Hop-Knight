@@ -198,12 +198,10 @@ public class Player : MonoBehaviour
             if (landOnWood)
             {
                 AkSoundEngine.SetSwitch("floor_material", "wood", gameObject);
-                Debug.Log("Pasa por suich madera");
             }
             else
             {
                 AkSoundEngine.SetSwitch("floor_material", "rock", gameObject);
-                Debug.Log("Pasa por suich ROCA");
             }
 
             AkSoundEngine.PostEvent("player_land", gameObject);
@@ -250,6 +248,7 @@ public class Player : MonoBehaviour
 
         if (powerUpActivated)
         {
+            Mathf.Clamp(transform.position.x, minValueWall, maxValueWall);
             if (Input.touchCount > 0) 
             {
 
@@ -261,7 +260,7 @@ public class Player : MonoBehaviour
 
                 transform.Translate(direction.x * speedOnX,0, 0);
             }
-            Mathf.Clamp(transform.position.x, minValueWall, maxValueWall);
+            
             timerPU += Time.deltaTime;
             transform.Translate(0, speedPU*Time.deltaTime, 0);
             rbody.velocity = Vector2.zero;

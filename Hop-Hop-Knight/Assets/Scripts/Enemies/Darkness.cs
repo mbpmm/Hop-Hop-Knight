@@ -37,7 +37,6 @@ public class Darkness : MonoBehaviour
         else
         {
             percentage = 0;
-            AkSoundEngine.SetRTPCValue("distance_trap_tentacle", percentage);
         }
 
         if (transform.position.y < startPos.position.y)
