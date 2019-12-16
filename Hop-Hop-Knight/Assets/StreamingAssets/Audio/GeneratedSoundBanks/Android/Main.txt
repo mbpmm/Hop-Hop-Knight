@@ -68,6 +68,7 @@ Custom State	ID	Name	State Group	Owner		Notes
 	62461102	powerup	ingame	\Interactive Music Hierarchy\Default Work Unit\MusicSystem\InGame		
 	193023128	powerup	ingame	\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Traps		
 	234402946	dead	player	\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Enemy		
+	341005566	powerup	ingame	\Actor-Mixer Hierarchy\Default Work Unit\Ingame\tentacles		
 	368734863	score	ingame	\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Enemy		
 	673411145	powerup	ingame	\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player		
 	686042931	powerup	ingame	\Actor-Mixer Hierarchy\Default Work Unit\UI		
@@ -76,6 +77,7 @@ Custom State	ID	Name	State Group	Owner		Notes
 	876702132	score	ingame	\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Traps		
 	959254705	powerup	ingame	\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Enemy		
 	1030568196	ghost	ingame	\Actor-Mixer Hierarchy\Default Work Unit\Ingame\Player		
+	1052047664	score	ingame	\Actor-Mixer Hierarchy\Default Work Unit\Ingame\tentacles		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	262799029	distance_enemy_blob			\Default Work Unit\distance_enemy_blob	

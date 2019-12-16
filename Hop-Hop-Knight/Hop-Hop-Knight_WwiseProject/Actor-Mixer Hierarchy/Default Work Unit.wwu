@@ -5175,6 +5175,39 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="ingame" ID="{7C48FE1A-1ADE-42A3-8E26-0EC5E5E69D86}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="play" ID="{2495BA82-9647-41EA-931E-DE727C31889E}"/>
+										<CustomState Name="" ID="{8AF7C07B-C51C-4745-9013-85B2C3F049BC}" ShortID="341740670"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="score" ID="{B1030D0F-0A75-47F0-9A67-8B44BAC8B3BF}"/>
+										<CustomState Name="" ID="{F856BD97-A7F5-44BA-B198-83AB60F2893B}" ShortID="1052047664">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="powerup" ID="{689820FE-30B4-4A24-B6E6-1DC82957CF23}"/>
+										<CustomState Name="" ID="{F3729517-9BE0-4E25-868D-C53890D66CEE}" ShortID="341005566">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="ghost" ID="{AFDBBF27-BB57-4EA8-938A-AC702A03A6A1}"/>
+										<CustomState Name="" ID="{C5FBE088-6413-4620-AF49-DCDAE09133F0}" ShortID="181062991"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
