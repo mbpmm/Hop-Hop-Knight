@@ -57,15 +57,15 @@ public class EnemyAI : MonoBehaviour
 
             if (gameObject.tag == "Murcy")
             {
-                AkSoundEngine.SetRTPCValue("distance_enemy_bat1", percentage);
+                AkSoundEngine.SetRTPCValue("distance_enemy_bat1", percentage, this.gameObject);
             }
             if (gameObject.tag == "Murcy2")
             {
-                AkSoundEngine.SetRTPCValue("distance_enemy_bat2", percentage);
+                AkSoundEngine.SetRTPCValue("distance_enemy_bat2", percentage, this.gameObject);
             }
             if (gameObject.tag == "Blobert")
             {
-                AkSoundEngine.SetRTPCValue("distance_enemy_blob", percentage);
+                AkSoundEngine.SetRTPCValue("distance_enemy_blob", percentage, this.gameObject);
             }
 
         }
