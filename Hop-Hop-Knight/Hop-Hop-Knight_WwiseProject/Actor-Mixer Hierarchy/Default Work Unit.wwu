@@ -6,7 +6,7 @@
 				<ActorMixer Name="UI" ID="{19749B07-FB5B-4296-8363-3E7DF5DA50FF}" ShortID="948326233">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Music Conversion Settings" ID="{3F593E94-6665-4FEE-8428-876DD3D7AF7B}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+							<ObjectRef Name="SFX Conversion Settings" ID="{D9025788-02E1-4B91-80B9-A28344F441C2}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="UI" ID="{B96A05AE-0F93-4382-8755-ABE19A2EF3AE}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -384,7 +384,7 @@
 				<ActorMixer Name="Ingame" ID="{1DB9ABA7-44F6-410F-AD19-6529EBE87814}" ShortID="737229185">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Music Conversion Settings" ID="{3F593E94-6665-4FEE-8428-876DD3D7AF7B}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
+							<ObjectRef Name="SFX Conversion Settings" ID="{D9025788-02E1-4B91-80B9-A28344F441C2}" WorkUnitID="{66D3BE38-60C6-47A3-B954-B6502F3F31FD}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Ingame" ID="{0B45A3F5-DE2B-405F-90A9-363791C79125}" WorkUnitID="{9F04C47B-3900-4996-B243-228CA2BD4D0C}"/>
@@ -4327,6 +4327,12 @@
 																		<SegmentShape>Log2</SegmentShape>
 																	</Point>
 																	<Point>
+																		<XPos>35.98327</XPos>
+																		<YPos>-0.92379</YPos>
+																		<Flags>0</Flags>
+																		<SegmentShape>Exp2</SegmentShape>
+																	</Point>
+																	<Point>
 																		<XPos>100</XPos>
 																		<YPos>0</YPos>
 																		<Flags>37</Flags>
@@ -4422,7 +4428,7 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>42</YPos>
+																		<YPos>49</YPos>
 																		<Flags>5</Flags>
 																	</Point>
 																	<Point>
@@ -4458,8 +4464,8 @@
 																		<SegmentShape>Log2</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>33.159</XPos>
-																		<YPos>-3.34101</YPos>
+																		<XPos>33.57741</XPos>
+																		<YPos>-0.87304</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -4997,8 +5003,8 @@
 														<SegmentShape>Log1</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>34.10042</XPos>
-														<YPos>-3.69522</YPos>
+														<XPos>25.94142</XPos>
+														<YPos>-1.67574</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
