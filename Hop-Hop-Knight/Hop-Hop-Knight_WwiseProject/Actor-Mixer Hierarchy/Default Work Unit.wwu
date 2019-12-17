@@ -393,14 +393,17 @@
 					<ChildrenList>
 						<ActorMixer Name="Enemy" ID="{487A1779-C29F-44E4-8753-8C9A7E8D07D0}" ShortID="827732720">
 							<PropertyList>
-								<Property Name="BelowThresholdBehavior" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
 								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
 									<ValueList>
-										<Value>15</Value>
+										<Value>20</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverLimitBehavior" Type="int16" Value="1"/>
+								<Property Name="OverrideVirtualVoice" Type="bool" Value="True"/>
 								<Property Name="Pitch" Type="int32">
 									<ModifierList>
 										<ModifierInfo>
@@ -488,8 +491,8 @@
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>35.14644</XPos>
-																<YPos>-3.59626</YPos>
+																<XPos>29.4979</XPos>
+																<YPos>-1.87638</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
@@ -640,28 +643,31 @@
 												<Value>3</Value>
 											</ValueList>
 											<RTPCList>
-												<RTPC Name="" ID="{AC650004-8162-4AAA-9FB3-1657700B94D6}" ShortID="259798574">
+												<RTPC Name="" ID="{235C22DC-2B14-4671-8FE8-E89D6AA0F869}" ShortID="548031309">
 													<ReferenceList>
 														<Reference Name="ControlInput">
 															<ObjectRef Name="distance_enemy_ghost" ID="{27D853C4-69D2-4FF0-BDF4-B3C9C3055221}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
 														</Reference>
 													</ReferenceList>
-													<Curve Name="" ID="{D58EEA79-5D5E-4A04-8478-DAB3AA438374}">
+													<Curve Name="" ID="{65143D78-5C46-4F48-B1D0-FD1CE5ABCC3E}">
 														<PropertyList>
 															<Property Name="Flags" Type="int32" Value="3"/>
 														</PropertyList>
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>-20.7143</YPos>
+																<YPos>-200</YPos>
 																<Flags>5</Flags>
-																<SegmentShape>Log2</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>33.4728</XPos>
-																<YPos>-3.93842</YPos>
+																<XPos>19.56067</XPos>
+																<YPos>-5.35616</YPos>
 																<Flags>0</Flags>
-																<SegmentShape>Log1</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>68.61925</XPos>
+																<YPos>-3.39744</YPos>
+																<Flags>0</Flags>
 															</Point>
 															<Point>
 																<XPos>100</XPos>
@@ -1029,7 +1035,7 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>29</YPos>
+																<YPos>39</YPos>
 																<Flags>5</Flags>
 															</Point>
 															<Point>
@@ -1044,13 +1050,13 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<RTPCList>
-												<RTPC Name="" ID="{BD767C13-CD9E-44DA-A3DE-82F3BA5D21FC}" ShortID="663323082">
+												<RTPC Name="" ID="{F6E93342-B4CE-4D31-A0A0-E9B7F815EF25}" ShortID="350874330">
 													<ReferenceList>
 														<Reference Name="ControlInput">
 															<ObjectRef Name="distance_enemy_bat1" ID="{F5A564D8-11FC-481B-915B-12E4E1C6363B}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
 														</Reference>
 													</ReferenceList>
-													<Curve Name="" ID="{451EED56-64A5-4E7F-8081-61EBCB0793AA}">
+													<Curve Name="" ID="{D744E46F-3D76-472B-933F-EB0E45C126D6}">
 														<PropertyList>
 															<Property Name="Flags" Type="int32" Value="3"/>
 														</PropertyList>
@@ -1059,11 +1065,15 @@
 																<XPos>0</XPos>
 																<YPos>-200</YPos>
 																<Flags>5</Flags>
-																<SegmentShape>Log2</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>45.29289</XPos>
-																<YPos>-0.64038</YPos>
+																<XPos>25.1046</XPos>
+																<YPos>-4.32249</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>68.41004</XPos>
+																<YPos>-2.48989</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
@@ -1089,7 +1099,6 @@
 										<RandomSequenceContainer Name="bat_green" ID="{7092E42C-38D6-4681-BF9A-B082FCF2A857}" ShortID="329877759">
 											<PropertyList>
 												<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-												<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismLoopCount" Type="int32" Value="6"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
@@ -1449,7 +1458,6 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
-												<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismLoopCount" Type="int32" Value="41"/>
 												<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
@@ -1701,7 +1709,7 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>29</YPos>
+																<YPos>51</YPos>
 																<Flags>5</Flags>
 															</Point>
 															<Point>
@@ -1719,13 +1727,13 @@
 												<Value>-2</Value>
 											</ValueList>
 											<RTPCList>
-												<RTPC Name="" ID="{CA93C074-6F2E-4D97-9F35-79C993A4F60C}" ShortID="865018404">
+												<RTPC Name="" ID="{697BF2EE-00FD-423A-B4D5-96A9A7032D75}" ShortID="463136162">
 													<ReferenceList>
 														<Reference Name="ControlInput">
 															<ObjectRef Name="distance_enemy_bat2" ID="{3E51CACC-5C62-422E-AB53-C434906738B1}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
 														</Reference>
 													</ReferenceList>
-													<Curve Name="" ID="{8083E21B-9929-4059-B1E6-DAE22C36265B}">
+													<Curve Name="" ID="{7F83A173-0E96-4C39-A376-9C28860112B8}">
 														<PropertyList>
 															<Property Name="Flags" Type="int32" Value="3"/>
 														</PropertyList>
@@ -1734,11 +1742,15 @@
 																<XPos>0</XPos>
 																<YPos>-200</YPos>
 																<Flags>5</Flags>
-																<SegmentShape>Log2</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>45.7113</XPos>
-																<YPos>-0.64038</YPos>
+																<XPos>39.85356</XPos>
+																<YPos>-2.89267</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>70.18828</XPos>
+																<YPos>-2.01639</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
@@ -1763,7 +1775,6 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="bat_red" ID="{BECDD1B7-2205-4096-B00E-5F5FA6602D5D}" ShortID="667199107">
 											<PropertyList>
-												<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
@@ -2162,7 +2173,6 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
-												<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismLoopCount" Type="int32" Value="154"/>
 												<Property Name="PlayMechanismResetPlaylistEachPlay" Type="bool" Value="False"/>
@@ -2407,12 +2417,12 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>57</YPos>
+																<YPos>50</YPos>
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>36.08787</XPos>
-																<YPos>47</YPos>
+																<XPos>45.18828</XPos>
+																<YPos>39</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
@@ -2430,13 +2440,13 @@
 												<Value>-3</Value>
 											</ValueList>
 											<RTPCList>
-												<RTPC Name="" ID="{3FE07333-AAFF-48FA-B46D-4AD273881CE6}" ShortID="317726673">
+												<RTPC Name="" ID="{183B4B1A-F218-40E8-86F6-10FCA6C3710C}" ShortID="140715133">
 													<ReferenceList>
 														<Reference Name="ControlInput">
 															<ObjectRef Name="distance_enemy_blob" ID="{DD8872FB-3A06-43E0-9FE0-79D8B9146C73}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
 														</Reference>
 													</ReferenceList>
-													<Curve Name="" ID="{B5A4B932-7005-41F0-8A17-94F9C795FA0C}">
+													<Curve Name="" ID="{861D592C-E38C-4E0D-9A6B-81B0A32762A0}">
 														<PropertyList>
 															<Property Name="Flags" Type="int32" Value="3"/>
 														</PropertyList>
@@ -2445,13 +2455,21 @@
 																<XPos>0</XPos>
 																<YPos>-200</YPos>
 																<Flags>5</Flags>
-																<SegmentShape>Log2</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>36.71549</XPos>
-																<YPos>-0.20956</YPos>
+																<XPos>20.08368</XPos>
+																<YPos>-5.12019</YPos>
 																<Flags>0</Flags>
-																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>39.85356</XPos>
+																<YPos>-4.3062</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>61.92469</XPos>
+																<YPos>-2.23387</YPos>
+																<Flags>0</Flags>
 															</Point>
 															<Point>
 																<XPos>100</XPos>
@@ -2475,7 +2493,6 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="mid" ID="{D5C5133F-3C37-46A9-9784-480B75AF151C}" ShortID="589800727">
 											<PropertyList>
-												<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="4"/>
@@ -2573,7 +2590,6 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="low" ID="{AEAAC4EC-486D-4B0E-B778-461D99C8B844}" ShortID="125664599">
 											<PropertyList>
-												<Property Name="PlayMechanismInfiniteOrNumberOfLoops" Type="int16" Value="0"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismLoopCount" Type="int32">
 													<ModifierList>
@@ -2692,6 +2708,9 @@
 									</BlendTrackList>
 								</BlendContainer>
 							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{A2AFDD1F-299B-45FC-B6F0-FF2D8ECAA309}"/>
+							</PositioningInfo>
 							<StateInfo>
 								<StateGroupList>
 									<StateGroupInfo>
@@ -4257,6 +4276,34 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="moving_platform_close" ID="{05B0E76C-A1D9-4F11-B35D-7EE94E818ADD}" ShortID="127122524">
 											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{6B5801CC-BC66-45ED-87F3-47981B215692}" ShortID="421263680">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="distance_trap_moving_platform" ID="{231105EE-67B1-4F53-A8C3-4D22EBE6A67C}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{EC87E1ED-0F8F-47CD-A10C-7D0A7B0CEE5E}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>42</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-3</Value>
@@ -4275,13 +4322,9 @@
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-5.79498</YPos>
+																		<YPos>-200</YPos>
 																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>21.12971</XPos>
-																		<YPos>-0.60597</YPos>
-																		<Flags>0</Flags>
+																		<SegmentShape>Log2</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
@@ -4364,30 +4407,59 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="moving_platform_open" ID="{C4DFF8F6-E299-4F08-9F78-BB4670D34ADC}" ShortID="902682066">
 											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-3</Value>
-													</ValueList>
+												<Property Name="Lowpass" Type="int16">
 													<RTPCList>
-														<RTPC Name="" ID="{471A181F-8BB3-4A77-A882-973D98A0CBB6}" ShortID="586852991">
+														<RTPC Name="" ID="{CE67B9D8-B019-43FF-BDED-9ABB08DF3993}" ShortID="800005666">
 															<ReferenceList>
 																<Reference Name="ControlInput">
 																	<ObjectRef Name="distance_trap_moving_platform" ID="{231105EE-67B1-4F53-A8C3-4D22EBE6A67C}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
 																</Reference>
 															</ReferenceList>
-															<Curve Name="" ID="{8844BF32-01BF-496B-8321-74716185B938}">
+															<Curve Name="" ID="{ECB15A20-4CC9-4A24-BCC3-119E58DBA646}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>42</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-3</Value>
+													</ValueList>
+													<RTPCList>
+														<RTPC Name="" ID="{A3CF643F-0BCF-427E-8806-B88019932539}" ShortID="734886561">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="distance_trap_moving_platform" ID="{231105EE-67B1-4F53-A8C3-4D22EBE6A67C}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{65C292E1-4892-43BB-8D72-861B1B048F17}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-7.78904</YPos>
+																		<YPos>-200</YPos>
 																		<Flags>5</Flags>
+																		<SegmentShape>Log2</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>20.81591</XPos>
-																		<YPos>-1.37423</YPos>
+																		<XPos>33.159</XPos>
+																		<YPos>-3.34101</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
@@ -4532,6 +4604,34 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="spikes_out" ID="{87ED1C78-AD8D-4B3A-9554-9D397E0B65C0}" ShortID="28253176">
 											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{32B93744-23CB-4451-8ED8-F1794BB2C9A8}" ShortID="202530308">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="distance_trap_spikes" ID="{3B15008C-744A-4F9E-AAEC-D19A626D0C0C}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{224F803E-2119-46E0-80FD-9C579BF1F3CE}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>42</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -4550,26 +4650,22 @@
 														<Value>2</Value>
 													</ValueList>
 													<RTPCList>
-														<RTPC Name="" ID="{57D72DA8-B845-4830-A5A8-D5A5F2398990}" ShortID="725362601">
+														<RTPC Name="" ID="{B8875CDF-3224-410C-97D5-7B385F07D567}" ShortID="325004080">
 															<ReferenceList>
 																<Reference Name="ControlInput">
 																	<ObjectRef Name="distance_trap_spikes" ID="{3B15008C-744A-4F9E-AAEC-D19A626D0C0C}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
 																</Reference>
 															</ReferenceList>
-															<Curve Name="" ID="{FC8D50CA-CAA9-4C17-B703-00A755B458EC}">
+															<Curve Name="" ID="{828063E7-FD3C-4713-ACB7-C8B1BDFC03DE}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
+																		<YPos>-10.38171</YPos>
 																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>36.71548</XPos>
-																		<YPos>-6.38486</YPos>
-																		<Flags>0</Flags>
+																		<SegmentShape>Log2</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
@@ -4633,6 +4729,34 @@
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="spikes_in" ID="{EF2652C2-0C98-42E2-9C73-DBE076191379}" ShortID="73110877">
 											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<RTPCList>
+														<RTPC Name="" ID="{678C8DE3-B091-4CE1-A55F-DEDEECBD4967}" ShortID="1035693003">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="distance_trap_spikes" ID="{3B15008C-744A-4F9E-AAEC-D19A626D0C0C}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{C185505D-7FD0-4283-A16A-CE77292C3B33}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>42</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -4651,26 +4775,22 @@
 														<Value>2</Value>
 													</ValueList>
 													<RTPCList>
-														<RTPC Name="" ID="{461C4B28-780B-4A68-A5DD-108771F94F81}" ShortID="911672643">
+														<RTPC Name="" ID="{C7DB9C21-985A-4390-BB9F-DBC3217580D5}" ShortID="497538340">
 															<ReferenceList>
 																<Reference Name="ControlInput">
 																	<ObjectRef Name="distance_trap_spikes" ID="{3B15008C-744A-4F9E-AAEC-D19A626D0C0C}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
 																</Reference>
 															</ReferenceList>
-															<Curve Name="" ID="{EDE3BD84-74BA-4D2D-B66F-5BC9C324E6A3}">
+															<Curve Name="" ID="{C2C78CE2-28E4-48DA-B0A0-EDF01AFECCD8}">
 																<PropertyList>
 																	<Property Name="Flags" Type="int32" Value="3"/>
 																</PropertyList>
 																<PointList>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-200</YPos>
+																		<YPos>-10.38171</YPos>
 																		<Flags>5</Flags>
-																	</Point>
-																	<Point>
-																		<XPos>39.33055</XPos>
-																		<YPos>-4.0935</YPos>
-																		<Flags>0</Flags>
+																		<SegmentShape>Log2</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>100</XPos>
@@ -4859,13 +4979,13 @@
 										<Value>3</Value>
 									</ValueList>
 									<RTPCList>
-										<RTPC Name="" ID="{26CD02D1-B0B5-4997-AD18-E59D58C44B3E}" ShortID="789880089">
+										<RTPC Name="" ID="{AADBA676-0302-463D-B96A-2B8C42384B4A}" ShortID="738262065">
 											<ReferenceList>
 												<Reference Name="ControlInput">
 													<ObjectRef Name="distance_trap_tentacle" ID="{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}" WorkUnitID="{8E91AF08-1AE4-4390-8E9C-AF483BD4279D}"/>
 												</Reference>
 											</ReferenceList>
-											<Curve Name="" ID="{681EB174-E030-4F6E-ABA1-0450C27A973E}">
+											<Curve Name="" ID="{2D4D6C55-2A85-4684-9AD1-6B11EEDB9BA8}">
 												<PropertyList>
 													<Property Name="Flags" Type="int32" Value="3"/>
 												</PropertyList>
@@ -4874,23 +4994,16 @@
 														<XPos>0</XPos>
 														<YPos>-200</YPos>
 														<Flags>5</Flags>
-														<SegmentShape>Log2</SegmentShape>
+														<SegmentShape>Log1</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>18.09624</XPos>
-														<YPos>-1.18869</YPos>
+														<XPos>34.10042</XPos>
+														<YPos>-3.69522</YPos>
 														<Flags>0</Flags>
-														<SegmentShape>Exp2</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>59.83264</XPos>
-														<YPos>0.14465</YPos>
-														<Flags>0</Flags>
-														<SegmentShape>Log3</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>100</XPos>
-														<YPos>0.23164</YPos>
+														<YPos>0</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -5180,11 +5293,26 @@
 									<StateGroupInfo>
 										<StateGroupRef Name="ingame" ID="{7C48FE1A-1ADE-42A3-8E26-0EC5E5E69D86}"/>
 									</StateGroupInfo>
+									<StateGroupInfo>
+										<StateGroupRef Name="player" ID="{E68E1284-45D8-423D-963A-255A39C8534E}"/>
+									</StateGroupInfo>
 								</StateGroupList>
 								<CustomStateList>
 									<CustomState>
 										<StateRef Name="play" ID="{2495BA82-9647-41EA-931E-DE727C31889E}"/>
 										<CustomState Name="" ID="{8AF7C07B-C51C-4745-9013-85B2C3F049BC}" ShortID="341740670"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="dead" ID="{6D8DAF9D-2166-4310-97C9-66F34B631362}"/>
+										<CustomState Name="" ID="{9B63E7E6-2BA4-484D-B1CA-F8DD85638F0A}" ShortID="607231545">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="alive" ID="{32DE1AA7-312B-43BF-973E-22F9BAAC529F}"/>
+										<CustomState Name="" ID="{CBB622AF-B5F0-4AED-9085-453E6774340F}" ShortID="331451602"/>
 									</CustomState>
 									<CustomState>
 										<StateRef Name="score" ID="{B1030D0F-0A75-47F0-9A67-8B44BAC8B3BF}"/>

@@ -8,13 +8,16 @@
 						<ObjectRef Name="hud_warning" ID="{73258A54-B373-4037-BC10-46551403091B}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="player_release" ID="{A9B777CB-0A2B-406C-866B-A1ECF68F2DDB}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="player_land" ID="{039C5A30-6233-40E8-A4B6-3C3084408E8A}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="enemy_blob_stop" ID="{D9E2BB8D-2C20-4101-9ACB-5403587FE1A6}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="player_wings" ID="{E603A4DE-EBD9-415B-98B1-9073D40E1935}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="player_touch" ID="{2C98039F-9EE8-427D-87F8-A4D33CD58201}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="enemy_blob" ID="{E4D1E1FA-BAE7-42CC-8D6D-40BE3465D260}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ui_ingame_highscore" ID="{5D295C08-607E-4316-BAD1-649074F5C685}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ui_menu_home" ID="{81D507B7-3B19-43D6-9DC0-85599D9BF2D2}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="enemy_bat2_stop" ID="{61B028C0-B285-43EC-AE9F-368D22C4A332}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="developer_logo" ID="{3B37DC72-7691-4435-BB27-322881C47A72}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="trap_arrows" ID="{EFCB9218-E943-4440-80D1-86EEDA82445D}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="enemy_bat1_stop" ID="{88A4481D-B9ED-445B-9842-F03CA9E61CFC}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="player_grab_gem" ID="{A250C783-E995-44B1-8E26-F07B4AF5950E}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="trap_platform_trigger" ID="{D2C62F81-B473-44D7-ADA1-94B483693B85}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="ui_menu_enter" ID="{772A466F-03D4-44ED-9EAA-F1FC6FCB285E}" WorkUnitID="{97ADB9D8-1080-4F2B-9D64-A9A8CE529B1E}" Filter="7" Origin="Manual"/>

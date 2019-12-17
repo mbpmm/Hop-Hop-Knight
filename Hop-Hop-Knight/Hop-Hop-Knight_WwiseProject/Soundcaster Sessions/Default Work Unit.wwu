@@ -129,11 +129,11 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="distance_enemy_bat2" ID="{3E51CACC-5C62-422E-AB53-C434906738B1}"/>
-							<Value>22</Value>
+							<Value>87.5523012552301</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_enemy_plant" ID="{42E0A334-BB59-4306-9CAF-86D018E94D8E}"/>
-							<Value>48</Value>
+							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="floor_number" ID="{09461037-B19D-4369-906E-CB4F5A99AA7D}"/>
@@ -153,11 +153,11 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_enemy_bat1" ID="{F5A564D8-11FC-481B-915B-12E4E1C6363B}"/>
-							<Value>5</Value>
+							<Value>42.8870292887029</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_trap_tentacle" ID="{D78D910D-4DDD-4864-9CBF-B6C1E6220A7A}"/>
-							<Value>100</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="powerup_state" ID="{92313F99-67CB-4A4F-9E72-884B51F24E01}"/>
@@ -169,15 +169,15 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_trap_moving_platform" ID="{231105EE-67B1-4F53-A8C3-4D22EBE6A67C}"/>
-							<Value>0</Value>
+							<Value>95.7112970711297</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_trap_spikes" ID="{3B15008C-744A-4F9E-AAEC-D19A626D0C0C}"/>
-							<Value>0</Value>
+							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="distance_enemy_ghost" ID="{27D853C4-69D2-4FF0-BDF4-B3C9C3055221}"/>
-							<Value>62</Value>
+							<Value>99.2677824267782</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">

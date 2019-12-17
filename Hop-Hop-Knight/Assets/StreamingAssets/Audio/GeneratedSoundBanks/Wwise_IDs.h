@@ -15,8 +15,11 @@ namespace AK
     {
         static const AkUniqueID DEVELOPER_LOGO = 2262673565U;
         static const AkUniqueID ENEMY_BAT1 = 2768764968U;
+        static const AkUniqueID ENEMY_BAT1_STOP = 2475312391U;
         static const AkUniqueID ENEMY_BAT2 = 2768764971U;
+        static const AkUniqueID ENEMY_BAT2_STOP = 4293348198U;
         static const AkUniqueID ENEMY_BLOB = 2582092671U;
+        static const AkUniqueID ENEMY_BLOB_STOP = 3430053834U;
         static const AkUniqueID ENEMY_GHOST = 1974222287U;
         static const AkUniqueID ENEMY_PLANT = 1098871033U;
         static const AkUniqueID GAME_START = 733168346U;

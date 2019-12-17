@@ -859,6 +859,48 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="enemy_bat1_stop" ID="{88A4481D-B9ED-445B-9842-F03CA9E61CFC}">
+					<ChildrenList>
+						<Action Name="" ID="{B4CCB6ED-E328-4856-8526-50208D78D176}" ShortID="1044963250">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="bat-green" ID="{966680D5-5A86-489D-96D2-709BE9CC5258}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="enemy_bat2_stop" ID="{61B028C0-B285-43EC-AE9F-368D22C4A332}">
+					<ChildrenList>
+						<Action Name="" ID="{E3ED8830-3279-4464-BFF6-86CBBC8D3A64}" ShortID="259696889">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="bat_red" ID="{5B4AF834-1864-4326-836F-DF1840F628E7}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="enemy_blob_stop" ID="{D9E2BB8D-2C20-4101-9ACB-5403587FE1A6}">
+					<ChildrenList>
+						<Action Name="" ID="{14266174-6698-47D4-AD9A-8755B648F546}" ShortID="938345224">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="blob" ID="{6BAF84B6-018E-4106-A3C5-A576B1EF3278}" WorkUnitID="{282BA983-1B23-4C1B-ADF4-F9AC6C453C36}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
