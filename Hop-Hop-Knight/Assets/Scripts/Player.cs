@@ -248,7 +248,10 @@ public class Player : MonoBehaviour
 
         if (powerUpActivated)
         {
-            Mathf.Clamp(transform.position.x, minValueWall, maxValueWall);
+            Vector3 pos=transform.position;
+            pos.x = Mathf.Clamp(transform.position.x, minValueWall, maxValueWall);
+            transform.position = pos;
+
             if (Input.touchCount > 0) 
             {
 

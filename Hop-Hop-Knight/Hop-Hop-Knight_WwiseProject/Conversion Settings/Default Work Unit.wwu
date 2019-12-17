@@ -146,7 +146,7 @@
 							<ConversionPlugin Name="" ID="{5C19D0AE-11BE-418C-8B7B-EB0D5E6A3ECD}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Android">
-							<ConversionPlugin Name="" ID="{8CE363FF-D0D2-4AD0-B74C-0A6657E1B3C3}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{36DA5111-D3B7-4AB4-A8A7-F6940E84211C}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Windows">
 							<ConversionPlugin Name="" ID="{6A555392-D4C3-427D-B3A6-89EAB02AB9CD}" PluginName="PCM" CompanyID="0" PluginID="1"/>

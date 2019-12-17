@@ -2467,8 +2467,8 @@
 																<Flags>0</Flags>
 															</Point>
 															<Point>
-																<XPos>61.92469</XPos>
-																<YPos>-2.23387</YPos>
+																<XPos>68.77116</XPos>
+																<YPos>-2.53463</YPos>
 																<Flags>0</Flags>
 															</Point>
 															<Point>
@@ -4327,8 +4327,8 @@
 																		<SegmentShape>Log2</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>35.98327</XPos>
-																		<YPos>-0.92379</YPos>
+																		<XPos>27.68451</XPos>
+																		<YPos>-1.58381</YPos>
 																		<Flags>0</Flags>
 																		<SegmentShape>Exp2</SegmentShape>
 																	</Point>
@@ -4464,8 +4464,8 @@
 																		<SegmentShape>Log2</SegmentShape>
 																	</Point>
 																	<Point>
-																		<XPos>33.57741</XPos>
-																		<YPos>-0.87304</YPos>
+																		<XPos>27.24961</XPos>
+																		<YPos>-1.66643</YPos>
 																		<Flags>0</Flags>
 																	</Point>
 																	<Point>
