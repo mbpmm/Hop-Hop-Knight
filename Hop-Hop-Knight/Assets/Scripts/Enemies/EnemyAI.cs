@@ -94,4 +94,21 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        percentage = 0;
+        if (gameObject.tag == "Murcy")
+        {
+            AkSoundEngine.PostEvent("enemy_bat1", this.gameObject);
+        }
+        if (gameObject.tag == "Murcy2")
+        {
+            AkSoundEngine.PostEvent("enemy_bat2", this.gameObject);
+        }
+        if (gameObject.tag == "Blobert")
+        {
+            AkSoundEngine.PostEvent("enemy_blob", this.gameObject);
+        }
+    }
+
 }
